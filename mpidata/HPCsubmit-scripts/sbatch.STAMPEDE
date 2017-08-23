@@ -1,0 +1,40 @@
+#!/bin/bash
+#----------------------------------------------------
+# Example SLURM job script to run MPI applications on 
+# TACC's Stampede system.
+#
+#----------------------------------------------------
+
+#SBATCH -J gsqMPI             # Job name
+#SBATCH -o gsqMPI.%j.out      # Name of stdout output file (%j expands to jobId)
+#SBATCH -p normal             # Queue name
+#SBATCH -N 1                  # Total number of nodes requested (32 cores/node)
+#SBATCH -n 6                  # Total number of mpi tasks requested
+#SBATCH -t 00:10:00           # Run time (hh:mm:ss)
+
+#SBATCH --mail-user=vbrendel@indiana.edu
+#SBATCH --mail-type=ALL
+#SBATCH -A TG-MCB110022       # <-- Allocation name to charge job against
+
+
+#
+# Put your Job commands here.
+#
+#------------------------------------------------
+# Specify binary and arguments here:
+#
+#
+#CHANGE THIS (location of binary, arguments to GeneSeqerMPI):
+
+PROG=${HOME}/bin/GeneSeqerMPI
+PROGARGS="-s Arabidopsis -d ../data/ATest1 ../data/ATest2 -O ./out.gbA.MPI6 -g ../data/U89959"
+
+cd WORKINGDIR
+
+# Execute the MPI code:
+
+ibrun $PROG $PROGARGS
+
+
+# End of MPI code execution lines
+#------------------------------------------------

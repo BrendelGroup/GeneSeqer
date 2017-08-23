@@ -1,0 +1,57 @@
+#!/bin/csh -f
+#xmkfig
+
+\rm sp.ZMAUX311 sp.ZMWAXY spC.U89959 spW.U89959
+\rm U89959W.tex U89959C.tex ZMAUX311.tex ZMWAXY.tex
+\rm fig.aux fig.dvi fig.ins fig.log fig.ps
+
+foreach file (ZMAUX311 ZMWAXY)
+../../bin/SplicePredictorLL -s maize -p 2 -T 5 -x -g $file > sp."$file"
+echo "\\parbox{10.5in}{" >> fig.ins
+echo "{\\bf $file}" >> fig.ins
+echo "\\bigskip" >> fig.ins
+echo "" >> fig.ins
+echo "\\input "$file".tex" >> fig.ins
+echo "}" >> fig.ins
+echo "" >> fig.ins
+echo "\\vskip1.0truein" >> fig.ins
+echo "" >> fig.ins
+ed "$file".tex <<%
+1,\$g/1\.0pt/s//1.5pt/g
+w
+q
+%
+end
+
+../../bin/SplicePredictorLL -s Arabidopsis -p 2 -T 14 -w -x -g ../U89959 \
+	> spW.U89959
+\mv U89959.tex U89959W.tex
+ed U89959W.tex <<%
+1,\$g/1\.0pt/s//1.2pt/g
+w
+q
+%
+../../bin/SplicePredictorLL -s Arabidopsis -p 2 -T 14 -w -x -r -g ../U89959 \
+	> spC.U89959
+\mv U89959.tex U89959C.tex
+ed U89959C.tex <<%
+1,\$g/1\.0pt/s//1.2pt/g
+w
+q
+%
+
+echo "\\newpage" >> fig.ins
+echo "\\parbox{10.5in}{" >> fig.ins
+echo "{\\bf U89959}" >> fig.ins
+echo "\\vskip2.0truein" >> fig.ins
+echo "" >> fig.ins
+echo "\\input U89959W.tex" >> fig.ins
+echo "" >> fig.ins
+echo "\\input U89959C.tex" >> fig.ins
+echo "}" >> fig.ins
+echo "" >> fig.ins
+
+
+latex fig
+dvips -f -t landscape fig > fig.ps
+gv fig.ps

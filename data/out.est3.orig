@@ -1,0 +1,459 @@
+GeneSeqer.   Version of February 15, 2014.
+Date run: Sat Feb 15 09:43:38 2014
+
+(Bayesian) Splice site model (species):	Arabidopsis thaliana
+Fast search parameters:  (-x) wsize 12, (-y) minqHSP 12, (-z) minqHSPc 30.
+                         (-w) minESTc 0.00.
+Total number of ESTs: 3	Total sequence length: 784
+Minimum sequence length: 255	Maximum sequence length: 266 
+
+Length distribution (number of sequences of specified length):
+<  100:	0
+<  200:	0
+<  300:	3
+<  400:	0
+<  500:	0
+<  600:	0
+<  700:	0
+<  800:	0
+<  900:	0
+< 1000:	0
+>=1000:	0
+
+GenBank file: U89959
+
+________________________________________________________________________________
+Sequence    1:   U89959, from 1 to 106973, both strands analyzed.
+... started  at: Sat Feb 15 09:43:38 2014
+
+
+EST library file:	est3;	matching gDNA +strand ...
+... found all matches, elapsed seconds = 0
+... matches indexed, elapsed seconds = 0 HitsTableSize = 1
+
+EST library file:	est3;	matching gDNA -strand ...
+... found all matches, elapsed seconds = 0
+... matches indexed, elapsed seconds = 0 HitsTableSize = 2
+
+********************************************************************************
+EST sequence      3 +strand   263 n (File: gi-9785390+)
+
+     1  GAGAGACCTC TGGCTCTGTA TCGCTCGCTG CTCTTCCTCC CACAGATCGA AAACCATGAA
+    61  TCCTGAGTAC GACTATCTTT TCAAGCTCCT GCTTATCGGG GATTCTGGCG TAGGCAAGTC
+   121  TTGTCTTCTT TTGAGATTCT CTGATGATTC TTATGTAGAA AGTTACATTA GCACTATTGG
+   181  AGTCGATTTT AAAATTAGGA CTGTGGAACA AGATGGCAAA ACAATTAAGC TCCAAATTTG
+   241  GGACACTGCT GGTCAAGAAC GGT
+
+Predicted gene structure (within gDNA segment 52894 to 50989):
+
+ Exon  1  52231  52163 (  69 n);  cDNA      1     69 (  69 n); score: 0.986
+  Intron  1  52162  52056 ( 107 n); Pd: 0.902 (s: 1.00), Pa: 0.886 (s: 1.00)
+ Exon  2  52055  51983 (  73 n);  cDNA     70    142 (  73 n); score: 1.000
+  Intron  2  51982  51897 (  86 n); Pd: 0.978 (s: 1.00), Pa: 0.990 (s: 1.00)
+ Exon  3  51896  51849 (  48 n);  cDNA    143    190 (  48 n); score: 1.000
+  Intron  3  51848  51759 (  90 n); Pd: 0.637 (s: 1.00), Pa: 0.963 (s: 1.00)
+ Exon  4  51758  51711 (  48 n);  cDNA    191    238 (  48 n); score: 1.000
+  Intron  4  51710  51624 (  87 n); Pd: 0.977 (s: 1.00), Pa: 0.986 (s:    0)
+ Exon  5  51623  51599 (  25 n);  cDNA    239    263 (  25 n); score: 1.000
+
+MATCH	U89959-	gi-9785390+	0.993	263	1.000	C
+PGS_U89959-_gi-9785390+	(52231  52163,52055  51983,51896  51849,51758  51711,51623  51599)
+
+Alignment (genomic DNA sequence = upper lines):
+
+GAGAGATCTC TGGCTCTGTA TCGCTCGCTG CTCTTCCTCC CACAGATCGA AAACCATGAA    52172
+|||||| ||| |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| 
+GAGAGACCTC TGGCTCTGTA TCGCTCGCTG CTCTTCCTCC CACAGATCGA AAACCATGAA       60
+
+
+TCCTGAGTAG TAAGTTCCTT TCTCCATCGA CACATACTTG GGTCGAAATT ACCTCTGTTA    52112
+|||||||||                                                         
+TCCTGAGTA. .......... .......... .......... .......... ..........       69
+
+
+TATATTTGAT TCTCCGGGTG GTTCCTAGGG TTTAATTAGC GTTTTGGGAT TTGCAGCGAC    52052
+                                                             |||| 
+.......... .......... .......... .......... .......... ......CGAC       73
+
+
+TATCTTTTCA AGCTCCTGCT TATCGGGGAT TCTGGCGTAG GCAAGTCTTG TCTTCTTTTG    51992
+|||||||||| |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| 
+TATCTTTTCA AGCTCCTGCT TATCGGGGAT TCTGGCGTAG GCAAGTCTTG TCTTCTTTTG      133
+
+
+AGATTCTCTG TAAGTTTTTT TTTTTGTCTT TTTCTTTCTC AGAGATCAAA CACTGTAGCT    51932
+|||||||||                                                         
+AGATTCTCT. .......... .......... .......... .......... ..........      142
+
+
+TTCTACATTT GTTCATGTTT GTTGTTCTGC TGCAGGATGA TTCTTATGTA GAAAGTTACA    51872
+                                      ||||| |||||||||| |||||||||| 
+.......... .......... .......... .....GATGA TTCTTATGTA GAAAGTTACA      167
+
+
+TTAGCACTAT TGGAGTCGAT TTTGTAAGTT GATGTTTTCT TTTTTTTCTT CTTGCTACTG    51812
+|||||||||| |||||||||| |||                                         
+TTAGCACTAT TGGAGTCGAT TTT....... .......... .......... ..........      190
+
+
+ATGACGATGC TTTGATCTGA CCTTTTTTTT TTTCTTATAT ATCTCTTGTT CAGAAAATTA    51752
+                                                          ||||||| 
+.......... .......... .......... .......... .......... ...AAAATTA      197
+
+
+GGACTGTGGA ACAAGATGGC AAAACAATTA AGCTCCAAAT TGTATGTAAC TATTTTCACA    51692
+|||||||||| |||||||||| |||||||||| |||||||||| |                     
+GGACTGTGGA ACAAGATGGC AAAACAATTA AGCTCCAAAT T......... ..........      238
+
+
+CTTGTCAAGT TAATAGCTCT ACGTCTCTTT CCCTTAATTC ATATTTTTCC CTCTTCACTT    51632
+                                                                  
+.......... .......... .......... .......... .......... ..........      238
+
+
+ATTTTCAGTG GGACACTGCT GGTCAAGAAC GGT    51599
+        || |||||||||| |||||||||| |||
+........TG GGACACTGCT GGTCAAGAAC GGT      263
+
+
+hqPGS_U89959-_gi-9785390+	(52231  52163,52055  51983,51896  51849,51758  51711,51623  51599)
+
+
+********************************************************************************
+EST sequence      1 +strand   255 n (File: gi-9787190+)
+
+     1  GAGATGCTTC TTCAGGCGGC GGTGCAGAAC CGCAATGTTC CNCTGGCTTC TTCCGCCTCC
+    61  TACTCTCGTC TCCTTCGCTG CAGATCTCCT GTCGTCTCCG TAGCTGCTCT CTCGAAGAAG
+   121  ACGGCAGCAA TCGTGTGCTC CATCTCCCAG GTTTATGGCT ACGGCACGGT GGACTACGAG
+   181  AGAAGGCCGA TTGTCCAGTG GAATGCCATC TACAAGAAGA TTTCGCTGAT GGAGAAGCCA
+   241  GAGCTTGGCG CTGCT
+
+Predicted gene structure (within gDNA segment 58564 to 60028):
+
+ Exon  1  59164  59418 ( 255 n);  cDNA      1    255 ( 255 n); score: 0.996
+
+MATCH	U89959+	gi-9787190+	0.996	255	1.000	C
+PGS_U89959+_gi-9787190+	(59164  59418)
+
+Alignment (genomic DNA sequence = upper lines):
+
+GAGATGCTTC TTCAGGCGGC GGTGCAGAAC CGCAATGTTC CACTGGCTTC TTCCGCCTCC    59223
+|||||||||| |||||||||| |||||||||| |||||||||| | |||||||| |||||||||| 
+GAGATGCTTC TTCAGGCGGC GGTGCAGAAC CGCAATGTTC CNCTGGCTTC TTCCGCCTCC       60
+
+
+TACTCTCGTC TCCTTCGCTG CAGATCTCCT GTCGTCTCCG TAGCTGCTCT CTCGAAGAAG    59283
+|||||||||| |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| 
+TACTCTCGTC TCCTTCGCTG CAGATCTCCT GTCGTCTCCG TAGCTGCTCT CTCGAAGAAG      120
+
+
+ACGGCAGCAA TCGTGTGCTC CATCTCCCAG GTTTATGGCT ACGGCACGGT GGACTACGAG    59343
+|||||||||| |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| 
+ACGGCAGCAA TCGTGTGCTC CATCTCCCAG GTTTATGGCT ACGGCACGGT GGACTACGAG      180
+
+
+AGAAGGCCGA TTGTCCAGTG GAATGCCATC TACAAGAAGA TTTCGCTGAT GGAGAAGCCA    59403
+|||||||||| |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| 
+AGAAGGCCGA TTGTCCAGTG GAATGCCATC TACAAGAAGA TTTCGCTGAT GGAGAAGCCA      240
+
+
+GAGCTTGGCG CTGCT    59418
+|||||||||| |||||
+GAGCTTGGCG CTGCT      255
+
+
+hqPGS_U89959+_gi-9787190+	(59164  59418)
+
+
+********************************************************************************
+EST sequence      2 +strand   266 n (File: gi-9786193+)
+
+     1  AAGAAAATTG GAAAAGGGCT GACTTTTTTG GTTTGGTGAA GTTCGTCGTG GGGACTCGGG
+    61  ACAATATAAT AAAGATGAGT CCTCGCTTAC TCTGAGTGTT ATCTATGTAG TTGCTTCAAT
+   121  TTTTGTCACT CATTTGCCTT CGATTCCTCC TTAAGAAACT GACGATTCTT CTATTGGGAA
+   181  TCGGTCAACG TCCTCAAGTT TATCAGAGAT CTTAGGGTTT CTAATCAGAT ATTTGATTCA
+   241  TCAAAATCAC CAACTAGGGT TTACAA
+
+Predicted gene structure (within gDNA segment 93865 to 92293):
+
+ Exon  1  93265  93106 ( 160 n);  cDNA      1    160 ( 160 n); score: 1.000
+  Intron  1  93105  93009 (  97 n); Pd: 0.925 (s: 1.00), Pa: 0.987 (s: 1.00)
+ Exon  2  93008  92903 ( 106 n);  cDNA    161    266 ( 106 n); score: 1.000
+
+MATCH	U89959-	gi-9786193+	1.000	266	1.000	C
+PGS_U89959-_gi-9786193+	(93265  93106,93008  92903)
+
+Alignment (genomic DNA sequence = upper lines):
+
+AAGAAAATTG GAAAAGGGCT GACTTTTTTG GTTTGGTGAA GTTCGTCGTG GGGACTCGGG    93206
+|||||||||| |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| 
+AAGAAAATTG GAAAAGGGCT GACTTTTTTG GTTTGGTGAA GTTCGTCGTG GGGACTCGGG       60
+
+
+ACAATATAAT AAAGATGAGT CCTCGCTTAC TCTGAGTGTT ATCTATGTAG TTGCTTCAAT    93146
+|||||||||| |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| 
+ACAATATAAT AAAGATGAGT CCTCGCTTAC TCTGAGTGTT ATCTATGTAG TTGCTTCAAT      120
+
+
+TTTTGTCACT CATTTGCCTT CGATTCCTCC TTAAGAAACT GTATGTTTAA CCATGAAACT    93086
+|||||||||| |||||||||| |||||||||| ||||||||||                       
+TTTTGTCACT CATTTGCCTT CGATTCCTCC TTAAGAAACT .......... ..........      160
+
+
+GGTCAAGTTT GTTTGATTAT CCAATACTTG TCGTTCTGAA TTCGTAACTG ATTGCCCTTT    93026
+                                                                  
+.......... .......... .......... .......... .......... ..........      160
+
+
+TCTTGTTTTT TCAACAGGAC GATTCTTCTA TTGGGAATCG GTCAACGTCC TCAAGTTTAT    92966
+                  ||| |||||||||| |||||||||| |||||||||| |||||||||| 
+.......... .......GAC GATTCTTCTA TTGGGAATCG GTCAACGTCC TCAAGTTTAT      203
+
+
+CAGAGATCTT AGGGTTTCTA ATCAGATATT TGATTCATCA AAATCACCAA CTAGGGTTTA    92906
+|||||||||| |||||||||| |||||||||| |||||||||| |||||||||| |||||||||| 
+CAGAGATCTT AGGGTTTCTA ATCAGATATT TGATTCATCA AAATCACCAA CTAGGGTTTA      263
+
+
+CAA    92903
+|||
+CAA      266
+
+
+hqPGS_U89959-_gi-9786193+	(93265  93106,93008  92903)
+
+
+
+Total number of EST alignments reported: 3
+
+
+
+________________________________________________________________________________
+
+
+
+Predicted gene locations (3) in segment 1 to 106973:
+
+
+PGL   1 (- strand):	 52231   51599
+AGS-1 (52231  52163,52055  51983,51896  51849,51758  51711,51623  51599)
+SCR   (e 0.986  d 0.902 a 0.886,e 1.000  d 0.978 a 0.990,e 1.000  d 0.637 a 0.963,e 1.000  d 0.977 a 0.986,e 1.000)
+
+  Exon  1  52231  52163 (  69 n); score: 0.986
+   Intron  1  52162  52056 ( 107 n);           Pd: 0.902  Pa: 0.886
+  Exon  2  52055  51983 (  73 n); score: 1.000
+   Intron  2  51982  51897 (  86 n);           Pd: 0.978  Pa: 0.990
+  Exon  3  51896  51849 (  48 n); score: 1.000
+   Intron  3  51848  51759 (  90 n);           Pd: 0.637  Pa: 0.963
+  Exon  4  51758  51711 (  48 n); score: 1.000
+   Intron  4  51710  51624 (  87 n);           Pd: 0.977  Pa: 0.986
+  Exon  5  51623  51599 (  25 n); score: 1.000
+
+  PGS (52231  52163,52055  51983,51896  51849,51758  51711,51623  51599)	gi-9785390+
+
+3-phase translation of AGS-1 (-strand):
+
+        .         .         .         .         .         .         
+ 52231  GAGAGATCTCTGGCTCTGTATCGCTCGCTGCTCTTCCTCCCACAGATCGAAAACCATGAA
+         E  R  S  L  A  L  Y  R  S  L  L  F  L  P  Q  I  E  N  H  E 
+          R  D  L  W  L  C  I  A  R  C  S  S  S  H  R  S  K  T  M  N 
+           E  I  S  G  S  V  S  L  A  A  L  P  P  T  D  R  K  P  - 
+
+
+        .         :  .         .         .         .         .         
+ 52171  TCCTGAGTA : CGACTATCTTTTCAAGCTCCTGCTTATCGGGGATTCTGGCGTAGGCAAGTC
+         S  -  V  :  R  L  S  F  Q  A  P  A  Y  R  G  F  W  R  R  Q  V 
+          P  E  Y :   D  Y  L  F  K  L  L  L  I  G  D  S  G  V  G  K  S 
+        I  L  S   : T  T  I  F  S  S  S  C  L  S  G  I  L  A  -  A  S 
+
+
+        .         .         .  :         .         .         .         
+ 52004  TTGTCTTCTTTTGAGATTCTCT : GATGATTCTTATGTAGAAAGTTACATTAGCACTATTGG
+         L  S  S  F  E  I  L   : -  -  F  L  C  R  K  L  H  -  H  Y  W 
+          C  L  L  L  R  F  S  :  D  D  S  Y  V  E  S  Y  I  S  T  I  G 
+        L  V  F  F  -  D  S  L :   M  I  L  M  -  K  V  T  L  A  L  L 
+
+
+        .          : .         .         .         .         .        :   
+ 51858  AGTCGATTTT : AAAATTAGGACTGTGGAACAAGATGGCAAAACAATTAAGCTCCAAATT : TG
+         S  R  F   : -  N  -  D  C  G  T  R  W  Q  N  N  -  A  P  N   : L 
+          V  D  F  :  K  I  R  T  V  E  Q  D  G  K  T  I  K  L  Q  I  :  W 
+        E  S  I  L :   K  L  G  L  W  N  K  M  A  K  Q  L  S  S  K  F :  
+
+
+        .         .         .  
+ 51621  GGACACTGCTGGTCAAGAACGGT
+         G  H  C  W  S  R  T 
+          D  T  A  G  Q  E  R 
+        G  T  L  L  V  K  N  G 
+
+
+Maximal non-overlapping open reading frames (>= 64 codons):
+
+>U89959-_PGL-1_AGS-1_PPS_1 (52230  52163,52055  51983,51896  51849,51758  51711,51623  51600)	(frame '2';   261 bp,   87 residues) 
+     1  RDLWLCIARC SSSHRSKTMN PEYDYLFKLL LIGDSGVGKS CLLLRFSDDS YVESYISTIG 
+    61  VDFKIRTVEQ DGKTIKLQIW DTAGQER
+
+
+
+
+PGL   2 (+ strand):	 59164   59418
+AGS-1 (59164  59418)
+SCR   (e 0.996)
+
+  Exon  1  59164  59418 ( 255 n); score: 0.996
+
+  PGS (59164  59418)	gi-9787190+
+
+3-phase translation of AGS-1 (+strand):
+
+        .         .         .         .         .         .         
+ 59164  GAGATGCTTCTTCAGGCGGCGGTGCAGAACCGCAATGTTCCACTGGCTTCTTCCGCCTCC
+         E  M  L  L  Q  A  A  V  Q  N  R  N  V  P  L  A  S  S  A  S 
+          R  C  F  F  R  R  R  C  R  T  A  M  F  H  W  L  L  P  P  P 
+           D  A  S  S  G  G  G  A  E  P  Q  C  S  T  G  F  F  R  L 
+
+
+        .         .         .         .         .         .         
+ 59224  TACTCTCGTCTCCTTCGCTGCAGATCTCCTGTCGTCTCCGTAGCTGCTCTCTCGAAGAAG
+         Y  S  R  L  L  R  C  R  S  P  V  V  S  V  A  A  L  S  K  K 
+          T  L  V  S  F  A  A  D  L  L  S  S  P  -  L  L  S  R  R  R 
+        L  L  S  S  P  S  L  Q  I  S  C  R  L  R  S  C  S  L  E  E 
+
+
+        .         .         .         .         .         .         
+ 59284  ACGGCAGCAATCGTGTGCTCCATCTCCCAGGTTTATGGCTACGGCACGGTGGACTACGAG
+         T  A  A  I  V  C  S  I  S  Q  V  Y  G  Y  G  T  V  D  Y  E 
+          R  Q  Q  S  C  A  P  S  P  R  F  M  A  T  A  R  W  T  T  R 
+        D  G  S  N  R  V  L  H  L  P  G  L  W  L  R  H  G  G  L  R 
+
+
+        .         .         .         .         .         .         
+ 59344  AGAAGGCCGATTGTCCAGTGGAATGCCATCTACAAGAAGATTTCGCTGATGGAGAAGCCA
+         R  R  P  I  V  Q  W  N  A  I  Y  K  K  I  S  L  M  E  K  P 
+          E  G  R  L  S  S  G  M  P  S  T  R  R  F  R  -  W  R  S  Q 
+        E  K  A  D  C  P  V  E  C  H  L  Q  E  D  F  A  D  G  E  A 
+
+
+        .         .    
+ 59404  GAGCTTGGCGCTGCT
+         E  L  G  A  A 
+          S  L  A  L 
+        R  A  W  R  C 
+
+
+Maximal non-overlapping open reading frames (>= 64 codons):
+
+>U89959+_PGL-2_AGS-1_PPS_1 (59164  59418)	(frame '1';   255 bp,   85 residues) 
+     1  EMLLQAAVQN RNVPLASSAS YSRLLRCRSP VVSVAALSKK TAAIVCSISQ VYGYGTVDYE 
+    61  RRPIVQWNAI YKKISLMEKP ELGAA
+
+>U89959+_PGL-2_AGS-1_PPS_2 (59166  59417)	(frame '0';   252 bp,   84 residues) 
+     1  DASSGGGAEP QCSTGFFRLL LSSPSLQISC RLRSCSLEED GSNRVLHLPG LWLRHGGLRE 
+    61  KADCPVECHL QEDFADGEAR AWRC
+
+
+3-phase translation of AGS-1 (-strand):
+
+        .         .         .         .         .         .         
+ 59418  AGCAGCGCCAAGCTCTGGCTTCTCCATCAGCGAAATCTTCTTGTAGATGGCATTCCACTG
+         S  S  A  K  L  W  L  L  H  Q  R  N  L  L  V  D  G  I  P  L 
+          A  A  P  S  S  G  F  S  I  S  E  I  F  L  -  M  A  F  H  W 
+           Q  R  Q  A  L  A  S  P  S  A  K  S  S  C  R  W  H  S  T 
+
+
+        .         .         .         .         .         .         
+ 59358  GACAATCGGCCTTCTCTCGTAGTCCACCGTGCCGTAGCCATAAACCTGGGAGATGGAGCA
+         D  N  R  P  S  L  V  V  H  R  A  V  A  I  N  L  G  D  G  A 
+          T  I  G  L  L  S  -  S  T  V  P  -  P  -  T  W  E  M  E  H 
+        G  Q  S  A  F  S  R  S  P  P  C  R  S  H  K  P  G  R  W  S 
+
+
+        .         .         .         .         .         .         
+ 59298  CACGATTGCTGCCGTCTTCTTCGAGAGAGCAGCTACGGAGACGACAGGAGATCTGCAGCG
+         H  D  C  C  R  L  L  R  E  S  S  Y  G  D  D  R  R  S  A  A 
+          T  I  A  A  V  F  F  E  R  A  A  T  E  T  T  G  D  L  Q  R 
+        T  R  L  L  P  S  S  S  R  E  Q  L  R  R  R  Q  E  I  C  S 
+
+
+        .         .         .         .         .         .         
+ 59238  AAGGAGACGAGAGTAGGAGGCGGAAGAAGCCAGTGGAACATTGCGGTTCTGCACCGCCGC
+         K  E  T  R  V  G  G  G  R  S  Q  W  N  I  A  V  L  H  R  R 
+          R  R  R  E  -  E  A  E  E  A  S  G  T  L  R  F  C  T  A  A 
+        E  G  D  E  S  R  R  R  K  K  P  V  E  H  C  G  S  A  P  P 
+
+
+        .         .    
+ 59178  CTGAAGAAGCATCTC
+         L  K  K  H  L 
+          -  R  S  I 
+        P  E  E  A  S 
+
+
+Maximal non-overlapping open reading frames (>= 64 codons):
+
+>U89959-_PGL-2_AGS-1_PPS_1 (59418  59164)	(frame '1';   255 bp,   85 residues) 
+     1  SSAKLWLLHQ RNLLVDGIPL DNRPSLVVHR AVAINLGDGA HDCCRLLRES SYGDDRRSAA 
+    61  KETRVGGGRS QWNIAVLHRR LKKHL
+
+>U89959-_PGL-2_AGS-1_PPS_2 (59416  59165)	(frame '0';   252 bp,   84 residues) 
+     1  QRQALASPSA KSSCRWHSTG QSAFSRSPPC RSHKPGRWST RLLPSSSREQ LRRRQEICSE 
+    61  GDESRRRKKP VEHCGSAPPP EEAS
+
+
+
+
+PGL   3 (- strand):	 93265   92903
+AGS-1 (93265  93106,93008  92903)
+SCR   (e 1.000  d 0.925 a 0.987,e 1.000)
+
+  Exon  1  93265  93106 ( 160 n); score: 1.000
+   Intron  1  93105  93009 (  97 n);           Pd: 0.925  Pa: 0.987
+  Exon  2  93008  92903 ( 106 n); score: 1.000
+
+  PGS (93265  93106,93008  92903)	gi-9786193+
+
+3-phase translation of AGS-1 (-strand):
+
+        .         .         .         .         .         .         
+ 93265  AAGAAAATTGGAAAAGGGCTGACTTTTTTGGTTTGGTGAAGTTCGTCGTGGGGACTCGGG
+         K  K  I  G  K  G  L  T  F  L  V  W  -  S  S  S  W  G  L  G 
+          R  K  L  E  K  G  -  L  F  W  F  G  E  V  R  R  G  D  S  G 
+           E  N  W  K  R  A  D  F  F  G  L  V  K  F  V  V  G  T  R 
+
+
+        .         .         .         .         .         .         
+ 93205  ACAATATAATAAAGATGAGTCCTCGCTTACTCTGAGTGTTATCTATGTAGTTGCTTCAAT
+         T  I  -  -  R  -  V  L  A  Y  S  E  C  Y  L  C  S  C  F  N 
+          Q  Y  N  K  D  E  S  S  L  T  L  S  V  I  Y  V  V  A  S  I 
+        D  N  I  I  K  M  S  P  R  L  L  -  V  L  S  M  -  L  L  Q 
+
+
+        .         .         .         .          : .         .         
+ 93145  TTTTGTCACTCATTTGCCTTCGATTCCTCCTTAAGAAACT : GACGATTCTTCTATTGGGAA
+         F  C  H  S  F  A  F  D  S  S  L  R  N   : -  R  F  F  Y  W  E 
+          F  V  T  H  L  P  S  I  P  P  -  E  T  :  D  D  S  S  I  G  N 
+        F  L  S  L  I  C  L  R  F  L  L  K  K  L :   T  I  L  L  L  G 
+
+
+        .         .         .         .         .         .         
+ 92988  TCGGTCAACGTCCTCAAGTTTATCAGAGATCTTAGGGTTTCTAATCAGATATTTGATTCA
+         S  V  N  V  L  K  F  I  R  D  L  R  V  S  N  Q  I  F  D  S 
+          R  S  T  S  S  S  L  S  E  I  L  G  F  L  I  R  Y  L  I  H 
+        I  G  Q  R  P  Q  V  Y  Q  R  S  -  G  F  -  S  D  I  -  F 
+
+
+        .         .         .     
+ 92928  TCAAAATCACCAACTAGGGTTTACAA
+         S  K  S  P  T  R  V  Y 
+          Q  N  H  Q  L  G  F  T 
+        I  K  I  T  N  -  G  L  Q 
+
+
+Maximal non-overlapping open reading frames (>= 64 codons):
+none
+
+
+
+... finished at: Sat Feb 15 09:43:38 2014
+

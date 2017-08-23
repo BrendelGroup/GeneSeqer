@@ -1,0 +1,44 @@
+#!/bin/bash
+#
+#qsub submission script for GeneSeqerMPI.  Look for "#CHANGE THIS:" to individualize.
+
+
+#------------------------------------------------
+#
+#CHANGE THIS (your specific job commands here):
+#
+
+#PBS -k o
+#PBS -m e
+#PBS -l nodes=1:ppn=32,walltime=0:10:00
+#PBS -M vbrendel@indiana.edu
+#PBS -m abe
+#PBS -N gsqMPI
+#PBS -j oe
+
+
+#------------------------------------------------
+#
+#CHANGE THIS (location of your work directory):
+#
+
+cd /N/u/vbrendel/BigRed2/svnwd/GENESEQER/mpidata
+
+
+#------------------------------------------------
+#
+#CHANGE THIS (location of binary, arguments to GeneSeqerMPI):
+#
+
+PROG="../bin/GeneSeqerMPI"
+PROGARGS="-s Arabidopsis -d ../data/ATest1 ../data/ATest2 -O ./out.gbA.MPI6 -g ../data/U89959"
+
+
+#------------------------------------------------
+#
+#CHANGE THIS (number of processors):
+#
+
+aprun -n 6 $PROG $PROGARGS
+
+#------------------------------------------------

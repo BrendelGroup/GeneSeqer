@@ -1,0 +1,10 @@
+#!/bin/csh -f
+#
+
+set np = 6
+
+\rm check
+\rm out.gbA
+\rm out.gbA.MPI"$np"
+\rm out.gbA.MPI"$np"_MPI_logfile_prc*
+\rm gsMPI.sh.e* gsMPI.sh.o* gsMPI.sh.pe* gsMPI.sh.po*

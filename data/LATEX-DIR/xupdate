@@ -1,0 +1,16 @@
+#!/bin/csh -f
+#
+                                                                                                 
+\rm fig.aux fig.dvi fig.ins fig.log
+
+\mv U89959W.tex U89959W.tex.orig
+\mv U89959C.tex U89959C.tex.orig
+\mv ZMAUX311.tex ZMAUX311.tex.orig
+\mv ZMWAXY.tex ZMWAXY.tex.orig
+\mv fig.ps fig.ps.orig
+\mv fig.pdf fig.pdf.orig
+\mv sp.ZMAUX311 sp.ZMAUX311.orig
+\mv sp.ZMWAXY sp.ZMWAXY.orig
+\mv spC.U89959 spC.U89959.orig
+\mv spW.U89959 spW.U89959.orig
+\rm check

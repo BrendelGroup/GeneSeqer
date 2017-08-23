@@ -1,0 +1,239 @@
+LOCUS       ZMWAXY       4800 bp    DNA             PLN       07-APR-1993
+DEFINITION  Zea mays waxy (wx+) locus for UDP-glucose starch glycosyl
+            transferase
+ACCESSION   X03935 M24258
+KEYWORDS    glycosyl transferase; transit peptide;
+            UDP-glucose starch glycosyl transferase; waxy locus.
+SOURCE      maize
+  ORGANISM  Zea mays
+            Eukaryota; Plantae; Embryobionta; Magnoliophyta; Liliopsida;
+            Commelinidae; Cyperales; Poaceae.
+REFERENCE   1  (bases 1 to 4800)
+  AUTHORS   Kloesgen,R.B., Gierl,A., Schwarz-Sommer,Z. and Saedler,H.
+  TITLE     Molecular analysis of the waxy locus of Zea mays
+  JOURNAL   Mol. Gen. Genet. 203, 237-244 (1986)
+  STANDARD  full automatic
+COMMENT
+            NCBI gi: 22509
+FEATURES               Location/Qualifiers
+   USCUEXON          901  1080
+   USCUINTR          1081  1219
+   USPUEXON          1220  1232
+   FEATEXON          1233  1553
+   FEATFEXN          1233  1553
+   FEATINTR          1554  1684
+   FEATEXON          1685  1765
+   FEATINTR          1766  1859
+   FEATEXON          1860  1958
+   FEATINTR          1959  2054
+   FEATEXON          2055  2144
+   FEATINTR          2145  2225
+   FEATEXON          2226  2289
+   FEATINTR          2290  2412
+   FEATEXON          2413  2513
+   FEATINTR          2514  2650
+   FEATEXON          2651  2760
+   FEATINTR          2761  2857
+   FEATEXON          2858  3101
+   FEATINTR          3102  3211
+   FEATEXON          3212  3394
+   FEATINTR          3395  3489
+   FEATEXON          3490  3681
+   FEATINTR          3682  3792
+   FEATEXON          3793  3879
+   FEATINTR          3880  3976
+   FEATEXON          3977  4105
+   FEATINTR          4106  4226
+   FEATEXON          4227  4343
+   FEATLEXN          4227  4343
+   DSPUEXON          4344  4595
+     source          1  4800
+                     /organism="Zea mays"
+     repeat_region   283  287
+                     /note="direct repeat 1"
+     repeat_region   288  292
+                     /note="direct repeat 1"
+     repeat_region   293  297
+                     /note="direct repeat 1"
+     repeat_region   298  302
+                     /note="direct repeat 1"
+     misc_feature    372  385
+                     /note="GC stretch (pot. regulatory factor binding site)"
+     misc_feature    442  468
+                     /note="GC stretch (pot. regulatory factor binding site)"
+     misc_feature    768  782
+                     /note="GC stretch (pot. regulatory factor binding site)"
+     misc_feature    810  822
+                     /note="GC stretch (pot. regulatory factor binding site)"
+     CAAT_signal     821  828
+     misc_feature    821  828
+                     /note="target duplication site (Ac7)"
+     TATA_signal     867  873
+     misc_feature    887  900
+                     /note="GC stretch (pot. regulatory factor binding site)"
+     exon            901  1080
+                     /number=1
+     misc_feature    901
+                     /note="transcriptional start site"
+     intron          1081  1219
+                     /number=1
+     exon            1220  1553
+                     /number=2
+     transit_peptide 1233  1448
+     intron          1554  1684
+                     /number=2
+     exon            1685  1765
+                     /number=3
+     intron          1766  1859
+                     /number=3
+     exon            1860  1958
+                     /number=4
+     intron          1959  2054
+                     /number=4
+     exon            2055  2144
+                     /number=5
+     intron          2145  2225
+                     /number=5
+     exon            2226  2289
+                     /number=6
+     intron          2290  2412
+                     /number=6
+     exon            2413  2513
+                     /number=7
+     intron          2514  2650
+                     /number=7
+     exon            2651  2760
+                     /number=8
+     intron          2761  2857
+                     /number=8
+     exon            2858  3101
+                     /number=9
+     intron          3102  3211
+                     /number=9
+     exon            3212  3394
+                     /number=10
+     misc_feature    3358  3365
+                     /note="target duplication site (Ac9)"
+     intron          3395  3489
+                     /number=10
+     exon            3490  3681
+                     /number=11
+     misc_feature    3570  3572
+                     /note="target duplication site (Spm 18)"
+     intron          3682  3792
+                     /number=11
+     exon            3793  3879
+                     /number=12
+     intron          3880  3976
+                     /number=12
+     exon            3977  4105
+                     /number=13
+     intron          4106  4226
+                     /number=13
+     exon            4227  4595
+                     /number=14
+     polyA_signal    4570  4575
+     polyA_signal    4593  4598
+     polyA_site      4595
+     polyA_signal    4597  4602
+     polyA_site      4618
+     polyA_site      4625
+     CDS             join(1449  1553,1685  1765,1860  1958,2055  2144,
+                     2226  2289,2413  2513,2651  2760,2858  3101,3212  3394,
+                     3490  3681,3793  3879,3977  4105,4227  4343)
+                     /note="NCBI gi: 22510"
+                     /product="glucosyl transferase"
+                     /codon_start=1
+                     /translation="ASAGMNVVFVGAEMAPWSKTGGLGDVLGGLPPAMAANGHRVMVV
+                     SPRYDQYKDAWDTSVVSEIKMGDGYETVRFFHCYKRGVDRVFVDHPLFLERVWGKTEE
+                     KIYGPVAGTDYRDNQLRFSLLCQAALEAPRILSLNNNPYFSGPYGEDVVFVCNDWHTG
+                     PLSCYLKSNYQSHGIYRDAKTAFCIHNISYQGRFAFSDYPELNLPERFKSSFDFIDGY
+                     EKPVEGRKINWMKAGILEADRVLTVSPYYAEELISGIARGCELDNIMRLTGITGIVNG
+                     MDVSEWDPSRDKYIAVKYDVSTAVEAKALNKEALQAEVGLPVDRNIPLVAFIGRLEEQ
+                     KGPDVMAAAIPQLMEMVEDVQIVLLGTGKKKFERMLMSAEEKFPGKVRAVVKFNAALA
+                     HHIMAGADVLAVTSRFEPCGLIQLQGMRYGTPCACASTGGLVDTIIEGKTGFHMGRLS
+                     VDCNVVEPADVKKVATTLQRAIKVVGTPAYEEMVRNCMIQDLSWKGPAKNWENVLLSL
+                     GVAGGEPGVEGEEIAPLAKENVAAP"
+BASE COUNT      935 a   1413 c   1447 g   1005 t
+ORIGIN
+        1 cagcgaccta ttacacagcc cgctcgggcc cgcgacgtcg ggacacatct tcttccccct     
+       61 tttggtgaag ctctgctcgc agctgtccgg ctccttggac gttcgtgtgg cagattcatc     
+      121 tgttgtctcg tctcctgtgc ttcctgggta gcttgtgtag tggagctgac atggtctgag     
+      181 caggcttaaa atttgctcgt agacgaggag taccagcaca gcacgttgcg gatttctctg     
+      241 cctgtgaagt gcaacgtcta ggattgtcac acgccttggt cgcgtcgcgt cgcgtcgcgt     
+      301 cgatgcggtg gtgagcagag cagcaacagc tgggcggccc aacgttggct tccgtgtctt     
+      361 cgtcgtacgt acgcgcgcgc cggggacacg cagcagagag cggagagcga gccgtgcacg     
+      421 gggaggtggt gtggaagtgg agccgcgcgc ccggccgccc gcgcccggtg ggcaacccaa     
+      481 aagtacccac gacaagcgaa ggcgccaaag cgatccaagc tccggaacgc aacagcatgc     
+      541 gtcgcgtcgg agagccagcc acaagcagcc gagaaccgaa ccggtgggcg acgcgtcatg     
+      601 ggacggacgc gggcgacgct tccaaacggg ccacgtacgc cggcgtgtgc gtgcgtgcag     
+      661 acgacaagcc aaggcgaggc agcccccgat cgggaaagcg ttttgggcgc gagcgctggc     
+      721 gtgcgggtca gtcgctggtg cgcagtgccg gggggaacgg gtatcgtggg gggcgcgggc     
+      781 ggaggagagc gtggcgaggg ccgagagcag cgcgcggccg ggtcacgcaa cgcgccccac     
+      841 gtactgccct ccccctccgc gcgcgctaga aataccgagg cctggaccgg gggggggccc     
+      901 cgtcacatcc atccatcgac cgatcgatcg ccacagccaa caccacccgc cgaggcgacg     
+      961 cgacagccgc caggaggaag gaataaactc actgccagcc agtgaagggg gagaagtgta     
+     1021 ctgctccgtc gaccagtgcg cgcaccgccc ggcagggctg ctcatctcgt cgacgaccag     
+     1081 gttctgttcc gttccgatcc gatccgatcc tgtccttgag tttcgtccag atcctggcgc     
+     1141 gtatctgcgt gtttgatgat ccaggttctt cgaacctaaa tctgtccgtg cacacgtctt     
+     1201 ttctctctct cctacgcagt ggattaatcg gcatggcggc tctggccacg tcgcagctcg     
+     1261 tcgcaacgcg cgccggcctg ggcgtcccgg acgcgtccac gttccgccgc ggcgccgcgc     
+     1321 agggcctgag gggggcccgg gcgtcggcgg cggcggacac gctcagcatg cggaccagcg     
+     1381 cgcgcgcggc gcccaggcac cagcagcagg cgcgccgcgg gggcaggttc ccgtcgctcg     
+     1441 tcgtgtgcgc cagcgccggc atgaacgtcg tcttcgtcgg cgccgagatg gcgccgtgga     
+     1501 gcaagaccgg cggcctcggc gacgtcctcg gcggcctgcc gccggccatg gccgtaagcg     
+     1561 cgcgcaccga gacatgcatc cgttggatcg cgtcttcttc gtgctcttgc cgcgtgcatg     
+     1621 atgcatgtgt ttcctcctgg cttgtgttcg tgtatgtgac gtgtttgttc gggcatgcat     
+     1681 gcaggcgaac gggcaccgtg tcatggtcgt ctctccccgc tacgaccagt acaaggacgc     
+     1741 ctgggacacc agcgtcgtgt ccgaggtacg gccaccgaga ccagattcag atcacagtca     
+     1801 cacacaccgt catatgaacc tttctctgct ctgatgcctg caactgcaaa tgcatgcaga     
+     1861 tcaagatggg agacgggtac gagacggtca ggttcttcca ctgctacaag cgcggagtgg     
+     1921 accgcgtgtt cgttgaccac ccactgttcc tggagagggt gagacgagat ctgatcactc     
+     1981 gatacgcaat taccacccca ttgtaagcag ttacagtgag ctttttttcc ccccggcctg     
+     2041 gtcgctggtt tcaggtttgg ggaaagaccg aggagaagat ctacgggcct gtcgctggaa     
+     2101 cggactacag ggacaaccag ctgcggttca gcctgctatg ccaggtcagg atggcttggt     
+     2161 actacaactt catatcatct gtatgcagca gtatacactg atgagaaatg catgctgttc     
+     2221 tgcaggcagc acttgaagct ccaaggatcc tgagcctcaa caacaaccca tacttctccg     
+     2281 gaccatacgg taagagttgc agtcttcgta tatatatctg ttgagctcga gaatcttcac     
+     2341 aggaagcggc ccatcagacg gactgtcatt ttacactgac tactgctgct gctcttcgtc     
+     2401 catccataca aggggaggac gtcgtgttcg tctgcaacga ctggcacacc ggccctctct     
+     2461 cgtgctacct caagagcaac taccagtccc acggcatcta cagggacgca aaggttgcct     
+     2521 tctctgaact gaacaacgcc gttttcgttc tccatgctcg tatatacctc gtctggtagt     
+     2581 ggtggtgctt ctctgagaaa ctaactgaaa ctgactgcat gtctgtctga ccatcttcac     
+     2641 gtactaccag accgctttct gcatccacaa catctcctac cagggccggt tcgccttctc     
+     2701 cgactacccg gagctgaacc tcccggagag attcaagtcg tccttcgatt tcatcgacgg     
+     2761 gtctgttttc ctgcgtgcat gtgaacattc atgaatggta acccacaact gttcgcgtcc     
+     2821 tgctggttca ttatctgacc tgattgcatt attgcagcta cgagaagccc gtggaaggcc     
+     2881 ggaagatcaa ctggatgaag gccgggatcc tcgaggccga cagggtcctc accgtcagcc     
+     2941 cctactacgc cgaggagctc atctccggca tcgccagggg ctgcgagctc gacaacatca     
+     3001 tgcgcctcac cggcatcacc ggcatcgtca acggcatgga cgtcagcgag tgggacccca     
+     3061 gcagggacaa gtacatcgcc gtgaagtacg acgtgtcgac ggtgagctgg ctagctctga     
+     3121 ttctgctgcc tggtcctcct gctcatcatg ctggttcggt actgacgcgg caagtgtacg     
+     3181 tacgtgcgtg cgacggtggt gtccggttca ggccgtggag gccaaggcgc tgaacaagga     
+     3241 ggcgctgcag gcggaggtcg ggctcccggt ggaccggaac atcccgctgg tggcgttcat     
+     3301 cggcaggctg gaagagcaga agggccccga cgtcatggcg gccgccatcc cgcagctcat     
+     3361 ggagatggtg gaggacgtgc agatcgttct gctggtacgt gtgcgccggc cgccacccgg     
+     3421 ctactacatg cgtgtatcgt tcgttctact ggaacatgcg tgtgagcaac gcgatggata     
+     3481 atgctgcagg gcacgggcaa gaagaagttc gagcgcatgc tcatgagcgc cgaggagaag     
+     3541 ttcccaggca aggtgcgcgc cgtggtcaag ttcaacgcgg cgctggcgca ccacatcatg     
+     3601 gccggcgccg acgtgctcgc cgtcaccagc cgcttcgagc cctgcggcct catccagctg     
+     3661 caggggatgc gatacggaac ggtacgagag aaaaaaaaaa tcctgaatcc tgacgagagg     
+     3721 gacagagaca gattatgaat gcttcatcga tttgaattga ttgatcgatg tctcccgctg     
+     3781 cgactcttgc agccctgcgc ctgcgcgtcc accggtggac tcgtcgacac catcatcgaa     
+     3841 ggcaagaccg ggttccacat gggccgcctc agcgtcgacg taagcctagc tctgccatgt     
+     3901 tctttcttct ttctttctgt atgtatgtat gaatcagcac cgccgttctt gtttcgtcgt     
+     3961 cgtcctctct tcccagtgta acgtcgtgga gccggcggac gtcaagaagg tggccaccac     
+     4021 attgcagcgc gccatcaagg tggtcggcac gccggcgtac gaggagatgg tgaggaactg     
+     4081 catgatccag gatctctcct ggaaggtacg tacgcccgcc ccgccccgcc ccgccagagc     
+     4141 agagcgccaa gatcgaccga tcgaccgacc acacgtacgc gcctcgctcc tgtcgctgac     
+     4201 cgtggtttaa tttgcgaaat gcgcagggcc ctgccaagaa ctgggagaac gtgctgctca     
+     4261 gcctcggggt cgccggcggc gagccagggg tcgaaggcga ggagatcgcg ccgctcgcca     
+     4321 aggagaacgt ggccgcgccc tgaagagttc ggcctgcagg gcccctgatc tcgcgcgtgg     
+     4381 tgcaaagatg ttgggacatc ttcttatata tgctgtttcg tttatgtgat atggacaagt     
+     4441 atgtgtagct gcttgcttgt gctagtgtaa tgtagtgtag tggtggccag tggcacaacc     
+     4501 taataagcgc atgaactaat tgcttgcgtg tgtagttaag taccgatcgg taattttata     
+     4561 ttgcgagtaa ataaatggac ctgtagtggt ggagtaaata atccctgctg ttcggtgttc     
+     4621 ttatcgctcc tcgtatagat attatataga gtacattttt ctctctctga atcctacgtt     
+     4681 tgtgaaattt ctatatcatt actgtaaaat ttctgcgttc caaaagagac catagcctat     
+     4741 ctttggccct gtttgtttcg gcttctggca gcttctggcc accaaaagct gctgcggact     
+//

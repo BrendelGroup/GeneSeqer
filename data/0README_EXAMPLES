@@ -1,0 +1,232 @@
+GeneSeqer-5.1 - README_EXAMPLES                              (February 15, 2014)
+________________________________________________________________________________
+
+
+#
+#Uncomment command line examples and run "source README_EXAMPLES" to test
+#program options (under UNIX).  Compare output files agains supplied *orig files
+#Use "./test-all.sh" (UNIX) or ".\test-all.bat" (win) to run the full set of
+#tests; "./xdiff" (UNIX) or ".\dif-all.bat" (win) will produce the file "check"
+#that compares the new output with the *orig files.
+#Note: There may be a few, insignificant differences due to different floating
+#      point precision on different architectures.
+
+
+#   I. Preprocessing:
+#
+#      The directory contains two Arabidopsis EST databases of 5,000 entries
+#      each (ATest1, ATest2).  The databases consist of FASTA-formatted files
+#      obtained from dbEST at NCBI
+#		(http:///www.ncbi.nlm.nih.gov/dbEST/index.html).
+#      Typically, you will download the complete sets of ESTs for particular
+#      species.  The databases must be pre-processed to create the suffix arrays
+#      used in fast screening for matching ESTs.  Pre-processing is done with
+#      the command "../bin/MakeArray".  Depending on available RAM on your CPU,
+#      the EST database may have to be split up into several smaller pieces as
+#      in the provided example (ATest1, ATest2).
+#
+#date
+#   ../bin/MakeArray ATest1; ../bin/MakeArray ATest2
+#date
+
+# Note: "MakeArray" creates the binary files (*.dat, *.ind, *.suf, *.tre).
+#       These files are platform-specific.
+
+
+#  II. Spliced alignment with ESTs:
+
+#      (1) Analysis of a short segment of GenBank sequence file U89959
+#	   (forward strand):
+#
+#date
+#   ../bin/GeneSeqer -s Arabidopsis -d ATest1 -a 59001 -b 62000 -f -g U89959 \
+#	> out1.gbS
+#date
+#   diff out1.gbS out1.gbS.orig
+
+#date
+#   ../bin/GeneSeqer -s Arabidopsis -d ATest2 -a 59001 -b 62000 -f -g U89959 \
+#	> out2.gbS
+#date
+#   diff out2.gbS out2.gbS.orig
+
+#date
+#   ../bin/GeneSeqer -s Arabidopsis -d ATest1 ATest2 -a 59001 -b 62000 -f \
+#	-g U89959  > out12.gbS
+#date
+#   diff out12.gbS out12.gbS.orig
+
+#          Output in HTML format:
+#date
+#   ../bin/GeneSeqer -h -s Arabidopsis -d ATest1 ATest2 -a 59001 -b 62000 -f \
+#	-g U89959  > out12.gbS.html
+#date
+#   diff out12.gbS.html out12.gbS.html.orig
+
+
+#      (2) Analysis of the entire sequence, both strands:
+#
+#date
+#   ../bin/GeneSeqer -s Arabidopsis -d ATest1 ATest2 -g U89959 > out.gbA
+#date
+#   diff out.gbA out.gbA.orig
+#
+#   MyGV.jpg gives a graphical display of some of the alignment results
+#   generated with our MyGV application (see
+#   http://bioinformatics.iastate.edu/bioinformatics2go/MyGV/).
+
+#          OR (sorted output in outfile.gb, on-the-fly output to stdout):
+#
+#date
+#   ../bin/GeneSeqer -s Arabidopsis -d ATest1 ATest2 -o outfile.gbA \
+#	-g U89959 > stdout.gbA
+
+# Note: The sorted output displays the quality-adjusted EST alignments
+#       incorporated into the consensus gene prediction.  The standard output
+#       displays the initial EST alignments, which may contain weak terminal
+#       exons and may have been derived for the complementary genomic DNA strand
+#       compared to the alignment given in the sorted output.
+#date
+#   diff outfile.gbA outfile.gbA.orig
+#   diff stdout.gbA stdout.gbA.orig
+
+#          Output in HTML format:
+#
+#date
+#   ../bin/GeneSeqer -h -s Arabidopsis -d ATest1 ATest2 -o outfile.gbA.html \
+#	-g U89959 > stdout.gbA.html
+#date
+#   diff outfile.gbA.html outfile.gbA.html.orig
+#   diff stdout.gbA.html stdout.gbA.html.orig
+
+#date
+#   ../bin/GeneSeqer -s Arabidopsis -d ATest1 ATest2 -M 40000 -g U89959 > outM40.gbA
+
+# Note: The option "-M 60000" specifies that the genomic sequence is processed in
+#       segments of size 60000.  This limits memory usage, at some additional
+#       processing time cost. The default value is set to 240000.
+#date
+#    diff outM60.gbA outM60.gbA.orig
+
+#          Input in library file format: 
+#
+#date
+#   ../bin/GeneSeqer -s Arabidopsis -d ATest1 ATest2 -R -l L89959 > out.faA
+#date
+#   diff out.faA out.faA.orig
+
+#          Adjusting the fast search parameters to only select very highly
+#          matching ESTs:
+#date
+#   ../bin/GeneSeqer -s Arabidopsis -d ATest1 ATest2 -x 30 -y 45 -z 60 \
+#	-l L89959 > out.faAX
+#date
+#   diff out.faAX out.faAX.orig
+#
+#          ... and eliminating weak terminal exons from the predicted
+#	   consensus gene structure using more stringent criteria specified
+#	   in the parameter file 'prmfileHQ':
+#date
+#   ../bin/GeneSeqer -s Arabidopsis -d ATest1 ATest2 -x 30 -y 45 -z 60 \
+#	-p prmfileHQ -l L89959 > out.faAXHQ
+#date
+#   diff out.faAXHQ out.faAXHQ.orig
+
+
+#      (3) Using a small EST database containing ESTs pre-selected to
+#          match; pre-processing on the fly:
+#
+#date
+#   ../bin/GeneSeqer -s Arabidopsis -E est3 -g U89959 > out.est3
+#date
+#   diff out.est3 out.est3.orig
+
+
+#      (4) Using an unprocessed EST database with sequences from a different
+#          species (in this case, rice ESTs with pre-determined significant
+#          similarity to the query); pre-processing on the fly:
+#
+#date
+#   ../bin/GeneSeqer -s rice -e rice_ests -g U89959 > out.rice
+#date
+#   diff out.rice out.rice.orig
+
+
+#      (5) Turning off splice site scoring by specifing "UNFRM 1" in the
+#          EST matching parameter file "prmfile" (note the poor alignments
+#          produced in this case for poorer matching ESTs):
+#
+#date
+#   ../bin/GeneSeqer -s rice -e rice_ests -p prmfileU -g U89959 \
+#	> out.riceU
+#date
+#   diff out.riceU out.riceU.orig
+
+# Note: A different way of producing this result would be
+#   ../bin/GeneSeqer -s generic -e rice_ests -x 12 -y 12 -z 30 -p prmfileU \
+#	-g U89959 > out.riceU
+
+
+# III. Spliced alignment with protein targets:
+#
+#      (1) A single target matching a specific segment, reverse strand:
+#date
+#   ../bin/GeneSeqer -s Arabidopsis -q QP-S23728 -a 72001 -b 76000 -r -g \
+#	AC002396 > out.qp1
+#date
+#   diff out.qp1 out.qp1.orig
+
+#          Output in HTML format:
+#
+#date
+#   ../bin/GeneSeqer -h -s Arabidopsis -q QP-S23728 -a 72001 -b 76000 -r -g \
+#	AC002396 > out.qp1.html
+#date
+#   diff out.qp1.html out.qp1.html.orig
+
+
+#      (2) Two targets, one matching outside the prescribed genomic DNA segment,
+#          both strands analyzed (output includes insignficant spliced
+#          alignments on the non-coding strand):
+#
+#date
+#   ../bin/GeneSeqer -s Arabidopsis -Q QP-U89959 -a 101 -b 13000 \
+#	-g U89959 > out.qp2
+#date
+#   diff out.qp2 out.qp2.orig
+#
+#          As above, but including EST alignments and specifying html output:
+#
+#date
+#   ../bin/GeneSeqer -h -s Arabidopsis -d ATest1 ATest2 -Q QP-U89959 -a 101 -b 13000 \
+#        -g U89959 > out.estqp2.html
+#date
+#   diff out.estqp2.html out.estqp2.html.orig
+
+
+#      (3) Changing the default amino acid substitution scoring matrix:
+#
+#date
+#   ../bin/GeneSeqer -s Arabidopsis -Q QP-U89959 -I ../include/PPAM250 \
+#	-a 101 -b 13000 -g U89959 > out.qp3
+#date
+#   diff out.qp3 out.qp3.orig
+
+
+
+# IV. Splice site prediction using Bayesian Models:
+# 
+#date
+#   ../bin/SplicePredictor -s Arabidopsis -p 1 -g U89959 > sp.out
+#date
+#   diff sp.out sp.out.orig
+
+#   Splice site prediction using logitlinear models (old version):
+#
+#date
+#   ../bin/SplicePredictorL -s Arabidopsis -p 1 -g U89959 > spL.out
+#date
+#   diff sp.outL sp.outL.orig
+
+#   The directory LATEX-DIR gives examples of LaTex figures produced
+#   from SplicePredictor output.

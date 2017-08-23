@@ -1,0 +1,84 @@
+PLATFORM = AN6PLAT
+INCLDIR  = ../include
+BINDIR   = ../bin
+#CC       = gcc -fsigned-char -O2 -Werror
+CC       = gcc -fsigned-char -O2 -Wall
+CFLAGS   = -D$(PLATFORM) -I$(INCLDIR)
+LFLAGS   = -lm
+
+%.h:	
+	
+
+all:	MakeArray GeneSeqer SplicePredictor SplicePredictorLL \
+	  GeneSeqerL GeneSeqerM GeneSeqerS
+
+
+MOBJS    = MakeArray.o \
+	   DbSuffix.o \
+	   SufArray.o \
+	   EstData.o \
+	   LcpTree.o \
+	   RawTextFile.o \
+	   TopsPage.o \
+	   TopsPost.o \
+	   TopsSeq.o \
+	   TopsWire.o
+
+MakeArray:	$(MOBJS)
+	$(CC) $(CFLAGS) $(MOBJS) -o $(BINDIR)/MakeArray
+
+
+GOBJS    = getgbs.o \
+	   getlns.o \
+	   getlps.o \
+	   list.o \
+	   result.o \
+	   SufArray.o \
+	   EstData.o \
+	   LcpTree.o \
+	   RawTextFile.o \
+	   TopsPage.o \
+	   TopsPost.o \
+	   TopsSeq.o \
+	   TopsWire.o
+
+GINCL	= platform.h minmax.h EstData.h SufArray.h RawTextFile.h html.h def.h abc.h smat.h mytype.h sahmt.h sequence.h space.h result.h daPbm7.h daPll.h
+
+GeneSeqer:	$(GOBJS) $(INCLDIR)/$(GINCL)
+	ln -f -s $(INCLDIR)/sahmt.hDEF $(INCLDIR)/sahmt.h
+	$(CC) $(CFLAGS) -c -o sahmtd.o sahmtd.c
+	$(CC) $(CFLAGS) -c -o sahmtp.o sahmtp.c
+	$(CC) $(CFLAGS) GeneSeqer.c $(GOBJS) sahmtd.o sahmtp.o $(LFLAGS) -o $(BINDIR)/GeneSeqer
+
+
+SOBJS    = RawTextFile.o \
+	   getgbs.o \
+	   getlns.o \
+	   getlps.o
+
+SplicePredictor:	$(SOBJS)
+	$(CC) $(CFLAGS) -DDAPBM -DDAPBM7 SplicePredictor.c $(SOBJS) sahmtd.o sahmtp.o $(LFLAGS) \
+	-o $(BINDIR)/SplicePredictor
+
+SplicePredictorLL:	$(SOBJS)
+	$(CC) $(CFLAGS) SplicePredictor.c $(SOBJS) sahmtd.o sahmtp.o $(LFLAGS) \
+	-o $(BINDIR)/SplicePredictorLL
+
+
+GeneSeqerL:	$(GOBJS) $(INCLDIR)/$(GINCL)
+	ln -f -s $(INCLDIR)/sahmt.hLRG $(INCLDIR)/sahmt.h
+	$(CC) $(CFLAGS) -c -o sahmtd.o sahmtd.c
+	$(CC) $(CFLAGS) -c -o sahmtp.o sahmtp.c
+	$(CC) $(CFLAGS) GeneSeqer.c $(GOBJS) sahmtd.o sahmtp.o $(LFLAGS) -o $(BINDIR)/GeneSeqerL
+
+GeneSeqerM:	$(GOBJS) $(INCLDIR)/$(GINCL)
+	ln -f -s $(INCLDIR)/sahmt.hMED $(INCLDIR)/sahmt.h
+	$(CC) $(CFLAGS) -c -o sahmtd.o sahmtd.c
+	$(CC) $(CFLAGS) -c -o sahmtp.o sahmtp.c
+	$(CC) $(CFLAGS) GeneSeqer.c $(GOBJS) sahmtd.o sahmtp.o $(LFLAGS) -o $(BINDIR)/GeneSeqerM
+
+GeneSeqerS:	$(GOBJS) $(INCLDIR)/$(GINCL)
+	ln -f -s $(INCLDIR)/sahmt.hSML $(INCLDIR)/sahmt.h
+	$(CC) $(CFLAGS) -c -o sahmtd.o sahmtd.c
+	$(CC) $(CFLAGS) -c -o sahmtp.o sahmtp.c
+	$(CC) $(CFLAGS) GeneSeqer.c $(GOBJS) sahmtd.o sahmtp.o $(LFLAGS) -o $(BINDIR)/GeneSeqerS

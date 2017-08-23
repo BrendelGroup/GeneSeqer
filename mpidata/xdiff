@@ -1,0 +1,11 @@
+#!/bin/csh -f
+#
+
+set np = 6
+
+\rm check;
+
+echo out.gbA >> check; echo "" >> check; diff out.gbA out.gbA.orig >> check; echo "" >> check;
+echo out.gbA.MPI"$np" >> check; echo "" >> check; diff out.gbA.MPI"$np" out.gbA.MPI"$np".orig >> check; echo "" >> check;
+
+echo "out.gbA.MPI"$np" vs out.gbA" >> check; echo "" >> check; diff out.gbA.MPI"$np" out.gbA >> check; echo "" >> check;

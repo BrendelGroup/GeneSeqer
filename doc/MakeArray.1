@@ -1,0 +1,169 @@
+.\" man page for MakeArray
+.de Ex
+.sp
+.RS
+.nf
+.ft C
+..
+.de Xe
+.RE
+.sp
+.fi
+..
+.TH MakeArray 1 "15 February 2014" 
+
+
+.SH NAME
+MakeArray \- Suffix Array Implementation for GeneSeqer
+
+
+.SH SYNOPSIS
+.B MakeArray
+[
+.I dbest
+]
+.br
+
+
+.SH DESCRIPTION
+\fBMakeArray\fP is an implementation of the Manber and Myer suffix array
+algorithm (Reference 1) for applications in conjunction with the
+\fBGeneSeqer\fP program (Reference 2).
+The distributed version is an implementation by Fred Goodman and George Juras
+in collaboration with VisualMetrics Corporation (unpublished).
+
+
+.PP
+The \fBGeneSeqer\fP pacakge of program was developed in the group of Prof. V. Brendel
+and is freely available under the GNU General Public Licence at
+http://brendelgroup.org/bioinformatics2go/GeneSeqer.php/.
+Correspondence relating to \fBMakeArray\fP/\fBGeneSeqer\fP should be addressed
+
+.PP
+.in +0.3i
+.ll -0.3i
+Volker Brendel
+.br
+Indiana University
+.br
+Department of Biology
+.br
+212 South Hawthorne Drive
+.br
+Simon Hall 205C
+.br
+Bloomington, IN 47405
+.br
+U.S.A.
+.br
+phone: (812) 855-7074
+.br
+email: vbrendel@indiana.edu
+.ll +0.3i
+
+
+.SH REFERENCES
+.PP
+.in +0.3i
+1. Manber, U. & Myers, G. (1993)
+.br
+\fISuffix arrays: a new method for on-line search. \fP
+.br
+SIAM J. Comput. 22, 938-945.
+
+.PP
+.in +0.3i
+.br
+2. Usuka, J., Zhu, W. & Brendel, V. (2000)
+.br
+\fIOptimal spliced alignment of homologous cDNA to a genomic DNA template.\fP
+.br
+Bioinformatics 16, 203-211.
+
+
+.SH USAGE
+\&
+.SH "Input file format"
+.PP
+
+\fIFASTA file format\fP
+refers to raw sequence data separated by identifier lines of the form starting
+with ">" followed by the sequence name.
+
+Examples:
+ 
+.Ex
+>gi|sequence1 - upper case
+ACGATTGGATCAAAATCCATGAAAGAGGGGAATCTATAGGCGGAATTGAG
+CGCCAGCGACTGGCTGCCTTGGCGGGGGAGGCCTTGGCGGA
+
+>SQ;sequence2 - upper case with numbering
+       1  ACGATTGGAT CAAAATCCAT GAAAGAGGGG AATCTATAGG CGGAATTGAG
+      51  CGCCAGCGAC TGGCTGCCTT GGCGGGGGAG GCCTTGGCGG A
+
+>vb_sequence3 - lower case
+acgattggatcaaaatccatgaaagaggggaatctataggcggaattgagcgccagcgac
+tggctgccttggcgggggaggccttggcgga
+
+>vb:sequence4 - mixed format
+       1  ACGATTGGAT CAAAATCCAT GAAAGAGGGG AATCTATAGG GGGGGGATCT
+cgccagcgac
+        tggctgcct       tggcggggg       AGGCCTTGGCGGA
+.Xe
+
+
+.SH "Output"
+.PP
+Output to standard output gives statistics of the EST database, including
+number of sequences, total length, minimum and maximum sequence length, and
+length distribution.
+
+In addition, the program produces four binary files that are read by the
+\fBGeneSeqer\fP program (\fBGeneSeqer\fP option: \fB-dD\fP \fIdbest\fP):
+
+.in +0.3i
+.IP "\fI\ dbest.dat\fP"
+Data file.
+.IP "\fI\ dbest.ind\fP"
+Index file.
+.IP "\fI\ dbest.suf\fP"
+Suffix Array file.
+.IP "\fI\ dbest.tre\fP" 
+Lcp Tree file.
+
+
+.SH COMPILATION OPTIONS
+.PP
+The minimal allowed sequence length is set by
+
+.br
+#define MinSeqLen	x
+.br
+
+in GENESEQER/src/EstData.c (default value: x = 12).
+.fi
+
+
+.SH FILES
+.PP
+.nf
+.ta 2.5i
+GENESEQER/README
+GENESEQER/bin
+GENESEQER/data (examples)
+GENESEQER/doc/MakeArray.1 (this file)
+GENESEQER/include
+GENESEQER/src
+.fi
+
+
+.SH SEE ALSO
+GeneSeqer(1), SplicePredictor(1).
+
+
+.SH NOTES
+A hardcopy of this manual page is obtained by `man -t ./MakeArray.1 | lpr'.
+
+
+.SH AUTHOR
+Volker Brendel <vbrendel@vbrendel.edu>

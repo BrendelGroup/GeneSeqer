@@ -1,0 +1,15 @@
+#!/bin/csh -f
+#
+
+\rm check
+\rm fig.aux fig.dvi fig.ins fig.log
+
+echo U89959W.tex >> check; echo "" >> check; diff U89959W.tex U89959W.tex.orig >> check; echo "" >> check;
+echo U89959C.tex >> check; echo "" >> check; diff U89959C.tex U89959C.tex.orig >> check; echo "" >> check;
+echo ZMAUX311.tex >> check; echo "" >> check; diff ZMAUX311.tex ZMAUX311.tex.orig >> check; echo "" >> check;
+echo ZMWAXY.tex >> check; echo "" >> check; diff ZMWAXY.tex ZMWAXY.tex.orig >> check; echo "" >> check;
+echo fig.ps >> check; echo "" >> check; diff fig.ps fig.ps.orig >> check; echo "" >> check;
+echo sp.ZMAUX311 >> check; echo "" >> check; diff sp.ZMAUX311 sp.ZMAUX311.orig >> check; echo "" >> check;
+echo sp.ZMWAXY >> check; echo "" >> check; diff sp.ZMWAXY sp.ZMWAXY.orig >> check; echo "" >> check;
+echo spC.U89959 >> check; echo "" >> check; diff spC.U89959 spC.U89959.orig >> check; echo "" >> check;
+echo spW.U89959 >> check; echo "" >> check; diff spW.U89959 spW.U89959.orig >> check; echo "" >> check;

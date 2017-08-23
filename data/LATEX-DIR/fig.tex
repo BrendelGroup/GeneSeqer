@@ -1,0 +1,27 @@
+%%%%%%%%%%%%%%%%%%%%%%%% Start fig.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\textwidth}{6.0in}
+\setlength{\textheight}{8.0in}
+\setlength{\topmargin}{0pt}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{10pt}
+\setlength{\baselineskip}{1.0cm}
+\pagestyle{empty}
+\def\i#1{\setbox0=\hbox{#1}
+\kern-.025em\copy0\kern-\wd0
+\kern.05em\copy0\kern-\wd0
+\kern-.025em\raise.0433em\box0 }
+\def\ba{\i{$a$}}
+\catcode`@=11
+\def\@fnsymbol#1{{}}
+\catcode`@=12
+
+\begin{document}
+
+\input fig.ins
+
+\end{document}

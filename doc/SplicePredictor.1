@@ -1,0 +1,539 @@
+.\" man page for SplicePredictor
+.de Ex
+.sp
+.RS
+.nf
+.ft C
+..
+.de Xe
+.RE
+.sp
+.fi
+..
+.TH SplicePredictor 1 "15 February 2014" 
+
+
+.SH NAME
+SplicePredictor \- Splice Site Prediction with Bayesian Models
+
+
+.SH SYNOPSIS
+.B SplicePredictor
+[
+.B \-s
+.I species
+]
+.B \-c
+.I cutoff
+]
+[
+.B \-t
+.I pval
+]
+[
+.B \-T
+.I sval
+]
+[
+.B \-oO
+]
+[
+.B \-n
+.I topN
+]
+[
+.B \-u
+]
+[
+.B \-U
+]
+[
+.B \-p
+.I pstyle
+]
+[
+.B \-w
+.I [nsites sscwl]
+]
+[
+.B \-x
+]
+[
+.B \-eE
+.I estdbn
+]
+[
+.B \-i
+.I prmfile
+]
+[
+.B \-qQ
+.I qpfname
+]
+[
+.B \-I
+.I matname
+]
+[
+.B \-a
+.I from
+]
+[
+.B \-b
+.I to
+]
+[
+.B \-rR
+]
+[
+.B \-lL
+.I libname
+]
+[
+.B \-g
+.I gbfname(s)
+]
+.br
+
+
+.SH DESCRIPTION
+The basic version of \fISplicePredictor\fP implements Bayesian models for
+splice site prediction trained as described in References 1 and 2.
+The predictions are implicitely based on the three variables of (i) degree of
+matching to the splice site consensus, (ii) local compositional contrast, and
+(iii) assessment of 3-base periodicity in coding regions.
+The models assign a \fIP-value\fP between 0 and 1 to each potential splice site
+such that true sites mostly score high and non-sites mostly score low.
+The \fIP-value\fPs represent intrinsic splice site quality (see also Reference
+3).
+Refinements of the basic model include the context-dependent scores \fIrho\fP
+and \fIgamma\fP (Reference 4).
+The \fIrho-value\fP of a given site is calculated as a weighted product of its
+P-value times the P-value of its best potential intron-forming complementary
+splice site; 0 < \fIrho\fP < 1.
+The \fIgamma-value\fP of a site reflects how well this site fits in the locally
+predicted splicing pattern.
+If the given site is in a context that suggests preferred usage of nearby sites
+as splicing partners to the exclusion of the given site, its \fIgamma-value\fP
+will be zero.
+Otherwise it will be a positive value less or equal to 2; high values of
+\fIgamma\fP would strongly suggest actual usage of the site.
+
+To quickly assess the overall quality of a site we implemented a * grading
+system: the values of \fIP\fP, \fIrho\fP, and \fIgamma\fP are labeled 5*,
+4*, 3*, or 2* if they match or exceed the threshold values for 90%, 80%,
+65%, and 50% prediction specificity on the training set, 1* otherwise.
+The sum of the \fI*-values\fP (attaining values between 3* and 15*) serves as a
+simple combined measure.
+For example, sites scoring 14* or 15* are highly reliable (estimated
+specificity > 90%).
+
+Minimal input to the program consists of a genomic sequence for which potential
+splice sites are to be listed.
+Optionally, the user may also supply cDNA/ESTs or "target proteins" which are
+known or suspected to significantly match the genomic sequence or its
+translation into encoded amino acids chains.
+If supplied, the algorithm will return optimal \fIspliced alignments\fP which
+"thread" the targets into the genomic DNA by scoring for splice sites and
+sequence similarity in potential exons while allowing for introns as long gaps
+in the alignment (References 5 and 6).
+
+.PP
+The \fBSplicePredictor\fP program was developed in the group of Prof. V. Brendel
+and is freely available under the GNU General Public Licence at
+http://brendelgroup.org/bioinformatics2go/SplicePredictor.php/.
+Correspondence relating to \fBSplicePredictor\fP should be addressed to
+
+.PP
+.in +0.3i
+.ll -0.3i
+Volker Brendel
+.br
+Indiana University
+.br
+Department of Biology
+.br
+212 South Hawthorne Drive
+.br
+Simon Hall 205C
+.br
+Bloomington, IN 47405
+.br
+U.S.A.
+.br
+phone: (812) 855-7074
+.br
+email: vbrendel@indiana.edu
+.ll +0.3i
+
+
+.SH REFERENCES
+.PP
+.in +0.3i
+.br
+1. Brendel, V., Xing, L. & Zhu, W. (2004)
+.br
+\fIGene structure prediction from consensus spliced alignment of multiple
+ESTs matching the same genomic locus.\fP
+.br
+Bioinformatics 20, 1157-1169.
+
+.PP
+.in +0.3i
+.br
+2. Sparks, M.E. & Brendel, V. (2005)
+.br
+\fIIncorporation of splice site probability models for non-canonical introns
+improves gene structure prediction in plants.\fP
+.br
+Bioinformatics 21 Suppl.3, iii1-iii11.
+
+.PP
+.in +0.3i
+.br
+3. Kleffe, J., Hermann, K., Vahrson, W., Wittig, B. & Brendel, V. (1996)
+.br
+\fILogitlinear models for the prediction of splice sites in plant pre-mRNA
+sequences.\fP
+.br
+Nucl. Acids Res. 24, 4709-4718.
+
+.PP
+.in +0.3i
+.br
+4. Brendel, V. & Kleffe, J. (1998)
+.br
+\fIPrediction of locally optimal splice sites in plant pre-mRNA with
+applications to gene identification in Arabidopsis thaliana genomic
+DNA.\fP
+.br
+Nucl. Acids Res. 26, 4748-4757.
+
+.PP
+.in +0.3i
+.br
+5. Usuka, J., Zhu, W. & Brendel, V. (2000)
+.br
+\fIOptimal spliced alignment of homologous cDNA to a genomic DNA template.\fP
+.br
+Bioinformatics 16, 203-211.
+
+.PP
+.in +0.3i
+6. Usuka, J. & Brendel, V. (2000)
+.br
+\fIGene structure prediction by spliced alignment of genomic DNA with
+protein sequences:  Increased accuracy by differential splice site scoring.\fP
+.br
+J. Mol. Biol. 297, 1075-1085.
+
+
+
+.SH OPTIONS
+.IP "\fB\-s\fP \fIspecies\fP"
+Set \fIspecies\fP to select the most appropriate splice site models.
+This parameter must be specified.  Options: "human", "mouse", "rat", "chicken",
+"Drosophila", "Daphnia", "nematode", "yeast", "Aspergillus", "Arabidopsis", "maize",
+"rice", "Medicago", "generic".
+.IP "\fB\-c\fP \fIcutoff\fP"
+set prediction threshold level; only sites with critical value c = 2 ln BF at
+least \fIcutoff\fP will be printed
+.IP "\fB\-t\fP \fIpval\fP"
+set prediction threshold to \fIpval\fP [overrides -c option]
+.IP "\fB\-T\fP \fIsval\fP"
+set prediction threshold to \fIsval\fP [overrides -c option]
+.IP "\fB\-oO\fP"
+-o: order sites by P-value [default: by position]
+-O: order sites by *-value [default: by position]
+.IP "\fB\-n\fP \fItopN\fP"
+display top N splice sites
+.IP "\fB\-u\fP"
+disable local pruning of non-optimal sites
+.IP "\fB\-U\fP"
+score also non-canonical splice site dinucleotides
+.IP "\fB\-p\fP \fIpstyle\fP"
+1 (terse=WWW); 2 (default); 3 (very terse=EXDOMINO); 4 (verbose);
+5 (spreadsheet)
+.IP "\fB\-w\fP [\fInsites sscwl\fP]"
+report splice site clusters
+(>= \fInsites\fP in <= \fIsscwl\fP bases; default: 4/1500, appropriate for
+-T 14 option)
+.IP "\fB\-x\fP [\fIfrom to\fP]"
+LaTex graphical output in *.tex file(s)
+.IP "\fB\-eE\fP \fIestdbn\fP"
+Read EST sequence data from library file \fIestdbn\fP;
+-e: align + strand only, -E: align + and - strands.
+.IP "\fB\-i\fP \fIprmfile\fP"
+Read parameters for EST matching from file \fIprmfile\fP.
+.IP "\fB\-qQ\fP \fIqpfname\fP"
+Read target protein sequence data from library (FASTA-format) file
+\fIqpfname\fP.
+.IP "\fB\-I\fP \fImatname\fP"
+Read amino acid substitution scoring matrix from file \fImatname\fP.
+.IP "\fB\-a\fP \fIfrom\fP"
+Analyze genomic sequence from position \fIfrom\fP [default: 1].
+.IP "\fB\-b\fP \fIto\fP"
+Analyze genomic sequence up to position \fIto\fP [default: end of sequence].
+.IP "\fB\-r\fP"
+Analyze reverse strand.
+.IP "\fB\-R\fP"
+Analyze both strands.
+.IP "\fB\-lL\fP \fIlibname\fP"
+Read (multiple) sequence data from library file \fIlibfname\fP (FASTA-format).
+.IP "\fB\-g\fP \fIgbfname(s)\fP"
+Read nucleic acid sequence data from GenBank file(s) \fIgbfname(s)\fP.
+If specified, the -g option must be last.
+
+
+.SH USAGE
+\&
+.SH "Input file format"
+.PP
+\fBGenomic DNA input:\fP
+Sequences should be in the one-letter-code
+({a,b,c,d,g,h,i,k,m,n,q,r,s,t,u,v,w,y}),
+upper or lower case; all other characters are ignored during input.
+Multiple sequence input is accepted in \fIlibrary (FASTA) file format\fP
+or in \fIGenBank format\fP.
+
+\fILibrary (FASTA) file format\fP
+refers to raw sequence data separated by identifier lines of the form starting
+with ">" followed by the sequence name.
+For options \fB-e\fP, \fB-E\fP, \fB-q\fP, and \fB-l\fP, the name of the
+sequence is taken to be the first string on the ">" line delimited by space,
+tab, |, or : starting from position 5.
+For example, ">gi|idnumber|something-else" is given the name "idnumber".
+For options \fB-Q\fP and \fB-L\fP, the name of the
+sequence is taken to be the first string on the ">" line delimited by space,
+tab, |, or : starting from position 2.
+In the above example, the name would be "gi".
+Typically, this option is appropriate for sequences supplied by the user in the
+format ">my-sequence-name comments".
+
+Examples (\fB-e\fP, \fB-E\fP, \fB-q\fP, and \fB-l\fP options):
+ 
+.Ex
+>gi|sequence1 - upper case
+ACGATTGGATCAAAATCCATGAAAGAGGGGAATCTATAGGCGGAATTGAG
+CGCCAGCGACTGGCTGCCTTGGCGGGGGAGGCCTTGGCGGA
+
+>SQ;sequence2 - upper case with numbering
+       1  ACGATTGGAT CAAAATCCAT GAAAGAGGGG AATCTATAGG CGGAATTGAG
+      51  CGCCAGCGAC TGGCTGCCTT GGCGGGGGAG GCCTTGGCGG A
+
+>vb:sequence3 - lower case
+acgattggatcaaaatccatgaaagaggggaatctataggcggaattgagcgccagcgac
+tggctgccttggcgggggaggccttggcgga
+
+>vb:sequence4 - mixed format
+       1  ACGATTGGAT CAAAATCCAT GAAAGAGGGG AATCTATAGG GGGGGGATCT
+cgccagcgac
+        tggctgcct       tggcggggg       AGGCCTTGGCGGA
+.Xe
+
+.PP
+\fIGenBank format\fP
+refers to raw sequence data with possible annotations as in standard GenBank
+files.
+Minimal requirements are the LOCUS and ORIGIN lines.
+Multiple sequences must be separated by // lines.
+
+.PP
+\fBEST sequence input:\fP
+EST sequences for spliced alignment may be supplied as a sequence file in
+library format with the \fI-eE estdbn\fP options.  Spliced alignment will only
+be performed for genomic DNA sequences of lengths not exceeding the parameter
+MAXGLGTH (default: 13000).
+
+.PP
+\fBQuery protein input:\fP
+Query protein sequences for spliced alignment may be supplied with the
+\fI-qQ qpfname\fP option, where \fIqpfname\fP is a sequence file in library
+format. Spliced alignment will only be performed for genomic DNA sequences of
+lengths not exceeding the parameter MAXGLGTH (default: 13000).
+
+
+.SH "Parameters"
+.PP
+There always is a trade-off between \fIsensitivity\fP ("How many true sites
+will be correctly predicted?") versus \fIspecificity\fP ("How large is the
+number of presumably false positive predictions?").  For \fISplicePredictor\fP,
+sensitivity and specificity are controlled by the critical value
+\fIc = 2 ln BF\fP, where \fIBF\fP is the Bayes Factor (ratio of posterior to
+prior oddds that a given site is a true splice site).  Higher values of \fIc\fP
+increase specificity but decrease sensitivity (Reference 1).
+
+
+
+.SH "Output format"
+.PP
+Output is directed to standard output.
+
+.PP
+\fBPotential splice sites (example):\fP
+.Ex
+.in -2.0in
+.ll +2.0in
+\s-1
+t    q      loc     sequence           P       c      rho   gamma   *  P*R*G*        parse
+
+  .......
+D ---->   35713           ccgGTttgt   0.994  10.73   0.277  1.980  13 (5 3 5)  IADADIA-D-AEEDADA
+A <-----  35819 ttattaattgcgtAGgt     0.986   9.04   0.487  1.963  14 (4 5 5)  ADADIAD-A-EEDADAD
+D -->     35859           ctgGTtctg   0.793   3.26   0.000  0.000   5 (3 1 1)  DADIADA-E-EDADADA
+D -->     35890           tatGTgatt   0.788   3.20   0.000  0.000   5 (3 1 1)  ADIADAE-E-DADADAE
+D --->    36012           aagGTacga   0.978   8.13   0.268  0.185  10 (5 3 2)  DIADAEE-D-ADADAED
+A <-----  36100 tcgtgttcattgcAGat     0.996  11.54   0.497  1.973  15 (5 5 5)  IADAEED-A-DADAEDA
+D ----->  36206           acgGTaatg   0.995  11.24   0.985  1.985  15 (5 5 5)  ADAEEDA-D-ADAEDAD
+A <-----  36296 ataatttttctgcAGtc     0.990   9.67   0.985  1.985  14 (4 5 5)  DAEEDAD-A-DAEDAED
+D ----->  36432           cagGTatgg   0.997  12.20   0.335  1.987  14 (5 4 5)  AEEDADA-D-AEDAEDA
+A   <---  36520 acattgcgataacAGgc     1.000  17.83   0.336  0.015  10 (5 3 2)  EEDADAD-A-EDAEDIA
+A    <--  36721 ttcgaatctgatcAGgt     0.985   8.97   0.000  0.000   6 (4 1 1)  EDADADA-E-DAEDIAD
+D ----->  36722           cagGTgagt   0.955   6.68   0.939  1.939  15 (5 5 5)  DADADAE-D-AEDIADA
+A <-----  36815 ggatgaatgaaacAGga     0.984   8.78   0.488  1.883  14 (4 5 5)  ADADAED-A-EDIADAE
+  .......
+\s+1
+.Xe
+.in +2.0in
+.ll -2.0in
+
+.PP
+Column \fIt\fP: type (D, donor, or A, acceptor)
+.br
+Column \fIq\fP: quality. The length of the arrow indicates the site quality
+measured by the *-value:
+.Ex
+ ----- = *value 14-15 = highly likely (estimated specificity   >90%)
+ ----  = *value 11-13 =    likely     (estimated specificity 60-70%)
+ ---   = *value  8-10 =    possible   (estimated specificity 35-45%)
+ --    = *value  5- 7 =    uncertain  (estimated specificity 10-20%)
+ -     = *value  3- 4 =    doubtful   (estimated specificity   < 5%)
+.Xe
+The arrow head points into the predicted intron.
+
+.PP
+Column \fIloc\fP: site location (position of first or last base of potential
+intron for D or A, respectively)
+.br
+Column \fIsequence\fP: site sequence
+.br
+Column \fIP\fP: P-value
+.br
+Column \fIc\fP: cutoff c = 2 ln (BF)
+.br
+Column \fIrho\fP: rho-value
+.br
+Column \fIgamma\fP: gamma-value
+.br
+Column \fI*\fP: *-value
+.br
+Column \fIP*R*G*\fP: individual *-values for P, rho, and gamma
+.br
+Column \fIparse\fP: highest scoring assignment of the given site
+and the seven adjacent sites upstream and downstream as either A (acceptor),
+D (donor), E (exon), or I (intron)
+.br
+Note: Spliced alignment with ESTs confirms introns 35713-35819, 36012-36100,
+36206-36296, 36342-36520, and 36722-36815 (see file out.gbA.orig in the
+GeneSeqer/SplicePredictor distribution data directory).
+
+.PP
+\fBSpliced alignment:\fP
+For each significantly matching EST, the predicted gene structure based on an
+optimal spliced alignment is displayed.
+The upper line gives the genomic DNA and the lower line gives the EST sequence.
+Identities are indicated by vertical bars in the center line.
+Introns are indicated by dots, gaps in the exons by '_'.
+For protein spliced alignments, the alignment gives the genomic DNA sequence,
+its inferred protein translation (one-letter-code), and the matching parts of
+the target protein sequence.
+Identical residues are linked by "|", positively scoring substitutions by "+",
+and zero scoring substitutions by "." according to the amino acid substitution
+scoring matrix used in the alignment.
+Coordinates for the predicted exons and introns are given in the list preceding
+the alignment.
+Exons are assigned a normalized similarity score (1.000 represents 100%
+identity).
+For introns, the list gives adjusted P-values of the donor and acceptor sites
+(2 * (P - 0.5) for P > 0.5) as well as a similarity score (s) based on the
+sequence similarity in the adjacent 50 bases of exon.
+
+.PP
+\fISpecial lines\fP:
+.br
+MATCH gDNAx cDNAy scr lgth cvrg y
+.PP
+.in +0.3i
+where gDNA = name of genomic DNA sequence; x = + (forward strand) or
+- (reverse strand); cDNA = name of cDNA sequence; y = + (forward strand) or
+- (reverse strand); scr = alignment score; lgth = cumulative length of scored
+exons; cvrg = coverage of genomic DNA segment (y = G) or cDNA (y = C) or
+target protein (y = P), whichever is highest
+.br
+\&
+.in -0.3i
+PGS_gDNAx_cDNAy (a  b,c  d, ...)
+.br
+or
+.br
+PGS_gDNAx_qp (a  b,c  d, ...)
+.PP
+.in +0.3i
+where gDNA = name of genomic DNA sequence; x = + (forward strand) or
+- (reverse strand); cDNA = name of cDNA sequence; y = + (forward strand) or
+- (reverse strand); qp = name of target protein;
+a, b, c, d, ... = exon coordinates.
+
+.in -0.3i
+The MATCH and PGS lines are useful for summarizing the search results for an
+application involving multiple genomic DNA sequences and multiple ESTs or
+target proteins (use a combination of 'egrep' and 'sort').  PGS = Predicted
+Gene Structure (GenBank CDS-styled exon coordinates).
+
+
+.SH NOTES
+.PP
+The \fBSplicePredictor.c\fP source code includes also the older logitlinear
+models for maize and \fIArabidopsis thaliana\fP (Reference 3), compiled by
+default as \fBSplicePredictorLL\fP.
+
+
+.SH COMPILATION OPTIONS
+.PP
+The following parameters are set in the file
+.br
+\fIGENESEQER/include/sahmt.h\fP (change and re-compile depending on need and
+available memory):
+.br
+
+.br
+MAXGLGTH - maximum length of genomic DNA segment for spliced alignment;
+default: 15000
+.br
+MAXCLGTH - maximum length of cDNA/EST for spliced alignment; default: 8000
+.br
+MAXPLGTH - maximum length of protein sequence for spliced alignment;
+default: 3000
+.fi
+
+.SH FILES
+.PP
+.nf
+.ta 2.5i
+GENESEQER/README
+GENESEQER/bin
+GENESEQER/data (examples)
+GENESEQER/doc/SplicePredictor.1 (this file)
+GENESEQER/doc/SplicePredictor.1 (this file)
+GENESEQER/include
+GENESEQER/src
+.fi
+
+.SH SEE ALSO
+GeneSeqer(1), SplicePredictorLL(1).
+
+.SH NOTES
+A hardcopy of this manual page is obtained by `man -t ./SplicePredictor.1 | lpr'.
+
+.SH AUTHOR
+Volker Brendel <vbrendel@indiana.edu>

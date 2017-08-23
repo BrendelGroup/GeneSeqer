@@ -1,0 +1,15 @@
+If you use LaTex, you can produce simple pictures depicting splice site
+location and strength directly from SplicePredictor output.  Use the "xmkfig"
+script in this directory to produce inserts for fig.tex, process fig.tex,
+and look at the PostScript output. The command reproduces the features of
+Fig.2 and Fig.3 of Brendel & Kleffe (1998) Nucl. Acids Res. 26, 4748-4757.
+
+
+Notes:
+
+xmkfig.alt uses 'echo "\\ ..."' to produce a single backslash in fig.ins -
+	this seems to be necessary for older versions of glibc.
+
+At least for Linux, ggv default shows the pictures upside down. Use
+"Swap Landscape" to show the pictures correctly.  If somebody knows how to fix
+this more elegantly, please let me know!

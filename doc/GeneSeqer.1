@@ -1,0 +1,526 @@
+.\" man page for GeneSeqer
+.de Ex
+.sp
+.RS
+.nf
+.ft C
+..
+.de Xe
+.RE
+.sp
+.fi
+..
+.TH GeneSeqer 1 "15 February 2014" 
+
+
+.SH NAME
+GeneSeqer \- Gene Identification by Spliced Alignment
+
+
+.SH SYNOPSIS
+.B GeneSeqer
+[
+.B \-hv
+]
+[
+.B \-s
+.I species
+]
+[
+.B \-dD
+.I dbest(s)
+]
+[
+.B \-eE
+.I estdbn
+]
+[
+.B \-k
+]
+[
+.B \-m
+.I maxnest
+]
+[
+.B \-M
+.I sgmntsze
+]
+[
+.B \-x
+.I wsize
+]
+[
+.B \-y
+.I minqHSP
+]
+[
+.B \-z
+.I minqHSPc
+]
+[
+.B \-w
+.I minESTc
+]
+[
+.B \-p
+.I prmfile
+]
+[
+.B \-qQ
+.I qpdbn(s)
+]
+[
+.B \-I
+.I matname
+]
+[
+.B \-a
+.I from
+]
+[
+.B \-b
+.I to
+]
+[
+.B \-frR
+]
+[
+.B \-oO
+.I outfname
+]
+[
+.B \-c
+.I fcountA
+]
+[
+.B \-C
+.I fcountB
+]
+[
+.B \-lL
+.I libfname
+]
+[
+.B \-g
+.I gbfname(s)
+]
+.br
+
+
+.SH DESCRIPTION
+\fBGeneSeqer\fP is a gene identification tool based on spliced alignment or
+"spliced threading" of ESTs (cDNAs; Reference 1) or target protein sequences
+(Reference 2) with a genomic query sequence. In a spliced alignment, aligned
+residues in the genomic sequence are assigned exon status.  Introns are
+identfied as large gaps in the alignment, typically (but not necessarily)
+flanked by the consensus GT and AG dinucleotides at the donor and acceptor
+sites, respectively.  The optimal alignment is derived by scoring for both
+sequence similarity and potential splice site strength.  The program is
+designed to handle alignment of a large number of ESTs on a long genomic
+query sequence (BAC size).  Therefore, the ESTs are pre-screened, and only
+ESTs with sufficient significant matching are fully aligned.  Optionally,
+target protein sequences are optimally aligned directly to implied
+translation products of the genomic DNA.  This mode does not involve
+pre-screening and is limited to short genomic sequence segments.
+
+.PP
+The \fBGeneSeqer\fP program was developed in the group of Prof. V. Brendel
+and is freely available under the GNU General Public Licence at
+http://brendelgroup.org/bioinformatics2go/GeneSeqer.php/.
+Correspondence relating to \fBGeneSeqer\fP should be addressed to
+
+.PP
+.in +0.3i
+.ll -0.3i
+Volker Brendel
+.br
+Indiana University
+.br
+Department of Biology
+.br
+212 South Hawthorne Drive
+.br
+Simon Hall 205C
+.br
+Bloomington, IN 47405
+.br
+U.S.A.
+.br
+phone: (812) 855-7074
+.br
+email: vbrendel@indiana.edu
+.ll +0.3i
+
+
+.SH REFERENCES
+.PP
+.in +0.3i
+.br
+1. Usuka, J., Zhu, W. & Brendel, V. (2000)
+.br
+\fIOptimal spliced alignment of homologous cDNA to a genomic DNA template.\fP
+.br
+Bioinformatics 16, 203-211.
+
+.PP
+.in +0.3i
+2. Usuka, J. & Brendel, V. (2000)
+.br
+\fIGene structure prediction by spliced alignment of genomic DNA with
+protein sequences:  Increased accuracy by differential splice site scoring.\fP
+.br
+J. Mol. Biol. 297, 1075-1085.
+
+.PP
+.in +0.3i
+.br
+3. Brendel, V., Xing, L. & Zhu, W. (2004)
+.br
+\fIGene structure prediction from consensus spliced alignment of multiple
+ESTs matching the same genomic locus.\fP
+.br
+Bioinformatics 20, 1157-1169.
+
+.PP
+.in +0.3i
+.br
+4. Sparks, M.E. & Brendel, V. (2005)
+.br
+\fIIncorporation of splice site probability models for non-canonical introns
+improves gene structure prediction in plants.\fP
+.br
+Bioinformatics 21 Suppl.3, iii1-iii11.
+
+.PP
+.in +0.3i
+.br
+5. Zhu, W. & Buell, C.R. (2007)
+\fIImprovement of whole-genome annotation of cereals through comparative
+analyses.\fP
+.br
+Genome Res. 17, 299-310.
+
+
+.SH OPTIONS
+.IP "\fB\-h\fP"
+Generate HTML output [default: simple text].  The HTML output should be viewed
+with an HTML browser.  It provides scrolling within the text and links to the
+NCBI databases and BLAST server.
+.IP "\fB\-v\fP"
+Generate verbose output (display the genomic DNA sequence and its base
+composition statistics).
+.IP "\fB\-s\fP \fIspecies\fP"
+Set \fIspecies\fP to select the most appropriate splice site models.
+This parameter must be specified.  Options: "human", "mouse", "rat", "chicken",
+"Drosophila", "Daphnia", "nematode", "yeast", "Aspergillus", "Arabidopsis", "maize",
+"rice", "Medicago", "generic".
+.IP "\fB\-dD\fP \fIdbest(s)\fP"
+Read EST sequence data from pre-processed library file(s) \fIdbest(s)\fP.
+.IP "\fB\-eE\fP \fIestdbn\fP"
+Read EST sequence data from library file \fIestdbn\fP.
+.IP "\fB\-k\fP"
+Assume fixed 5' to 3' transcript orientation of supplied EST sequences.
+.IP "\fB\-m\fP \fImaxnest\fP"
+Display at most \fImaxnest\fP spliced EST alignments per genomic DNA input
+[default: 500].
+.IP "\fB\-M\fP \fIsgmntsze\fP"
+Process input sequence in segments of size \fIsgmntsze\fP [default: 240000;
+increased by \fInp\fP * 20000 for the MPI version with \fInp\fP processors].
+The entire input sequence is tiled with overlapping segments, thus all
+significant alignments will be reported independent of the setting. Decrease or
+increase the segment size depending on how much memory is available.
+The maximal value of \fIsgmntsze\fP is set to \fIMAXSGMNTSZE\fP in sahmt.h
+and can be changed at compile time (see below).
+.IP "\fB\-x\fP \fIwsize\fP"
+Specify the word size for the initial exact match search step.
+Default: \fIwsize\fP = 12 for Arabidopsis and maize, 16 otherwise.
+Must be set to >= 12.  Increasing \fIwsize\fP will improve search speed and
+selectivity but reduce sensitivity.
+.IP "\fB\-y\fP \fIminqHSP\fP"
+Specify the minimum quality value of alignment HSPs to be pursued.
+Default: \fIminqHSP\fP = 12 for Arabidopsis and maize, 16 otherwise.
+Must be set to >= 'wsize'.  Increasing \fIminqHSP\fP will improve search
+speed and selectivity but reduce sensitivity.
+.IP "\fB\-z\fP \fIminqHSPc\fP"
+Specify the minimum quality value of alignment HSP-chains to be pursued.
+Default: \fIminqHSPc\fP = 30 for Arabidopsis and maize, 40 otherwise.
+Must be set to >= 'minqHSP'.  Increasing \fIminqHSPc\fP will improve search
+speed and selectivity but reduce sensitivity.
+.IP "\fB\-w\fP \fIminESTc\fP"
+Specify the minimum EST coverage for an alignment HSP-chain to be pursued.
+Default: \fIminESTc\fP = 0.0 (no restriction).
+Must be set to a value between 0.0 and 1.0.  Increasing \fIminESTc\fP will
+improve search speed and selectivity but reduce sensitivity.
+Alignments missed by setting \fIminESTc\fP to high coverage would include
+those with sequence errors (or short exons) at either 5'- or 3'-end such
+that these EST parts do not participate in high-quality matches making up
+the HSP-chain that triggers the dynamic programming alignment.
+Note that the values of \fIMinWidthOfEST\fP and \fIMinWidthOfGDNA\fP (set in
+\fIinclude/mytype.h\fP) exclude short HSP-chains based on absolute length
+(both parameters set to 50 by default; for specialty applications such as
+matching short tags across exon boundaries, \fBGeneSeqer\fP would have to
+be recompiled with smaller values for these parameters).
+The idea for \fIminESTc\fP was kindly provided by W. Zhu (Reference 5).
+.IP "\fB\-p\fP \fIprmfile\fP"
+Read parameters for EST matching from file \fIprmfile\fP.
+.IP "\fB\-qQ\fP \fIqpdbn(s)\fP"
+Read target protein sequence data from library file(s) \fIqpdbn(s)\fP
+(FASTA-format).
+.IP "\fB\-I\fP \fImatname\fP"
+Read amino acid substitution scoring matrix from file \fImatname\fP.
+.IP "\fB\-a\fP \fIfrom\fP"
+Analyze genomic sequence from position \fIfrom\fP [default: 1].
+.IP "\fB\-b\fP \fIto\fP"
+Analyze genomic sequence up to position \fIto\fP [default: end of sequence].
+.IP "\fB\-f\fP"
+Analyze forward strand.
+.IP "\fB\-r\fP"
+Analyze reverse strand.
+.IP "\fB\-R\fP"
+Analyze both strands [default].
+.IP "\fB\-oO\fP \fIoutfname\fP"
+Redirect output to file \fIoutfname\fP [default: stdout;
+if 'outfname' is set with the -o option, then on-the-fly output
+will be directed to stdout].
+.IP "\fB\-c\fP \fIfcountA\fP"
+If multiple genomic input sequences are supplied with the -lLg options,
+skip the first sequences and process starting from sequence number \fIfcountA\fP.
+.IP "\fB\-C\fP \fIfcountB\fP"
+If multiple genomic input sequences are supplied with the -lLg options,
+skip any sequences after the sequence numbered \fIfcountB\fP.
+.IP "\fB\-lL\fP \fIlibfname\fP"
+Read (multiple) sequence data from library file \fIlibfname\fP (FASTA-format).
+.IP "\fB\-g\fP \fIgbfname(s)\fP"
+Read nucleic acid sequence data from GenBank file(s) \fIgbfname(s)\fP.
+If specified, the -g option must be last.
+
+
+.SH USAGE
+\&
+.SH "Input file format"
+.PP
+\fBGenomic DNA input:\fP
+Sequences should be in the one-letter-code
+({a,b,c,d,g,h,i,k,m,n,q,r,s,t,u,v,w,y}),
+upper or lower case; all other characters are ignored during input.
+Multiple sequence input is accepted in \fIlibrary (FASTA) file format\fP
+or in \fIGenBank format\fP.
+
+\fILibrary (FASTA) file format\fP
+refers to raw sequence data separated by identifier lines of the form starting
+with ">" followed by the sequence name.
+For options \fB-d\fP, \fB-e\fP, \fB-q\fP, and \fB-l\fP, the name of the
+sequence is taken to be the first string on the ">" line delimited by space,
+tab, |, or : starting from position 5.
+For example, ">gi|idnumber|something-else" is given the name "idnumber".
+For options \fB-D\fP, \fB-E\fP, \fB-Q\fP, and \fB-L\fP, the name of the
+sequence is taken to be the first string on the ">" line delimited by space,
+tab, |, or : starting from position 2.
+In the above example, the name would be "gi".
+Typically, this option is appropriate for sequences supplied by the user in the
+format ">my-sequence-name comments".
+The \fB-k\fP option is appropriate when all the EST sequences are represented
+in correct 5' to 3' transcript orientation.
+In this case, no alignment with the complementary strand is ever attempted.
+
+Examples (\fB-d\fP, \fB-e\fP, and \fB-l\fP options):
+ 
+.Ex
+>gi|sequence1 - upper case
+ACGATTGGATCAAAATCCATGAAAGAGGGGAATCTATAGGCGGAATTGAG
+CGCCAGCGACTGGCTGCCTTGGCGGGGGAGGCCTTGGCGGA
+
+>SQ;sequence2 - upper case with numbering
+       1  ACGATTGGAT CAAAATCCAT GAAAGAGGGG AATCTATAGG CGGAATTGAG
+      51  CGCCAGCGAC TGGCTGCCTT GGCGGGGGAG GCCTTGGCGG A
+
+>vb:sequence3 - lower case
+acgattggatcaaaatccatgaaagaggggaatctataggcggaattgagcgccagcgac
+tggctgccttggcgggggaggccttggcgga
+
+>vb:sequence4 - mixed format
+       1  ACGATTGGAT CAAAATCCAT GAAAGAGGGG AATCTATAGG GGGGGGATCT
+cgccagcgac
+        tggctgcct       tggcggggg       AGGCCTTGGCGGA
+.Xe
+
+.PP
+\fIGenBank format\fP
+refers to raw sequence data with possible annotations as in standard GenBank
+files.
+Minimal requirements are the LOCUS and ORIGIN lines.
+Multiple sequences must be separated by // lines.
+Note that you can use the \fB-c\fP and \fB-C\fP options to specify only certain
+sequences from the input files to be processed.  These options are handy if you
+want to split the processing of a multi-sequence input file over several CPUs,
+for example.
+
+.PP
+\fBEST database input:\fP
+The EST database for spliced alignment may be supplied in pre-processed form
+with the \fI-dD dbest(s)\fP option or as a sequence file in library format with
+the \fI-eE estdbn\fP option.  Pre-processing must be performed prior to the
+\fBGeneSeqer\fP application with the accompanying program \fBMakeArray\fP
+(command [for each file dbest]: MakeArray dbest).
+
+.PP
+\fBQuery protein input:\fP
+Query protein sequences for spliced alignment may be supplied with the
+\fI-qQ qpdbn(s)\fP option, where \fIqpdbn(s)\fP are sequence files in library
+format. Spliced alignment on the protein level will only be performed for
+genomic DNA sequences of lengths not exceeding the parameter MAXGLGTH
+(default: 15000).
+
+
+.SH "Output format"
+.PP
+Output is directed to standard output (default) or to the file specified with
+the \fI-o outfname\fP command line argument.
+For each significantly matching EST, the predicted gene structure based on an
+optimal spliced alignment is displayed.
+The upper line gives the genomic DNA and the lower line gives the EST
+sequence.
+Identities are indicated by vertical bars in the center line.
+Introns are indicated by dots, gaps in the exons by '_'.
+For protein spliced alignments, the alignment gives the genomic DNA sequence,
+its inferred protein translation (one-letter-code), and the matching parts of
+the target protein sequence.
+Identical residues are linked by "|", positively scoring substitutions by
+"+", and zero scoring substitutions by "." according to the
+amino acid substitution scoring matrix used in the alignment (BLOSUM62 by
+default).
+Coordinates for the predicted exons and introns are given in the list
+preceding the alignment.
+Exons are assigned a normalized similarity score (1.000 represents 100%
+identity).
+Per position alignment scores can be changed by changing the parameters
+PDG, IDS, MMS, NNS, and DLS in 'prmfile' (Reference 1).
+For introns, the list gives adjusted P-values of the donor and acceptor sites
+(References 3 and 4) as well as a similarity score (s) based on the sequence
+similarity in the adjacent 50 bases of exon.
+Introns shorter than a specified minimal length (parameter MIN_INTRON_LENGTH
+in 'prmfile')
+are penalized in the optimal alignment (predicted introns of size
+MIN_INTRON_LENGTH or less are flagged by '??' in the output).
+Similarly, a minimal exon size is set by the parameter MIN_EXON_LENGTH.
+The alignment ends are forced to terminate with MIN_NBR_ENDMATCHES identities
+(default value: 2) and to be indel-free for MIN_EXON_LENGTH positions to
+avoid display of poor quality alignment ends.
+
+.PP
+If the \fI-o outfname\fP option is specified, EST alignments in the order in
+which they are produced are piped to the standard output.
+The \fIoutfname\fP file displays the sorted and quality-screened EST alignments
+that make up the consensus gene predictions (see below).
+
+.PP
+\fISpecial lines\fP:
+.br
+MATCH gDNAx cDNAy scr lgth cvrg Z
+.PP
+.in +0.3i
+where gDNA = name of genomic DNA sequence; x = + (forward strand) or
+- (reverse strand); cDNA = name of cDNA sequence; y = + (forward strand) or
+- (reverse strand); scr = alignment score; lgth = cumulative length of scored
+exons; cvrg = coverage of genomic DNA segment (Z = G) or cDNA (Z = C) or
+target protein (Z = P), whichever is highest.
+.br
+\&
+.in -0.3i
+PGS_gDNAx_cDNAy (a  b,c  d, ...)
+.br
+or
+.br
+PGS_gDNAx_qp (a  b,c  d, ...)
+.PP
+.in +0.3i
+where gDNA = name of genomic DNA sequence; x = + (forward strand) or
+- (reverse strand); cDNA = name of cDNA sequence; y = + (forward strand) or
+- (reverse strand); qp = name of target protein;
+a, b, c, d, ... = exon coordinates.
+
+.in -0.3i
+The MATCH and PGS lines are useful for summarizing the search results for an
+application involving multiple genomic DNA sequences and multiple ESTs or
+target proteins (use a combination of 'egrep' and 'sort').  PGS = Predicted
+Gene Structure (GenBank CDS-styled exon coordinates).  A "hqPGS" line
+following the alignment gives the coordinates of the high-quality alignment
+parts used to build consensus gene predictions (see below).
+
+.SH "Consensus gene predictions"
+.PP
+For EST matching, the overall gene predictions are summarized at the end of
+the output file in a section labeled "Predicted gene locations".
+In brief, individual EST alignments are culled to remove weak terminal exon
+predictions and then assembled into groups of overlapping alignments with
+respect to the genomic DNA coordinates (the maximal gap within a cluster is
+set by the parameter JOIN_LENGTH in 'prmfile').
+This quality-adjustment may result in complete removal of weak EST
+alignments.
+If the adjustment only removes terminal exons, then the shortened alignment
+is used for generating the consensus gene predictions, although the
+complete alignment is still displayed for each EST for reference.
+Criteria for culling weak terminal exons are governed by the parameters
+TINY_EXON, SHORT_EXON, LONG_INTRON, POOR_EXON_SCORE, POOR_DONOR_SCORE, and
+POOR_ACPTR_SCORE specified in 'prmfile'.
+
+Each overlapping cluster of alignments is indicated as a PGL (Predicted Gene
+Location).
+Within each PGL, alternative exon/intron assignments are indicated by labels
+AGS (Alternative Gene Structure), followed by a summary of the predicted gene
+structure and scores and the individual PGS lines.
+Details of the consensus building procedure are discussed in Reference 3.
+
+
+.SH COMPILATION OPTIONS
+.PP
+The following parameters are set in the file
+.br
+\fIGENESEQER/include/sahmt.h\fP (change and re-compile depending on need and
+available memory):
+.br
+
+.br
+MAXSGMNTSZE - maximum length of genomic DNA segment as a unit of processing
+(upper limit of argument \fIsgmntsze\fP to the -M option); default: 750000
+.br
+.br
+MAXGLGTH - maximum length of genomic DNA segment for spliced alignment;
+default: 40000
+.br
+MAXCLGTH - maximum length of cDNA/EST for spliced alignment; default: 16000
+.br
+MAXPLGTH - maximum length of protein sequence for spliced alignment;
+default: 5000
+.fi
+
+For large applications, memory requirements may become limiting.
+In that case, first try to split individual EST database files into smaller
+files representing subsets.
+
+.SH FILES
+.PP
+.nf
+.ta 2.5i
+GENESEQER/README
+GENESEQER/bin
+GENESEQER/data (examples)
+GENESEQER/doc/GeneSeqer.1 (this file)
+GENESEQER/include
+GENESEQER/src
+.fi
+
+
+.SH SEE ALSO
+MakeArray(1), SplicePredictor(1).
+
+
+.SH NOTES
+A hardcopy of this manual page is obtained by `man -t ./GeneSeqer.1 | lpr'.
+
+\fBGeneSeqer\fP output can be graphically displayed with \fBMyGV\fP; see
+http://brendelgroup.org/bioinformatics2go/MyGV.php/.
+
+
+.SH AUTHOR
+Volker Brendel <vbrendel@indiana.edu>
