@@ -1,0 +1,4157 @@
+GeneSeqer.   Version of February 15, 2014.
+Date run: Sat Feb 15 09:43:41 2014
+
+(Bayesian) Splice site model (species):	Oryza sativa
+Fast search parameters:  (-x) wsize 12, (-y) minqHSP 12, (-z) minqHSPc 30.
+                         (-w) minESTc 0.00.
+Total number of ESTs: 19	Total sequence length: 9045
+Minimum sequence length: 275	Maximum sequence length: 712 
+
+Length distribution (number of sequences of specified length):
+<  100:	0
+<  200:	0
+<  300:	1
+<  400:	4
+<  500:	9
+<  600:	0
+<  700:	3
+<  800:	2
+<  900:	0
+< 1000:	0
+>=1000:	0
+
+Alignment parameters:
+	PDG	 0.03
+	IDS	 2.00
+	MMS	-2.00
+	NNS	 0.00
+	DLS	-5.00
+	UNFRM 1
+	MIN_INTRON_LENGTH	 30
+	MIN_EXON_LENGTH	  5
+	MIN_NBR_ENDMATCHES	  2
+	TINY_EXON	 20
+	SHORT_EXON	200
+	LONG_INTRON	300
+	POOR_EXON_SCORE	0.70
+	POOR_DONOR_SCORE	0.50
+	POOR_ACPTR_SCORE	0.50
+	JOIN_LENGTH	300
+
+GenBank file: U89959
+
+________________________________________________________________________________
+Sequence    1:   U89959, from 1 to 106973, both strands analyzed.
+... started  at: Sat Feb 15 09:43:41 2014
+
+
+EST library file:	rice_ests;	matching gDNA +strand ...
+... found all matches, elapsed seconds = 0
+... matches indexed, elapsed seconds = 0 HitsTableSize = 1
+
+EST library file:	rice_ests;	matching gDNA -strand ...
+... found all matches, elapsed seconds = 0
+... matches indexed, elapsed seconds = 0 HitsTableSize = 15
+
+********************************************************************************
+EST sequence     14 +strand   449 n (File: 2280601+)
+
+     1  TCCTTGTTGG GAACAAGAGN GACCTAACTG CCAACAAAGT TGTGTCATCT GAAACAGCTA
+    61  AGGCGTTTGC TGATGAGATG GGCATCCCCT TCATGGAGAC AAGTGCCAAG AACGCCACTA
+   121  ATGTGGAGCA GGCCTTCATG GCTATGGCCG CATCCATCAA GGACAGGATG GCTAGCCAAC
+   181  CGGCCGCTTC AAATGCAAGG CCACCGACCG TGCAGATCCG CGGGCAACCT GTCAACCAGA
+   241  AGACGTCGTG CTGCTCGTCC TAAAGATAAC CAAGTCTTTC CTTCCATGTA AAATTCGACG
+   301  TATGTTACTA CTGTTTGCTC ACTACAACGT ATTTGTGATA TTCATTTGAA CGGCCTTGAT
+   361  ACCATCTTTT CTTTAATCAG ATGGTTAGGC AGCTGCAAAT ATATATGTAA CCTTGCTTTG
+   421  TTGCTCTTTG CTCACGGATC GAGAGGAGG
+
+Predicted gene structure (within gDNA segment 53103 to 43063):
+
+ Exon  1  51380  51319 (  62 n);  cDNA      1     62 (  62 n); score: 0.710
+  Intron  1  51318  51217 ( 102 n); Pd: 0.050 (s: 0.66), Pa: 0.050 (s: 0.76)
+ Exon  2  51216  51113 ( 104 n);  cDNA     63    166 ( 104 n); score: 0.769
+  Intron  2  51112  50835 ( 278 n); Pd: 0.050 (s: 0.80), Pa: 0.050 (s: 0.82)
+ Exon  3  50834  50740 (  95 n);  cDNA    167    261 (  95 n); score: 0.742
+  Intron  3  50739  50404 ( 336 n); Pd: 0.000 (s: 0.68), Pa: 0.002 (s:    0)
+ Exon  4  50403  50394 (  10 n);  cDNA    262    271 (  10 n); score: 0.900
+  Intron  4  50393  49624 ( 770 n); Pd: 0.050 (s:    0), Pa: 0.050 (s:    0)
+ Exon  5  49623  49607 (  17 n);  cDNA    272    287 (  16 n); score: 0.706
+  Intron  5  49606  48986 ( 621 n); Pd: 0.002 (s:    0), Pa: 0.050 (s:    0)
+ Exon  6  48985  48965 (  21 n);  cDNA    288    308 (  21 n); score: 0.714
+  Intron  6  48964  48573 ( 392 n); Pd: 0.000 (s:    0), Pa: 0.050 (s:    0)
+ Exon  7  48572  48565 (   8 n);  cDNA    309    316 (   8 n); score: 1.000
+  Intron  7  48564  45295 (3270 n); Pd: 0.002 (s:    0), Pa: 0.050 (s:    0)
+ Exon  8  45294  45282 (  13 n);  cDNA    317    328 (  12 n); score: 0.769
+  Intron  8  45281  45104 ( 178 n); Pd: 0.000 (s:    0), Pa: 0.000 (s:    0)
+ Exon  9  45103  45088 (  16 n);  cDNA    329    343 (  15 n); score: 0.812
+  Intron  9  45087  44169 ( 919 n); Pd: 0.050 (s:    0), Pa: 0.050 (s:    0)
+ Exon 10  44168  44158 (  11 n);  cDNA    344    354 (  11 n); score: 0.818
+
+MATCH	U89959-	2280601+	0.745	357	0.795	C
+PGS_U89959-_2280601+	(51380  51319,51216  51113,50834  50740,50403  50394,49623  49607,48985  48965,48572  48565,45294  45282,45103  45088,44168  44158)
+
+Alignment (genomic DNA sequence = upper lines):
+
+TCCTTGTTGG AAACAAGTCT GATCTTACTG AAAACAGAGC CATTCCTTAT GAAACTGCCA    51321
+||||||||||  ||||||    || || ||||   |||| ||    |  | | | ||||| || | 
+TCCTTGTTGG GAACAAGAGN GACCTAACTG CCAACAAAGT TGTGTCATCT GAAACAGCTA       60
+
+
+AGGTATATAT ATGCCACTTG AACCAATTCT TTCTTCTCAA GTTTTGAAAA TCATCAAACT    51261
+||                                                                
+AG........ .......... .......... .......... .......... ..........       62
+
+
+CTAAGGCTAT TATTACTTTC CTGATTACTT CGAAACATTC ATAGGCTTTT GCCGATGAAA    51201
+                                                || ||| || ||||| | 
+.......... .......... .......... .......... ....GCGTTT GCTGATGAGA       78
+
+
+TCGGGATTCC TTTTATGGAG ACTAGTGCAA AAGATGCTAC AAACGTAGAA CAGGCTTTCA    51141
+| || || ||  || |||||| || ||||| | |  | || ||  || || ||  ||||| |||| 
+TGGGCATCCC CTTCATGGAG ACAAGTGCCA AGAACGCCAC TAATGTGGAG CAGGCCTTCA      138
+
+
+TGGCAATGTC TGCATCCATC AAAGAGAGGT ATTTATCTTA CATCGTTCTT TTTAAGTAAC    51081
+|||| ||| |  ||||||||| || || ||                                    
+TGGCTATGGC CGCATCCATC AAGGACAG.. .......... .......... ..........      166
+
+
+TGCGGTTAAT ATACTCATCA TACCTGATGG AACTTTTGCG AAGCCATAAT CTCATTTTTG    51021
+                                                                  
+.......... .......... .......... .......... .......... ..........      166
+
+
+TAAGTGTTTA TATAGATCTC AGAAAGTGTC ACTGTGTAAG TGACCTTGGA GTGAAATAAA    50961
+                                                                  
+.......... .......... .......... .......... .......... ..........      166
+
+
+TAAATGACTG ATGTTGACCT TGCAGTGTTC AAATTGAAAA TTCAAGTAGT TGTACTTAAT    50901
+                                                                  
+.......... .......... .......... .......... .......... ..........      166
+
+
+CAATTTGCAG AGAGTGTGCG TTCGTGTGAT ATATGAGAGA AATTGATCTC TGTGGTTTGG    50841
+                                                                  
+.......... .......... .......... .......... .......... ..........      166
+
+
+ATGCAGAATG GCTAGCCAAC CAGCTGGGAA TAATGCAAGA CCACCGACCG TGCAGATCAG    50781
+       ||| |||||||||| | || |      ||||||||  |||||||||| |||||||| | 
+......GATG GCTAGCCAAC CGGCCGCTTC AAATGCAAGG CCACCGACCG TGCAGATCCG      220
+
+
+AGGACAGCCT GTGGCACAGA AGAACGGC-T GCTGCTCAAC TTGATTGACG TGACCAGCCT    50722
+ || || ||| ||    |||| || ||| | | |||||||  |  |                    
+CGGGCAACCT GTCAACCAGA AG-ACGTCGT GCTGCTCGTC CT........ ..........      261
+
+
+AGCAATATCC TTTCCAATCT TAGAACACGT GTTCCTTCTT TTGACTAGGC TCCAATTCAC    50662
+                                                                  
+.......... .......... .......... .......... .......... ..........      261
+
+
+TACTACTTGG TTTTTACACA ACATCCCCCC AAATCTGTCT TGTCTGTAAT TAAGCTCCTT    50602
+                                                                  
+.......... .......... .......... .......... .......... ..........      261
+
+
+TGGTTGGTTA TTATTCTGTT TTTCACGTTT CCTATTTGCT TTACCTCATG ATGAGGTCCT    50542
+                                                                  
+.......... .......... .......... .......... .......... ..........      261
+
+
+CATCTTTCCA ACATTCTTGT TTTTCATTTC TGCCTTTAGT GGTTTTCTAT GGGTTTCTTT    50482
+                                                                  
+.......... .......... .......... .......... .......... ..........      261
+
+
+GCATAACAAT GTTCTACGAC TCGATTTAAA ACCCACAAAT TGTTTTTTCC TATATCAAAC    50422
+                                                                  
+.......... .......... .......... .......... .......... ..........      261
+
+
+GTGATCATCA TTGAAAACAA AGATAATCGT CTCGGGAATT TAAATTAGAA TCAACTTTTG    50362
+                   || |||||| |                                    
+.......... ........AA AGATAACC.. .......... .......... ..........      271
+
+
+TTTGTTTGAT TGAGACATTG AGAGAATCCA ATAGCGAGAA AGTGGAGTCA CCAGTGTGAA    50302
+                                                                  
+.......... .......... .......... .......... .......... ..........      271
+
+
+TTTAATCTTT GATACAGGTG CAACACGAAT ACAATTGATT ACATCATTTC GTTTAACAGA    50242
+                                                                  
+.......... .......... .......... .......... .......... ..........      271
+
+
+GTCTCTGCTC ATATTCATAT GAGTAGGTAG GTATAACAAC AACTTTGCAA AGTAACGTCC    50182
+                                                                  
+.......... .......... .......... .......... .......... ..........      271
+
+
+GATAATACAT TACATACATA CATGCATATA TCCATCCGCA TTCTGCACAA ACAGAGAGTA    50122
+                                                                  
+.......... .......... .......... .......... .......... ..........      271
+
+
+GGGTGTAGCA AATTTACTGT TTGTTGCGGC GGAGGAGGCG TTCCAAATGG TGGAACTGAG    50062
+                                                                  
+.......... .......... .......... .......... .......... ..........      271
+
+
+CCTTCAAGGC GGCATGGTCT TGTCGCATCC TCTGCAAACG ATCCTCAACC ATCATCATCT    50002
+                                                                  
+.......... .......... .......... .......... .......... ..........      271
+
+
+CTTCCCTCAG GAAATGCATT CTCTTCTCTA ACCACCCCAA AGTCTCCCCG TTTACACTGT    49942
+                                                                  
+.......... .......... .......... .......... .......... ..........      271
+
+
+ACTCGTCGTA CCTCTCATGA TACTCCACTT GCCCCCCTCC TCCTTTTTTC AGTAGCACCA    49882
+                                                                  
+.......... .......... .......... .......... .......... ..........      271
+
+
+CTATCGTCAC CTGTCCACAC TTCCACCTAT TGTTAGCTTT TTTTTTTCTC TATCTCCCTC    49822
+                                                                  
+.......... .......... .......... .......... .......... ..........      271
+
+
+TCTCTCTCTT TCACTACCAA TTTATCCAAA ATACACATAC CTGCATCAGT AAGATTACTG    49762
+                                                                  
+.......... .......... .......... .......... .......... ..........      271
+
+
+CAAACGCTAA TACTATAACC TGCCTTGTCC CGCTTTGCCT CTTCACAAAT GAAGTCAGAT    49702
+                                                                  
+.......... .......... .......... .......... .......... ..........      271
+
+
+TCACCCATGC TTCCTTTAAG CTTTTTTTAA CTACCCCTTC GCCCACCATT TCCACCTTCC    49642
+                                                                  
+.......... .......... .......... .......... .......... ..........      271
+
+
+CCTCCTCGTC ACATTCAGAT ACTCTTTCTT CCCTTGCTGC TAGCGGTTCA CCATCCTCAA    49582
+                   |  | |||||| |  || |                            
+.......... ........A- AGTCTTTCCT TCCAT..... .......... ..........      287
+
+
+TCAACTTATT CCCTGTAGAA TATGGTGTCA GCCAGCTTTC TTCGGGGAAA AGCTTCTGTT    49522
+                                                                  
+.......... .......... .......... .......... .......... ..........      287
+
+
+AATCATCAGT CTACAACACT AACCTTCTTG GTTCTCCAGC TTCTTCTGCT TCAACAGTTC    49462
+                                                                  
+.......... .......... .......... .......... .......... ..........      287
+
+
+ATGTGCCTCC AAAGATAATA ATGAAGAAAA ATATATATAA ACTTGTTTAA ATTCCTGCAG    49402
+                                                                  
+.......... .......... .......... .......... .......... ..........      287
+
+
+AAACTAAAAA AAAAAAAATG TTGACCCAAT GGCCCCTGAT CAAGTACCAT TCTTATCCAA    49342
+                                                                  
+.......... .......... .......... .......... .......... ..........      287
+
+
+TGTGCATAAG CTTCTCTACA TTCTTCTAAA GTAGACTGCA CTATTTTCCC TGTAAAAATT    49282
+                                                                  
+.......... .......... .......... .......... .......... ..........      287
+
+
+CATAGACGTC AAGCCAGATT CAAGAACCAT CAAATTCAAC AAAGCTGAAA GATTTCCAAA    49222
+                                                                  
+.......... .......... .......... .......... .......... ..........      287
+
+
+TCTATAAGAA CGAGAATCCG CAGCAAACAC TCTTGAACTA TTAATTGAAA TTTCTTCATT    49162
+                                                                  
+.......... .......... .......... .......... .......... ..........      287
+
+
+GATAGGAGGC AAGAGTGAAA AAAATCAAGG ATAAAGAAGA GTAAATTAGG CTTAACAAAC    49102
+                                                                  
+.......... .......... .......... .......... .......... ..........      287
+
+
+CTTTCCACAC TGTTCTTTTA GAGAAGGCCA CATTGACATA AACATCCAAT ATACAACCTT    49042
+                                                                  
+.......... .......... .......... .......... .......... ..........      287
+
+
+CTACCGAGTC TCTGCAATCT CTTTTCAAGT CCCAGACTCC CTGGGATCAG CCAAAGGTAA    48982
+                                                             |||| 
+.......... .......... .......... .......... .......... ......GTAA      291
+
+
+AATTTTTCAC ATGTAACACA CATCAAACAA CAAAATATTG ATAGCATTTG ATGTAAATTT    48922
+||||   |   |||| ||                                                
+AATTCGACGT ATGTTAC... .......... .......... .......... ..........      308
+
+
+CCCCTACCTC TACCGTAAAA TAATCTGCAT AAGGCACATC GCTGATCTCC TGTGATGTTT    48862
+                                                                  
+.......... .......... .......... .......... .......... ..........      308
+
+
+CAATAACCAG ATGGCTAGCA TAGGAAATTA CAATATTAGC TAACAGAGGA TAAGCATGCA    48802
+                                                                  
+.......... .......... .......... .......... .......... ..........      308
+
+
+TGAGTTCAGA CTAGCTTTGC TTTGACGATA TAGAATAAAA CCAAAAAACA TTACAAAATT    48742
+                                                                  
+.......... .......... .......... .......... .......... ..........      308
+
+
+TCTGTACCTA TTTCTGTACA TCCGAAATTT CTGTGACTCC TGGCAGCCAC CAAACTTTGC    48682
+                                                                  
+.......... .......... .......... .......... .......... ..........      308
+
+
+ACCTTTAAAC GAAAGCCAGA GTCATGCATA CATATATTTG ATATAAACCG TAATCTATTT    48622
+                                                                  
+.......... .......... .......... .......... .......... ..........      308
+
+
+TATATAATTA CACCAAAAAA ATATATATTT GATATAAACC GTAATCTAGT ACTGTTTATC    48562
+                                                     | |||||||    
+.......... .......... .......... .......... .........T ACTGTTT...      316
+
+
+TATAGGAAAG AAAAAATATT ACCAAAATAA ATTTTTATCG GATGTTGAAA TGAGACATTG    48502
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+CGGGTGTGTC CAAGCTTTTC ATGAGGTTGC CAAGAGGTAC ACCTAAACTC TGCAAGTACA    48442
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+AATATCTCTT CTGGTTAAAA GAACACCGAG AAAGAGAGAG AAAACAGCTA AACACAGGAG    48382
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+CAAAATGATT CCATCACTTA TAGCTTTACC TTTGTCTCCA CAATTTTTAT GGAAAGATTC    48322
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+AACAAAACTG ACAGCACCAT CTGAAAAAAA CAATCTAAAG AACTCTTCTA CTGGAATCTG    48262
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+CAAATATAAA CTAAAGTCTA TTTAGGTATA TGAAACTTCT GCATCCAGTC AATGCTTATA    48202
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+TTCTCATAAA TTTGAATGAG AATGGTTCCA TAATTTCCTC TAGCTGATAA GACAAAGAAC    48142
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+GAGACATTAC CGAAAACTTT GCCTCTGCTA CCTTTGTAAA GTCAGATGAC ACTGCGTGCA    48082
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+AGGAACACAA ATTTGTGTGG TGAATACAAA TGAGAACAAG AAAAGAGATC ACGATAACCA    48022
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+AAAGAAATAG ATGAGAGATC ATGTATGCAA AAACGAAATA ACCGGTTCAG TAATATAGGA    47962
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+TCTCCATACT GAGTGCAAGC TCGTTGGGAC AAACTGAGAA CTAGTGCAAC TTGTGAAGTA    47902
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+GCACCAAAAG ACAAGATCAT AAAGCTAAGC TACCCCATCC TGATAGGCCT TATTTAGCAA    47842
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+AACCATTAAG AGACCGTTTC CCATTGACCA TTTAAATTTC AAACAATTTA TATTGCAAAG    47782
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+AAAACAAGCT AAAAGATAGA CACATAATGA CATATACCTA GAAACAGTAA GAAGTTAACT    47722
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+GATTGTCCAC TTTAAAGGAA CTTTAAAGGA GTTAGGAGAA ACCCAAGCGT CTGCATTTTT    47662
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+AATACTCTTT ACCAACAGGT TGACCTGACC CCAGCAAAAA AAAAAAAACC CGTTGAATTT    47602
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+ACTGAAAACA CTAGCATTCA CATCCTTAAA CAGTTGACTT GAAAAAGATA ATCTACCACA    47542
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+CTACCCAAAC CAACCAAAAA GAACTAAGGT AAAAGCGAGG AAGGAGTTTA ACTACATTTA    47482
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+GGTGCATCTG TATCTTCAGG CTTCCAGTTG AAAGTATTGG CCGCCACAAC ATCTACATCT    47422
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+GGTTCAGCGT GCCGCTGAAC GGATGAAGGT GGAACGCCAT TCTGACTAAT GACAGGAAGA    47362
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+CTGGAACTGC TGGAAAGATG AAGAGTTTCA TCCCTGAGAA GGAAGTATAG TGAGCGATAA    47302
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+AGCAGTAAGA AACAGAAAGA TGGAACACCA TATGGAAGAG ATAAACGCAC CTTACTGGAA    47242
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+TATCTAGTTC ATTGGCCAAA TCCATGGAAC TGCGTGCCCT TTTAACAACT CCATCGCTTA    47182
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+CCTGGATTTT GGACTCAGAT AAGGAAACAA GGATTAAGCA GTAAAATAAG AGTGTGTGTT    47122
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+GCACCCACCT GCGGTTCGGT CACCAGAATC TCGCCTTCTG ATTTGACAGC ACTACCATAT    47062
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+TCCAACCATC CATCATGGAT AAGCTTGAAA GCTTCATCGC GGGAAAGAAA CGATGCAAAA    47002
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+AAGTACTGGG AGAGAATGCG GTTCAAAGAT CAGGACAGAC GCACCAACCA ATATCGAGTA    46942
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+AAGAGGGAAC TAGTGGTACC TTCTTCCCTC CAGCTAAAAT CTCAATGGCA TTAGGAAAAA    46882
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+TACCAGCAGT CTTGGCTCGT TTAACACAAG ATATTTCAGC AAATGGGATA ATTTTCTGCA    46822
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+AAGAGAGTTC CGATCAATAT TGAAGAGGAA AAAGGGAAGA AACAAAAGTG AGTGGAGGAG    46762
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+AGCAACAATG GCGGCACCTT GGTCTCATAA CCAAAGATGT TGGAGTAAAA GCAGATATAA    46702
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+TGGATGAAGA GGTACATATG ACCCTGCAAC AAAAAGTAAA GATGATTAAA AGATAAGGTA    46642
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+AGTATTCGCA AAGAGAGAAA GATAAAAGTA CCTAACCTGC ATAAGAATAC TCTCCTGACA    46582
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+AGCACAGTTA AAATCTTGAA CAAGGATCTA CACAATTCGG AAGCAATGGT GGAGTCAGTA    46522
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+CTTCTCTCAT TGATGGAATT TCAAGACGAG AGAGGCAATA CTTACTTCGT CAGCTGGAAG    46462
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+CCGAAACAAT TGCCGATACT CTTCACTCTT GGATATGACT TCAGACTAGA GGAGAATAAG    46402
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+TAAGAAGAAA TCCAGGTCAT AAACCAAGGA AACGAATAGA TCGAAGCAGA GAGAATTCAT    46342
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+CAGATACCTG ATTGTCACCA CCACGACTGG GGCTCGGAGA AGAAGTGGAA GGGTCATGGC    46282
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+GATCAGGTGA GCCCTTTGGG GAAGATGGTG GGAGATCGGA TACGACCTCC GGAGACGCAG    46222
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+ACGAGTCAAC CTTCATGGTT CCTCGAGGAA GGTCGACGCT CCCCGAAACG GAAGCAGTAG    46162
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+AAAGCATCGC CATGTTTAGA GAGAGAAAGG GGAAAGTGTT GTTGTTTGCT GTTTGGCGGT    46102
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+CGTTGGGTGC GGCGTACGAT GTCAACGTCA ACGGCCATTG AGTCAAAAAC GAACGATCGG    46042
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+CCTCTTTTGG GCTCTCACTT TCTTGGCCCA TTTCTTACCC TTGTATTCAA TTTGGCGGGC    45982
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+CACCTTTGGG CCATTAGTTA GGTGCCGTGT CTGCTCATGT ATTAAATGAG AAAGATTGTG    45922
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+AGTCCTCACA AAACCACAAG ACTCAATTTA ATCAATCCTC AAATTTACAT GATACCAACG    45862
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+TAATGAGAGC TTAAAAATAA ATGAGAAACT TGGACATAAT CAGTTGATGG AGTAGGAACG    45802
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+AGAACAGACA GTCTGGAGAG ATTCAGTGAA GAGAGATGAG AAGCTGGTCA AGGCCTGGAA    45742
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+TACATTGGGC AGGCCGGTTT GTAGATTGTT GAGAGTCATA GCTCGTGTCA CCTCCACAGC    45682
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+CTTCACGTGC CTCATTACCT CATCCTCCAC CTGCCTCTGA CATGCCGCCA GCTCACATTT    45622
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+CTTCTCAGAT AGCGGGTCCC GTGAGTCCAA CACCTCCGGT CCAGGGCCTA TCCCAACCGT    45562
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+CGAGTATGCC TGGTAGTACT TCCTCTCTAT GCTCCTCAGT GAGGATGCTT TCTTCTCCAG    45502
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+CTCCTTTCCT GCACTCTCCG TGCGTTTCTT CATCTTCACC TCTTCCGCCT GCTTTATTGA    45442
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+TATCACATGT ACCACGTTTA CAAAGCTCTT TATGGCTTCT GACGCCACTG TGTCAGGCAC    45382
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+CCGTTCCAGG CTCTGCTTCC ACTCCTCGCA CAAGGCAAAT GAGTCTGGCC GCTGTTTCTT    45322
+                                                                  
+.......... .......... .......... .......... .......... ..........      316
+
+
+TGGGTCTCCG TTGCTCAGGG GAACCAGGCT CAGCTTGAAC CATGCGTGGA GAGAGCATAT    45262
+                             ||| || ||  |||                       
+.......... .......... .......GCT CA-CTACAAC .......... ..........      328
+
+
+GAACTCCCTC TGGAATTTAA TGATGCGACA GAAGCTCGAA TGCCACAAGG ACACAGCTGA    45202
+                                                                  
+.......... .......... .......... .......... .......... ..........      328
+
+
+CTCTAGGTCC CGCGTCACCT GCCGGTGTAC CTCTGATGTT GACTCACCTC TCTCTGTTTG    45142
+                                                                  
+.......... .......... .......... .......... .......... ..........      328
+
+
+GTTGATCAGG CCACGGACTT GTTGCACGAT GTTGTTCTGG ATTTCGTGAT ACTCGTGCAT    45082
+                                         |  |||| ||||| | ||       
+.......... .......... .......... ........GT ATTT-GTGAT ATTC......      343
+
+
+TGACTTCCAC ATGTACATTA ATCTGCATTT CAAGGTGGTT AGAGACACAT ACAAATCCTC    45022
+                                                                  
+.......... .......... .......... .......... .......... ..........      343
+
+
+CCTACTTTTA TTTCGAACTT ACCTATAAAA TCCCCCACTG GCAGAACAGC AATGGGTTTG    44962
+                                                                  
+.......... .......... .......... .......... .......... ..........      343
+
+
+GTATTACATA TGCCTAATTC GGGTTCACAT GAGTTTGCAG AAGCATATAA ACAAGCCTAG    44902
+                                                                  
+.......... .......... .......... .......... .......... ..........      343
+
+
+ACCGAACCAG CAGCCCTCAA GGAACAATGA AACACAAACA CAACTACAAA AAAAAGACTG    44842
+                                                                  
+.......... .......... .......... .......... .......... ..........      343
+
+
+ACCCGTGGCA GAGTTCAACA AGCTGAGGGA CAAGGTCAGT GTCCCGGAGG CGGAGAATGG    44782
+                                                                  
+.......... .......... .......... .......... .......... ..........      343
+
+
+CATTAGACGT GGTTAAAACA GCTTCTGAAG AAACAATGAT GAGTGATTGC AGTCTGGTTA    44722
+                                                                  
+.......... .......... .......... .......... .......... ..........      343
+
+
+TGGAAGTTTT AGTCTTGTCT AGCTTGGATT CATCACCTCC CTTATACTCC TGACTCTGCA    44662
+                                                                  
+.......... .......... .......... .......... .......... ..........      343
+
+
+GCGCAGACAG CTTCTTCTCG TGCTCAATCT TAACTCCTTC TCTTGCCTAA ATTCGAATTC    44602
+                                                                  
+.......... .......... .......... .......... .......... ..........      343
+
+
+ACAAGTTTAT TTCGTAACCG TTGGTAAGCC GAAAACCGAA AACAAAAACA GGGAATGTAC    44542
+                                                                  
+.......... .......... .......... .......... .......... ..........      343
+
+
+CTTGACATCC TCATAAAGCT TCTTTTCCCA AGCGAGGAGT CGGTCTAGAG TGGAGCAGAG    44482
+                                                                  
+.......... .......... .......... .......... .......... ..........      343
+
+
+GCTCTTGAGG CCGCCTTGTT CATCATTCAG GGTAGATGCA TCGAGCTTGT ATTTGACTGC    44422
+                                                                  
+.......... .......... .......... .......... .......... ..........      343
+
+
+CAATGGGGGT TTTGAGGTCC AGCTTGCGCT CAAGTTGCTG AACACACTGC TTGAATGATA    44362
+                                                                  
+.......... .......... .......... .......... .......... ..........      343
+
+
+CACCGTCTCT GCAGACAACA AATATAGAGA GAGTAAGAGA ATGAGATGGG TTTCAATGCA    44302
+                                                                  
+.......... .......... .......... .......... .......... ..........      343
+
+
+TCATCATCTA CATCTAGTTA GTAGAGTGTG AGACTTACTC CTCAGCTTGC TGAAGCTGCG    44242
+                                                                  
+.......... .......... .......... .......... .......... ..........      343
+
+
+GTCGAGCTCA GCCCGGCCGA TCTCAAGCAT GGCGGAGACC TGGTCCCCAG CGGAGGCAGC    44182
+                                                                  
+.......... .......... .......... .......... .......... ..........      343
+
+
+CTTGTCGAAG TAGTCTTGAA CGGC    44158
+                ||||| ||||
+.......... ...ATTTGAA CGGC      354
+
+
+hqPGS_U89959-_2280601+	(51380  51319,51216  51113,50834  50740,50403  50394,49623  49607,48985  48965)
+
+
+********************************************************************************
+EST sequence      9 +strand   467 n (File: 3767651+)
+
+     1  CCAACAAAGT TGTGTCATCT GAAACANCTA AGGCGTTTGC TGATGAGATG GGCATCCCCT
+    61  TCATGGAGAC AAGTGCCAAG AACNCCACTA ATGTGGAGCA GGCCTTCATG GCTATGGCCG
+   121  CATCCCATCA AGGACAGGAT GGCTAGCCAA CCGGCCGCTT CAAATGCAAG GCCACCGACC
+   181  GTGCAGATCC GCGGGCAACC TGTCAACCAG AAGACGTCGT GCTGCTCGTC CTAAAGATAA
+   241  CCAAGTCTTT CCTTCCATGT AAAATTCGAC GTATGTTACT ACTGTTTGCT CACTACAACG
+   301  TATTTGTGAT ATTCATTTGA ACGCCCTTGA TNCCATCTTT TCTTTAATCA GATGGTTAGG
+   361  CAGCTGCAAA TATATATGTA ACCTTGCTTT GTTGCTCTTT GCTCACGAAT CGAGAGGAGC
+   421  AAGCAGAACC AGTGTATTTG ATTCTTTTCA AAAAAAAAAA AAAAAAA
+
+Predicted gene structure (within gDNA segment 52813 to 47393):
+
+ Exon  1  51216  51113 ( 104 n);  cDNA     33    137 ( 105 n); score: 0.736
+  Intron  1  51112  50835 ( 278 n); Pd: 0.050 (s: 0.74), Pa: 0.050 (s: 0.82)
+ Exon  2  50834  50740 (  95 n);  cDNA    138    232 (  95 n); score: 0.742
+  Intron  2  50739  50404 ( 336 n); Pd: 0.000 (s: 0.68), Pa: 0.002 (s:    0)
+ Exon  3  50403  50394 (  10 n);  cDNA    233    242 (  10 n); score: 0.900
+  Intron  3  50393  49624 ( 770 n); Pd: 0.050 (s:    0), Pa: 0.050 (s:    0)
+ Exon  4  49623  49607 (  17 n);  cDNA    243    258 (  16 n); score: 0.706
+  Intron  4  49606  48986 ( 621 n); Pd: 0.002 (s:    0), Pa: 0.050 (s:    0)
+ Exon  5  48985  48965 (  21 n);  cDNA    259    279 (  21 n); score: 0.714
+  Intron  5  48964  48573 ( 392 n); Pd: 0.000 (s:    0), Pa: 0.050 (s:    0)
+ Exon  6  48572  48565 (   8 n);  cDNA    280    287 (   8 n); score: 1.000
+ PPA                              cDNA    450    467
+
+MATCH	U89959-	3767651+	0.739	255	0.546	C
+PGS_U89959-_3767651+	(51216  51113,50834  50740,50403  50394,49623  49607,48985  48965,48572  48565)
+
+Alignment (genomic DNA sequence = upper lines):
+
+GCTTTTGCCG ATGAAATCGG GATTCCTTTT ATGGAGACTA GTGCAAAAGA TGCTACAAAC    51157
+|| ||||| | |||| || ||  || || ||  |||||||| | |||| ||  |   | || ||  
+GCGTTTGCTG ATGAGATGGG CATCCCCTTC ATGGAGACAA GTGCCAAGAA CNCCACTAAT       92
+
+
+GTAGAACAGG CTTTCATGGC AATGTCTGCA T-CCATCAAA GAGAGGTATT TATCTTACAT    51098
+|| || |||| | ||||||||  ||| | ||| | |||||||  || ||                 
+GTGGAGCAGG CCTTCATGGC TATGGCCGCA TCCCATCAAG GACAG..... ..........      137
+
+
+CGTTCTTTTT AAGTAACTGC GGTTAATATA CTCATCATAC CTGATGGAAC TTTTGCGAAG    51038
+                                                                  
+.......... .......... .......... .......... .......... ..........      137
+
+
+CCATAATCTC ATTTTTGTAA GTGTTTATAT AGATCTCAGA AAGTGTCACT GTGTAAGTGA    50978
+                                                                  
+.......... .......... .......... .......... .......... ..........      137
+
+
+CCTTGGAGTG AAATAAATAA ATGACTGATG TTGACCTTGC AGTGTTCAAA TTGAAAATTC    50918
+                                                                  
+.......... .......... .......... .......... .......... ..........      137
+
+
+AAGTAGTTGT ACTTAATCAA TTTGCAGAGA GTGTGCGTTC GTGTGATATA TGAGAGAAAT    50858
+                                                                  
+.......... .......... .......... .......... .......... ..........      137
+
+
+TGATCTCTGT GGTTTGGATG CAGAATGGCT AGCCAACCAG CTGGGAATAA TGCAAGACCA    50798
+                          |||||| |||||||| | | |     || |||||| ||| 
+.......... .......... ...GATGGCT AGCCAACCGG CCGCTTCAAA TGCAAGGCCA      174
+
+
+CCGACCGTGC AGATCAGAGG ACAGCCTGTG GCACAGAAGA ACGGC-TGCT GCTCAACTTG    50739
+|||||||||| ||||| | ||  || |||||     ||||||  ||| | |||| ||||  | |  
+CCGACCGTGC AGATCCGCGG GCAACCTGTC AACCAGAAG- ACGTCGTGCT GCTCGTCCT.      232
+
+
+ATTGACGTGA CCAGCCTAGC AATATCCTTT CCAATCTTAG AACACGTGTT CCTTCTTTTG    50679
+                                                                  
+.......... .......... .......... .......... .......... ..........      232
+
+
+ACTAGGCTCC AATTCACTAC TACTTGGTTT TTACACAACA TCCCCCCAAA TCTGTCTTGT    50619
+                                                                  
+.......... .......... .......... .......... .......... ..........      232
+
+
+CTGTAATTAA GCTCCTTTGG TTGGTTATTA TTCTGTTTTT CACGTTTCCT ATTTGCTTTA    50559
+                                                                  
+.......... .......... .......... .......... .......... ..........      232
+
+
+CCTCATGATG AGGTCCTCAT CTTTCCAACA TTCTTGTTTT TCATTTCTGC CTTTAGTGGT    50499
+                                                                  
+.......... .......... .......... .......... .......... ..........      232
+
+
+TTTCTATGGG TTTCTTTGCA TAACAATGTT CTACGACTCG ATTTAAAACC CACAAATTGT    50439
+                                                                  
+.......... .......... .......... .......... .......... ..........      232
+
+
+TTTTTCCTAT ATCAAACGTG ATCATCATTG AAAACAAAGA TAATCGTCTC GGGAATTTAA    50379
+                                      ||||| ||| |                 
+.......... .......... .......... .....AAAGA TAACC..... ..........      242
+
+
+ATTAGAATCA ACTTTTGTTT GTTTGATTGA GACATTGAGA GAATCCAATA GCGAGAAAGT    50319
+                                                                  
+.......... .......... .......... .......... .......... ..........      242
+
+
+GGAGTCACCA GTGTGAATTT AATCTTTGAT ACAGGTGCAA CACGAATACA ATTGATTACA    50259
+                                                                  
+.......... .......... .......... .......... .......... ..........      242
+
+
+TCATTTCGTT TAACAGAGTC TCTGCTCATA TTCATATGAG TAGGTAGGTA TAACAACAAC    50199
+                                                                  
+.......... .......... .......... .......... .......... ..........      242
+
+
+TTTGCAAAGT AACGTCCGAT AATACATTAC ATACATACAT GCATATATCC ATCCGCATTC    50139
+                                                                  
+.......... .......... .......... .......... .......... ..........      242
+
+
+TGCACAAACA GAGAGTAGGG TGTAGCAAAT TTACTGTTTG TTGCGGCGGA GGAGGCGTTC    50079
+                                                                  
+.......... .......... .......... .......... .......... ..........      242
+
+
+CAAATGGTGG AACTGAGCCT TCAAGGCGGC ATGGTCTTGT CGCATCCTCT GCAAACGATC    50019
+                                                                  
+.......... .......... .......... .......... .......... ..........      242
+
+
+CTCAACCATC ATCATCTCTT CCCTCAGGAA ATGCATTCTC TTCTCTAACC ACCCCAAAGT    49959
+                                                                  
+.......... .......... .......... .......... .......... ..........      242
+
+
+CTCCCCGTTT ACACTGTACT CGTCGTACCT CTCATGATAC TCCACTTGCC CCCCTCCTCC    49899
+                                                                  
+.......... .......... .......... .......... .......... ..........      242
+
+
+TTTTTTCAGT AGCACCACTA TCGTCACCTG TCCACACTTC CACCTATTGT TAGCTTTTTT    49839
+                                                                  
+.......... .......... .......... .......... .......... ..........      242
+
+
+TTTTCTCTAT CTCCCTCTCT CTCTCTTTCA CTACCAATTT ATCCAAAATA CACATACCTG    49779
+                                                                  
+.......... .......... .......... .......... .......... ..........      242
+
+
+CATCAGTAAG ATTACTGCAA ACGCTAATAC TATAACCTGC CTTGTCCCGC TTTGCCTCTT    49719
+                                                                  
+.......... .......... .......... .......... .......... ..........      242
+
+
+CACAAATGAA GTCAGATTCA CCCATGCTTC CTTTAAGCTT TTTTTAACTA CCCCTTCGCC    49659
+                                                                  
+.......... .......... .......... .......... .......... ..........      242
+
+
+CACCATTTCC ACCTTCCCCT CCTCGTCACA TTCAGATACT CTTTCTTCCC TTGCTGCTAG    49599
+                                      | | | ||||| | ||  |         
+.......... .......... .......... .....A-AGT CTTTCCTTCC AT........      258
+
+
+CGGTTCACCA TCCTCAATCA ACTTATTCCC TGTAGAATAT GGTGTCAGCC AGCTTTCTTC    49539
+                                                                  
+.......... .......... .......... .......... .......... ..........      258
+
+
+GGGGAAAAGC TTCTGTTAAT CATCAGTCTA CAACACTAAC CTTCTTGGTT CTCCAGCTTC    49479
+                                                                  
+.......... .......... .......... .......... .......... ..........      258
+
+
+TTCTGCTTCA ACAGTTCATG TGCCTCCAAA GATAATAATG AAGAAAAATA TATATAAACT    49419
+                                                                  
+.......... .......... .......... .......... .......... ..........      258
+
+
+TGTTTAAATT CCTGCAGAAA CTAAAAAAAA AAAAATGTTG ACCCAATGGC CCCTGATCAA    49359
+                                                                  
+.......... .......... .......... .......... .......... ..........      258
+
+
+GTACCATTCT TATCCAATGT GCATAAGCTT CTCTACATTC TTCTAAAGTA GACTGCACTA    49299
+                                                                  
+.......... .......... .......... .......... .......... ..........      258
+
+
+TTTTCCCTGT AAAAATTCAT AGACGTCAAG CCAGATTCAA GAACCATCAA ATTCAACAAA    49239
+                                                                  
+.......... .......... .......... .......... .......... ..........      258
+
+
+GCTGAAAGAT TTCCAAATCT ATAAGAACGA GAATCCGCAG CAAACACTCT TGAACTATTA    49179
+                                                                  
+.......... .......... .......... .......... .......... ..........      258
+
+
+ATTGAAATTT CTTCATTGAT AGGAGGCAAG AGTGAAAAAA ATCAAGGATA AAGAAGAGTA    49119
+                                                                  
+.......... .......... .......... .......... .......... ..........      258
+
+
+AATTAGGCTT AACAAACCTT TCCACACTGT TCTTTTAGAG AAGGCCACAT TGACATAAAC    49059
+                                                                  
+.......... .......... .......... .......... .......... ..........      258
+
+
+ATCCAATATA CAACCTTCTA CCGAGTCTCT GCAATCTCTT TTCAAGTCCC AGACTCCCTG    48999
+                                                                  
+.......... .......... .......... .......... .......... ..........      258
+
+
+GGATCAGCCA AAGGTAAAAT TTTTCACATG TAACACACAT CAAACAACAA AATATTGATA    48939
+              ||||||| |   |  ||| | ||                             
+.......... ...GTAAAAT TCGACGTATG TTAC...... .......... ..........      279
+
+
+GCATTTGATG TAAATTTCCC CTACCTCTAC CGTAAAATAA TCTGCATAAG GCACATCGCT    48879
+                                                                  
+.......... .......... .......... .......... .......... ..........      279
+
+
+GATCTCCTGT GATGTTTCAA TAACCAGATG GCTAGCATAG GAAATTACAA TATTAGCTAA    48819
+                                                                  
+.......... .......... .......... .......... .......... ..........      279
+
+
+CAGAGGATAA GCATGCATGA GTTCAGACTA GCTTTGCTTT GACGATATAG AATAAAACCA    48759
+                                                                  
+.......... .......... .......... .......... .......... ..........      279
+
+
+AAAAACATTA CAAAATTTCT GTACCTATTT CTGTACATCC GAAATTTCTG TGACTCCTGG    48699
+                                                                  
+.......... .......... .......... .......... .......... ..........      279
+
+
+CAGCCACCAA ACTTTGCACC TTTAAACGAA AGCCAGAGTC ATGCATACAT ATATTTGATA    48639
+                                                                  
+.......... .......... .......... .......... .......... ..........      279
+
+
+TAAACCGTAA TCTATTTTAT ATAATTACAC CAAAAAAATA TATATTTGAT ATAAACCGTA    48579
+                                                                  
+.......... .......... .......... .......... .......... ..........      279
+
+
+ATCTAGTACT GTTT    48565
+      |||| ||||
+......TACT GTTT      287
+
+
+hqPGS_U89959-_3767651+	(51216  51113,50834  50740,50403  50394,49623  49607,48985  48965)
+
+
+********************************************************************************
+EST sequence     10 +strand   612 n (File: 3763507+)
+
+     1  AGCTCATGGA ATTATTATTG TATATGATGT GACAGACCAA GAAAGCTTCA ACAATGTGAA
+    61  GCAGTGGTTG AATGAAATTG ATCGTTATGC AAGTGACAAT GTTAACAAGC TCCTCGTTGG
+   121  GAACAAGAGC GACCTAACTG CCAACAAAGT TGTGTCATCT GAAACAGCTA AGGCGTTTGC
+   181  TGATGAGATG GGCATCCCAT TCATGGAGAC AAGTGCCAAG AACGCCACTA ATGTGGAGCA
+   241  GGCCTTTATG GCTATGGCTG CATCCATCAA GGACAGGATG GCGAGCCAAC CGGCCGCTGC
+   301  AAATGCAAGG CCACCGACGG TGCAGATCCG CGGGCAACCT GTCAACCAGA AGACGTCGTG
+   361  CTGCTCGTCC TAAAGATAAC GAAGTACTTC CTTCTATGTA AAATTCGACG TATGTTACTA
+   421  CTGTTTGCTC ACTACAACGT ATTTGTAATA TTCATTTGAA CGCCCTCGAT AGCATCTTTT
+   481  CTTTAATCAG ATGGTTAGGG AGCTGCAAAT ATATATGTAA CTTTGCTGTG TTGCTCTTTG
+   541  CTCACGAATC AAGAGGAGCA AGCAGAACCA GTGTATTTGA TTCATTTTAC GCTTAAAAAA
+   601  AAAAAAAAAA AA
+
+Predicted gene structure (within gDNA segment 52203 to 47089):
+
+ Exon  1  51566  51552 (  15 n);  cDNA      2     16 (  15 n); score: 0.933
+  Intron  1  51551  51475 (  77 n); Pd: 0.050 (s:    0), Pa: 0.050 (s: 0.84)
+ Exon  2  51474  51319 ( 156 n);  cDNA     17    172 ( 156 n); score: 0.801
+  Intron  2  51318  51217 ( 102 n); Pd: 0.050 (s: 0.66), Pa: 0.050 (s: 0.76)
+ Exon  3  51216  51113 ( 104 n);  cDNA    173    276 ( 104 n); score: 0.769
+  Intron  3  51112  50835 ( 278 n); Pd: 0.050 (s: 0.80), Pa: 0.050 (s: 0.78)
+ Exon  4  50834  50740 (  95 n);  cDNA    277    371 (  95 n); score: 0.721
+  Intron  4  50739  50404 ( 336 n); Pd: 0.000 (s: 0.68), Pa: 0.002 (s:    0)
+ Exon  5  50403  50394 (  10 n);  cDNA    372    380 (   9 n); score: 0.900
+  Intron  5  50393  49992 ( 402 n); Pd: 0.050 (s:    0), Pa: 0.050 (s:    0)
+ Exon  6  49991  49987 (   5 n);  cDNA    381    385 (   5 n); score: 0.800
+  Intron  6  49986  49864 ( 123 n); Pd: 0.002 (s:    0), Pa: 0.002 (s:    0)
+ Exon  7  49863  49851 (  13 n);  cDNA    386    398 (  13 n); score: 0.769
+  Intron  7  49850  49773 (  78 n); Pd: 0.050 (s:    0), Pa: 0.050 (s:    0)
+ Exon  8  49772  49736 (  37 n);  cDNA    399    434 (  36 n); score: 0.568
+  Intron  8  49735  49199 ( 537 n); Pd: 0.050 (s:    0), Pa: 0.050 (s:    0)
+ Exon  9  49198  49165 (  34 n);  cDNA    435    467 (  33 n); score: 0.588
+  Intron  9  49164  48943 ( 222 n); Pd: 0.002 (s:    0), Pa: 0.000 (s:    0)
+ Exon 10  48942  48932 (  11 n);  cDNA    468    478 (  11 n); score: 0.818
+  Intron 10  48931  48864 (  68 n); Pd: 0.002 (s:    0), Pa: 0.000 (s:    0)
+ Exon 11  48863  48845 (  19 n);  cDNA    479    497 (  19 n); score: 0.789
+  Intron 11  48844  48270 ( 575 n); Pd: 0.002 (s:    0), Pa: 0.000 (s:    0)
+ Exon 12  48269  48252 (  18 n);  cDNA    498    515 (  18 n); score: 0.833
+  Intron 12  48251  47918 ( 334 n); Pd: 0.000 (s:    0), Pa: 0.050 (s:    0)
+ Exon 13  47917  47910 (   8 n);  cDNA    516    523 (   8 n); score: 0.875
+ PPA                              cDNA    595    612
+
+MATCH	U89959-	3763507+	0.770	525	0.858	C
+PGS_U89959-_3763507+	(51566  51552,51474  51319,51216  51113,50834  50740,50403  50394,49991  49987,49863  49851,49772  49736,49198  49165,48942  48932,48863  48845,48269  48252,47917  47910)
+
+Alignment (genomic DNA sequence = upper lines):
+
+GCACATGGAA TTATTGTAAG CAACATCTTA TCTAGGTTCT TTCTGTTGAC TCCTTTAAGT    51507
+|| ||||||| |||||                                                  
+GCTCATGGAA TTATT..... .......... .......... .......... ..........       16
+
+
+TTATGTCCTA ATTTAGTTCT TGCACCTGGT AGATTGTCTA CGATGTCACA GATGAAGAAA    51447
+                                   ||||| ||  ||||| ||| ||  |||||| 
+.......... .......... .......... ..ATTGTATA TGATGTGACA GACCAAGAAA       44
+
+
+GCTTCAATAA TGTCAAGCAA TGGTTGAGTG AAATTGATCG TTATGCTAGT GACAATGTCA    51387
+||||||| || ||| |||||  ||||||| || |||||||||| |||||| ||| |||||||| | 
+GCTTCAACAA TGTGAAGCAG TGGTTGAATG AAATTGATCG TTATGCAAGT GACAATGTTA      104
+
+
+ACAAACTCCT TGTTGGAAAC AAGTCTGATC TTACTGAAAA CAGAGCCATT CCTTATGAAA    51327
+|||| |||||  ||||| ||| |||   || | | ||||  || || ||   |   | | ||||| 
+ACAAGCTCCT CGTTGGGAAC AAGAGCGACC TAACTGCCAA CAAAGTTGTG TCATCTGAAA      164
+
+
+CTGCCAAGGT ATATATATGC CACTTGAACC AATTCTTTCT TCTCAAGTTT TGAAAATCAT    51267
+| || |||                                                          
+CAGCTAAG.. .......... .......... .......... .......... ..........      172
+
+
+CAAACTCTAA GGCTATTATT ACTTTCCTGA TTACTTCGAA ACATTCATAG GCTTTTGCCG    51207
+                                                       || ||||| | 
+.......... .......... .......... .......... .......... GCGTTTGCTG      182
+
+
+ATGAAATCGG GATTCCTTTT ATGGAGACTA GTGCAAAAGA TGCTACAAAC GTAGAACAGG    51147
+|||| || ||  || || ||  |||||||| | |||| ||  |  || || ||  || || |||| 
+ATGAGATGGG CATCCCATTC ATGGAGACAA GTGCCAAGAA CGCCACTAAT GTGGAGCAGG      242
+
+
+CTTTCATGGC AATGTCTGCA TCCATCAAAG AGAGGTATTT ATCTTACATC GTTCTTTTTA    51087
+| || |||||  ||| ||||| |||||||| | | ||                             
+CCTTTATGGC TATGGCTGCA TCCATCAAGG ACAG...... .......... ..........      276
+
+
+AGTAACTGCG GTTAATATAC TCATCATACC TGATGGAACT TTTGCGAAGC CATAATCTCA    51027
+                                                                  
+.......... .......... .......... .......... .......... ..........      276
+
+
+TTTTTGTAAG TGTTTATATA GATCTCAGAA AGTGTCACTG TGTAAGTGAC CTTGGAGTGA    50967
+                                                                  
+.......... .......... .......... .......... .......... ..........      276
+
+
+AATAAATAAA TGACTGATGT TGACCTTGCA GTGTTCAAAT TGAAAATTCA AGTAGTTGTA    50907
+                                                                  
+.......... .......... .......... .......... .......... ..........      276
+
+
+CTTAATCAAT TTGCAGAGAG TGTGCGTTCG TGTGATATAT GAGAGAAATT GATCTCTGTG    50847
+                                                                  
+.......... .......... .......... .......... .......... ..........      276
+
+
+GTTTGGATGC AGAATGGCTA GCCAACCAGC TGGGAATAAT GCAAGACCAC CGACCGTGCA    50787
+              ||||| | ||||||| ||  |     ||| ||||| |||| |||| ||||| 
+.......... ..GATGGCGA GCCAACCGGC CGCTGCAAAT GCAAGGCCAC CGACGGTGCA      324
+
+
+GATCAGAGGA CAGCCTGTGG CACAGAAGAA CGGC-TGCTG CTCAACTTGA TTGACGTGAC    50728
+|||| | ||  || |||||     |||||| | || | ||||| |||  | |              
+GATCCGCGGG CAACCTGTCA ACCAGAAG-A CGTCGTGCTG CTCGTCCT.. ..........      371
+
+
+CAGCCTAGCA ATATCCTTTC CAATCTTAGA ACACGTGTTC CTTCTTTTGA CTAGGCTCCA    50668
+                                                                  
+.......... .......... .......... .......... .......... ..........      371
+
+
+ATTCACTACT ACTTGGTTTT TACACAACAT CCCCCCAAAT CTGTCTTGTC TGTAATTAAG    50608
+                                                                  
+.......... .......... .......... .......... .......... ..........      371
+
+
+CTCCTTTGGT TGGTTATTAT TCTGTTTTTC ACGTTTCCTA TTTGCTTTAC CTCATGATGA    50548
+                                                                  
+.......... .......... .......... .......... .......... ..........      371
+
+
+GGTCCTCATC TTTCCAACAT TCTTGTTTTT CATTTCTGCC TTTAGTGGTT TTCTATGGGT    50488
+                                                                  
+.......... .......... .......... .......... .......... ..........      371
+
+
+TTCTTTGCAT AACAATGTTC TACGACTCGA TTTAAAACCC ACAAATTGTT TTTTCCTATA    50428
+                                                                  
+.......... .......... .......... .......... .......... ..........      371
+
+
+TCAAACGTGA TCATCATTGA AAACAAAGAT AATCGTCTCG GGAATTTAAA TTAGAATCAA    50368
+                          |||||| || |                             
+.......... .......... ....AAAGAT AA-C...... .......... ..........      380
+
+
+CTTTTGTTTG TTTGATTGAG ACATTGAGAG AATCCAATAG CGAGAAAGTG GAGTCACCAG    50308
+                                                                  
+.......... .......... .......... .......... .......... ..........      380
+
+
+TGTGAATTTA ATCTTTGATA CAGGTGCAAC ACGAATACAA TTGATTACAT CATTTCGTTT    50248
+                                                                  
+.......... .......... .......... .......... .......... ..........      380
+
+
+AACAGAGTCT CTGCTCATAT TCATATGAGT AGGTAGGTAT AACAACAACT TTGCAAAGTA    50188
+                                                                  
+.......... .......... .......... .......... .......... ..........      380
+
+
+ACGTCCGATA ATACATTACA TACATACATG CATATATCCA TCCGCATTCT GCACAAACAG    50128
+                                                                  
+.......... .......... .......... .......... .......... ..........      380
+
+
+AGAGTAGGGT GTAGCAAATT TACTGTTTGT TGCGGCGGAG GAGGCGTTCC AAATGGTGGA    50068
+                                                                  
+.......... .......... .......... .......... .......... ..........      380
+
+
+ACTGAGCCTT CAAGGCGGCA TGGTCTTGTC GCATCCTCTG CAAACGATCC TCAACCATCA    50008
+                                                                  
+.......... .......... .......... .......... .......... ..........      380
+
+
+TCATCTCTTC CCTCAGGAAA TGCATTCTCT TCTCTAACCA CCCCAAAGTC TCCCCGTTTA    49948
+                 |||  |                                           
+.......... ......GAAG T......... .......... .......... ..........      385
+
+
+CACTGTACTC GTCGTACCTC TCATGATACT CCACTTGCCC CCCTCCTCCT TTTTTCAGTA    49888
+                                                                  
+.......... .......... .......... .......... .......... ..........      385
+
+
+GCACCACTAT CGTCACCTGT CCACACTTCC ACCTATTGTT AGCTTTTTTT TTTCTCTATC    49828
+                          ||||||   ||||                           
+.......... .......... ....ACTTCC TTCTATG... .......... ..........      398
+
+
+TCCCTCTCTC TCTCTTTCAC TACCAATTTA TCCAAAATAC ACATACCTGC ATCAGTAAGA    49768
+                                                            ||| | 
+.......... .......... .......... .......... .......... .....TAAAA      403
+
+
+TTACTGCAAA CGCTAATACT ATAACCTGCC TTGTCCCGCT TTGCCTCTTC ACAAATGAAG    49708
+|| |  |  |  | || ||||  |   ||  | |                                
+TT-CGACGTA TGTTACTACT GTTTGCTCAC TA........ .......... ..........      434
+
+
+TCAGATTCAC CCATGCTTCC TTTAAGCTTT TTTTAACTAC CCCTTCGCCC ACCATTTCCA    49648
+                                                                  
+.......... .......... .......... .......... .......... ..........      434
+
+
+CCTTCCCCTC CTCGTCACAT TCAGATACTC TTTCTTCCCT TGCTGCTAGC GGTTCACCAT    49588
+                                                                  
+.......... .......... .......... .......... .......... ..........      434
+
+
+CCTCAATCAA CTTATTCCCT GTAGAATATG GTGTCAGCCA GCTTTCTTCG GGGAAAAGCT    49528
+                                                                  
+.......... .......... .......... .......... .......... ..........      434
+
+
+TCTGTTAATC ATCAGTCTAC AACACTAACC TTCTTGGTTC TCCAGCTTCT TCTGCTTCAA    49468
+                                                                  
+.......... .......... .......... .......... .......... ..........      434
+
+
+CAGTTCATGT GCCTCCAAAG ATAATAATGA AGAAAAATAT ATATAAACTT GTTTAAATTC    49408
+                                                                  
+.......... .......... .......... .......... .......... ..........      434
+
+
+CTGCAGAAAC TAAAAAAAAA AAAATGTTGA CCCAATGGCC CCTGATCAAG TACCATTCTT    49348
+                                                                  
+.......... .......... .......... .......... .......... ..........      434
+
+
+ATCCAATGTG CATAAGCTTC TCTACATTCT TCTAAAGTAG ACTGCACTAT TTTCCCTGTA    49288
+                                                                  
+.......... .......... .......... .......... .......... ..........      434
+
+
+AAAATTCATA GACGTCAAGC CAGATTCAAG AACCATCAAA TTCAACAAAG CTGAAAGATT    49228
+                                                                  
+.......... .......... .......... .......... .......... ..........      434
+
+
+TCCAAATCTA TAAGAACGAG AATCCGCAGC AAACACTCTT GAACTATTAA TTGAAATTTC    49168
+                               |  |||    || | | |||| | ||  ||   | 
+.......... .......... .........C -AACGTATTT GTAATATTCA TTTGAACGCC      464
+
+
+TTCATTGATA GGAGGCAAGA GTGAAAAAAA TCAAGGATAA AGAAGAGTAA ATTAGGCTTA    49108
+ ||                                                               
+CTC....... .......... .......... .......... .......... ..........      467
+
+
+ACAAACCTTT CCACACTGTT CTTTTAGAGA AGGCCACATT GACATAAACA TCCAATATAC    49048
+                                                                  
+.......... .......... .......... .......... .......... ..........      467
+
+
+AACCTTCTAC CGAGTCTCTG CAATCTCTTT TCAAGTCCCA GACTCCCTGG GATCAGCCAA    48988
+                                                                  
+.......... .......... .......... .......... .......... ..........      467
+
+
+AGGTAAAATT TTTCACATGT AACACACATC AAACAACAAA ATATTGATAG CATTTGATGT    48928
+                                                 ||||| ||| |      
+.......... .......... .......... .......... .....GATAG CATCTT....      478
+
+
+AAATTTCCCC TACCTCTACC GTAAAATAAT CTGCATAAGG CACATCGCTG ATCTCCTGTG    48868
+                                                                  
+.......... .......... .......... .......... .......... ..........      478
+
+
+ATGTTTCAAT AACCAGATGG CTAGCATAGG AAATTACAAT ATTAGCTAAC AGAGGATAAG    48808
+    |||  | || |||||||  ||                                         
+....TTCTTT AATCAGATGG TTA....... .......... .......... ..........      497
+
+
+CATGCATGAG TTCAGACTAG CTTTGCTTTG ACGATATAGA ATAAAACCAA AAAACATTAC    48748
+                                                                  
+.......... .......... .......... .......... .......... ..........      497
+
+
+AAAATTTCTG TACCTATTTC TGTACATCCG AAATTTCTGT GACTCCTGGC AGCCACCAAA    48688
+                                                                  
+.......... .......... .......... .......... .......... ..........      497
+
+
+CTTTGCACCT TTAAACGAAA GCCAGAGTCA TGCATACATA TATTTGATAT AAACCGTAAT    48628
+                                                                  
+.......... .......... .......... .......... .......... ..........      497
+
+
+CTATTTTATA TAATTACACC AAAAAAATAT ATATTTGATA TAAACCGTAA TCTAGTACTG    48568
+                                                                  
+.......... .......... .......... .......... .......... ..........      497
+
+
+TTTATCTATA GGAAAGAAAA AATATTACCA AAATAAATTT TTATCGGATG TTGAAATGAG    48508
+                                                                  
+.......... .......... .......... .......... .......... ..........      497
+
+
+ACATTGCGGG TGTGTCCAAG CTTTTCATGA GGTTGCCAAG AGGTACACCT AAACTCTGCA    48448
+                                                                  
+.......... .......... .......... .......... .......... ..........      497
+
+
+AGTACAAATA TCTCTTCTGG TTAAAAGAAC ACCGAGAAAG AGAGAGAAAA CAGCTAAACA    48388
+                                                                  
+.......... .......... .......... .......... .......... ..........      497
+
+
+CAGGAGCAAA ATGATTCCAT CACTTATAGC TTTACCTTTG TCTCCACAAT TTTTATGGAA    48328
+                                                                  
+.......... .......... .......... .......... .......... ..........      497
+
+
+AGATTCAACA AAACTGACAG CACCATCTGA AAAAAACAAT CTAAAGAACT CTTCTACTGG    48268
+                                                               || 
+.......... .......... .......... .......... .......... ........GG      499
+
+
+AATCTGCAAA TATAAACTAA AGTCTATTTA GGTATATGAA ACTTCTGCAT CCAGTCAATG    48208
+ | ||||||| |||| |                                                 
+GAGCTGCAAA TATATA.... .......... .......... .......... ..........      515
+
+
+CTTATATTCT CATAAATTTG AATGAGAATG GTTCCATAAT TTCCTCTAGC TGATAAGACA    48148
+                                                                  
+.......... .......... .......... .......... .......... ..........      515
+
+
+AAGAACGAGA CATTACCGAA AACTTTGCCT CTGCTACCTT TGTAAAGTCA GATGACACTG    48088
+                                                                  
+.......... .......... .......... .......... .......... ..........      515
+
+
+CGTGCAAGGA ACACAAATTT GTGTGGTGAA TACAAATGAG AACAAGAAAA GAGATCACGA    48028
+                                                                  
+.......... .......... .......... .......... .......... ..........      515
+
+
+TAACCAAAAG AAATAGATGA GAGATCATGT ATGCAAAAAC GAAATAACCG GTTCAGTAAT    47968
+                                                                  
+.......... .......... .......... .......... .......... ..........      515
+
+
+ATAGGATCTC CATACTGAGT GCAAGCTCGT TGGGACAAAC TGAGAACTAG TGCAACTT    47910
+                                                       || |||||
+.......... .......... .......... .......... .......... TGTAACTT      523
+
+
+hqPGS_U89959-_3763507+	(51474  51319,51216  51113,50834  50740)
+
+
+********************************************************************************
+EST sequence      4 +strand   485 n (File: 4969255+)
+
+     1  TCCTTGTTGG GAACAAGAGC GACCTAACTG CCAACAAAGT TGTGTCATCT GAAACAGCTA
+    61  AGGCGTTTGC TGATGAGATG GGCATCCCCT TCATGGAGAC AAGTGCCAAG AACGCCACTA
+   121  ATGTGGAGCA GGCCTTCATG GCTATGGCCG CATCCATCAA GGACAGGATG GCTAGCCAAC
+   181  CGGCCGNTTC AAATGCAAGG CCACCGACCG TGCAGATCCG CGGGCAACCT GTCAACCAGA
+   241  AGACGTCGTG CTGCTCGTCC TAAAGATAAC CAAGTCTTTC CTTCCATGTA AAATTCGACG
+   301  TATGTTACTA CTTGTTTGCT CACTACAACG TATTTGTGAT ATTCATTTGA ACGGCCTTGA
+   361  TACCATNTTT TCTTTAATCA GATGGTTAGG AAGTGGAANT ATATATGGTA AACCTGGTTT
+   421  GGTGGTTCTN TGGTCAAGGA TTGGGNGGAG GAAGAAGACC AGNGAATTTG ATTNTTTTAA
+   481  GGTTA
+
+Predicted gene structure (within gDNA segment 53103 to 46303):
+
+ Exon  1  51380  51319 (  62 n);  cDNA      1     62 (  62 n); score: 0.710
+  Intron  1  51318  51217 ( 102 n); Pd: 0.050 (s: 0.66), Pa: 0.050 (s: 0.76)
+ Exon  2  51216  51113 ( 104 n);  cDNA     63    166 ( 104 n); score: 0.769
+  Intron  2  51112  50835 ( 278 n); Pd: 0.050 (s: 0.80), Pa: 0.050 (s: 0.82)
+ Exon  3  50834  50740 (  95 n);  cDNA    167    261 (  95 n); score: 0.742
+  Intron  3  50739  50404 ( 336 n); Pd: 0.000 (s: 0.68), Pa: 0.002 (s:    0)
+ Exon  4  50403  50394 (  10 n);  cDNA    262    271 (  10 n); score: 0.900
+  Intron  4  50393  49624 ( 770 n); Pd: 0.050 (s:    0), Pa: 0.050 (s:    0)
+ Exon  5  49623  49607 (  17 n);  cDNA    272    287 (  16 n); score: 0.706
+  Intron  5  49606  48986 ( 621 n); Pd: 0.002 (s:    0), Pa: 0.050 (s:    0)
+ Exon  6  48985  48964 (  22 n);  cDNA    288    309 (  22 n); score: 0.682
+  Intron  6  48963  48793 ( 171 n); Pd: 0.000 (s:    0), Pa: 0.050 (s:    0)
+ Exon  7  48792  48781 (  12 n);  cDNA    310    320 (  11 n); score: 0.833
+  Intron  7  48780  48609 ( 172 n); Pd: 0.000 (s:    0), Pa: 0.002 (s:    0)
+ Exon  8  48608  48589 (  20 n);  cDNA    321    340 (  20 n); score: 0.650
+  Intron  8  48588  48197 ( 392 n); Pd: 0.002 (s:    0), Pa: 0.000 (s:    0)
+ Exon  9  48196  48160 (  37 n);  cDNA    341    377 (  37 n); score: 0.622
+  Intron  9  48159  48101 (  59 n); Pd: 0.002 (s:    0), Pa: 0.050 (s:    0)
+ Exon 10  48100  48092 (   9 n);  cDNA    378    386 (   9 n); score: 0.778
+  Intron 10  48091  47324 ( 768 n); Pd: 0.000 (s:    0), Pa: 0.050 (s:    0)
+ Exon 11  47323  47316 (   8 n);  cDNA    387    394 (   8 n); score: 0.875
+  Intron 11  47315  46937 ( 379 n); Pd: 0.002 (s:    0), Pa: 0.050 (s:    0)
+ Exon 12  46936  46930 (   7 n);  cDNA    395    401 (   7 n); score: 0.857
+
+MATCH	U89959-	4969255+	0.745	403	0.831	C
+PGS_U89959-_4969255+	(51380  51319,51216  51113,50834  50740,50403  50394,49623  49607,48985  48964,48792  48781,48608  48589,48196  48160,48100  48092,47323  47316,46936  46930)
+
+Alignment (genomic DNA sequence = upper lines):
+
+TCCTTGTTGG AAACAAGTCT GATCTTACTG AAAACAGAGC CATTCCTTAT GAAACTGCCA    51321
+||||||||||  ||||||    || || ||||   |||| ||    |  | | | ||||| || | 
+TCCTTGTTGG GAACAAGAGC GACCTAACTG CCAACAAAGT TGTGTCATCT GAAACAGCTA       60
+
+
+AGGTATATAT ATGCCACTTG AACCAATTCT TTCTTCTCAA GTTTTGAAAA TCATCAAACT    51261
+||                                                                
+AG........ .......... .......... .......... .......... ..........       62
+
+
+CTAAGGCTAT TATTACTTTC CTGATTACTT CGAAACATTC ATAGGCTTTT GCCGATGAAA    51201
+                                                || ||| || ||||| | 
+.......... .......... .......... .......... ....GCGTTT GCTGATGAGA       78
+
+
+TCGGGATTCC TTTTATGGAG ACTAGTGCAA AAGATGCTAC AAACGTAGAA CAGGCTTTCA    51141
+| || || ||  || |||||| || ||||| | |  | || ||  || || ||  ||||| |||| 
+TGGGCATCCC CTTCATGGAG ACAAGTGCCA AGAACGCCAC TAATGTGGAG CAGGCCTTCA      138
+
+
+TGGCAATGTC TGCATCCATC AAAGAGAGGT ATTTATCTTA CATCGTTCTT TTTAAGTAAC    51081
+|||| ||| |  ||||||||| || || ||                                    
+TGGCTATGGC CGCATCCATC AAGGACAG.. .......... .......... ..........      166
+
+
+TGCGGTTAAT ATACTCATCA TACCTGATGG AACTTTTGCG AAGCCATAAT CTCATTTTTG    51021
+                                                                  
+.......... .......... .......... .......... .......... ..........      166
+
+
+TAAGTGTTTA TATAGATCTC AGAAAGTGTC ACTGTGTAAG TGACCTTGGA GTGAAATAAA    50961
+                                                                  
+.......... .......... .......... .......... .......... ..........      166
+
+
+TAAATGACTG ATGTTGACCT TGCAGTGTTC AAATTGAAAA TTCAAGTAGT TGTACTTAAT    50901
+                                                                  
+.......... .......... .......... .......... .......... ..........      166
+
+
+CAATTTGCAG AGAGTGTGCG TTCGTGTGAT ATATGAGAGA AATTGATCTC TGTGGTTTGG    50841
+                                                                  
+.......... .......... .......... .......... .......... ..........      166
+
+
+ATGCAGAATG GCTAGCCAAC CAGCTGGGAA TAATGCAAGA CCACCGACCG TGCAGATCAG    50781
+       ||| |||||||||| | || |      ||||||||  |||||||||| |||||||| | 
+......GATG GCTAGCCAAC CGGCCGNTTC AAATGCAAGG CCACCGACCG TGCAGATCCG      220
+
+
+AGGACAGCCT GTGGCACAGA AGAACGGC-T GCTGCTCAAC TTGATTGACG TGACCAGCCT    50722
+ || || ||| ||    |||| || ||| | | |||||||  |  |                    
+CGGGCAACCT GTCAACCAGA AG-ACGTCGT GCTGCTCGTC CT........ ..........      261
+
+
+AGCAATATCC TTTCCAATCT TAGAACACGT GTTCCTTCTT TTGACTAGGC TCCAATTCAC    50662
+                                                                  
+.......... .......... .......... .......... .......... ..........      261
+
+
+TACTACTTGG TTTTTACACA ACATCCCCCC AAATCTGTCT TGTCTGTAAT TAAGCTCCTT    50602
+                                                                  
+.......... .......... .......... .......... .......... ..........      261
+
+
+TGGTTGGTTA TTATTCTGTT TTTCACGTTT CCTATTTGCT TTACCTCATG ATGAGGTCCT    50542
+                                                                  
+.......... .......... .......... .......... .......... ..........      261
+
+
+CATCTTTCCA ACATTCTTGT TTTTCATTTC TGCCTTTAGT GGTTTTCTAT GGGTTTCTTT    50482
+                                                                  
+.......... .......... .......... .......... .......... ..........      261
+
+
+GCATAACAAT GTTCTACGAC TCGATTTAAA ACCCACAAAT TGTTTTTTCC TATATCAAAC    50422
+                                                                  
+.......... .......... .......... .......... .......... ..........      261
+
+
+GTGATCATCA TTGAAAACAA AGATAATCGT CTCGGGAATT TAAATTAGAA TCAACTTTTG    50362
+                   || |||||| |                                    
+.......... ........AA AGATAACC.. .......... .......... ..........      271
+
+
+TTTGTTTGAT TGAGACATTG AGAGAATCCA ATAGCGAGAA AGTGGAGTCA CCAGTGTGAA    50302
+                                                                  
+.......... .......... .......... .......... .......... ..........      271
+
+
+TTTAATCTTT GATACAGGTG CAACACGAAT ACAATTGATT ACATCATTTC GTTTAACAGA    50242
+                                                                  
+.......... .......... .......... .......... .......... ..........      271
+
+
+GTCTCTGCTC ATATTCATAT GAGTAGGTAG GTATAACAAC AACTTTGCAA AGTAACGTCC    50182
+                                                                  
+.......... .......... .......... .......... .......... ..........      271
+
+
+GATAATACAT TACATACATA CATGCATATA TCCATCCGCA TTCTGCACAA ACAGAGAGTA    50122
+                                                                  
+.......... .......... .......... .......... .......... ..........      271
+
+
+GGGTGTAGCA AATTTACTGT TTGTTGCGGC GGAGGAGGCG TTCCAAATGG TGGAACTGAG    50062
+                                                                  
+.......... .......... .......... .......... .......... ..........      271
+
+
+CCTTCAAGGC GGCATGGTCT TGTCGCATCC TCTGCAAACG ATCCTCAACC ATCATCATCT    50002
+                                                                  
+.......... .......... .......... .......... .......... ..........      271
+
+
+CTTCCCTCAG GAAATGCATT CTCTTCTCTA ACCACCCCAA AGTCTCCCCG TTTACACTGT    49942
+                                                                  
+.......... .......... .......... .......... .......... ..........      271
+
+
+ACTCGTCGTA CCTCTCATGA TACTCCACTT GCCCCCCTCC TCCTTTTTTC AGTAGCACCA    49882
+                                                                  
+.......... .......... .......... .......... .......... ..........      271
+
+
+CTATCGTCAC CTGTCCACAC TTCCACCTAT TGTTAGCTTT TTTTTTTCTC TATCTCCCTC    49822
+                                                                  
+.......... .......... .......... .......... .......... ..........      271
+
+
+TCTCTCTCTT TCACTACCAA TTTATCCAAA ATACACATAC CTGCATCAGT AAGATTACTG    49762
+                                                                  
+.......... .......... .......... .......... .......... ..........      271
+
+
+CAAACGCTAA TACTATAACC TGCCTTGTCC CGCTTTGCCT CTTCACAAAT GAAGTCAGAT    49702
+                                                                  
+.......... .......... .......... .......... .......... ..........      271
+
+
+TCACCCATGC TTCCTTTAAG CTTTTTTTAA CTACCCCTTC GCCCACCATT TCCACCTTCC    49642
+                                                                  
+.......... .......... .......... .......... .......... ..........      271
+
+
+CCTCCTCGTC ACATTCAGAT ACTCTTTCTT CCCTTGCTGC TAGCGGTTCA CCATCCTCAA    49582
+                   |  | |||||| |  || |                            
+.......... ........A- AGTCTTTCCT TCCAT..... .......... ..........      287
+
+
+TCAACTTATT CCCTGTAGAA TATGGTGTCA GCCAGCTTTC TTCGGGGAAA AGCTTCTGTT    49522
+                                                                  
+.......... .......... .......... .......... .......... ..........      287
+
+
+AATCATCAGT CTACAACACT AACCTTCTTG GTTCTCCAGC TTCTTCTGCT TCAACAGTTC    49462
+                                                                  
+.......... .......... .......... .......... .......... ..........      287
+
+
+ATGTGCCTCC AAAGATAATA ATGAAGAAAA ATATATATAA ACTTGTTTAA ATTCCTGCAG    49402
+                                                                  
+.......... .......... .......... .......... .......... ..........      287
+
+
+AAACTAAAAA AAAAAAAATG TTGACCCAAT GGCCCCTGAT CAAGTACCAT TCTTATCCAA    49342
+                                                                  
+.......... .......... .......... .......... .......... ..........      287
+
+
+TGTGCATAAG CTTCTCTACA TTCTTCTAAA GTAGACTGCA CTATTTTCCC TGTAAAAATT    49282
+                                                                  
+.......... .......... .......... .......... .......... ..........      287
+
+
+CATAGACGTC AAGCCAGATT CAAGAACCAT CAAATTCAAC AAAGCTGAAA GATTTCCAAA    49222
+                                                                  
+.......... .......... .......... .......... .......... ..........      287
+
+
+TCTATAAGAA CGAGAATCCG CAGCAAACAC TCTTGAACTA TTAATTGAAA TTTCTTCATT    49162
+                                                                  
+.......... .......... .......... .......... .......... ..........      287
+
+
+GATAGGAGGC AAGAGTGAAA AAAATCAAGG ATAAAGAAGA GTAAATTAGG CTTAACAAAC    49102
+                                                                  
+.......... .......... .......... .......... .......... ..........      287
+
+
+CTTTCCACAC TGTTCTTTTA GAGAAGGCCA CATTGACATA AACATCCAAT ATACAACCTT    49042
+                                                                  
+.......... .......... .......... .......... .......... ..........      287
+
+
+CTACCGAGTC TCTGCAATCT CTTTTCAAGT CCCAGACTCC CTGGGATCAG CCAAAGGTAA    48982
+                                                             |||| 
+.......... .......... .......... .......... .......... ......GTAA      291
+
+
+AATTTTTCAC ATGTAACACA CATCAAACAA CAAAATATTG ATAGCATTTG ATGTAAATTT    48922
+||||   |   |||| ||                                                
+AATTCGACGT ATGTTACT.. .......... .......... .......... ..........      309
+
+
+CCCCTACCTC TACCGTAAAA TAATCTGCAT AAGGCACATC GCTGATCTCC TGTGATGTTT    48862
+                                                                  
+.......... .......... .......... .......... .......... ..........      309
+
+
+CAATAACCAG ATGGCTAGCA TAGGAAATTA CAATATTAGC TAACAGAGGA TAAGCATGCA    48802
+                                                                  
+.......... .......... .......... .......... .......... ..........      309
+
+
+TGAGTTCAGA CTAGCTTTGC TTTGACGATA TAGAATAAAA CCAAAAAACA TTACAAAATT    48742
+         | || | ||||| |                                           
+.........A CTTG-TTTGC T......... .......... .......... ..........      320
+
+
+TCTGTACCTA TTTCTGTACA TCCGAAATTT CTGTGACTCC TGGCAGCCAC CAAACTTTGC    48682
+                                                                  
+.......... .......... .......... .......... .......... ..........      320
+
+
+ACCTTTAAAC GAAAGCCAGA GTCATGCATA CATATATTTG ATATAAACCG TAATCTATTT    48622
+                                                                  
+.......... .......... .......... .......... .......... ..........      320
+
+
+TATATAATTA CACCAAAAAA ATATATATTT GATATAAACC GTAATCTAGT ACTGTTTATC    48562
+              ||  | | |  ||| | | |||                              
+.......... ...CACTACA ACGTATTTGT GAT....... .......... ..........      340
+
+
+TATAGGAAAG AAAAAATATT ACCAAAATAA ATTTTTATCG GATGTTGAAA TGAGACATTG    48502
+                                                                  
+.......... .......... .......... .......... .......... ..........      340
+
+
+CGGGTGTGTC CAAGCTTTTC ATGAGGTTGC CAAGAGGTAC ACCTAAACTC TGCAAGTACA    48442
+                                                                  
+.......... .......... .......... .......... .......... ..........      340
+
+
+AATATCTCTT CTGGTTAAAA GAACACCGAG AAAGAGAGAG AAAACAGCTA AACACAGGAG    48382
+                                                                  
+.......... .......... .......... .......... .......... ..........      340
+
+
+CAAAATGATT CCATCACTTA TAGCTTTACC TTTGTCTCCA CAATTTTTAT GGAAAGATTC    48322
+                                                                  
+.......... .......... .......... .......... .......... ..........      340
+
+
+AACAAAACTG ACAGCACCAT CTGAAAAAAA CAATCTAAAG AACTCTTCTA CTGGAATCTG    48262
+                                                                  
+.......... .......... .......... .......... .......... ..........      340
+
+
+CAAATATAAA CTAAAGTCTA TTTAGGTATA TGAAACTTCT GCATCCAGTC AATGCTTATA    48202
+                                                                  
+.......... .......... .......... .......... .......... ..........      340
+
+
+TTCTCATAAA TTTGAATGAG AATGGTTCCA TAATTTCCTC TAGCTGATAA GACAAAGAAC    48142
+     ||  | |||||| |     || | ||| |  |||| |   |                    
+.....ATTCA TTTGAACGGC CTTGATACCA TNTTTTCTTT AA........ ..........      377
+
+
+GAGACATTAC CGAAAACTTT GCCTCTGCTA CCTTTGTAAA GTCAGATGAC ACTGCGTGCA    48082
+                                             |||||||              
+.......... .......... .......... .......... .TCAGATGGT ..........      386
+
+
+AGGAACACAA ATTTGTGTGG TGAATACAAA TGAGAACAAG AAAAGAGATC ACGATAACCA    48022
+                                                                  
+.......... .......... .......... .......... .......... ..........      386
+
+
+AAAGAAATAG ATGAGAGATC ATGTATGCAA AAACGAAATA ACCGGTTCAG TAATATAGGA    47962
+                                                                  
+.......... .......... .......... .......... .......... ..........      386
+
+
+TCTCCATACT GAGTGCAAGC TCGTTGGGAC AAACTGAGAA CTAGTGCAAC TTGTGAAGTA    47902
+                                                                  
+.......... .......... .......... .......... .......... ..........      386
+
+
+GCACCAAAAG ACAAGATCAT AAAGCTAAGC TACCCCATCC TGATAGGCCT TATTTAGCAA    47842
+                                                                  
+.......... .......... .......... .......... .......... ..........      386
+
+
+AACCATTAAG AGACCGTTTC CCATTGACCA TTTAAATTTC AAACAATTTA TATTGCAAAG    47782
+                                                                  
+.......... .......... .......... .......... .......... ..........      386
+
+
+AAAACAAGCT AAAAGATAGA CACATAATGA CATATACCTA GAAACAGTAA GAAGTTAACT    47722
+                                                                  
+.......... .......... .......... .......... .......... ..........      386
+
+
+GATTGTCCAC TTTAAAGGAA CTTTAAAGGA GTTAGGAGAA ACCCAAGCGT CTGCATTTTT    47662
+                                                                  
+.......... .......... .......... .......... .......... ..........      386
+
+
+AATACTCTTT ACCAACAGGT TGACCTGACC CCAGCAAAAA AAAAAAAACC CGTTGAATTT    47602
+                                                                  
+.......... .......... .......... .......... .......... ..........      386
+
+
+ACTGAAAACA CTAGCATTCA CATCCTTAAA CAGTTGACTT GAAAAAGATA ATCTACCACA    47542
+                                                                  
+.......... .......... .......... .......... .......... ..........      386
+
+
+CTACCCAAAC CAACCAAAAA GAACTAAGGT AAAAGCGAGG AAGGAGTTTA ACTACATTTA    47482
+                                                                  
+.......... .......... .......... .......... .......... ..........      386
+
+
+GGTGCATCTG TATCTTCAGG CTTCCAGTTG AAAGTATTGG CCGCCACAAC ATCTACATCT    47422
+                                                                  
+.......... .......... .......... .......... .......... ..........      386
+
+
+GGTTCAGCGT GCCGCTGAAC GGATGAAGGT GGAACGCCAT TCTGACTAAT GACAGGAAGA    47362
+                                                                  
+.......... .......... .......... .......... .......... ..........      386
+
+
+CTGGAACTGC TGGAAAGATG AAGAGTTTCA TCCCTGAGAA GGAAGTATAG TGAGCGATAA    47302
+                                          | ||||||                
+.......... .......... .......... ........TA GGAAGT.... ..........      394
+
+
+AGCAGTAAGA AACAGAAAGA TGGAACACCA TATGGAAGAG ATAAACGCAC CTTACTGGAA    47242
+                                                                  
+.......... .......... .......... .......... .......... ..........      394
+
+
+TATCTAGTTC ATTGGCCAAA TCCATGGAAC TGCGTGCCCT TTTAACAACT CCATCGCTTA    47182
+                                                                  
+.......... .......... .......... .......... .......... ..........      394
+
+
+CCTGGATTTT GGACTCAGAT AAGGAAACAA GGATTAAGCA GTAAAATAAG AGTGTGTGTT    47122
+                                                                  
+.......... .......... .......... .......... .......... ..........      394
+
+
+GCACCCACCT GCGGTTCGGT CACCAGAATC TCGCCTTCTG ATTTGACAGC ACTACCATAT    47062
+                                                                  
+.......... .......... .......... .......... .......... ..........      394
+
+
+TCCAACCATC CATCATGGAT AAGCTTGAAA GCTTCATCGC GGGAAAGAAA CGATGCAAAA    47002
+                                                                  
+.......... .......... .......... .......... .......... ..........      394
+
+
+AAGTACTGGG AGAGAATGCG GTTCAAAGAT CAGGACAGAC GCACCAACCA ATATCGAGTA    46942
+                                                                  
+.......... .......... .......... .......... .......... ..........      394
+
+
+AAGAGGGAAC TA    46930
+     ||||  ||
+.....GGAAN TA      401
+
+
+hqPGS_U89959-_4969255+	(51380  51319,51216  51113,50834  50740)
+
+
+********************************************************************************
+EST sequence      7 +strand   318 n (File: 4716498+)
+
+     1  GTTTGCTGAT GAGATGGGCA TCCCCTTCAT GGAGACAAGT GCCAAGAACG CCACTAATGT
+    61  GGAGCAGGCC TTCATGGCTA TGGCCGCATC CATCAAGGAC AGGATGGCTA GCCAACCGGC
+   121  CGCTTCAAAT GCAAGGCCAC CGACCGTGCA GATCCGCGGG CAACCTGTCA ACCAGAAGAC
+   181  GTCGTGCTGC TCGTCCTAAA GATAACCAAG TCTTTCCTTC CATGTAAAAT TCGACGTATG
+   241  TTACTACTGT TTGCTCACTA CAACGTATTT GTGATATTCA TTTGAACGCC CTTGATACCA
+   301  AAAAAAAAAA AAAAAAGG
+
+Predicted gene structure (within gDNA segment 52463 to 47933):
+
+ Exon  1  51213  51113 ( 101 n);  cDNA      2    102 ( 101 n); score: 0.772
+  Intron  1  51112  50835 ( 278 n); Pd: 0.050 (s: 0.80), Pa: 0.050 (s: 0.82)
+ Exon  2  50834  50740 (  95 n);  cDNA    103    197 (  95 n); score: 0.742
+  Intron  2  50739  50404 ( 336 n); Pd: 0.000 (s: 0.68), Pa: 0.002 (s:    0)
+ Exon  3  50403  50394 (  10 n);  cDNA    198    207 (  10 n); score: 0.900
+  Intron  3  50393  49624 ( 770 n); Pd: 0.050 (s:    0), Pa: 0.050 (s:    0)
+ Exon  4  49623  49607 (  17 n);  cDNA    208    223 (  16 n); score: 0.706
+  Intron  4  49606  48986 ( 621 n); Pd: 0.002 (s:    0), Pa: 0.050 (s:    0)
+ Exon  5  48985  48970 (  16 n);  cDNA    224    239 (  16 n); score: 0.688
+ PPA                              cDNA    300    317
+
+MATCH	U89959-	4716498+	0.758	239	0.752	C
+PGS_U89959-_4716498+	(51213  51113,50834  50740,50403  50394,49623  49607,48985  48970)
+
+Alignment (genomic DNA sequence = upper lines):
+
+TTTGCCGATG AAATCGGGAT TCCTTTTATG GAGACTAGTG CAAAAGATGC TACAAACGTA    51154
+||||| |||| | || || ||  || || ||| ||||| |||| | ||  | ||  || || ||  
+TTTGCTGATG AGATGGGCAT CCCCTTCATG GAGACAAGTG CCAAGAACGC CACTAATGTG       61
+
+
+GAACAGGCTT TCATGGCAAT GTCTGCATCC ATCAAAGAGA GGTATTTATC TTACATCGTT    51094
+|| ||||| | ||||||| || | | |||||| ||||| || | |                     
+GAGCAGGCCT TCATGGCTAT GGCCGCATCC ATCAAGGACA G......... ..........      102
+
+
+CTTTTTAAGT AACTGCGGTT AATATACTCA TCATACCTGA TGGAACTTTT GCGAAGCCAT    51034
+                                                                  
+.......... .......... .......... .......... .......... ..........      102
+
+
+AATCTCATTT TTGTAAGTGT TTATATAGAT CTCAGAAAGT GTCACTGTGT AAGTGACCTT    50974
+                                                                  
+.......... .......... .......... .......... .......... ..........      102
+
+
+GGAGTGAAAT AAATAAATGA CTGATGTTGA CCTTGCAGTG TTCAAATTGA AAATTCAAGT    50914
+                                                                  
+.......... .......... .......... .......... .......... ..........      102
+
+
+AGTTGTACTT AATCAATTTG CAGAGAGTGT GCGTTCGTGT GATATATGAG AGAAATTGAT    50854
+                                                                  
+.......... .......... .......... .......... .......... ..........      102
+
+
+CTCTGTGGTT TGGATGCAGA ATGGCTAGCC AACCAGCTGG GAATAATGCA AGACCACCGA    50794
+                      |||||||||| |||| || |      |||||| || ||||||| 
+.......... .........G ATGGCTAGCC AACCGGCCGC TTCAAATGCA AGGCCACCGA      143
+
+
+CCGTGCAGAT CAGAGGACAG CCTGTGGCAC AGAAGAACGG C-TGCTGCTC AACTTGATTG    50735
+|||||||||| | | || ||  |||||    | ||||| |||  | ||||||||   | |      
+CCGTGCAGAT CCGCGGGCAA CCTGTCAACC AGAAG-ACGT CGTGCTGCTC GTCCT.....      197
+
+
+ACGTGACCAG CCTAGCAATA TCCTTTCCAA TCTTAGAACA CGTGTTCCTT CTTTTGACTA    50675
+                                                                  
+.......... .......... .......... .......... .......... ..........      197
+
+
+GGCTCCAATT CACTACTACT TGGTTTTTAC ACAACATCCC CCCAAATCTG TCTTGTCTGT    50615
+                                                                  
+.......... .......... .......... .......... .......... ..........      197
+
+
+AATTAAGCTC CTTTGGTTGG TTATTATTCT GTTTTTCACG TTTCCTATTT GCTTTACCTC    50555
+                                                                  
+.......... .......... .......... .......... .......... ..........      197
+
+
+ATGATGAGGT CCTCATCTTT CCAACATTCT TGTTTTTCAT TTCTGCCTTT AGTGGTTTTC    50495
+                                                                  
+.......... .......... .......... .......... .......... ..........      197
+
+
+TATGGGTTTC TTTGCATAAC AATGTTCTAC GACTCGATTT AAAACCCACA AATTGTTTTT    50435
+                                                                  
+.......... .......... .......... .......... .......... ..........      197
+
+
+TCCTATATCA AACGTGATCA TCATTGAAAA CAAAGATAAT CGTCTCGGGA ATTTAAATTA    50375
+                                  ||||||||  |                     
+.......... .......... .......... .AAAGATAAC C......... ..........      207
+
+
+GAATCAACTT TTGTTTGTTT GATTGAGACA TTGAGAGAAT CCAATAGCGA GAAAGTGGAG    50315
+                                                                  
+.......... .......... .......... .......... .......... ..........      207
+
+
+TCACCAGTGT GAATTTAATC TTTGATACAG GTGCAACACG AATACAATTG ATTACATCAT    50255
+                                                                  
+.......... .......... .......... .......... .......... ..........      207
+
+
+TTCGTTTAAC AGAGTCTCTG CTCATATTCA TATGAGTAGG TAGGTATAAC AACAACTTTG    50195
+                                                                  
+.......... .......... .......... .......... .......... ..........      207
+
+
+CAAAGTAACG TCCGATAATA CATTACATAC ATACATGCAT ATATCCATCC GCATTCTGCA    50135
+                                                                  
+.......... .......... .......... .......... .......... ..........      207
+
+
+CAAACAGAGA GTAGGGTGTA GCAAATTTAC TGTTTGTTGC GGCGGAGGAG GCGTTCCAAA    50075
+                                                                  
+.......... .......... .......... .......... .......... ..........      207
+
+
+TGGTGGAACT GAGCCTTCAA GGCGGCATGG TCTTGTCGCA TCCTCTGCAA ACGATCCTCA    50015
+                                                                  
+.......... .......... .......... .......... .......... ..........      207
+
+
+ACCATCATCA TCTCTTCCCT CAGGAAATGC ATTCTCTTCT CTAACCACCC CAAAGTCTCC    49955
+                                                                  
+.......... .......... .......... .......... .......... ..........      207
+
+
+CCGTTTACAC TGTACTCGTC GTACCTCTCA TGATACTCCA CTTGCCCCCC TCCTCCTTTT    49895
+                                                                  
+.......... .......... .......... .......... .......... ..........      207
+
+
+TTCAGTAGCA CCACTATCGT CACCTGTCCA CACTTCCACC TATTGTTAGC TTTTTTTTTT    49835
+                                                                  
+.......... .......... .......... .......... .......... ..........      207
+
+
+CTCTATCTCC CTCTCTCTCT CTTTCACTAC CAATTTATCC AAAATACACA TACCTGCATC    49775
+                                                                  
+.......... .......... .......... .......... .......... ..........      207
+
+
+AGTAAGATTA CTGCAAACGC TAATACTATA ACCTGCCTTG TCCCGCTTTG CCTCTTCACA    49715
+                                                                  
+.......... .......... .......... .......... .......... ..........      207
+
+
+AATGAAGTCA GATTCACCCA TGCTTCCTTT AAGCTTTTTT TAACTACCCC TTCGCCCACC    49655
+                                                                  
+.......... .......... .......... .......... .......... ..........      207
+
+
+ATTTCCACCT TCCCCTCCTC GTCACATTCA GATACTCTTT CTTCCCTTGC TGCTAGCGGT    49595
+                                  | | ||||| | | || |              
+.......... .......... .......... .A-AGTCTTT CCTTCCAT.. ..........      223
+
+
+TCACCATCCT CAATCAACTT ATTCCCTGTA GAATATGGTG TCAGCCAGCT TTCTTCGGGG    49535
+                                                                  
+.......... .......... .......... .......... .......... ..........      223
+
+
+AAAAGCTTCT GTTAATCATC AGTCTACAAC ACTAACCTTC TTGGTTCTCC AGCTTCTTCT    49475
+                                                                  
+.......... .......... .......... .......... .......... ..........      223
+
+
+GCTTCAACAG TTCATGTGCC TCCAAAGATA ATAATGAAGA AAAATATATA TAAACTTGTT    49415
+                                                                  
+.......... .......... .......... .......... .......... ..........      223
+
+
+TAAATTCCTG CAGAAACTAA AAAAAAAAAA ATGTTGACCC AATGGCCCCT GATCAAGTAC    49355
+                                                                  
+.......... .......... .......... .......... .......... ..........      223
+
+
+CATTCTTATC CAATGTGCAT AAGCTTCTCT ACATTCTTCT AAAGTAGACT GCACTATTTT    49295
+                                                                  
+.......... .......... .......... .......... .......... ..........      223
+
+
+CCCTGTAAAA ATTCATAGAC GTCAAGCCAG ATTCAAGAAC CATCAAATTC AACAAAGCTG    49235
+                                                                  
+.......... .......... .......... .......... .......... ..........      223
+
+
+AAAGATTTCC AAATCTATAA GAACGAGAAT CCGCAGCAAA CACTCTTGAA CTATTAATTG    49175
+                                                                  
+.......... .......... .......... .......... .......... ..........      223
+
+
+AAATTTCTTC ATTGATAGGA GGCAAGAGTG AAAAAAATCA AGGATAAAGA AGAGTAAATT    49115
+                                                                  
+.......... .......... .......... .......... .......... ..........      223
+
+
+AGGCTTAACA AACCTTTCCA CACTGTTCTT TTAGAGAAGG CCACATTGAC ATAAACATCC    49055
+                                                                  
+.......... .......... .......... .......... .......... ..........      223
+
+
+AATATACAAC CTTCTACCGA GTCTCTGCAA TCTCTTTTCA AGTCCCAGAC TCCCTGGGAT    48995
+                                                                  
+.......... .......... .......... .......... .......... ..........      223
+
+
+CAGCCAAAGG TAAAATTTTT CACAT    48970
+         | |||||||    |  ||
+.........G TAAAATTCGA CGTAT      239
+
+
+hqPGS_U89959-_4716498+	(51213  51113,50834  50740)
+
+
+********************************************************************************
+EST sequence      5 +strand   463 n (File: 4880608+)
+
+     1  AGCAGCTATT ACCGGGGAGC TCATGGAATA ATTATTGTAT ACGATGTGAC AGACCAAGAA
+    61  AGCTTCAACA ATGTGAAGCA GTGGTTGAAT GAAATTGATC GTTATGCAAG TGACAATGTA
+   121  AACAAGCTCC TTGTTGGGAA CAAGAGCGAC CTAACTGCCA ACAAAGTTGT GTCATCTGAA
+   181  ACAGCTAAGG CGTTTGCTGA TGAGATGGGC ATCCCCTTCA TGGAGACAAG TGCCAAGAAC
+   241  GCCACTAATG TGGAGCAGGC CTTCATGGCT ATGGCCGCAT CCATCAAGGA CAGGATGGCT
+   301  AGCCAACCGG CCGCTTCAAA TGCAAGGCCA CCGACCGTGC AGATCCGCGG GCAACCTGTC
+   361  AACCAGAAGA CGTCGTGCTG CTCGTCCTAA AGATAACCAA GTCTTTNCTT CCATGTAAAA
+   421  TTCGACGNAT GTTACTACTT GTTTGCTTAC TACAACGNAT TTG
+
+Predicted gene structure (within gDNA segment 52602 to 48993):
+
+ Exon  1  51584  51552 (  33 n);  cDNA      1     33 (  33 n); score: 0.818
+  Intron  1  51551  51475 (  77 n); Pd: 0.050 (s:    0), Pa: 0.050 (s: 0.86)
+ Exon  2  51474  51319 ( 156 n);  cDNA     34    189 ( 156 n); score: 0.814
+  Intron  2  51318  51217 ( 102 n); Pd: 0.050 (s: 0.66), Pa: 0.050 (s: 0.76)
+ Exon  3  51216  51113 ( 104 n);  cDNA    190    293 ( 104 n); score: 0.769
+  Intron  3  51112  50835 ( 278 n); Pd: 0.050 (s: 0.80), Pa: 0.050 (s: 0.82)
+ Exon  4  50834  50745 (  90 n);  cDNA    294    383 (  90 n); score: 0.761
+
+MATCH	U89959-	4880608+	0.787	383	0.827	C
+PGS_U89959-_4880608+	(51584  51552,51474  51319,51216  51113,50834  50745)
+
+Alignment (genomic DNA sequence = upper lines):
+
+AGCAGTTACT ACCGTGGGGC ACATGGAATT ATTGTAAGCA ACATCTTATC TAGGTTCTTT    51525
+||||| || | |||| || ||  ||||||||  |||                              
+AGCAGCTATT ACCGGGGAGC TCATGGAATA ATT....... .......... ..........       33
+
+
+CTGTTGACTC CTTTAAGTTT ATGTCCTAAT TTAGTTCTTG CACCTGGTAG ATTGTCTACG    51465
+                                                       ||||| |||| 
+.......... .......... .......... .......... .......... ATTGTATACG       43
+
+
+ATGTCACAGA TGAAGAAAGC TTCAATAATG TCAAGCAATG GTTGAGTGAA ATTGATCGTT    51405
+|||| |||||   |||||||| ||||| |||| | ||||| || ||||| |||| |||||||||| 
+ATGTGACAGA CCAAGAAAGC TTCAACAATG TGAAGCAGTG GTTGAATGAA ATTGATCGTT      103
+
+
+ATGCTAGTGA CAATGTCAAC AAACTCCTTG TTGGAAACAA GTCTGATCTT ACTGAAAACA    51345
+|||| ||||| |||||| ||| || ||||||| |||| ||||| |   || ||  ||||  |||| 
+ATGCAAGTGA CAATGTAAAC AAGCTCCTTG TTGGGAACAA GAGCGACCTA ACTGCCAACA      163
+
+
+GAGCCATTCC TTATGAAACT GCCAAGGTAT ATATATGCCA CTTGAACCAA TTCTTTCTTC    51285
+ ||   |  |  | ||||||  || |||                                      
+AAGTTGTGTC ATCTGAAACA GCTAAG.... .......... .......... ..........      189
+
+
+TCAAGTTTTG AAAATCATCA AACTCTAAGG CTATTATTAC TTTCCTGATT ACTTCGAAAC    51225
+                                                                  
+.......... .......... .......... .......... .......... ..........      189
+
+
+ATTCATAGGC TTTTGCCGAT GAAATCGGGA TTCCTTTTAT GGAGACTAGT GCAAAAGATG    51165
+        ||  ||||| ||| || || || | | || || || |||||| ||| || ||  | | 
+........GC GTTTGCTGAT GAGATGGGCA TCCCCTTCAT GGAGACAAGT GCCAAGAACG      241
+
+
+CTACAAACGT AGAACAGGCT TTCATGGCAA TGTCTGCATC CATCAAAGAG AGGTATTTAT    51105
+| || || ||  || |||||  |||||||| | || | ||||| |||||| ||  ||         
+CCACTAATGT GGAGCAGGCC TTCATGGCTA TGGCCGCATC CATCAAGGAC AG........      293
+
+
+CTTACATCGT TCTTTTTAAG TAACTGCGGT TAATATACTC ATCATACCTG ATGGAACTTT    51045
+                                                                  
+.......... .......... .......... .......... .......... ..........      293
+
+
+TGCGAAGCCA TAATCTCATT TTTGTAAGTG TTTATATAGA TCTCAGAAAG TGTCACTGTG    50985
+                                                                  
+.......... .......... .......... .......... .......... ..........      293
+
+
+TAAGTGACCT TGGAGTGAAA TAAATAAATG ACTGATGTTG ACCTTGCAGT GTTCAAATTG    50925
+                                                                  
+.......... .......... .......... .......... .......... ..........      293
+
+
+AAAATTCAAG TAGTTGTACT TAATCAATTT GCAGAGAGTG TGCGTTCGTG TGATATATGA    50865
+                                                                  
+.......... .......... .......... .......... .......... ..........      293
+
+
+GAGAAATTGA TCTCTGTGGT TTGGATGCAG AATGGCTAGC CAACCAGCTG GGAATAATGC    50805
+                                  ||||||||| ||||| || |      ||||| 
+.......... .......... .......... GATGGCTAGC CAACCGGCCG CTTCAAATGC      323
+
+
+AAGACCACCG ACCGTGCAGA TCAGAGGACA GCCTGTGGCA CAGAAGAACG GC-TGCTGCT    50746
+||| |||||| |||||||||| || | || ||  |||||     |||||| |||  | ||||||| 
+AAGGCCACCG ACCGTGCAGA TCCGCGGGCA ACCTGTCAAC CAGAAG-ACG TCGTGCTGCT      382
+
+
+C    50745
+|
+C      383
+
+
+hqPGS_U89959-_4880608+	(51584  51552,51474  51319,51216  51113,50834  50745)
+
+
+********************************************************************************
+EST sequence      6 +strand   460 n (File: 4879734+)
+
+     1  AGCAGCTATT ACCGGGGAGC TCATGGAATA ATTATTGTAT ACGATGTGAC AGACCAAGAA
+    61  AGCTTCAACA ATGTGAAGCA GTGGTTGAAT GAAATTNATC GTTATGCAAG TNACAATGTA
+   121  AACAAGCTCC TTGTTGGGAA CAAGAGCGAC CTAACTGCCA ACAAAGTTGT GTCATCTGAA
+   181  ACAGCTAAGG CGTTTGCTGA TGAGATGGGC ATCCCCTTCA TGGAGACAAG TGCCAAGAAC
+   241  GCCACTAATG TGGAGCAGGC CTTCATGGCT ATGGCCGCAT CCATCAAGGA CAGGATGGCT
+   301  AGCCAACCGG CCGCTTCAAA TGCAAGGCCA CCGACCGTGC AGATCCGCGG GCAACCTGTC
+   361  AACCAGAAGA CGTCGTGCTT CTCGTCCTAA AGATAACCAA GTCTTTCCTT CCATGTAAAA
+   421  TTCGCGNATT GTACTACTGT TTGTCACNCA CGTATTTGTG
+
+Predicted gene structure (within gDNA segment 52602 to 49023):
+
+ Exon  1  51584  51552 (  33 n);  cDNA      1     33 (  33 n); score: 0.818
+  Intron  1  51551  51475 (  77 n); Pd: 0.050 (s:    0), Pa: 0.050 (s: 0.86)
+ Exon  2  51474  51319 ( 156 n);  cDNA     34    189 ( 156 n); score: 0.801
+  Intron  2  51318  51217 ( 102 n); Pd: 0.050 (s: 0.66), Pa: 0.050 (s: 0.76)
+ Exon  3  51216  51113 ( 104 n);  cDNA    190    293 ( 104 n); score: 0.769
+  Intron  3  51112  50835 ( 278 n); Pd: 0.050 (s: 0.80), Pa: 0.050 (s: 0.82)
+ Exon  4  50834  50759 (  76 n);  cDNA    294    369 (  76 n); score: 0.776
+
+MATCH	U89959-	4879734+	0.786	369	0.802	C
+PGS_U89959-_4879734+	(51584  51552,51474  51319,51216  51113,50834  50759)
+
+Alignment (genomic DNA sequence = upper lines):
+
+AGCAGTTACT ACCGTGGGGC ACATGGAATT ATTGTAAGCA ACATCTTATC TAGGTTCTTT    51525
+||||| || | |||| || ||  ||||||||  |||                              
+AGCAGCTATT ACCGGGGAGC TCATGGAATA ATT....... .......... ..........       33
+
+
+CTGTTGACTC CTTTAAGTTT ATGTCCTAAT TTAGTTCTTG CACCTGGTAG ATTGTCTACG    51465
+                                                       ||||| |||| 
+.......... .......... .......... .......... .......... ATTGTATACG       43
+
+
+ATGTCACAGA TGAAGAAAGC TTCAATAATG TCAAGCAATG GTTGAGTGAA ATTGATCGTT    51405
+|||| |||||   |||||||| ||||| |||| | ||||| || ||||| |||| ||| |||||| 
+ATGTGACAGA CCAAGAAAGC TTCAACAATG TGAAGCAGTG GTTGAATGAA ATTNATCGTT      103
+
+
+ATGCTAGTGA CAATGTCAAC AAACTCCTTG TTGGAAACAA GTCTGATCTT ACTGAAAACA    51345
+|||| ||| | |||||| ||| || ||||||| |||| ||||| |   || ||  ||||  |||| 
+ATGCAAGTNA CAATGTAAAC AAGCTCCTTG TTGGGAACAA GAGCGACCTA ACTGCCAACA      163
+
+
+GAGCCATTCC TTATGAAACT GCCAAGGTAT ATATATGCCA CTTGAACCAA TTCTTTCTTC    51285
+ ||   |  |  | ||||||  || |||                                      
+AAGTTGTGTC ATCTGAAACA GCTAAG.... .......... .......... ..........      189
+
+
+TCAAGTTTTG AAAATCATCA AACTCTAAGG CTATTATTAC TTTCCTGATT ACTTCGAAAC    51225
+                                                                  
+.......... .......... .......... .......... .......... ..........      189
+
+
+ATTCATAGGC TTTTGCCGAT GAAATCGGGA TTCCTTTTAT GGAGACTAGT GCAAAAGATG    51165
+        ||  ||||| ||| || || || | | || || || |||||| ||| || ||  | | 
+........GC GTTTGCTGAT GAGATGGGCA TCCCCTTCAT GGAGACAAGT GCCAAGAACG      241
+
+
+CTACAAACGT AGAACAGGCT TTCATGGCAA TGTCTGCATC CATCAAAGAG AGGTATTTAT    51105
+| || || ||  || |||||  |||||||| | || | ||||| |||||| ||  ||         
+CCACTAATGT GGAGCAGGCC TTCATGGCTA TGGCCGCATC CATCAAGGAC AG........      293
+
+
+CTTACATCGT TCTTTTTAAG TAACTGCGGT TAATATACTC ATCATACCTG ATGGAACTTT    51045
+                                                                  
+.......... .......... .......... .......... .......... ..........      293
+
+
+TGCGAAGCCA TAATCTCATT TTTGTAAGTG TTTATATAGA TCTCAGAAAG TGTCACTGTG    50985
+                                                                  
+.......... .......... .......... .......... .......... ..........      293
+
+
+TAAGTGACCT TGGAGTGAAA TAAATAAATG ACTGATGTTG ACCTTGCAGT GTTCAAATTG    50925
+                                                                  
+.......... .......... .......... .......... .......... ..........      293
+
+
+AAAATTCAAG TAGTTGTACT TAATCAATTT GCAGAGAGTG TGCGTTCGTG TGATATATGA    50865
+                                                                  
+.......... .......... .......... .......... .......... ..........      293
+
+
+GAGAAATTGA TCTCTGTGGT TTGGATGCAG AATGGCTAGC CAACCAGCTG GGAATAATGC    50805
+                                  ||||||||| ||||| || |      ||||| 
+.......... .......... .......... GATGGCTAGC CAACCGGCCG CTTCAAATGC      323
+
+
+AAGACCACCG ACCGTGCAGA TCAGAGGACA GCCTGTGGCA CAGAAG    50759
+||| |||||| |||||||||| || | || ||  |||||     ||||||
+AAGGCCACCG ACCGTGCAGA TCCGCGGGCA ACCTGTCAAC CAGAAG      369
+
+
+hqPGS_U89959-_4879734+	(51584  51552,51474  51319,51216  51113,50834  50759)
+
+
+********************************************************************************
+EST sequence      3 +strand   275 n (File: 4969256+)
+
+     1  TCCTTGTTGG GAACAAGAGC GACCTAACTG CCAACAAAGT TGTGTCATCT GAAACAGCTA
+    61  AGGCNTTTNC TGATGAGATG GGCATCCCCT TCATGGAGAC AAGTGCCAAG AACGCCACTA
+   121  ATGTGGAGCA GGCCTTCATG GCTATGGCCG CATCCATCAA GGACAGGATG GCTAGCCAAC
+   181  CGGCCGCTTC AAATGCAAGG CCACCGACCG TGCAGATCCG CGGGCAACCT GTCAACCAGA
+   241  AGACGTCGTG CTGCTCGTNC TAAAGATAAC CAAGT
+
+Predicted gene structure (within gDNA segment 53103 to 49603):
+
+ Exon  1  51380  51319 (  62 n);  cDNA      1     62 (  62 n); score: 0.710
+  Intron  1  51318  51217 ( 102 n); Pd: 0.050 (s: 0.66), Pa: 0.050 (s: 0.74)
+ Exon  2  51216  51113 ( 104 n);  cDNA     63    166 ( 104 n); score: 0.760
+  Intron  2  51112  50835 ( 278 n); Pd: 0.050 (s: 0.80), Pa: 0.050 (s: 0.82)
+ Exon  3  50834  50771 (  64 n);  cDNA    167    230 (  64 n); score: 0.797
+
+MATCH	U89959-	4969256+	0.757	230	0.836	C
+PGS_U89959-_4969256+	(51380  51319,51216  51113,50834  50771)
+
+Alignment (genomic DNA sequence = upper lines):
+
+TCCTTGTTGG AAACAAGTCT GATCTTACTG AAAACAGAGC CATTCCTTAT GAAACTGCCA    51321
+||||||||||  ||||||    || || ||||   |||| ||    |  | | | ||||| || | 
+TCCTTGTTGG GAACAAGAGC GACCTAACTG CCAACAAAGT TGTGTCATCT GAAACAGCTA       60
+
+
+AGGTATATAT ATGCCACTTG AACCAATTCT TTCTTCTCAA GTTTTGAAAA TCATCAAACT    51261
+||                                                                
+AG........ .......... .......... .......... .......... ..........       62
+
+
+CTAAGGCTAT TATTACTTTC CTGATTACTT CGAAACATTC ATAGGCTTTT GCCGATGAAA    51201
+                                                || |||  | ||||| | 
+.......... .......... .......... .......... ....GCNTTT NCTGATGAGA       78
+
+
+TCGGGATTCC TTTTATGGAG ACTAGTGCAA AAGATGCTAC AAACGTAGAA CAGGCTTTCA    51141
+| || || ||  || |||||| || ||||| | |  | || ||  || || ||  ||||| |||| 
+TGGGCATCCC CTTCATGGAG ACAAGTGCCA AGAACGCCAC TAATGTGGAG CAGGCCTTCA      138
+
+
+TGGCAATGTC TGCATCCATC AAAGAGAGGT ATTTATCTTA CATCGTTCTT TTTAAGTAAC    51081
+|||| ||| |  ||||||||| || || ||                                    
+TGGCTATGGC CGCATCCATC AAGGACAG.. .......... .......... ..........      166
+
+
+TGCGGTTAAT ATACTCATCA TACCTGATGG AACTTTTGCG AAGCCATAAT CTCATTTTTG    51021
+                                                                  
+.......... .......... .......... .......... .......... ..........      166
+
+
+TAAGTGTTTA TATAGATCTC AGAAAGTGTC ACTGTGTAAG TGACCTTGGA GTGAAATAAA    50961
+                                                                  
+.......... .......... .......... .......... .......... ..........      166
+
+
+TAAATGACTG ATGTTGACCT TGCAGTGTTC AAATTGAAAA TTCAAGTAGT TGTACTTAAT    50901
+                                                                  
+.......... .......... .......... .......... .......... ..........      166
+
+
+CAATTTGCAG AGAGTGTGCG TTCGTGTGAT ATATGAGAGA AATTGATCTC TGTGGTTTGG    50841
+                                                                  
+.......... .......... .......... .......... .......... ..........      166
+
+
+ATGCAGAATG GCTAGCCAAC CAGCTGGGAA TAATGCAAGA CCACCGACCG TGCAGATCAG    50781
+       ||| |||||||||| | || |      ||||||||  |||||||||| |||||||| | 
+......GATG GCTAGCCAAC CGGCCGCTTC AAATGCAAGG CCACCGACCG TGCAGATCCG      220
+
+
+AGGACAGCCT    50771
+ || || ||| 
+CGGGCAACCT      230
+
+
+hqPGS_U89959-_4969256+	(51380  51319,51216  51113,50834  50771)
+
+
+********************************************************************************
+EST sequence     15 +strand   365 n (File: 703053+)
+
+     1  TGGAATTATT ATTGTATATG ANGTGACAGA CCAAGAAAGC TTCAACAATG TGAAGCAGTG
+    61  GTTGAATGAA ATTGATCGTT ATGCAAGTGA CAATGTTAAC AAGCTCCTCG TTGGGAACAA
+   121  GAGCGACCTA ACTGCCAACA AAGTTGTGTC ATCTGAAACA GCTAAGGCGT TTGCTGATGA
+   181  GATGGGCATC CCATTCATGG AGACAAGTGC CAAGAACGCC ACTAATGTGG AGCAGGCCTT
+   241  TATGGCTATG GCTGCATCCA TCAAGGACAG GATGGCGAGC CAACCGGCCG CTGCAAATGC
+   301  AAGGCCACCG ACGGTGCAGA TCCGCGGGCA CCTGTCAACC AGANGCGTCG TNTTCTCGTC
+   361  CTAAG
+
+Predicted gene structure (within gDNA segment 52372 to 49499):
+
+ Exon  1  51561  51552 (  10 n);  cDNA      1     10 (  10 n); score: 1.000
+  Intron  1  51551  51475 (  77 n); Pd: 0.050 (s:    0), Pa: 0.050 (s: 0.82)
+ Exon  2  51474  51319 ( 156 n);  cDNA     11    166 ( 156 n); score: 0.795
+  Intron  2  51318  51217 ( 102 n); Pd: 0.050 (s: 0.66), Pa: 0.050 (s: 0.76)
+ Exon  3  51216  51113 ( 104 n);  cDNA    167    270 ( 104 n); score: 0.769
+  Intron  3  51112  50835 ( 278 n); Pd: 0.050 (s: 0.80), Pa: 0.050 (s: 0.78)
+ Exon  4  50834  50775 (  60 n);  cDNA    271    330 (  60 n); score: 0.767
+
+MATCH	U89959-	703053+	0.781	330	0.904	C
+PGS_U89959-_703053+	(51561  51552,51474  51319,51216  51113,50834  50775)
+
+Alignment (genomic DNA sequence = upper lines):
+
+TGGAATTATT GTAAGCAACA TCTTATCTAG GTTCTTTCTG TTGACTCCTT TAAGTTTATG    51502
+||||||||||                                                        
+TGGAATTATT .......... .......... .......... .......... ..........       10
+
+
+TCCTAATTTA GTTCTTGCAC CTGGTAGATT GTCTACGATG TCACAGATGA AGAAAGCTTC    51442
+                             ||| || || || | | |||||  | |||||||||| 
+.......... .......... .......ATT GTATATGANG TGACAGACCA AGAAAGCTTC       43
+
+
+AATAATGTCA AGCAATGGTT GAGTGAAATT GATCGTTATG CTAGTGACAA TGTCAACAAA    51382
+|| ||||| | |||| ||||| || ||||||| |||||||||| | |||||||| ||| |||||  
+AACAATGTGA AGCAGTGGTT GAATGAAATT GATCGTTATG CAAGTGACAA TGTTAACAAG      103
+
+
+CTCCTTGTTG GAAACAAGTC TGATCTTACT GAAAACAGAG CCATTCCTTA TGAAACTGCC    51322
+||||| |||| | ||||||    || || ||| |  |||| ||    |  | |  |||||| ||  
+CTCCTCGTTG GGAACAAGAG CGACCTAACT GCCAACAAAG TTGTGTCATC TGAAACAGCT      163
+
+
+AAGGTATATA TATGCCACTT GAACCAATTC TTTCTTCTCA AGTTTTGAAA ATCATCAAAC    51262
+|||                                                               
+AAG....... .......... .......... .......... .......... ..........      166
+
+
+TCTAAGGCTA TTATTACTTT CCTGATTACT TCGAAACATT CATAGGCTTT TGCCGATGAA    51202
+                                                 || || ||| |||||  
+.......... .......... .......... .......... .....GCGTT TGCTGATGAG      181
+
+
+ATCGGGATTC CTTTTATGGA GACTAGTGCA AAAGATGCTA CAAACGTAGA ACAGGCTTTC    51142
+|| || || | | || ||||| ||| |||||  ||  | || | | || || ||  ||||| ||  
+ATGGGCATCC CATTCATGGA GACAAGTGCC AAGAACGCCA CTAATGTGGA GCAGGCCTTT      241
+
+
+ATGGCAATGT CTGCATCCAT CAAAGAGAGG TATTTATCTT ACATCGTTCT TTTTAAGTAA    51082
+||||| |||  |||||||||| ||| || ||                                   
+ATGGCTATGG CTGCATCCAT CAAGGACAG. .......... .......... ..........      270
+
+
+CTGCGGTTAA TATACTCATC ATACCTGATG GAACTTTTGC GAAGCCATAA TCTCATTTTT    51022
+                                                                  
+.......... .......... .......... .......... .......... ..........      270
+
+
+GTAAGTGTTT ATATAGATCT CAGAAAGTGT CACTGTGTAA GTGACCTTGG AGTGAAATAA    50962
+                                                                  
+.......... .......... .......... .......... .......... ..........      270
+
+
+ATAAATGACT GATGTTGACC TTGCAGTGTT CAAATTGAAA ATTCAAGTAG TTGTACTTAA    50902
+                                                                  
+.......... .......... .......... .......... .......... ..........      270
+
+
+TCAATTTGCA GAGAGTGTGC GTTCGTGTGA TATATGAGAG AAATTGATCT CTGTGGTTTG    50842
+                                                                  
+.......... .......... .......... .......... .......... ..........      270
+
+
+GATGCAGAAT GGCTAGCCAA CCAGCTGGGA ATAATGCAAG ACCACCGACC GTGCAGATCA    50782
+        || ||| |||||| || || |      ||||||||  ||||||||  |||||||||  
+.......GAT GGCGAGCCAA CCGGCCGCTG CAAATGCAAG GCCACCGACG GTGCAGATCC      323
+
+
+GAGGACA    50775
+| || ||
+GCGGGCA      330
+
+
+hqPGS_U89959-_703053+	(51474  51319,51216  51113,50834  50775)
+
+
+********************************************************************************
+EST sequence      8 +strand   471 n (File: 3769183+)
+
+     1  TGGAAACAGC TAAAGNCGTT TGGCTGATGA GATGGGNAAT CCCTTACTGN AGACAAGTGC
+    61  CAAGAACGCC ACTAAATGTG GAGCAGGCCT TCCATGGCTA TGGCCGCNTC CATCAGGGAC
+   121  AGGATGGCTA GCCAACCGGC CGCTTCAAAT GCAAGGCCAC CGACCGTGCA GATCCGCGGG
+   181  NAACCTGTCA ACCAGAAGAC GTCGTGCTGC TCGTCCTAAA GATAACCAAG TCTTTCCTTC
+   241  CATGTAAAAA TCGACGTANG TNNCNACTGT TTGCNCACTA CAACGTATTT GTGATATTCA
+   301  TTTGAACGCC CTTGATACCA TCTTTTCTTT CATCAGATGG TTAGGCAGCT GCAAATATAT
+   361  ATGTAACCTT GCTTTGTTGC TCTTTGCTCA CGAATCGAGA GGAGCAAGCA GAACCAGTGT
+   421  ATTTGATTCT TTTCACGCTT ACATTTTTCC CATTTCAAAN AAAAAAAAAA A
+
+Predicted gene structure (within gDNA segment 52663 to 47203):
+
+ Exon  1  51229  51113 ( 117 n);  cDNA      3    122 ( 120 n); score: 0.662
+  Intron  1  51112  50835 ( 278 n); Pd: 0.050 (s: 0.67), Pa: 0.050 (s: 0.82)
+ Exon  2  50834  50740 (  95 n);  cDNA    123    217 (  95 n); score: 0.732
+  Intron  2  50739  50404 ( 336 n); Pd: 0.000 (s: 0.66), Pa: 0.002 (s:    0)
+ Exon  3  50403  50394 (  10 n);  cDNA    218    227 (  10 n); score: 0.900
+  Intron  3  50393  49963 ( 431 n); Pd: 0.050 (s:    0), Pa: 0.000 (s:    0)
+ Exon  4  49962  49953 (  10 n);  cDNA    228    237 (  10 n); score: 0.800
+  Intron  4  49952  49297 ( 656 n); Pd: 0.050 (s:    0), Pa: 0.000 (s:    0)
+ Exon  5  49296  49265 (  32 n);  cDNA    238    269 (  32 n); score: 0.594
+  Intron  5  49264  49101 ( 164 n); Pd: 0.002 (s:    0), Pa: 0.000 (s:    0)
+ Exon  6  49100  49091 (  10 n);  cDNA    270    279 (  10 n); score: 0.800
+  Intron  6  49090  48956 ( 135 n); Pd: 0.050 (s:    0), Pa: 0.000 (s:    0)
+ Exon  7  48955  48930 (  26 n);  cDNA    280    306 (  27 n); score: 0.635
+  Intron  7  48929  48876 (  54 n); Pd: 0.050 (s:    0), Pa: 0.000 (s:    0)
+ Exon  8  48875  48866 (  10 n);  cDNA    307    316 (  10 n); score: 0.700
+  Intron  8  48865  48793 (  73 n); Pd: 0.050 (s:    0), Pa: 0.050 (s:    0)
+ Exon  9  48792  48768 (  25 n);  cDNA    317    341 (  25 n); score: 0.640
+  Intron  9  48767  48271 ( 497 n); Pd: 0.002 (s:    0), Pa: 0.002 (s:    0)
+ Exon 10  48270  48247 (  24 n);  cDNA    342    366 (  25 n); score: 0.646
+ PPA                              cDNA    457    471
+
+MATCH	U89959-	3769183+	0.693	359	0.762	C
+PGS_U89959-_3769183+	(51229  51113,50834  50740,50403  50394,49962  49953,49296  49265,49100  49091,48955  48930,48875  48866,48792  48768,48270  48247)
+
+Alignment (genomic DNA sequence = upper lines):
+
+GAAACATTCA TAGGC-TTTT GCCGATGAAA TCGGGATTCC TTTTATGGAG ACTAGTGCAA    51171
+||||||   |  || | |||  || ||||| | | || | |||  ||  || || || ||||| | 
+GAAACAGCTA AAGNCGTTTG GCTGATGAGA TGGGNAATCC CTTACTGNAG ACAAGTGCCA       62
+
+
+AAGATGCTAC -AAACGTAGA ACAGG-CTTT CATGGCAATG TCTGCATCCA TCAAAGAGAG    51113
+|  | || ||  ||| || ||  |||| |||  |||||| |||  | || |||| |||  || || 
+AGAACGCCAC TAAATGTGGA GCAGGCCTTC CATGGCTATG GCCGCNTCCA TCAGGGACAG      122
+
+
+GTATTTATCT TACATCGTTC TTTTTAAGTA ACTGCGGTTA ATATACTCAT CATACCTGAT    51053
+                                                                  
+.......... .......... .......... .......... .......... ..........      122
+
+
+GGAACTTTTG CGAAGCCATA ATCTCATTTT TGTAAGTGTT TATATAGATC TCAGAAAGTG    50993
+                                                                  
+.......... .......... .......... .......... .......... ..........      122
+
+
+TCACTGTGTA AGTGACCTTG GAGTGAAATA AATAAATGAC TGATGTTGAC CTTGCAGTGT    50933
+                                                                  
+.......... .......... .......... .......... .......... ..........      122
+
+
+TCAAATTGAA AATTCAAGTA GTTGTACTTA ATCAATTTGC AGAGAGTGTG CGTTCGTGTG    50873
+                                                                  
+.......... .......... .......... .......... .......... ..........      122
+
+
+ATATATGAGA GAAATTGATC TCTGTGGTTT GGATGCAGAA TGGCTAGCCA ACCAGCTGGG    50813
+                                          | |||||||||| ||| || |   
+.......... .......... .......... ........GA TGGCTAGCCA ACCGGCCGCT      144
+
+
+AATAATGCAA GACCACCGAC CGTGCAGATC AGAGGACAGC CTGTGGCACA GAAGAACGGC    50753
+   ||||||| | |||||||| ||||||||||  | ||  | | ||||    || |||| ||| | 
+TCAAATGCAA GGCCACCGAC CGTGCAGATC CGCGGGNAAC CTGTCAACCA GAAG-ACGTC      203
+
+
+-TGCTGCTCA ACTTGATTGA CGTGACCAGC CTAGCAATAT CCTTTCCAAT CTTAGAACAC    50694
+ ||||||||   | |                                                   
+GTGCTGCTCG TCCT...... .......... .......... .......... ..........      217
+
+
+GTGTTCCTTC TTTTGACTAG GCTCCAATTC ACTACTACTT GGTTTTTACA CAACATCCCC    50634
+                                                                  
+.......... .......... .......... .......... .......... ..........      217
+
+
+CCAAATCTGT CTTGTCTGTA ATTAAGCTCC TTTGGTTGGT TATTATTCTG TTTTTCACGT    50574
+                                                                  
+.......... .......... .......... .......... .......... ..........      217
+
+
+TTCCTATTTG CTTTACCTCA TGATGAGGTC CTCATCTTTC CAACATTCTT GTTTTTCATT    50514
+                                                                  
+.......... .......... .......... .......... .......... ..........      217
+
+
+TCTGCCTTTA GTGGTTTTCT ATGGGTTTCT TTGCATAACA ATGTTCTACG ACTCGATTTA    50454
+                                                                  
+.......... .......... .......... .......... .......... ..........      217
+
+
+AAACCCACAA ATTGTTTTTT CCTATATCAA ACGTGATCAT CATTGAAAAC AAAGATAATC    50394
+                                                       |||||||| | 
+.......... .......... .......... .......... .......... AAAGATAACC      227
+
+
+GTCTCGGGAA TTTAAATTAG AATCAACTTT TGTTTGTTTG ATTGAGACAT TGAGAGAATC    50334
+                                                                  
+.......... .......... .......... .......... .......... ..........      227
+
+
+CAATAGCGAG AAAGTGGAGT CACCAGTGTG AATTTAATCT TTGATACAGG TGCAACACGA    50274
+                                                                  
+.......... .......... .......... .......... .......... ..........      227
+
+
+ATACAATTGA TTACATCATT TCGTTTAACA GAGTCTCTGC TCATATTCAT ATGAGTAGGT    50214
+                                                                  
+.......... .......... .......... .......... .......... ..........      227
+
+
+AGGTATAACA ACAACTTTGC AAAGTAACGT CCGATAATAC ATTACATACA TACATGCATA    50154
+                                                                  
+.......... .......... .......... .......... .......... ..........      227
+
+
+TATCCATCCG CATTCTGCAC AAACAGAGAG TAGGGTGTAG CAAATTTACT GTTTGTTGCG    50094
+                                                                  
+.......... .......... .......... .......... .......... ..........      227
+
+
+GCGGAGGAGG CGTTCCAAAT GGTGGAACTG AGCCTTCAAG GCGGCATGGT CTTGTCGCAT    50034
+                                                                  
+.......... .......... .......... .......... .......... ..........      227
+
+
+CCTCTGCAAA CGATCCTCAA CCATCATCAT CTCTTCCCTC AGGAAATGCA TTCTCTTCTC    49974
+                                                                  
+.......... .......... .......... .......... .......... ..........      227
+
+
+TAACCACCCC AAAGTCTCCC CGTTTACACT GTACTCGTCG TACCTCTCAT GATACTCCAC    49914
+            ||||||  | |                                           
+.......... .AAGTCTTTC C......... .......... .......... ..........      237
+
+
+TTGCCCCCCT CCTCCTTTTT TCAGTAGCAC CACTATCGTC ACCTGTCCAC ACTTCCACCT    49854
+                                                                  
+.......... .......... .......... .......... .......... ..........      237
+
+
+ATTGTTAGCT TTTTTTTTTC TCTATCTCCC TCTCTCTCTC TTTCACTACC AATTTATCCA    49794
+                                                                  
+.......... .......... .......... .......... .......... ..........      237
+
+
+AAATACACAT ACCTGCATCA GTAAGATTAC TGCAAACGCT AATACTATAA CCTGCCTTGT    49734
+                                                                  
+.......... .......... .......... .......... .......... ..........      237
+
+
+CCCGCTTTGC CTCTTCACAA ATGAAGTCAG ATTCACCCAT GCTTCCTTTA AGCTTTTTTT    49674
+                                                                  
+.......... .......... .......... .......... .......... ..........      237
+
+
+AACTACCCCT TCGCCCACCA TTTCCACCTT CCCCTCCTCG TCACATTCAG ATACTCTTTC    49614
+                                                                  
+.......... .......... .......... .......... .......... ..........      237
+
+
+TTCCCTTGCT GCTAGCGGTT CACCATCCTC AATCAACTTA TTCCCTGTAG AATATGGTGT    49554
+                                                                  
+.......... .......... .......... .......... .......... ..........      237
+
+
+CAGCCAGCTT TCTTCGGGGA AAAGCTTCTG TTAATCATCA GTCTACAACA CTAACCTTCT    49494
+                                                                  
+.......... .......... .......... .......... .......... ..........      237
+
+
+TGGTTCTCCA GCTTCTTCTG CTTCAACAGT TCATGTGCCT CCAAAGATAA TAATGAAGAA    49434
+                                                                  
+.......... .......... .......... .......... .......... ..........      237
+
+
+AAATATATAT AAACTTGTTT AAATTCCTGC AGAAACTAAA AAAAAAAAAA TGTTGACCCA    49374
+                                                                  
+.......... .......... .......... .......... .......... ..........      237
+
+
+ATGGCCCCTG ATCAAGTACC ATTCTTATCC AATGTGCATA AGCTTCTCTA CATTCTTCTA    49314
+                                                                  
+.......... .......... .......... .......... .......... ..........      237
+
+
+AAGTAGACTG CACTATTTTC CCTGTAAAAA TTCATAGACG TCAAGCCAGA TTCAAGAACC    49254
+                  ||| | |||||||| |  |   | | |     | |             
+.......... .......TTC CATGTAAAAA TCGACGTANG TNNCNACTG. ..........      269
+
+
+ATCAAATTCA ACAAAGCTGA AAGATTTCCA AATCTATAAG AACGAGAATC CGCAGCAAAC    49194
+                                                                  
+.......... .......... .......... .......... .......... ..........      269
+
+
+ACTCTTGAAC TATTAATTGA AATTTCTTCA TTGATAGGAG GCAAGAGTGA AAAAAATCAA    49134
+                                                                  
+.......... .......... .......... .......... .......... ..........      269
+
+
+GGATAAAGAA GAGTAAATTA GGCTTAACAA ACCTTTCCAC ACTGTTCTTT TAGAGAAGGC    49074
+                                    ||| | | |||                   
+.......... .......... .......... ...TTTGCNC ACT....... ..........      279
+
+
+CACATTGACA TAAACATCCA ATATACAACC TTCTACCGAG TCTCTGCAAT CTCTTTTCAA    49014
+                                                                  
+.......... .......... .......... .......... .......... ..........      279
+
+
+GTCCCAGACT CCCTGGGATC AGCCAAAGGT AAAATTTTTC ACATGTAACA CACATCAAAC    48954
+                                                               || 
+.......... .......... .......... .......... .......... ........AC      281
+
+
+AACAAAATAT TGATA-GCAT TTGATGTAAA TTTCCCCTAC CTCTACCGTA AAATAATCTG    48895
+|||  | |   |||||  ||| ||||                                        
+AACGTATTTG TGATATTCAT TTGAA..... .......... .......... ..........      306
+
+
+CATAAGGCAC ATCGCTGATC TCCTGTGATG TTTCAATAAC CAGATGGCTA GCATAGGAAA    48835
+                    |  ||  ||||                                   
+.......... .........C GCCCTTGAT. .......... .......... ..........      316
+
+
+TTACAATATT AGCTAACAGA GGATAAGCAT GCATGAGTTC AGACTAGCTT TGCTTTGACG    48775
+                                              || | ||| | |||| |   
+.......... .......... .......... .......... ..ACCATCTT TTCTTTCATC      334
+
+
+ATATAGAATA AAACCAAAAA ACATTACAAA ATTTCTGTAC CTATTTCTGT ACATCCGAAA    48715
+| || |                                                            
+AGATGGT... .......... .......... .......... .......... ..........      341
+
+
+TTTCTGTGAC TCCTGGCAGC CACCAAACTT TGCACCTTTA AACGAAAGCC AGAGTCATGC    48655
+                                                                  
+.......... .......... .......... .......... .......... ..........      341
+
+
+ATACATATAT TTGATATAAA CCGTAATCTA TTTTATATAA TTACACCAAA AAAATATATA    48595
+                                                                  
+.......... .......... .......... .......... .......... ..........      341
+
+
+TTTGATATAA ACCGTAATCT AGTACTGTTT ATCTATAGGA AAGAAAAAAT ATTACCAAAA    48535
+                                                                  
+.......... .......... .......... .......... .......... ..........      341
+
+
+TAAATTTTTA TCGGATGTTG AAATGAGACA TTGCGGGTGT GTCCAAGCTT TTCATGAGGT    48475
+                                                                  
+.......... .......... .......... .......... .......... ..........      341
+
+
+TGCCAAGAGG TACACCTAAA CTCTGCAAGT ACAAATATCT CTTCTGGTTA AAAGAACACC    48415
+                                                                  
+.......... .......... .......... .......... .......... ..........      341
+
+
+GAGAAAGAGA GAGAAAACAG CTAAACACAG GAGCAAAATG ATTCCATCAC TTATAGCTTT    48355
+                                                                  
+.......... .......... .......... .......... .......... ..........      341
+
+
+ACCTTTGTCT CCACAATTTT TATGGAAAGA TTCAACAAAA CTGACAGCAC CATCTGAAAA    48295
+                                                                  
+.......... .......... .......... .......... .......... ..........      341
+
+
+AAACAATCTA AAGAACTCTT CTACT-GGAA TCTGCAAATA TAAACTAAA    48247
+                          | || |  ||||||||| || |   ||
+.......... .......... ....TAGGCA GCTGCAAATA TATATGTAA      366
+
+
+hqPGS_U89959-_3769183+	(50834  50740)
+
+
+********************************************************************************
+EST sequence     11 +strand   614 n (File: 3760776+)
+
+     1  TTCCCCCCCC GACGGCAAGC TCCNTACGCC AACAACTCCA ACTACAAGAA CGACNCCNTG
+    61  ATCCGCAAGG AGGTCTTCGT CTCCCCCTCC GTCCTCCCGC GAGGCCCGGA GGATCATCCA
+   121  GGAGTCCGAG ATTTATGAAG GAGGACGACA ACAACTGGCC AGAGCCCGAC CGCTTGGGGA
+   181  GGCAGGAGCT CGAGATTGTT ATGGGCAACG AGCACATCTC CTTCACCACC TCCAAGATTG
+   241  GCTCCCTCGT CGACGTCCAG ACCAGCAAGG ACCCTGAGGG CCTCCGCATC TTCTACTACC
+   301  TCGTCCAGGA TCTGAAATGT TTCGTGTTTT CACTCATCAA TCTCCACTTC AAGATCAAGC
+   361  CTATTCAATC TTGAGCTCCT TTCAGTCTCT TAATTGTGTT ATGGCCNGTT TTAGAGAATT
+   421  CTGTATTATT ATGTATGATC CAGCGGGTTA ACCATGGTGG TGGGGTGTTT GTGGAACAGA
+   481  GGGTGGAATC TTAATACTTT GGTGCCTGGG ATTGTTGTTG GATTGTGCAA GCTTTGGGTG
+   541  CTCGTTACTC AAGTNGTGAT ATTTATTATT GTGAAATCTT TTTCTNCTCC AAAAAAAAAA
+   601  AAAAAAAAAA AAAA
+
+Predicted gene structure (within gDNA segment 55653 to 50399):
+
+ Exon  1  54693  54574 ( 120 n);  cDNA     11    130 ( 120 n); score: 0.721
+  Intron  1  54573  54336 ( 238 n); Pd: 0.050 (s: 0.58), Pa: 0.050 (s: 0.70)
+ Exon  2  54335  54159 ( 177 n);  cDNA    131    308 ( 178 n); score: 0.749
+  Intron  2  54158  53915 ( 244 n); Pd: 0.050 (s: 0.80), Pa: 0.050 (s: 0.80)
+ Exon  3  53914  53861 (  54 n);  cDNA    309    362 (  54 n); score: 0.815
+  Intron  3  53860  53673 ( 188 n); Pd: 0.002 (s: 0.84), Pa: 0.002 (s:    0)
+ Exon  4  53672  53652 (  21 n);  cDNA    363    383 (  21 n); score: 0.667
+  Intron  4  53651  53260 ( 392 n); Pd: 0.002 (s:    0), Pa: 0.000 (s:    0)
+ Exon  5  53259  53225 (  35 n);  cDNA    384    417 (  34 n); score: 0.657
+  Intron  5  53224  52966 ( 259 n); Pd: 0.050 (s:    0), Pa: 0.000 (s:    0)
+ Exon  6  52965  52949 (  17 n);  cDNA    418    433 (  16 n); score: 0.706
+  Intron  6  52948  52547 ( 402 n); Pd: 0.050 (s:    0), Pa: 0.050 (s:    0)
+ Exon  7  52546  52535 (  12 n);  cDNA    434    444 (  11 n); score: 0.833
+  Intron  7  52534  52084 ( 451 n); Pd: 0.002 (s:    0), Pa: 0.050 (s:    0)
+ Exon  8  52083  52062 (  22 n);  cDNA    445    466 (  22 n); score: 0.636
+  Intron  8  52061  51751 ( 311 n); Pd: 0.000 (s:    0), Pa: 0.050 (s:    0)
+ Exon  9  51750  51726 (  25 n);  cDNA    467    490 (  24 n); score: 0.640
+  Intron  9  51725  51580 ( 146 n); Pd: 0.002 (s:    0), Pa: 0.050 (s:    0)
+ Exon 10  51579  51552 (  28 n);  cDNA    491    516 (  26 n); score: 0.714
+ PPA                              cDNA    591    614
+
+MATCH	U89959-	3760776+	0.749	511	0.832	C
+PGS_U89959-_3760776+	(54693  54574,54335  54159,53914  53861,53672  53652,53259  53225,52965  52949,52546  52535,52083  52062,51750  51726,51579  51552)
+
+Alignment (genomic DNA sequence = upper lines):
+
+GACGGTAAGC TCCGTTACGC CAATAACTCT AACTACAAGA ACGATACTAT TATCCGCAAG    54634
+||||| |||| |||  ||||| ||| |||||  |||||||||| ||||  |  |  ||||||||| 
+GACGGCAAGC TCC-NTACGC CAACAACTCC AACTACAAGA ACGACNCCNT GATCCGCAAG       69
+
+
+GAGGTATTTC TCACCCCCGC CGTGCTCAAG -GAATGCAAG CGTATCGTCT CCGAGAGCGA    54575
+||||| ||   || ||||| | ||| |||  |  ||   |  |  | ||| ||    |||  ||| 
+GAGGTCTTCG TCTCCCCCTC CGTCCTCCCG CGAGGCCCGG AGGATCATCC AGGAGTCCGA      129
+
+
+GGTCCTTTTT CTCTCTCTCT TCCGATTTGC TTCTCTCTTG TTAATTGTCC GCGTTTTGGT    54515
+|                                                                 
+G......... .......... .......... .......... .......... ..........      130
+
+
+CAATCGACGC TATAATAGCC AATTAGGGTT TTAGTGATTT TGCTTCGATT TTTGTCGATC    54455
+                                                                  
+.......... .......... .......... .......... .......... ..........      130
+
+
+TAGGGCATCT TTCCTGACTA GTGTTGTAGG TTTAGAACCC TCTTCGTTGT TAATGCTATT    54395
+                                                                  
+.......... .......... .......... .......... .......... ..........      130
+
+
+ATCTAGGAAT AATGGATGAT TTTGTACAAC CTGACATGTG ATTATTTGTC TGCGGGTAGA    54335
+                                                                | 
+.......... .......... .......... .......... .......... .........A      131
+
+
+-TTCTGAAAG AAGACGATAA CAATTGGCCG GAACCTGACC GTGTTGGAAA GCAAGAGCTC    54276
+ || |||| | | ||||| || ||| |||||  || || |||| |  | || |  ||| |||||| 
+TTTATGAAGG AGGACGACAA CAACTGGCCA GAGCCCGACC GCTTGGGGAG GCAGGAGCTC      191
+
+
+GAGATCGTCT TGGGTAATGA GCATATCTCA TTCGCTACAT CTAAGATTGG ATCTCTTGTT    54216
+||||| ||   |||| || || ||| |||||  ||| | || | | ||||||||  || || ||  
+GAGATTGTTA TGGGCAACGA GCACATCTCC TTCACCACCT CCAAGATTGG CTCCCTCGTC      251
+
+
+GATTGCCAGA GCAGTAATGA TCCTGAAGGA CTTCGCATCT TCTACTATCT TGTTCAGGTC    54156
+||   |||||  ||| || ||  ||||| ||  || ||||||| ||||||| ||  || |||    
+GACGTCCAGA CCAGCAAGGA CCCTGAGGGC CTCCGCATCT TCTACTACCT CGTCCAG...      308
+
+
+TCCTCTCTTT TTCTTCCACC CCTTGCCTTA CCATCTTTTC TTTTACCTAA TCCCTTAACT    54096
+                                                                  
+.......... .......... .......... .......... .......... ..........      308
+
+
+CTATTGGACT CGATTATATA TTTAGGACTC TGCCTTTTAA CGTATTCACT GTCTCAAACT    54036
+                                                                  
+.......... .......... .......... .......... .......... ..........      308
+
+
+TTAACATTTA GGGTTTGGCT GTTAACACTC ATCCCTTACA TGGTTCTGTA GTTTTTTTTT    53976
+                                                                  
+.......... .......... .......... .......... .......... ..........      308
+
+
+TTTTAGTTTC TGTATTTATT TGTGCTCTAA CATATTCCTT TTGAAACTTT CATGGTTGCA    53916
+                                                                  
+.......... .......... .......... .......... .......... ..........      308
+
+
+GGACTTGAAA TGTCTTGTTT TTTCGCTCAT CTCTCTGCAC TTCAAAATCA AGCCTATCTA    53856
+ ||  ||||| ||| | || | |||| ||||| |  ||| ||| ||||| |||| |||||      
+.GATCTGAAA TGTTTCGTGT TTTCACTCAT CAATCTCCAC TTCAAGATCA AGCCT.....      362
+
+
+GAGAAGAAAA TCAGTTTGTG ACATGTCAAG ACGCGATGAA TTTGTTGGGA ACATGAGGAC    53796
+                                                                  
+.......... .......... .......... .......... .......... ..........      362
+
+
+TTTGTGACTG AAGTTTGGTT GTTTTTATGT CTCTGGTTCT CTGTTTTTTT TTTTTGTTGG    53736
+                                                                  
+.......... .......... .......... .......... .......... ..........      362
+
+
+ATTTGGGTGA AAGTGGGTAT GTAAGATGTT CTACCTCAAC TTTTGGTCCT TTTTTGTGTC    53676
+                                                                  
+.......... .......... .......... .......... .......... ..........      362
+
+
+AACATCCCAT GTGAAGAACC TTTCATGAAC CACAACCTAT CTTCTAAAAA CCATATACTT    53616
+   || | ||  |  ||  || ||||                                        
+...ATTCAAT CTTGAGCTCC TTTC...... .......... .......... ..........      383
+
+
+GCTGTTTTCT TATCACAAAT CATTCACTCT CCCTAATGTA CATCTACATA TGATGCATGT    53556
+                                                                  
+.......... .......... .......... .......... .......... ..........      383
+
+
+TTCTTTTCCC TCAAGCCAAT TTAAACTAAG GAATGTGATC TATCTAAAAT ACAAAGTATC    53496
+                                                                  
+.......... .......... .......... .......... .......... ..........      383
+
+
+AAAAACTAGC TGGATTAGTC GATAATTAGG ATTGTTTCCA TTCTAAAAAA ACGCCCTCGG    53436
+                                                                  
+.......... .......... .......... .......... .......... ..........      383
+
+
+ACCATTCAAA CTGCTCCTCC AAAACCCGTA AATCTGGTTT TGCATTGAAG ATATCAAGAG    53376
+                                                                  
+.......... .......... .......... .......... .......... ..........      383
+
+
+TAGCTTTTTA TGAATCGGGA AGAACAATGG AGGATTCATT TGTCAGTGTC AGGCGGATTA    53316
+                                                                  
+.......... .......... .......... .......... .......... ..........      383
+
+
+CTCACAGCCT AGACAGAGGA CGCACCTGCC ATTCATCCTC AGGTTAAGCA CGCACTAGTC    53256
+                                                             |||| 
+.......... .......... .......... .......... .......... ......AGTC      387
+
+
+TCCTTTACCT TGTTGTAGTG TGTTGCAGAG AGTCACATGC ATATTTCATC TTGTGGCAGG    53196
+|| || |    |||| | |    |||  |||| |                                
+TC-TTAATTG TGTTATGGCC NGTTTTAGAG A......... .......... ..........      417
+
+
+ATCAGGTGCA TGGTTAGGGC GGGGACTGGC TTGTGTTTGT GCACAGAAAA GGGATCACCA    53136
+                                                                  
+.......... .......... .......... .......... .......... ..........      417
+
+
+CTCTCGTTAT TCCTTTGATC TCACCCCTGC TCAGGCACCA ACTAGCATCA GCTAGTTAGT    53076
+                                                                  
+.......... .......... .......... .......... .......... ..........      417
+
+
+TAGTTACCTT TTAAGATGGT CGGGGAAACA TTAGTAGCTG GTTAGTTAGT TAGTTACAGC    53016
+                                                                  
+.......... .......... .......... .......... .......... ..........      417
+
+
+AGCTTTGGGT TAAGAGAGAT AAACGCGAAG CCATATATAT TGACAATTGG ATGGTGTATA    52956
+                                                       ||  |||||  
+.......... .......... .......... .......... .......... ATTCTGTATT      427
+
+
+ATTTATTGTT AGAAAACGAG TCCGCATTTG ATATTCGATA TTGCATTGCG TTCAAGGTGA    52896
+| ||||                                                            
+A-TTATG... .......... .......... .......... .......... ..........      433
+
+
+TGGATGATAA GTGGCTCACA ATGCGGGATT CCTACATGGA TTTTTTTTTT TTTTTTTTTA    52836
+                                                                  
+.......... .......... .......... .......... .......... ..........      433
+
+
+CATGGATTTT AACGTAGCCT TTCTCCTCCA TATAGCTTTG ACTTTAAGAG ATCAACTCAG    52776
+                                                                  
+.......... .......... .......... .......... .......... ..........      433
+
+
+TCTTCAGAGA CTGAGTGTAA GTAAATTTGT GTTTGTTTGG CAGACGGTGC TGAAATCGAC    52716
+                                                                  
+.......... .......... .......... .......... .......... ..........      433
+
+
+AAGGCATCAA CTGGAGAGAG AGCTTCTACT GGAAGATGGG ACCCGAGTCC AAGCCTTACC    52656
+                                                                  
+.......... .......... .......... .......... .......... ..........      433
+
+
+TTGTTTTAAC CTCCTCCTCC AGAAAGAGTT AGAGTATATC TCCCAACTTA AAATATAGAT    52596
+                                                                  
+.......... .......... .......... .......... .......... ..........      433
+
+
+GTCAATCAAA AAGCAAGCAA CAATTGGAAA AATGAATCAA GAAGACTAGT ATAGATCCAA    52536
+                                                     | || ||||||  
+.......... .......... .......... .......... .........T AT-GATCCAG      443
+
+
+CATCTGGGAA CCACAAAACA ATCTCCAATT GCTGAGTGGA TCGTAGGAAG GGCCAATTTA    52476
+|                                                                 
+C......... .......... .......... .......... .......... ..........      444
+
+
+CAACCCTAAA CTTGTGAAAG AAGAATGAAT TTTAATCTTG GCGTTATTGG GCCTCCGCTC    52416
+                                                                  
+.......... .......... .......... .......... .......... ..........      444
+
+
+CTCTGGACTC TGTCGGGCTT GATCCATTTT CGTTGCTGAG TGGATCGTAG GAACCCTAAA    52356
+                                                                  
+.......... .......... .......... .......... .......... ..........      444
+
+
+CTTGTGAAAG AAGAATGAAT TTTAATCTTT TGCATTATTG GGCCTTCGCT CATATTATTA    52296
+                                                                  
+.......... .......... .......... .......... .......... ..........      444
+
+
+TTCAAGGCCC AAACACTGAA TCTCCTCCTC TTGTAAATCG CGAGAGAAAA TCAGAAAAGA    52236
+                                                                  
+.......... .......... .......... .......... .......... ..........      444
+
+
+GAGAGAGAGA TCTCTGGCTC TGTATCGCTC GCTGCTCTTC CTCCCACAGA TCGAAAACCA    52176
+                                                                  
+.......... .......... .......... .......... .......... ..........      444
+
+
+TGAATCCTGA GTAGTAAGTT CCTTTCTCCA TCGACACATA CTTGGGTCGA AATTACCTCT    52116
+                                                                  
+.......... .......... .......... .......... .......... ..........      444
+
+
+GTTATATATT TGATTCTCCG GGTGGTTCCT AGGGTTTAAT TAGCGTTTTG GGATTTGCAG    52056
+                                   || ||||   |  ||  || || |       
+.......... .......... .......... ..GGGTTAAC CATGGTGGTG GGGT......      466
+
+
+CGACTATCTT TTCAAGCTCC TGCTTATCGG GGATTCTGGC GTAGGCAAGT CTTGTCTTCT    51996
+                                                                  
+.......... .......... .......... .......... .......... ..........      466
+
+
+TTTGAGATTC TCTGTAAGTT TTTTTTTTTG TCTTTTTCTT TCTCAGAGAT CAAACACTGT    51936
+                                                                  
+.......... .......... .......... .......... .......... ..........      466
+
+
+AGCTTTCTAC ATTTGTTCAT GTTTGTTGTT CTGCTGCAGG ATGATTCTTA TGTAGAAAGT    51876
+                                                                  
+.......... .......... .......... .......... .......... ..........      466
+
+
+TACATTAGCA CTATTGGAGT CGATTTTGTA AGTTGATGTT TTCTTTTTTT TCTTCTTGCT    51816
+                                                                  
+.......... .......... .......... .......... .......... ..........      466
+
+
+ACTGATGACG ATGCTTTGAT CTGACCTTTT TTTTTTTCTT ATATATCTCT TGTTCAGAAA    51756
+                                                                  
+.......... .......... .......... .......... .......... ..........      466
+
+
+ATTAGGACTG TGGAACAAGA TGGCAAAACA ATTAAGCTCC AAATTGTATG TAACTATTTT    51696
+     |  || |||||| |||  ||   ||                                    
+.....GTTTG TGGAAC-AGA GGGTGGAATC .......... .......... ..........      490
+
+
+CACACTTGTC AAGTTAATAG CTCTACGTCT CTTTCCCTTA ATTCATATTT TTCCCTCTTC    51636
+                                                                  
+.......... .......... .......... .......... .......... ..........      490
+
+
+ACTTATTTTC AGTGGGACAC TGCTGGTCAA GAACGGTTCA GGACTATTAC TAGCAGTTAC    51576
+                                                             |||  
+.......... .......... .......... .......... .......... ......TTAA      494
+
+
+TACCGTGGGG CACATGGAAT TATT    51552
+|||  ||| | | | ||| || | ||
+TACTTTGGTG C-C-TGGGAT TGTT      516
+
+
+hqPGS_U89959-_3760776+	(54693  54574,54335  54159,53914  53861,53672  53652,53259  53225,52965  52949,52546  52535,52083  52062,51750  51726,51579  51552)
+
+
+********************************************************************************
+EST sequence      2 +strand   712 n (File: 5005502+)
+
+     1  TGCAAAATCT CGCGACCAAG CGGCGGCGGC GGCGGGAGAG AACGAGAGGT GACCGATGGC
+    61  GACGGGCGGC GCCGCCGGCG AGGACGTCCC CGGCGGCGGC GAGTTCTACC TGCGGTACTA
+   121  CGTGGGGCAC AAGGGGAAGT TCGGGCACGA GTTCCTCGAG TTCGAGTTCC GCCCCGACGG
+   181  CAAGCTCCGC TACGCCAACA ACTCCAACTA CAAGAACGAC ACCATGATCC GCAAGGAGGT
+   241  CTTCGTCTCC CCCTCCGTCC TCCGCGAGGC CCGGAGGATC ATCCAGGAGT CCGAGATTAT
+   301  GAAGGAGGAC GACAACAACT GGCCAGAGCC CGACCGCGTG GGGAGGCAGG AGCTCGAGAT
+   361  TGTTATGGGC AACGAGCACA TCTCCTTCAC CACCTCCAAG ATTGGCTCCC TCGTCGACGT
+   421  CCAGACCAGC AAGGACCCTG AGGGCCTCCG GCATCTTCTA CTACCTCGTC CAGGATCTGA
+   481  AATGTTTCGT GTTTTCACTC ATCAATCTCC ACTTCAAAGA TCAAGCCTAT TCAATCTTGA
+   541  GCTCCTTTCA GTCTCTTAAT TGTGTTATGG CCAGTTTTAG AGAATTCTGT ATTATTATGT
+   601  ATGATCCAGC GGGTTANCCA TGGTGGTGGG GTGTTTGTGG AACAGAGGGT GGAATCTTAA
+   661  TACTTTGGTG CCTGGGATTG GTTGTTGGAT TGNGCAAGTT TGGGTGTCGT TA
+
+Predicted gene structure (within gDNA segment 56368 to 50469):
+
+ Exon  1  54768  54574 ( 195 n);  cDNA    101    295 ( 195 n); score: 0.769
+  Intron  1  54573  54336 ( 238 n); Pd: 0.050 (s: 0.62), Pa: 0.050 (s: 0.76)
+ Exon  2  54335  54159 ( 177 n);  cDNA    296    473 ( 178 n); score: 0.754
+  Intron  2  54158  53915 ( 244 n); Pd: 0.050 (s: 0.74), Pa: 0.050 (s: 0.77)
+ Exon  3  53914  53861 (  54 n);  cDNA    474    528 (  55 n); score: 0.787
+  Intron  3  53860  53673 ( 188 n); Pd: 0.002 (s: 0.81), Pa: 0.002 (s:    0)
+ Exon  4  53672  53652 (  21 n);  cDNA    529    549 (  21 n); score: 0.667
+  Intron  4  53651  53260 ( 392 n); Pd: 0.002 (s:    0), Pa: 0.000 (s:    0)
+ Exon  5  53259  53225 (  35 n);  cDNA    550    583 (  34 n); score: 0.657
+  Intron  5  53224  51990 (1235 n); Pd: 0.050 (s:    0), Pa: 0.050 (s:    0)
+ Exon  6  51989  51979 (  11 n);  cDNA    584    594 (  11 n); score: 0.727
+  Intron  6  51978  51113 ( 866 n); Pd: 0.050 (s:    0), Pa: 0.050 (s:    0)
+ Exon  7  51112  51099 (  14 n);  cDNA    595    608 (  14 n); score: 0.643
+
+MATCH	U89959-	5005502+	0.765	507	0.712	C
+PGS_U89959-_5005502+	(54768  54574,54335  54159,53914  53861,53672  53652,53259  53225,51989  51979,51112  51099)
+
+Alignment (genomic DNA sequence = upper lines):
+
+GAGTTCTACC TGAGATACTA TGTCGGTCAC AAAGGGAAAT TTGGACACGA GTTCCTGGAG    54709
+|||||||||| || | |||||  || || ||| || ||||| | | || ||||| |||||| ||| 
+GAGTTCTACC TGCGGTACTA CGTGGGGCAC AAGGGGAAGT TCGGGCACGA GTTCCTCGAG      160
+
+
+TTCGAGTTTA GAGAGGACGG TAAGCTCCGT TACGCCAATA ACTCTAACTA CAAGAACGAT    54649
+||||||||   |    |||||  ||||||||  |||||||| | |||| ||||| |||||||||  
+TTCGAGTTCC GCCCCGACGG CAAGCTCCGC TACGCCAACA ACTCCAACTA CAAGAACGAC      220
+
+
+ACTATTATCC GCAAGGAGGT ATTTCTCACC CCCGCCGTGC TCAAGGAATG CAAGCGTATC    54589
+|| || |||| ||||||||||  ||  || || ||| |||| | ||   ||    |  | | ||| 
+ACCATGATCC GCAAGGAGGT CTTCGTCTCC CCCTCCGTCC TCCGCGAGGC CCGGAGGATC      280
+
+
+GTCTCCGAGA GCGAGGTCCT TTTTCTCTCT CTCTTCCGAT TTGCTTCTCT CTTGTTAATT    54529
+ ||   |||   ||||                                                  
+ATCCAGGAGT CCGAG..... .......... .......... .......... ..........      295
+
+
+GTCCGCGTTT TGGTCAATCG ACGCTATAAT AGCCAATTAG GGTTTTAGTG ATTTTGCTTC    54469
+                                                                  
+.......... .......... .......... .......... .......... ..........      295
+
+
+GATTTTTGTC GATCTAGGGC ATCTTTCCTG ACTAGTGTTG TAGGTTTAGA ACCCTCTTCG    54409
+                                                                  
+.......... .......... .......... .......... .......... ..........      295
+
+
+TTGTTAATGC TATTATCTAG GAATAATGGA TGATTTTGTA CAACCTGACA TGTGATTATT    54349
+                                                                  
+.......... .......... .......... .......... .......... ..........      295
+
+
+TGTCTGCGGG TAGATTCTGA AAGAAGACGA TAACAATTGG CCGGAACCTG ACCGTGTTGG    54289
+              ||| ||| | || |||||  ||||| ||| || || || | |||| || || 
+.......... ...ATTATGA AGGAGGACGA CAACAACTGG CCAGAGCCCG ACCGCGTGGG      342
+
+
+AAAGCAAGAG CTCGAGATCG TCTTGGGTAA TGAGCATATC TCATTCGCTA CATCTAAGAT    54229
+ | ||| ||| |||||||| | |  |||| ||  ||||| ||| || ||| | | | || ||||| 
+GAGGCAGGAG CTCGAGATTG TTATGGGCAA CGAGCACATC TCCTTCACCA CCTCCAAGAT      402
+
+
+TGGATCTCTT GTTGATTGCC AGAGCAGTAA TGATCCTGAA GGACTTC-GC ATCTTCTACT    54170
+||| || ||  || ||   || ||| ||| ||  || |||||  || || | || |||||||||| 
+TGGCTCCCTC GTCGACGTCC AGACCAGCAA GGACCCTGAG GGCCTCCGGC ATCTTCTACT      462
+
+
+ATCTTGTTCA GGTCTCCTCT CTTTTTCTTC CACCCCTTGC CTTACCATCT TTTCTTTTAC    54110
+| || || || |                                                      
+ACCTCGTCCA G......... .......... .......... .......... ..........      473
+
+
+CTAATCCCTT AACTCTATTG GACTCGATTA TATATTTAGG ACTCTGCCTT TTAACGTATT    54050
+                                                                  
+.......... .......... .......... .......... .......... ..........      473
+
+
+CACTGTCTCA AACTTTAACA TTTAGGGTTT GGCTGTTAAC ACTCATCCCT TACATGGTTC    53990
+                                                                  
+.......... .......... .......... .......... .......... ..........      473
+
+
+TGTAGTTTTT TTTTTTTTAG TTTCTGTATT TATTTGTGCT CTAACATATT CCTTTTGAAA    53930
+                                                                  
+.......... .......... .......... .......... .......... ..........      473
+
+
+CTTTCATGGT TGCAGGACTT GAAATGTCTT GTTTTTTCGC TCATCTCTCT GCACTTCAAA    53870
+                ||  | ||||||| |  || ||||| | |||||  |||  ||||||||| 
+.......... .....GATCT GAAATGTTTC GTGTTTTCAC TCATCAATCT CCACTTCAAA      518
+
+
+-ATCAAGCCT ATCTAGAGAA GAAAATCAGT TTGTGACATG TCAAGACGCG ATGAATTTGT    53811
+ |||||||||                                                        
+GATCAAGCCT .......... .......... .......... .......... ..........      528
+
+
+TGGGAACATG AGGACTTTGT GACTGAAGTT TGGTTGTTTT TATGTCTCTG GTTCTCTGTT    53751
+                                                                  
+.......... .......... .......... .......... .......... ..........      528
+
+
+TTTTTTTTTT GTTGGATTTG GGTGAAAGTG GGTATGTAAG ATGTTCTACC TCAACTTTTG    53691
+                                                                  
+.......... .......... .......... .......... .......... ..........      528
+
+
+GTCCTTTTTT GTGTCAACAT CCCATGTGAA GAACCTTTCA TGAACCACAA CCTATCTTCT    53631
+                   ||  | || |  | |  ||||||                        
+.......... ........AT TCAATCTTGA GCTCCTTTC. .......... ..........      549
+
+
+AAAAACCATA TACTTGCTGT TTTCTTATCA CAAATCATTC ACTCTCCCTA ATGTACATCT    53571
+                                                                  
+.......... .......... .......... .......... .......... ..........      549
+
+
+ACATATGATG CATGTTTCTT TTCCCTCAAG CCAATTTAAA CTAAGGAATG TGATCTATCT    53511
+                                                                  
+.......... .......... .......... .......... .......... ..........      549
+
+
+AAAATACAAA GTATCAAAAA CTAGCTGGAT TAGTCGATAA TTAGGATTGT TTCCATTCTA    53451
+                                                                  
+.......... .......... .......... .......... .......... ..........      549
+
+
+AAAAAACGCC CTCGGACCAT TCAAACTGCT CCTCCAAAAC CCGTAAATCT GGTTTTGCAT    53391
+                                                                  
+.......... .......... .......... .......... .......... ..........      549
+
+
+TGAAGATATC AAGAGTAGCT TTTTATGAAT CGGGAAGAAC AATGGAGGAT TCATTTGTCA    53331
+                                                                  
+.......... .......... .......... .......... .......... ..........      549
+
+
+GTGTCAGGCG GATTACTCAC AGCCTAGACA GAGGACGCAC CTGCCATTCA TCCTCAGGTT    53271
+                                                                  
+.......... .......... .......... .......... .......... ..........      549
+
+
+AAGCACGCAC TAGTCTCCTT TACCTTGTTG TAGTGTGTTG CAGAGAGTCA CATGCATATT    53211
+            ||||| |||  |   ||||  | |   |||   |||||                
+.......... .AGTCT-CTT AATTGTGTTA TGGCCAGTTT TAGAGA.... ..........      583
+
+
+TCATCTTGTG GCAGGATCAG GTGCATGGTT AGGGCGGGGA CTGGCTTGTG TTTGTGCACA    53151
+                                                                  
+.......... .......... .......... .......... .......... ..........      583
+
+
+GAAAAGGGAT CACCACTCTC GTTATTCCTT TGATCTCACC CCTGCTCAGG CACCAACTAG    53091
+                                                                  
+.......... .......... .......... .......... .......... ..........      583
+
+
+CATCAGCTAG TTAGTTAGTT ACCTTTTAAG ATGGTCGGGG AAACATTAGT AGCTGGTTAG    53031
+                                                                  
+.......... .......... .......... .......... .......... ..........      583
+
+
+TTAGTTAGTT ACAGCAGCTT TGGGTTAAGA GAGATAAACG CGAAGCCATA TATATTGACA    52971
+                                                                  
+.......... .......... .......... .......... .......... ..........      583
+
+
+ATTGGATGGT GTATAATTTA TTGTTAGAAA ACGAGTCCGC ATTTGATATT CGATATTGCA    52911
+                                                                  
+.......... .......... .......... .......... .......... ..........      583
+
+
+TTGCGTTCAA GGTGATGGAT GATAAGTGGC TCACAATGCG GGATTCCTAC ATGGATTTTT    52851
+                                                                  
+.......... .......... .......... .......... .......... ..........      583
+
+
+TTTTTTTTTT TTTTACATGG ATTTTAACGT AGCCTTTCTC CTCCATATAG CTTTGACTTT    52791
+                                                                  
+.......... .......... .......... .......... .......... ..........      583
+
+
+AAGAGATCAA CTCAGTCTTC AGAGACTGAG TGTAAGTAAA TTTGTGTTTG TTTGGCAGAC    52731
+                                                                  
+.......... .......... .......... .......... .......... ..........      583
+
+
+GGTGCTGAAA TCGACAAGGC ATCAACTGGA GAGAGAGCTT CTACTGGAAG ATGGGACCCG    52671
+                                                                  
+.......... .......... .......... .......... .......... ..........      583
+
+
+AGTCCAAGCC TTACCTTGTT TTAACCTCCT CCTCCAGAAA GAGTTAGAGT ATATCTCCCA    52611
+                                                                  
+.......... .......... .......... .......... .......... ..........      583
+
+
+ACTTAAAATA TAGATGTCAA TCAAAAAGCA AGCAACAATT GGAAAAATGA ATCAAGAAGA    52551
+                                                                  
+.......... .......... .......... .......... .......... ..........      583
+
+
+CTAGTATAGA TCCAACATCT GGGAACCACA AAACAATCTC CAATTGCTGA GTGGATCGTA    52491
+                                                                  
+.......... .......... .......... .......... .......... ..........      583
+
+
+GGAAGGGCCA ATTTACAACC CTAAACTTGT GAAAGAAGAA TGAATTTTAA TCTTGGCGTT    52431
+                                                                  
+.......... .......... .......... .......... .......... ..........      583
+
+
+ATTGGGCCTC CGCTCCTCTG GACTCTGTCG GGCTTGATCC ATTTTCGTTG CTGAGTGGAT    52371
+                                                                  
+.......... .......... .......... .......... .......... ..........      583
+
+
+CGTAGGAACC CTAAACTTGT GAAAGAAGAA TGAATTTTAA TCTTTTGCAT TATTGGGCCT    52311
+                                                                  
+.......... .......... .......... .......... .......... ..........      583
+
+
+TCGCTCATAT TATTATTCAA GGCCCAAACA CTGAATCTCC TCCTCTTGTA AATCGCGAGA    52251
+                                                                  
+.......... .......... .......... .......... .......... ..........      583
+
+
+GAAAATCAGA AAAGAGAGAG AGAGATCTCT GGCTCTGTAT CGCTCGCTGC TCTTCCTCCC    52191
+                                                                  
+.......... .......... .......... .......... .......... ..........      583
+
+
+ACAGATCGAA AACCATGAAT CCTGAGTAGT AAGTTCCTTT CTCCATCGAC ACATACTTGG    52131
+                                                                  
+.......... .......... .......... .......... .......... ..........      583
+
+
+GTCGAAATTA CCTCTGTTAT ATATTTGATT CTCCGGGTGG TTCCTAGGGT TTAATTAGCG    52071
+                                                                  
+.......... .......... .......... .......... .......... ..........      583
+
+
+TTTTGGGATT TGCAGCGACT ATCTTTTCAA GCTCCTGCTT ATCGGGGATT CTGGCGTAGG    52011
+                                                                  
+.......... .......... .......... .......... .......... ..........      583
+
+
+CAAGTCTTGT CTTCTTTTGA GATTCTCTGT AAGTTTTTTT TTTTGTCTTT TTCTTTCTCA    51951
+                       ||||| | |  |                               
+.......... .......... .ATTCTGTAT TA........ .......... ..........      594
+
+
+GAGATCAAAC ACTGTAGCTT TCTACATTTG TTCATGTTTG TTGTTCTGCT GCAGGATGAT    51891
+                                                                  
+.......... .......... .......... .......... .......... ..........      594
+
+
+TCTTATGTAG AAAGTTACAT TAGCACTATT GGAGTCGATT TTGTAAGTTG ATGTTTTCTT    51831
+                                                                  
+.......... .......... .......... .......... .......... ..........      594
+
+
+TTTTTTCTTC TTGCTACTGA TGACGATGCT TTGATCTGAC CTTTTTTTTT TTCTTATATA    51771
+                                                                  
+.......... .......... .......... .......... .......... ..........      594
+
+
+TCTCTTGTTC AGAAAATTAG GACTGTGGAA CAAGATGGCA AAACAATTAA GCTCCAAATT    51711
+                                                                  
+.......... .......... .......... .......... .......... ..........      594
+
+
+GTATGTAACT ATTTTCACAC TTGTCAAGTT AATAGCTCTA CGTCTCTTTC CCTTAATTCA    51651
+                                                                  
+.......... .......... .......... .......... .......... ..........      594
+
+
+TATTTTTCCC TCTTCACTTA TTTTCAGTGG GACACTGCTG GTCAAGAACG GTTCAGGACT    51591
+                                                                  
+.......... .......... .......... .......... .......... ..........      594
+
+
+ATTACTAGCA GTTACTACCG TGGGGCACAT GGAATTATTG TAAGCAACAT CTTATCTAGG    51531
+                                                                  
+.......... .......... .......... .......... .......... ..........      594
+
+
+TTCTTTCTGT TGACTCCTTT AAGTTTATGT CCTAATTTAG TTCTTGCACC TGGTAGATTG    51471
+                                                                  
+.......... .......... .......... .......... .......... ..........      594
+
+
+TCTACGATGT CACAGATGAA GAAAGCTTCA ATAATGTCAA GCAATGGTTG AGTGAAATTG    51411
+                                                                  
+.......... .......... .......... .......... .......... ..........      594
+
+
+ATCGTTATGC TAGTGACAAT GTCAACAAAC TCCTTGTTGG AAACAAGTCT GATCTTACTG    51351
+                                                                  
+.......... .......... .......... .......... .......... ..........      594
+
+
+AAAACAGAGC CATTCCTTAT GAAACTGCCA AGGTATATAT ATGCCACTTG AACCAATTCT    51291
+                                                                  
+.......... .......... .......... .......... .......... ..........      594
+
+
+TTCTTCTCAA GTTTTGAAAA TCATCAAACT CTAAGGCTAT TATTACTTTC CTGATTACTT    51231
+                                                                  
+.......... .......... .......... .......... .......... ..........      594
+
+
+CGAAACATTC ATAGGCTTTT GCCGATGAAA TCGGGATTCC TTTTATGGAG ACTAGTGCAA    51171
+                                                                  
+.......... .......... .......... .......... .......... ..........      594
+
+
+AAGATGCTAC AAACGTAGAA CAGGCTTTCA TGGCAATGTC TGCATCCATC AAAGAGAGGT    51111
+                                                                | 
+.......... .......... .......... .......... .......... ........TT      596
+
+
+ATTTATCTTA CA    51099
+|| |||  |  ||
+ATGTATGATC CA      608
+
+
+hqPGS_U89959-_5005502+	(54768  54574,54335  54159,53914  53861)
+
+
+********************************************************************************
+EST sequence     13 +strand   475 n (File: 2312397+)
+
+     1  GGGGAAGTTC GGGCACGAGT TCCTGGAGTT CGAGTTCCGG CCCGACGGGA AGCTCCGGTA
+    61  CGCCAACAAC TCCAACTACA AGAAGGACAC CATGATCCGC AAGGAGGTGT TCGTCTCCCC
+   121  CTCCGTCCTC CGCGAGGCCA CCAGGATCAT CCACGAATCC GAGATTATGA AGGAGGATGA
+   181  CAGCAACTGG CCGGAGCCAG ACGAACGTGG GAAGGCAGGA GCTGGAGATC GTGATGGGGA
+   241  ACGAGCACAT CTCCTTCACC ACCTCCAAGA TCGGCTCCCT CGTCGACGTC CAGACCAGCA
+   301  AGGACCCCGA GGGCCTCCGC ATCTTCTACT ACCTCGTCCA GGATCTTAAG TGCTTTCGTG
+   361  TTTTCACTCA TCAATCTCCA CTTCAAGATC AAAGCCCATT TAAATCTTGA GCTNCTTTCA
+   421  GTTTCTTAAT TGTATTATGG TCAGTGTTAA GAGAGTCAGT ACAATGTATG ATCTG
+
+Predicted gene structure (within gDNA segment 55453 to 52119):
+
+ Exon  1  54735  54574 ( 162 n);  cDNA      2    163 ( 162 n); score: 0.759
+  Intron  1  54573  54336 ( 238 n); Pd: 0.050 (s: 0.62), Pa: 0.050 (s: 0.68)
+ Exon  2  54335  54159 ( 177 n);  cDNA    164    341 ( 178 n); score: 0.732
+  Intron  2  54158  53915 ( 244 n); Pd: 0.050 (s: 0.78), Pa: 0.050 (s: 0.70)
+ Exon  3  53914  53865 (  50 n);  cDNA    342    392 (  51 n); score: 0.710
+
+MATCH	U89959-	2312397+	0.740	389	0.819	C
+PGS_U89959-_2312397+	(54735  54574,54335  54159,53914  53865)
+
+Alignment (genomic DNA sequence = upper lines):
+
+GGGAAATTTG GACACGAGTT CCTGGAGTTC GAGTTTAGAG AGGACGGTAA GCTCCGTTAC    54676
+||||| || | | |||||||| |||||||||| |||||  |     ||||| || |||||| ||| 
+GGGAAGTTCG GGCACGAGTT CCTGGAGTTC GAGTTCCGGC CCGACGGGAA GCTCCGGTAC       61
+
+
+GCCAATAACT CTAACTACAA GAACGATACT ATTATCCGCA AGGAGGTATT TCTCACCCCC    54616
+||||| |||| | |||||||| ||| || ||  || ||||||| ||||||| ||   || ||||| 
+GCCAACAACT CCAACTACAA GAAGGACACC ATGATCCGCA AGGAGGTGTT CGTCTCCCCC      121
+
+
+GCCGTGCTCA AGGAATGCAA GCGTATCGTC TCCGAGAGCG AGGTCCTTTT TCTCTCTCTC    54556
+ |||| |||    ||   ||    | ||| ||   |||   || ||                    
+TCCGTCCTCC GCGAGGCCAC CAGGATCATC CACGAATCCG AG........ ..........      163
+
+
+TTCCGATTTG CTTCTCTCTT GTTAATTGTC CGCGTTTTGG TCAATCGACG CTATAATAGC    54496
+                                                                  
+.......... .......... .......... .......... .......... ..........      163
+
+
+CAATTAGGGT TTTAGTGATT TTGCTTCGAT TTTTGTCGAT CTAGGGCATC TTTCCTGACT    54436
+                                                                  
+.......... .......... .......... .......... .......... ..........      163
+
+
+AGTGTTGTAG GTTTAGAACC CTCTTCGTTG TTAATGCTAT TATCTAGGAA TAATGGATGA    54376
+                                                                  
+.......... .......... .......... .......... .......... ..........      163
+
+
+TTTTGTACAA CCTGACATGT GATTATTTGT CTGCGGGTAG ATTCTGAAAG AAGACGATAA    54316
+                                            ||| |||| | | || || |  
+.......... .......... .......... .......... ATTATGAAGG AGGATGACAG      183
+
+
+CAATTGGCCG GAACCTGAC- CGTGTTGGAA AGCAAGAGCT CGAGATCGTC TTGGGTAATG    54257
+||| |||||| || || |||     || ||||  ||| |||||  ||||||||   |||| || | 
+CAACTGGCCG GAGCCAGACG AACGTGGGAA GGCAGGAGCT GGAGATCGTG ATGGGGAACG      243
+
+
+AGCATATCTC ATTCGCTACA TCTAAGATTG GATCTCTTGT TGATTGCCAG AGCAGTAATG    54197
+|||| |||||  ||| | ||  || ||||| | | || || ||  ||   |||| | ||| || | 
+AGCACATCTC CTTCACCACC TCCAAGATCG GCTCCCTCGT CGACGTCCAG ACCAGCAAGG      303
+
+
+ATCCTGAAGG ACTTCGCATC TTCTACTATC TTGTTCAGGT CTCCTCTCTT TTTCTTCCAC    54137
+| || || ||  || |||||| |||||||| | | || |||                         
+ACCCCGAGGG CCTCCGCATC TTCTACTACC TCGTCCAG.. .......... ..........      341
+
+
+CCCTTGCCTT ACCATCTTTT CTTTTACCTA ATCCCTTAAC TCTATTGGAC TCGATTATAT    54077
+                                                                  
+.......... .......... .......... .......... .......... ..........      341
+
+
+ATTTAGGACT CTGCCTTTTA ACGTATTCAC TGTCTCAAAC TTTAACATTT AGGGTTTGGC    54017
+                                                                  
+.......... .......... .......... .......... .......... ..........      341
+
+
+TGTTAACACT CATCCCTTAC ATGGTTCTGT AGTTTTTTTT TTTTTAGTTT CTGTATTTAT    53957
+                                                                  
+.......... .......... .......... .......... .......... ..........      341
+
+
+TTGTGCTCTA ACATATTCCT TTTGAAACTT TCATGGTTGC AGGACTTGAA ATG-TCTTGT    53898
+                                              ||  | ||  || | | || 
+.......... .......... .......... .......... ..GATCTTAA GTGCTTTCGT      359
+
+
+TTTTTCGCTC ATCTCTCTGC ACTTCAAAAT CAA    53865
+ ||||| ||| |||  ||| | ||||||| || |||
+GTTTTCACTC ATCAATCTCC ACTTCAAGAT CAA      392
+
+
+hqPGS_U89959-_2312397+	(54735  54574,54335  54159,53914  53865)
+
+
+********************************************************************************
+EST sequence     16 +strand   416 n (File: 569748+)
+
+     1  CCTCTATTTG CGTTGCGAGG CGACGACGTG CCAACCACGA ACAGAGGCGG CGCTGCAAAA
+    61  TCTCGCGACC AAGCGGCGGC GGCGGCGGGA GAGAACGAGA GGTGACCGAT GGCGACGGGC
+   121  GGNGCGCCGG CGAGNGACGT CCCCGGCGGC GGCGAGTTCT ACCTGCGGTA CTACGTGGGG
+   181  CACAAGGGGA AGTTCGGGCA CGAGTTCCTC GAGTTCGAGT TCCGCCCCGA CGGCAAGCTC
+   241  CGCTACGCCA ACAACTCCAA CTACAAGAAC GACACCATGA TCCGCAAGGA GGTCTTCGTC
+   301  TCCCCCTCCG TCCTCCGCGA GGCCCGGAGG ATCATCCAGG AGTNCGAGAT TATGAAGGAG
+   361  GACGACAACA ACTTNGCCAG AGCCCGACCG CGTTGGGGAG GCAGGAGCTC GAGATT
+
+Predicted gene structure (within gDNA segment 56898 to 52789):
+
+ Exon  1  56127  56119 (   9 n);  cDNA     90     98 (   9 n); score: 0.889
+  Intron  1  56118  55913 ( 206 n); Pd: 0.050 (s:    0), Pa: 0.050 (s:    0)
+ Exon  2  55912  55906 (   7 n);  cDNA     99    104 (   6 n); score: 0.714
+  Intron  2  55905  55431 ( 475 n); Pd: 0.050 (s:    0), Pa: 0.050 (s:    0)
+ Exon  3  55430  55421 (  10 n);  cDNA    105    114 (  10 n); score: 0.700
+  Intron  3  55420  54851 ( 570 n); Pd: 0.050 (s:    0), Pa: 0.050 (s:    0)
+ Exon  4  54850  54830 (  21 n);  cDNA    115    134 (  20 n); score: 0.619
+  Intron  4  54829  54792 (  38 n); Pd: 0.050 (s:    0), Pa: 0.050 (s: 0.68)
+ Exon  5  54791  54574 ( 218 n);  cDNA    135    348 ( 214 n); score: 0.743
+  Intron  5  54573  54336 ( 238 n); Pd: 0.050 (s: 0.62), Pa: 0.050 (s: 0.69)
+ Exon  6  54335  54271 (  65 n);  cDNA    349    415 (  67 n); score: 0.738
+
+MATCH	U89959-	569748+	0.742	330	0.793	C
+PGS_U89959-_569748+	(56127  56119,55912  55906,55430  55421,54850  54830,54791  54574,54335  54271)
+
+Alignment (genomic DNA sequence = upper lines):
+
+AGAGGACGAG TGCAGTAGAA AAGAAAATGA AACTGAAGAC TGGTGAAAAG TACAAAGAAA    56068
+|||| ||||                                                         
+AGAGAACGA. .......... .......... .......... .......... ..........       98
+
+
+GTTTCCACTT GATTTCCAAA CTTTTTTTTT ATCTGACAAA CCAGTAGATT TTGGTCAGTG    56008
+                                                                  
+.......... .......... .......... .......... .......... ..........       98
+
+
+GCAGTATATA GGAGAAAAAC AGCCAACAAG ATGCATGTAA GAGATCCCAA TTCCAAGGAC    55948
+                                                                  
+.......... .......... .......... .......... .......... ..........       98
+
+
+ATGGGAAGGG ACAAAGAATC AGATAGGGGA GTCAGAAGTG TGGTATGGAA AGAAGCACTA    55888
+                                       || | ||                    
+.......... .......... .......... .....GAG-G TG........ ..........      104
+
+
+AAGGAACTTC ATACCTGAAT CCGGAAAAAT CTTAGTGTGG ACAATATGAT GCAGCCCAAC    55828
+                                                                  
+.......... .......... .......... .......... .......... ..........      104
+
+
+ACCAAACGAG CTGCAAGACA AAATGATAAA ACTATGATGT GAATTGGTTT TGTCTGTGTT    55768
+                                                                  
+.......... .......... .......... .......... .......... ..........      104
+
+
+TAGGGGAAAA TAGTTAGCGA TTCATTAAGG AATTATATAG GGAGGGAGAA ACAGAAGAGA    55708
+                                                                  
+.......... .......... .......... .......... .......... ..........      104
+
+
+AACCTGCAAC AAGGCTATAA ACCTTGGGGA AGCCAAGGCA GCTGATAATT GATACAACAG    55648
+                                                                  
+.......... .......... .......... .......... .......... ..........      104
+
+
+GTGATGCAAA AACAGAGACT ATGAAGGCTC CTGCAAGAAC AAATCAGAGT GGAATAAAAA    55588
+                                                                  
+.......... .......... .......... .......... .......... ..........      104
+
+
+AAAAACCATC CACTAATGTA TAATGATAAA AAAAAAACCA TCAACAGGTG ATGCAAAAAC    55528
+                                                                  
+.......... .......... .......... .......... .......... ..........      104
+
+
+AGAGAGCGAA ATTCAACAGC CCTCCTTACC AATAAAAGTT CGAGGGACAA CACCGGGGAA    55468
+                                                                  
+.......... .......... .......... .......... .......... ..........      104
+
+
+CTCCAAATGA TCATACTGAT AGGAAAAAAA TAAAAAGACA GAAGTCGGTA AAAATTGACA    55408
+                                        ||  || | ||               
+.......... .......... .......... .......ACC GATGGCG... ..........      114
+
+
+TCACTCTAGA GATAAAAAAA AAAAGAGTAA AGCTTCAGAG AAGAAGTAAA AAGAGAGGTC    55348
+                                                                  
+.......... .......... .......... .......... .......... ..........      114
+
+
+ACTCACAGAG TCCAAATGAT GGCGATGGTA AAGAATGTCG TGCATTGACT TGAGACGAGT    55288
+                                                                  
+.......... .......... .......... .......... .......... ..........      114
+
+
+GAAACGGTTT CAGTAAAACG GAGAAAGAGT GTGACTCTAA ATACTTTGAA AACCTACCTG    55228
+                                                                  
+.......... .......... .......... .......... .......... ..........      114
+
+
+AACGTTGAAG CTCTCTTCCA CCTTAGTATA TGGTGCCATG ACCACATAGA TTGCAGCTAC    55168
+                                                                  
+.......... .......... .......... .......... .......... ..........      114
+
+
+AGATCCCAGA ATCAAATCAT ATCCTGCTCC CACCAATCGA AAGTTTCAGT TATATAAAAA    55108
+                                                                  
+.......... .......... .......... .......... .......... ..........      114
+
+
+AAGAAAAAGA GATCATCTGG CCGCCTAAGA AGACGAAACG AAGAAATTAC CATAGGATTG    55048
+                                                                  
+.......... .......... .......... .......... .......... ..........      114
+
+
+AAGAAACTTG GCCATTTTCG AATCCGTCGG CATCGTCTCT GTATCGGGGA ATCGGAAATC    54988
+                                                                  
+.......... .......... .......... .......... .......... ..........      114
+
+
+AGGCAGCCCG GATACACACA CAATTTCGAT GGAAACAGAA AAACTAAAAC TGGGCCTTAA    54928
+                                                                  
+.......... .......... .......... .......... .......... ..........      114
+
+
+CTTTTCGGGT TACAAATGGG TTCTGGCCCA ATATGTAAGC CCATTACCTT TTTTCTTTTG    54868
+                                                                  
+.......... .......... .......... .......... .......... ..........      114
+
+
+CGGGGACGGA CTTAAAGAAG GGCAAAGGAC ACGGAGAGGT AATCTCGATC TCGAGAAAGA    54808
+                  | | |||   |  |  ||| |||                         
+.......... .......ACG GGCGGNGCGC -CGGCGAG.. .......... ..........      134
+
+
+AAGAAAAAAA GAGAAGGCAT GGCCGCGGAA GAAGCGACGG AGTTCTACCT GAGATACTAT    54748
+                   |  | || |||   |  ||| ||  |||||||||| | | |||||  
+.......... ......NGAC GTCCCCGG-C G--GCGGCG- AGTTCTACCT GCGGTACTAC      174
+
+
+GTCGGTCACA AAGGGAAATT TGGACACGAG TTCCTGGAGT TCGAGTTTAG AGAGGACGGT    54688
+|| || |||| | ||||| ||  || |||||| ||||| |||| |||||||  |     |||||  
+GTGGGGCACA AGGGGAAGTT CGGGCACGAG TTCCTCGAGT TCGAGTTCCG CCCCGACGGC      234
+
+
+AAGCTCCGTT ACGCCAATAA CTCTAACTAC AAGAACGATA CTATTATCCG CAAGGAGGTA    54628
+|||||||| | ||||||| || ||| |||||| |||||||| | | || ||||| |||||||||  
+AAGCTCCGCT ACGCCAACAA CTCCAACTAC AAGAACGACA CCATGATCCG CAAGGAGGTC      294
+
+
+TTTCTCACCC CCGCCGTGCT CAAGGAATGC AAGCGTATCG TCTCCGAGAG CGAGGTCCTT    54568
+||  || ||| || |||| || |   ||   |   | | |||  ||   |||   ||||       
+TTCGTCTCCC CCTCCGTCCT CCGCGAGGCC CGGAGGATCA TCCAGGAGTN CGAG......      348
+
+
+TTTCTCTCTC TCTTCCGATT TGCTTCTCTC TTGTTAATTG TCCGCGTTTT GGTCAATCGA    54508
+                                                                  
+.......... .......... .......... .......... .......... ..........      348
+
+
+CGCTATAATA GCCAATTAGG GTTTTAGTGA TTTTGCTTCG ATTTTTGTCG ATCTAGGGCA    54448
+                                                                  
+.......... .......... .......... .......... .......... ..........      348
+
+
+TCTTTCCTGA CTAGTGTTGT AGGTTTAGAA CCCTCTTCGT TGTTAATGCT ATTATCTAGG    54388
+                                                                  
+.......... .......... .......... .......... .......... ..........      348
+
+
+AATAATGGAT GATTTTGTAC AACCTGACAT GTGATTATTT GTCTGCGGGT AGATTCTGAA    54328
+                                                         ||| |||| 
+.......... .......... .......... .......... .......... ..ATTATGAA      356
+
+
+AGAAGACGAT AACAA-TTGG CCGGAACCTG ACCGTGTT-G GAAAGCAAGA GCTCGAGAT    54271
+ || |||||  ||||| || | || || || | |||| ||| | | | ||| || |||||||||
+GGAGGACGAC AACAACTTNG CCAGAGCCCG ACCGCGTTGG GGAGGCAGGA GCTCGAGAT      415
+
+
+hqPGS_U89959-_569748+	(54791  54574,54335  54271)
+
+
+********************************************************************************
+EST sequence     12 +strand   325 n (File: 425897+)
+
+     1  CGGACGTGCG GCGCTGCAAA ATCTCGCGAC CAAGCGGCGG CGGCGGCGGG AGAGAACGAG
+    61  AGGTGACCGA TGGCGACGGG CGGAGCGCCG GCGAGGACGT CCCCGGCGGC GGCGAGTTCT
+   121  ACCTGCGGTA CTACGTGGGG CACAAGGGGA AGTTCGGGCA CGAGTTCCTC GAGTTCGAGT
+   181  TCCGCCCCGA CGGCAAGCTC CGCTACGCCA ACAACTCCAA CTACAAGAAC GACACCATGA
+   241  TCCGCAAGGA GGTCTTCGTC TCCCCCTCCG TCCTNCGGAG CCCGGAGGAT CATCCAGGAG
+   301  TNCGAGATTA TGAAGGAGGA CGACA
+
+Predicted gene structure (within gDNA segment 56498 to 53299):
+
+ Exon  1  54768  54613 ( 156 n);  cDNA    114    269 ( 156 n); score: 0.821
+
+MATCH	U89959-	425897+	0.821	156	0.480	C
+PGS_U89959-_425897+	(54768  54613)
+
+Alignment (genomic DNA sequence = upper lines):
+
+GAGTTCTACC TGAGATACTA TGTCGGTCAC AAAGGGAAAT TTGGACACGA GTTCCTGGAG    54709
+|||||||||| || | |||||  || || ||| || ||||| | | || ||||| |||||| ||| 
+GAGTTCTACC TGCGGTACTA CGTGGGGCAC AAGGGGAAGT TCGGGCACGA GTTCCTCGAG      173
+
+
+TTCGAGTTTA GAGAGGACGG TAAGCTCCGT TACGCCAATA ACTCTAACTA CAAGAACGAT    54649
+||||||||   |    |||||  ||||||||  |||||||| | |||| ||||| |||||||||  
+TTCGAGTTCC GCCCCGACGG CAAGCTCCGC TACGCCAACA ACTCCAACTA CAAGAACGAC      233
+
+
+ACTATTATCC GCAAGGAGGT ATTTCTCACC CCCGCC    54613
+|| || |||| ||||||||||  ||  || || ||| ||
+ACCATGATCC GCAAGGAGGT CTTCGTCTCC CCCTCC      269
+
+
+hqPGS_U89959-_425897+	(54768  54613)
+
+
+********************************************************************************
+EST sequence      1 +strand   314 n (File: 4880166+)
+
+     1  GCAAGACTCT TGCCGTGTTG AGACTGCAGA AACGAGAGCT AGCTAGCCAG AGGTGCAAGA
+    61  AGATTCTGCA CCCATAGATC GTCTACCATG GCCACAAACC CAGGACTCTT CACGGAGTGG
+   121  CCATGGAAGA AGCTTGGCAG CTTCAAGTAC GTGTTGCTGG CGCCGTGGGT AGCGCACGGG
+   181  TGGTATGAGG TGGCGANCAA GGGGTGGCGG GAGGTGGATC TCGGGTACAT CGGCATCCTC
+   241  CCGTCGTTGC TGCTGCGGAT NCTGCACAAC CAAGCCTTGA TCACCATTTC CGGCTTTCAA
+   301  AACGCCGTTG CCGC
+
+Predicted gene structure (within gDNA segment 63873 to 68454):
+
+ Exon  1  64797  64806 (  10 n);  cDNA     96    105 (  10 n); score: 0.800
+  Intron  1  64807  65560 ( 754 n); Pd: 0.050 (s:    0), Pa: 0.050 (s: 0.79)
+ Exon  2  65561  65624 (  64 n);  cDNA    106    170 (  65 n); score: 0.789
+  Intron  2  65625  65815 ( 191 n); Pd: 0.000 (s: 0.78), Pa: 0.050 (s:    0)
+ Exon  3  65816  65822 (   7 n);  cDNA    171    177 (   7 n); score: 1.000
+  Intron  3  65823  67734 (1912 n); Pd: 0.000 (s:    0), Pa: 0.050 (s:    0)
+ Exon  4  67735  67750 (  16 n);  cDNA    178    193 (  16 n); score: 0.688
+
+MATCH	U89959+	4880166+	0.789	97	0.309	C
+PGS_U89959+_4880166+	(64797  64806,65561  65624,65816  65822,67735  67750)
+
+Alignment (genomic DNA sequence = upper lines):
+
+AAAGCAAGGA GTTACCGTGC AATTTGGAGC TAGCTAGCAC TGATGAGAGT GACAGAAACA    64856
+||| | ||||                                                        
+AAACCCAGGA .......... .......... .......... .......... ..........      105
+
+
+GTAAAATCAA CTCCAAAATG CTGATTTCGT TCTTCATATC GTGTTTTATC CTCTGAATTC    64916
+                                                                  
+.......... .......... .......... .......... .......... ..........      105
+
+
+CCAGCGTAAT AGCTCGAGCT GGCGGATTTT CGAAAAATCG AGAAAAACAA AAAACAGAAA    64976
+                                                                  
+.......... .......... .......... .......... .......... ..........      105
+
+
+AGGAGAAAGT TTTTGAAAGG AGATGAGCTT GATGGAGATG TTGACTGGTC CCTGAATAAA    65036
+                                                                  
+.......... .......... .......... .......... .......... ..........      105
+
+
+TGAAAAATGT GTTGCATTAT TTCTATTATT GAGAAGAAAA AAACCAGGCA TTTTGGTTAT    65096
+                                                                  
+.......... .......... .......... .......... .......... ..........      105
+
+
+TGGGCTTTGA TTTGATGTTG GGCTCTCAAC CATTGAAATT GAATGAAGAA AGAAGGAAAG    65156
+                                                                  
+.......... .......... .......... .......... .......... ..........      105
+
+
+TACGTGACTT GAATTTCATT TACTTCATTA AATGGGCGGC GTTGGGGCCG GTGGAGGTGG    65216
+                                                                  
+.......... .......... .......... .......... .......... ..........      105
+
+
+GCCAATGACA TTGATGTGTA AACAGAGGTA AAGCCGAATT TTGGCTAAGG CGAATCAATG    65276
+                                                                  
+.......... .......... .......... .......... .......... ..........      105
+
+
+CCCATTGGCT CCTCTCCTTA CATATTTGAA GTTTGAGGTT TCCTTCCTTT TCTTAAATTA    65336
+                                                                  
+.......... .......... .......... .......... .......... ..........      105
+
+
+AATGTTGCTG TAACATTTCT ACTATTGTAA ACCGGGGCTC CACCACCATG TGCTTCTTCA    65396
+                                                                  
+.......... .......... .......... .......... .......... ..........      105
+
+
+ACACTGTATC ATCAGAGCCC ACATGGTCAT GCCTCTATAT AATACTTTGT ATTATTATTA    65456
+                                                                  
+.......... .......... .......... .......... .......... ..........      105
+
+
+TTCTTATGTC ACATTATAAA CAAGTACCTC CAAATTGCAC TTCCTTCAAA CTTATTCGAC    65516
+                                                                  
+.......... .......... .......... .......... .......... ..........      105
+
+
+AGTAGACTAG CTCAAGTACC TTTGGATGGC GTCGAGGCCC GGAGCTCTT- ACGGAGTGGC    65575
+                                                |||||  |||||||||| 
+.......... .......... .......... .......... ....CTCTTC ACGGAGTGGC      121
+
+
+CATGGAGTCC CCTTGGTAGC TTCAAGTACC TCTTGGTGGC CCCGTTGGTG ATGGCGAGCA    65635
+||||||      ||||| ||| |||||||||  | ||| ||||  |||| |||             
+CATGGAAGAA GCTTGGCAGC TTCAAGTACG TGTTGCTGGC GCCGTGGGT. ..........      170
+
+
+TGCACTCGTA CGTGACGGCT GTGGATGAGG AGAAAGACCT CAGCAGACTT ATGATAGTCG    65695
+                                                                  
+.......... .......... .......... .......... .......... ..........      170
+
+
+TGTTGATGCT GTGGAGAATA GTTCACAGCC AGATATGGAT CAGCGTGTCT CGCCAGAGGA    65755
+                                                                  
+.......... .......... .......... .......... .......... ..........      170
+
+
+CGGCTAAGGG AACGAACAAG ATCGTGGACA AGCCCATTGA GTTTGAGCAA GTGGACCGAG    65815
+                                                                  
+.......... .......... .......... .......... .......... ..........      170
+
+
+AGCGCACTTG GGACGACCAA GTCATCTTCA ACACTCTCCT CATGTATCTC GCAAACATCA    65875
+|||||||                                                           
+AGCGCAC... .......... .......... .......... .......... ..........      177
+
+
+AGCTCCCAGG CGCCTCCCAC CTTCCCCCAT GGAGGCTAGA CGGGGCCATC CTCATGGCTC    65935
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+TACTTCACGC TGGTCCCGTC GAGTTTCTCT ACTACTGGTT TCACAGAGCT CTCCACCACC    65995
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+ATTTCCTCTA CTCTCGCTAC CATTCTCACC ACCACTCCTC CATTGTCACC GAGCCCATCA    66055
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+CGTGTACGTA CCTTTATCCA CCATTTGCTT CTATTCTATA TACATTCATT CATATCTTTA    66115
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+ATCAAACTTG GCAGCTGTGG TGCACCCCTT CGCCGAGCAC ATCGCCTACA CACTACTCTT    66175
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+TGCCATACCT ATGGTAACGG CGTCCCTGTG TGGGATCCTC TCCATCGTTT CCATCATGGG    66235
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+ATACATTACT TACATTGACT TCATGAACAA CATGGGACAT TGCAACTTCG AGCTTTTCCC    66295
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+TAAGCGTCTC TTCCACCTCT TCCCTCCCCT CAAGTTCCTC TGTTACACCC CCTCGTACGT    66355
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+CGTTTGTAAA AACACTACTA TTTATTTGGA TTTGAATATA TGCATGCATT TATAACATGG    66415
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+CATCAAATAT GTTGAAGGTT TCACTCGCTC CACCACACGC AGTTCCGGAC CAACTACTCT    66475
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+CTGTTCATGC CAATATACGA CTTCATCTAC GGGACGACTG ATAATTTGAC CGACTCACTA    66535
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+TACGAGAGGT CGTTGGAGAT AGAGGAAGAA TCACCCGACG TCATCCACCT CACTCACCTC    66595
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+ACCACACACA ACTCCATCTA CCAAATGCGC CTTGGTTTCC CGTCCCTCTC CTCTTGCCCC    66655
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+TTGTGGTCTC GACCCCCATG GTACCTCACA TGCTTCATGT GGCCCTTCAC TCTCCTCTGC    66715
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+TCATTTGCCC TCACTTCAGC TATCCCTTTG CGCACCTTTG TCTTTGAGCG AAACCGTCTC    66775
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+CGTGACCTCA CCGTTCACTC TCACCTCCTT CCCAAGTTTT CCTTTCACGT AAGCATTTTA    66835
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+CACGCATGCA TATGCACTTT CCCTCTCTCT CGCTCTCTTG ACACAAACGG GTTTACTTAT    66895
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+TATGTTGTAC TTCACACCAC TATTTTCCAA ACTTTCACAC ACAAAAAAAA CATTGATTCT    66955
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+CACTTAACTT GTACGTACTA CGTAGGAAGG ACATAACCTT TTATACAAAA AGAAAATTAA    67015
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+AACAACCTAA AAATGAACAA TGAACATTTT CTTGTGGGTA TACCTTTTGT AAGTTGCATC    67075
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+TAAAGTTTAT TAATAATTTT GCCTCATAAA CATGCGGCGG TAGTATAAAT CACAGCGCCA    67135
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+CCATGAGTCC ATCAACACTA TCATAGAGGA AGCTATCCTT GAAGCAGATG AAAAGGGTGT    67195
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+GAAAGTAATG AGTCTTGGCC TGATGAACAA TGTAAGTTTA TTTACTTCAA ATCCCCCTAA    67255
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+ATATATATGA ATCACTATTG GATAAGTACT GTAACTAATT ACACACGCTG GCAAAAGAAA    67315
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+AAAGTAACTA ATCAACACAC AATTAATTAA TGAGAGGGAG GAACTAAACG GGTCTGGAGA    67375
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+AATGTACGTG CAAAAGTATC CGAAGTTGAA GATAAGACTA GTGGACGGGA GCAGCATGGC    67435
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+AGCTACGGTG GTTATCAACA ATATTCCAAA GGAAGCCACG GAAATTGTCT TTAGAGGAAA    67495
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+TCTCACAAAG GTGGCTTCGG CTGTTGTCTT TGCTCTGTGC CAAAAGGGCG TCAAGGTTTG    67555
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+TGAATATATG AGGGAATTGG AATATATATA CTCAGCTTCT CATATCAAAC AAAAAATAAT    67615
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+GTAGTAATGT GTATATATAG GTGGTCGTGT TACGCGAGGA GGAACACAGC AAACTCATCA    67675
+                                                                  
+.......... .......... .......... .......... .......... ..........      177
+
+
+AATCTGGGGT TGACAAGAAT CTGGTACTGT CTACAAGCAA TAGTTATTAC TCCCCAAAGG    67735
+                                                                | 
+.......... .......... .......... .......... .......... .........G      178
+
+
+TGTGGTTGGT GGGGG    67750
+ |||||  |  || ||
+GGTGGTATGA GGTGG      193
+
+
+hqPGS_U89959+_4880166+	(65561  65624)
+
+
+
+Total number of EST alignments reported: 16
+
+
+
+________________________________________________________________________________
+
+
+
+Predicted gene locations (2) in segment 1 to 106973:
+
+
+PGL   1 (- strand):	 54791   48965
+AGS-1 (54791  54574,54335  54159,53914  53861,53672  53652,53259  53225,52965  52949,52546  52535,52083  52062,51750  51726,51579  51552,51474  51319,51216  51113,50834  50740,50403  50394,49623  49607,48985  48965)
+SCR   (e 0.769  d 0.050 a 0.050,e 0.754  d 0.050 a 0.050,e 0.815  d 0.002 a 0.002,e 0.667  d 0.002 a 0.000,e 0.657  d 0.050 a 0.000,e 0.706  d 0.050 a 0.050,e 0.833  d 0.002 a 0.050,e 0.636  d 0.000 a 0.050,e 0.640  d 0.002 a 0.050,e 0.818  d 0.050 a 0.050,e 0.814  d 0.050 a 0.050,e 0.772  d 0.050 a 0.050,e 0.776  d 0.000 a 0.002,e 0.900  d 0.050 a 0.050,e 0.706  d 0.002 a 0.050,e 0.714)
+
+  Exon  1  54791  54574 ( 218 n); score: 0.769
+   Intron  1  54573  54336 ( 238 n);           Pd: 0.050  Pa: 0.050
+  Exon  2  54335  54159 ( 177 n); score: 0.754
+   Intron  2  54158  53915 ( 244 n);           Pd: 0.050  Pa: 0.050
+  Exon  3  53914  53861 (  54 n); score: 0.815
+   Intron  3  53860  53673 ( 188 n);           Pd: 0.002  Pa: 0.002
+  Exon  4  53672  53652 (  21 n); score: 0.667
+   Intron  4  53651  53260 ( 392 n);           Pd: 0.002  Pa: 0.000
+  Exon  5  53259  53225 (  35 n); score: 0.657
+   Intron  5  53224  52966 ( 259 n);           Pd: 0.050  Pa: 0.000
+  Exon  6  52965  52949 (  17 n); score: 0.706
+   Intron  6  52948  52547 ( 402 n);           Pd: 0.050  Pa: 0.050
+  Exon  7  52546  52535 (  12 n); score: 0.833
+   Intron  7  52534  52084 ( 451 n);           Pd: 0.002  Pa: 0.050
+  Exon  8  52083  52062 (  22 n); score: 0.636
+   Intron  8  52061  51751 ( 311 n);           Pd: 0.000  Pa: 0.050
+  Exon  9  51750  51726 (  25 n); score: 0.640
+   Intron  9  51725  51580 ( 146 n);           Pd: 0.002  Pa: 0.050
+  Exon 10  51579  51552 (  28 n); score: 0.818
+   Intron 10  51551  51475 (  77 n);           Pd: 0.050  Pa: 0.050
+  Exon 11  51474  51319 ( 156 n); score: 0.814
+   Intron 11  51318  51217 ( 102 n);           Pd: 0.050  Pa: 0.050
+  Exon 12  51216  51113 ( 104 n); score: 0.772
+   Intron 12  51112  50835 ( 278 n);           Pd: 0.050  Pa: 0.050
+  Exon 13  50834  50740 (  95 n); score: 0.776
+   Intron 13  50739  50404 ( 336 n);           Pd: 0.000  Pa: 0.002
+  Exon 14  50403  50394 (  10 n); score: 0.900
+   Intron 14  50393  49624 ( 770 n);           Pd: 0.050  Pa: 0.050
+  Exon 15  49623  49607 (  17 n); score: 0.706
+   Intron 15  49606  48986 ( 621 n);           Pd: 0.002  Pa: 0.050
+  Exon 16  48985  48965 (  21 n); score: 0.714
+
+  PGS (51380  51319,51216  51113,50834  50740,50403  50394,49623  49607,48985  48965)	2280601+
+  PGS (51216  51113,50834  50740,50403  50394,49623  49607,48985  48965)	3767651+
+  PGS (51474  51319,51216  51113,50834  50740)	3763507+
+  PGS (51380  51319,51216  51113,50834  50740)	4969255+
+  PGS (51213  51113,50834  50740)	4716498+
+  PGS (50834  50740)	3769183+
+  PGS (51584  51552,51474  51319,51216  51113,50834  50745)	4880608+
+  PGS (51584  51552,51474  51319,51216  51113,50834  50759)	4879734+
+  PGS (51380  51319,51216  51113,50834  50771)	4969256+
+  PGS (51474  51319,51216  51113,50834  50775)	703053+
+  PGS (54693  54574,54335  54159,53914  53861,53672  53652,53259  53225,52965  52949,52546  52535,52083  52062,51750  51726,51579  51552)	3760776+
+  PGS (54768  54574,54335  54159,53914  53861)	5005502+
+  PGS (54735  54574,54335  54159,53914  53865)	2312397+
+  PGS (54791  54574,54335  54271)	569748+
+  PGS (54768  54613)	425897+
+
+3-phase translation of AGS-1 (-strand):
+
+        .         .         .         .         .         .         
+ 54791  GCATGGCCGCGGAAGAAGCGACGGAGTTCTACCTGAGATACTATGTCGGTCACAAAGGGA
+         A  W  P  R  K  K  R  R  S  S  T  -  D  T  M  S  V  T  K  G 
+          H  G  R  G  R  S  D  G  V  L  P  E  I  L  C  R  S  Q  R  E 
+           M  A  A  E  E  A  T  E  F  Y  L  R  Y  Y  V  G  H  K  G 
+
+
+        .         .         .         .         .         .         
+ 54731  AATTTGGACACGAGTTCCTGGAGTTCGAGTTTAGAGAGGACGGTAAGCTCCGTTACGCCA
+         N  L  D  T  S  S  W  S  S  S  L  E  R  T  V  S  S  V  T  P 
+          I  W  T  R  V  P  G  V  R  V  -  R  G  R  -  A  P  L  R  Q 
+        K  F  G  H  E  F  L  E  F  E  F  R  E  D  G  K  L  R  Y  A 
+
+
+        .         .         .         .         .         .         
+ 54671  ATAACTCTAACTACAAGAACGATACTATTATCCGCAAGGAGGTATTTCTCACCCCCGCCG
+         I  T  L  T  T  R  T  I  L  L  S  A  R  R  Y  F  S  P  P  P 
+          -  L  -  L  Q  E  R  Y  Y  Y  P  Q  G  G  I  S  H  P  R  R 
+        N  N  S  N  Y  K  N  D  T  I  I  R  K  E  V  F  L  T  P  A 
+
+
+        .         .         .         .        :   .         .         
+ 54611  TGCTCAAGGAATGCAAGCGTATCGTCTCCGAGAGCGAG : ATTCTGAAAGAAGACGATAACA
+         C  S  R  N  A  S  V  S  S  P  R  A  R :   F  -  K  K  T  I  T 
+          A  Q  G  M  Q  A  Y  R  L  R  E  R   : D  S  E  R  R  R  -  Q 
+        V  L  K  E  C  K  R  I  V  S  E  S  E  :  I  L  K  E  D  D  N 
+
+
+        .         .         .         .         .         .         
+ 54313  ATTGGCCGGAACCTGACCGTGTTGGAAAGCAAGAGCTCGAGATCGTCTTGGGTAATGAGC
+         I  G  R  N  L  T  V  L  E  S  K  S  S  R  S  S  W  V  M  S 
+          L  A  G  T  -  P  C  W  K  A  R  A  R  D  R  L  G  -  -  A 
+        N  W  P  E  P  D  R  V  G  K  Q  E  L  E  I  V  L  G  N  E 
+
+
+        .         .         .         .         .         .         
+ 54253  ATATCTCATTCGCTACATCTAAGATTGGATCTCTTGTTGATTGCCAGAGCAGTAATGATC
+         I  S  H  S  L  H  L  R  L  D  L  L  L  I  A  R  A  V  M  I 
+          Y  L  I  R  Y  I  -  D  W  I  S  C  -  L  P  E  Q  -  -  S 
+        H  I  S  F  A  T  S  K  I  G  S  L  V  D  C  Q  S  S  N  D 
+
+
+        .         .         .         .     :      .         .         
+ 54193  CTGAAGGACTTCGCATCTTCTACTATCTTGTTCAG : GACTTGAAATGTCTTGTTTTTTCGC
+         L  K  D  F  A  S  S  T  I  L  F  R :   T  -  N  V  L  F  F  R 
+          -  R  T  S  H  L  L  L  S  C  S   : G  L  E  M  S  C  F  F  A 
+        P  E  G  L  R  I  F  Y  Y  L  V  Q  :  D  L  K  C  L  V  F  S 
+
+
+        .         .         .         :  .         .          : .         
+ 53889  TCATCTCTCTGCACTTCAAAATCAAGCCT : ATCCCATGTGAAGAACCTTTC : AGTCTCCTTT
+         S  S  L  C  T  S  K  S  S  L :   S  H  V  K  N  L  S :   V  S  F 
+          H  L  S  A  L  Q  N  Q  A   : Y  P  M  -  R  T  F   : Q  S  P  L 
+        L  I  S  L  H  F  K  I  K  P  :  I  P  C  E  E  P  F  :  S  L  L 
+
+
+        .         .         .     :      .         .  :         .    :       
+ 53249  ACCTTGTTGTAGTGTGTTGCAGAGA : ATGGTGTATAATTTATT : TATAGATCCAAC : GGTTTA
+         T  L  L  -  C  V  A  E   : N  G  V  -  F  I  :  Y  R  S  N  :  G  L 
+          P  C  C  S  V  L  Q  R  :  M  V  Y  N  L  F :   I  D  P  T :   V  - 
+        Y  L  V  V  V  C  C  R  E :   W  C  I  I  Y   : L  -  I  Q   : R  F 
+
+
+        .         .      :     .         .         . :          .         
+ 52077  ATTAGCGTTTTGGGAT : GACTGTGGAACAAGATGGCAAAACA : TTACTACCGTGGGGCACAT
+         I  S  V  L  G   : -  L  W  N  K  M  A  K  H :   Y  Y  R  G  A  H 
+          L  A  F  W  D  :  D  C  G  T  R  W  Q  N   : I  T  T  V  G  H  M 
+        N  -  R  F  G  M :   T  V  E  Q  D  G  K  T  :  L  L  P  W  G  T 
+
+
+        .         :  .         .         .         .         .         
+ 51560  GGAATTATT : ATTGTCTACGATGTCACAGATGAAGAAAGCTTCAATAATGTCAAGCAATGG
+         G  I  I  :  I  V  Y  D  V  T  D  E  E  S  F  N  N  V  K  Q  W 
+          E  L  L :   L  S  T  M  S  Q  M  K  K  A  S  I  M  S  S  N  G 
+        W  N  Y   : Y  C  L  R  C  H  R  -  R  K  L  Q  -  C  Q  A  M 
+
+
+        .         .         .         .         .         .         
+ 51423  TTGAGTGAAATTGATCGTTATGCTAGTGACAATGTCAACAAACTCCTTGTTGGAAACAAG
+         L  S  E  I  D  R  Y  A  S  D  N  V  N  K  L  L  V  G  N  K 
+          -  V  K  L  I  V  M  L  V  T  M  S  T  N  S  L  L  E  T  S 
+        V  E  -  N  -  S  L  C  -  -  Q  C  Q  Q  T  P  C  W  K  Q 
+
+
+        .         .         .         .         .     :      .         
+ 51363  TCTGATCTTACTGAAAACAGAGCCATTCCTTATGAAACTGCCAAG : GCTTTTGCCGATGAA
+         S  D  L  T  E  N  R  A  I  P  Y  E  T  A  K  :  A  F  A  D  E 
+          L  I  L  L  K  T  E  P  F  L  M  K  L  P  R :   L  L  P  M  K 
+        V  -  S  Y  -  K  Q  S  H  S  L  -  N  C  Q   : G  F  C  R  - 
+
+
+        .         .         .         .         .         .         
+ 51201  ATCGGGATTCCTTTTATGGAGACTAGTGCAAAAGATGCTACAAACGTAGAACAGGCTTTC
+         I  G  I  P  F  M  E  T  S  A  K  D  A  T  N  V  E  Q  A  F 
+          S  G  F  L  L  W  R  L  V  Q  K  M  L  Q  T  -  N  R  L  S 
+        N  R  D  S  F  Y  G  D  -  C  K  R  C  Y  K  R  R  T  G  F 
+
+
+        .         .         .         :  .         .         .         
+ 51141  ATGGCAATGTCTGCATCCATCAAAGAGAG : AATGGCTAGCCAACCAGCTGGGAATAATGCA
+         M  A  M  S  A  S  I  K  E  R :   M  A  S  Q  P  A  G  N  N  A 
+          W  Q  C  L  H  P  S  K  R   : E  W  L  A  N  Q  L  G  I  M  Q 
+        H  G  N  V  C  I  H  Q  R  E  :  N  G  -  P  T  S  W  E  -  C 
+
+
+        .         .         .         .         .         .         
+ 50803  AGACCACCGACCGTGCAGATCAGAGGACAGCCTGTGGCACAGAAGAACGGCTGCTGCTCA
+         R  P  P  T  V  Q  I  R  G  Q  P  V  A  Q  K  N  G  C  C  S 
+          D  H  R  P  C  R  S  E  D  S  L  W  H  R  R  T  A  A  A  Q 
+        K  T  T  D  R  A  D  Q  R  T  A  C  G  T  E  E  R  L  L  L 
+
+
+        .    :       .    :       .         . :          .         . 
+ 50743  ACTT : AAAGATAATC : ATACTCTTTCTTCCCTT : GTAAAATTTTTCACATGTAAC
+         T   : -  R  -  S :   Y  S  F  F  P   : C  K  I  F  H  M  - 
+          L  :  K  D  N   : H  T  L  S  S  L  :  V  K  F  F  T  C  N 
+        N  L :   K  I  I  :  I  L  F  L  P  L :   -  N  F  S  H  V 
+
+
+Maximal non-overlapping open reading frames (>= 64 codons):
+
+>U89959-_PGL-1_AGS-1_PPS_1 (54789  54574,54335  54159,53914  53861,53672  53652,53259  53225,52965  52949,52546  52542)	(frame '0';   522 bp,  174 residues) 
+     1  MAAEEATEFY LRYYVGHKGK FGHEFLEFEF REDGKLRYAN NSNYKNDTII RKEVFLTPAV 
+    61  LKECKRIVSE SEILKEDDNN WPEPDRVGKQ ELEIVLGNEH ISFATSKIGS LVDCQSSNDP 
+   121  EGLRIFYYLV QDLKCLVFSL ISLHFKIKPI PCEEPFSLLY LVVVCCREWC IIYL-
+
+>U89959-_PGL-1_AGS-1_PPS_2 (51748  51726,51579  51552,51474  51319,51216  51113,50834  50740,50403  50402)	(frame '1';   405 bp,  135 residues) 
+     1  LWNKMAKHYY RGAHGIIIVY DVTDEESFNN VKQWLSEIDR YASDNVNKLL VGNKSDLTEN 
+    61  RAIPYETAKA FADEIGIPFM ETSAKDATNV EQAFMAMSAS IKERMASQPA GNNARPPTVQ 
+   121  IRGQPVAQKN GCCST-
+
+
+
+
+PGL   2 (+ strand):	 65561   65624
+AGS-1 (65561  65624)
+SCR   (e 0.789)
+
+  Exon  1  65561  65624 (  64 n); score: 0.789
+
+  PGS (65561  65624)	4880166+
+
+3-phase translation of AGS-1 (+strand):
+
+        .         .         .         .         .         .         
+ 65561  CTCTTACGGAGTGGCCATGGAGTCCCCTTGGTAGCTTCAAGTACCTCTTGGTGGCCCCGT
+         L  L  R  S  G  H  G  V  P  L  V  A  S  S  T  S  W  W  P  R 
+          S  Y  G  V  A  M  E  S  P  W  -  L  Q  V  P  L  G  G  P  V 
+           L  T  E  W  P  W  S  P  L  G  S  F  K  Y  L  L  V  A  P 
+
+
+        .   
+ 65621  TGGT
+         W 
+          G 
+        L 
+
+
+Maximal non-overlapping open reading frames (>= 64 codons):
+none
+
+
+3-phase translation of AGS-1 (-strand):
+
+        .         .         .         .         .         .         
+ 65624  ACCAACGGGGCCACCAAGAGGTACTTGAAGCTACCAAGGGGACTCCATGGCCACTCCGTA
+         T  N  G  A  T  K  R  Y  L  K  L  P  R  G  L  H  G  H  S  V 
+          P  T  G  P  P  R  G  T  -  S  Y  Q  G  D  S  M  A  T  P  - 
+           Q  R  G  H  Q  E  V  L  E  A  T  K  G  T  P  W  P  L  R 
+
+
+        .   
+ 65564  AGAG
+         R 
+          E 
+        K 
+
+
+Maximal non-overlapping open reading frames (>= 64 codons):
+none
+
+
+
+... finished at: Sat Feb 15 09:43:53 2014
+

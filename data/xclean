@@ -1,0 +1,23 @@
+#!/bin/csh -f
+#
+
+\rm check
+\rm ATest1.dat ATest1.ind ATest1.suf ATest1.tre
+\rm ATest2.dat ATest2.ind ATest2.suf ATest2.tre
+\rm out1.gbS
+\rm out2.gbS
+\rm out12.gbS out12.gbS.html
+\rm out.gbA
+\rm outfile.gbA outfile.gbA.html stdout.gbA stdout.gbA.html
+\rm out.gbAw8
+\rm outM60.gbA
+\rm out.faA
+\rm out.faAX out.faAXHQ
+\rm out.est3
+\rm out.rice out.riceU
+\rm out.qp1 out.qp1.html
+\rm out.qp2
+\rm out.estqp2.html
+\rm out.qp3
+\rm sp.out
+\rm spLL.out

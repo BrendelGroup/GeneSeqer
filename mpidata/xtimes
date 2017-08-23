@@ -1,0 +1,33 @@
+#!/bin/csh -f
+#
+
+set np = $argv[1]
+
+mkdir DIR$np
+
+echo "**********" >> ./times
+echo DIR$np >> ./times
+echo "" >> ./times
+
+mv *.sh.e* *.sh.o* *.sh.p* MPI* out*$np DIR$np
+
+cd DIR$np
+egrep "matches" *.sh.o* | sort -t" " -k 2 -n > find-matches-byP
+egrep "generate" *.sh.o* | sort -t" " -k 2 -n > generate-alignments-byP
+egrep "pgl|wrapped" *.sh.o* >> ../times
+
+egrep "^TIME" *.sh.o* > times-byA
+egrep "received alignment  ..00 " *.sh.o* > times-a00
+egrep "^TIME" *.sh.o* | sort -t" " -k 2 -b -n -r > times-dec
+
+set i = 1
+while ($i < $np)
+  if ($i < 10) then
+    egrep "TIME.*Processor  $i" *.sh.o*   | sort -t" " -k 2 -b -n -r > time-Processor$i
+    egrep "Processor  $i.*sahmtD" *.sh.o* | sort -t"d" -k 2 -b -n -r > sahmtD-Processor$i
+  else
+    egrep "TIME.*Processor $i" *.sh.o*    | sort -t" " -k 2 -b -n -r > time-Processor$i
+    egrep "Processor $i.*sahmtD" *.sh.o*  | sort -t"d" -k 2 -b -n -r > sahmtD-Processor$i
+  endif
+  @ i = $i + 1
+end

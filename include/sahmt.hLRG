@@ -1,0 +1,261 @@
+/*sahmt.h.                                    Version of October 8, 2008 (VB) */
+
+#ifndef _sahmt_h
+#define _sahmt_h
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+/*      DEFINITIONS      */
+#define		MAXSGMNTSZE	750000
+#define		MAXGLGTH	100003
+#define		MAXCLGTH	30001
+#define		MAXPLGTH	8001
+#define		MAXNEXNS	200
+#define		MAXNAGS		200
+#define		MAXNPPS		25
+#define		MINELGTHfS	50
+#define		MINCVRGEfS	0.8
+#define		DASH		11
+#define		PROT_DASH	24
+#define		STAR		30
+#define		BLANK		31
+#define		INDEL_PEN	-10.0
+#define		DUMMY		-1
+#define		Log_Half	-0.69314718
+
+
+#define     MOD2(X)    ((X)&1)
+#define     MOD4(X)    ((X)&3)
+#define     DIV2(X)    ((X)>>1)
+
+#define CODON2NUMBER(J) (codtoaa[(int) seq[(J) - 1]]\
+                                [(int) seq[(J)]]\
+                                [(int) seq[(J) + 1]])
+#define CODON2CHAR(J)   (AAUC[CODON2NUMBER(J)])
+
+  int JNLGTH;
+  int MIN_INTRONLENGTH;
+  float SIWEIGHT;
+  int MIN_EXONLENGTH;
+  float SEWEIGHT;
+  int MIN_NBR_ENDMATCHES;
+
+  struct sprmtr
+    {
+      float pdg, ids, mms, nns, dls;
+      int unfrm, min_intron_length, min_exon_length, min_nbr_endmatches, tiny_exon, short_exon, long_intron;
+      float poor_exon_score, poor_donor_score, poor_acptr_score;
+      int join_length;
+    };
+
+  struct gcalgnmnt
+    {
+      char gname[257], gsgmntn[257], cname[257], estdbn[257];
+      int calln;
+      int offset;
+      int gia, gib, clgth;
+      int exn;
+      int gcds[MAXNEXNS][2];
+      int ccds[MAXNEXNS][2];
+      int ppa[2];
+      float exnscr[MAXNEXNS];
+      float itrscr[MAXNEXNS][2];
+      float score;
+      int pcds[MAXNPPS][MAXNEXNS][2];
+      int npsg[MAXNPPS];
+      int npps;
+      int ags[MAXNAGS];
+      char *algnmnt;
+      struct gcalgnmnt *link;
+      struct gcalgnmnt *next;
+    };
+
+struct gcalgnmnt_buf
+    {
+      char gname[257], gsgmntn[257], cname[257], estdbn[257];
+      int calln;
+      int offset;
+      int gia, gib, clgth;
+      int exn;
+      int gcds[MAXNEXNS][2];
+      int ccds[MAXNEXNS][2];
+      int ppa[2];
+      float exnscr[MAXNEXNS];
+      float itrscr[MAXNEXNS][2];
+      float score;
+      int pcds[MAXNPPS][MAXNEXNS][2];
+      int npsg[MAXNPPS];
+      int npps;
+      int ags[MAXNAGS];
+      char algnmnt[6*MAXGLGTH+2*MAXCLGTH+2*MAXNEXNS*80];
+      struct gcalgnmnt *link;
+      struct gcalgnmnt *next;
+    };
+
+   
+
+  struct pgl
+    {
+      int gcrd[2];
+      int rflag;
+      int nags;
+      int exn[MAXNAGS];
+      int gcds[MAXNAGS][MAXNEXNS][2];
+      float exnscr[MAXNAGS][MAXNEXNS];
+      float itrscr[MAXNAGS][MAXNEXNS][2];
+      int npps[MAXNAGS];
+      int pcds[MAXNAGS][MAXNPPS][MAXNEXNS][2];
+      int npsg[MAXNAGS][MAXNPPS];
+      struct gcalgnmnt *gca;
+      struct pgl *next;
+    };
+  struct orf
+    {
+     int i, j, l, f, n;
+     struct orf *next;
+    };
+  struct gpalgnmnt
+    {
+      char gname[257], gsgmntn[257], pname[257], qpdbn[257];
+      int calln;
+      int gia, gib, plgth;
+      int exn;
+      int gcds[MAXNEXNS][2];
+      int pcds[MAXNEXNS][2];
+      float exnscr[MAXNEXNS];
+      float itrscr[MAXNEXNS][2];
+      float score;
+      char *algnmnt;
+      struct gpalgnmnt *next;
+    };
+
+
+/*      THESE DEFINITIONS REFER TO THE STATE INDEX FOR THE TWO
+   N x M SCORE MATRICES IN sahmtD.c.
+ */
+#define		E		0
+#define		I		1
+
+/* THESE DEFINITIONS ARE USED TO RETRACE THE OPTIMAL PATH IN sahmtD.c.
+   E, I REFER TO THE ORIGINAL STATE, N, M, AND NM REFER TO WHICH INDEX
+   SHOULD BE DECREMENTED.
+ */
+#define		E_NM		0
+#define		I_NM		1
+#define		E_N		2
+#define		I_N		3
+#define		E_M		4
+#define		I_M		5
+
+
+
+
+/*      THESE DEFINITIONS REFER TO THE STATE INDEX FOR THE FOUR
+   N x M SCORE MATRICES IN sahmtP.c.
+ */
+#define		C_STATE		0
+#define		IA_STATE	1
+#define		IB_STATE	2
+#define		IC_STATE	3
+
+
+/* THESE DEFINITIONS ARE USED TO RETRACE THE OPTIMAL PATH IN sahmtP.c.
+   C, I REFER TO THE ORIGINAL STATE, N, M, AND NM REFER TO WHICH INDEX
+   SHOULD BE DECREMENTED.
+ */
+#define		C_N3M		0
+#define		C_N2M		1
+#define		C_N1M		2
+#define		C_M		3
+#define		C_N3		4
+#define		C_N2		5
+#define		C_N		6
+#define		I_N3		7
+#define		I_N3M		8
+#define		I_N2M		9
+#define		I_N1M 		10
+#define		IA_N		11
+#define		IB_N		12
+#define		IC_N		13
+
+
+/*      GLOBAL VARIABLES & STRUCTURES  */
+
+  float match[12][12];
+  float *scoreD[2][2];
+  short int **pathD[2];
+  int *intronstart[2];
+  int *exonstart[2];
+
+  int ssmat[23][23];
+  float *scoreP[4][4];
+  short int **pathP[4];
+  int *intronstart_IA[4], *intronstart_IB[4], *intronstart_IC[4];
+  int *splitcodon_IB[4], *splitcodon_IC1[4], *splitcodon_IC2[4];
+
+  int *optGDNA, *optCDNA, *optProtein, *optState, optN, optM, optcounter;
+  FILE *sahmtfp;
+
+/*      GLOBAL VARIABLES  & STRUCTURES   /
+
+   float        match[12][12];
+   float        scoreD[2][2][MAXCLGTH+1];
+   short int    pathD[2][MAXGLGTH+1][MAXCLGTH+1];
+   int          intronstart[2][MAXCLGTH+1];
+   int          exonstart[2][MAXCLGTH+1];
+
+   int          ssmat[23][23];
+   float        scoreP[4][4][MAXPLGTH+1];
+   short int    pathP[4][MAXGLGTH+1][MAXPLGTH+1];
+   int          intronstart_IA[4][MAXPLGTH+1], intronstart_IB[4][MAXPLGTH+1],
+                 intronstart_IC[4][MAXPLGTH+1];
+   int          splitcodon_IB[4][MAXPLGTH+1],
+                 splitcodon_IC1[4][MAXPLGTH+1], splitcodon_IC2[4][MAXPLGTH+1];
+
+   int          optGDNA[2*MAXGLGTH], optCDNA[2*MAXGLGTH],
+                 optProtein[2*MAXGLGTH], optState[2*MAXGLGTH],
+                 optN, optM, optcounter;
+   FILE*        sahmtfp;
+ */
+
+
+
+/*      FUNCTION PROTOTYPES     */
+
+/*      INTERFACE WITH THE SplicePredictor and GeneSeqer PROGRAMS */
+  void read_sahmt_prm (FILE * fp, struct sprmtr *sprm);
+
+  int sahmtD (FILE * outfp, char *gdna, char *gdnaR, int sia, int sib,
+	      int numbp, int rflag, float *pd, float *pa, float *pdR,
+	      float *paR, char *cdna, struct gcalgnmnt *gca,
+	      struct sprmtr sprm, int calln);
+
+  int insert_gca (struct gcalgnmnt **gcahpp, struct gcalgnmnt *nodep);
+  int prt_gca_list (FILE * fp, struct gcalgnmnt *gcap, char *gsgmntn);
+  void free_gca (struct gcalgnmnt *gca);
+
+  void det_pgl(FILE *fp, struct gcalgnmnt **gcaheadpp, char *gname,
+	       char *gsgmntn, char *gdna, char *gdnaR, int sia, int sib,
+	       int numbp, float *pd, float *pa, float *pdR, float *paR,
+	       struct sprmtr sprm, int bflag, int revestallowed);
+
+
+  int sahmtP (FILE * fp, char *gdna, char *gname, int glgth, int ia,
+	      int numbp, int rflag, float *pd, float *pa, char *protein,
+	      char *pname, int plgth, int smat[23][23],
+	      struct gpalgnmnt *gpa, struct sprmtr sprm, int calln);
+
+  int insert_gpa (struct gpalgnmnt **gpahpp, struct gpalgnmnt *nodep);
+  int prt_gpa_list (FILE * fp, struct gpalgnmnt *gpap, char *gsgmntn);
+  void free_gpa (struct gpalgnmnt *gpa);
+
+  extern void fatal_error (char *buf);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

@@ -1,0 +1,27 @@
+#!/bin/csh -f
+#
+
+\mv out1.gbS		out1.gbS.orig
+\mv out2.gbS		out2.gbS.orig
+\mv out12.gbS		out12.gbS.orig
+\mv out12.gbS.html	out12.gbS.html.orig
+\mv out.gbA		out.gbA.orig
+\mv outfile.gbA		outfile.gbA.orig
+\mv stdout.gbA		stdout.gbA.orig
+\mv outfile.gbA.html	outfile.gbA.html.orig
+\mv stdout.gbA.html	stdout.gbA.html.orig
+\mv out.gbAw8		out.gbAw8.orig
+\mv outM60.gbA		outM60.gbA.orig
+\mv out.faA		out.faA.orig
+\mv out.faAX		out.faAX.orig
+\mv out.faAXHQ		out.faAXHQ.orig
+\mv out.est3		out.est3.orig
+\mv out.rice		out.rice.orig
+\mv out.riceU		out.riceU.orig
+\mv out.qp1		out.qp1.orig
+\mv out.qp1.html	out.qp1.html.orig
+\mv out.qp2		out.qp2.orig
+\mv out.estqp2.html	out.estqp2.html.orig
+\mv out.qp3		out.qp3.orig
+\mv sp.out		sp.out.orig
+\mv spLL.out		spLL.out.orig

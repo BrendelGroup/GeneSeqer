@@ -1,0 +1,46 @@
+This directory contains a few scripts for database backend support to store
+GeneSeqer results.  These scripts were kindly provided by Michael E. Sparks
+(mespar1@iastate.edu) and are included as examples "as is".  Please see the
+script headers for details on usage and usage agreement.  Note that the XML
+standard was developed for the GeneSeqer-derivative software GenomeThreader
+(gth; see http://www.genomethreader.org).
+
+
+********************************************************************************
+
+Usage example 1 (storing GeneSeqer results in a MySQL database):
+
+1.1) Create an account for user "gthuser" with password "gthpass"
+in your local MySQL database.
+
+1.2) Create database tables for storing output results:
+
+	mysql -u gthuser -p < gthDB_make.sql
+
+1.3) Create XML-formatted GeneSeqer output:
+
+	GSQ2XML.pl -e out.gbA.orig
+
+	(output is in out.gbA.orig.xml)
+
+1.4) Populate the database tables (note: change "gthuser" and
+"gthpass" appropriately in load_data.gthDB.pl, if necessary):
+
+	cat out.gbA.orig.xml | load_data.gthDB.pl T
+
+
+********************************************************************************
+
+Usage example 2 (generating GFF output of GeneSeqer results);
+
+	python gthxmlToGFF.py -t EST -i out.gbA.orig.xml -o out.gbA.orig.gff
+
+
+********************************************************************************
+
+Usage example 3 (generating SQL insert statements for the xGDB browser,
+http://sourceforge.net/projects/xgdb):
+
+	python xGDBload_PgsFromgthxml.py -x U89959.ref -i out.gbA.orig.xml
+		> xGDB.sql
+********************************************************************************

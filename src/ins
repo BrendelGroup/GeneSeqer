@@ -1,0 +1,9 @@
+
+#The following seems to work on Fedora:
+#
+MPICC     = /usr/lib64/openmpi/bin/mpicc -I/usr/include/openmpi-x86_64 -pthread -Wl,-rpath -Wl,/usr/lib64/openmpi/lib -Wl,--enable-new-dtags -L/usr/lib64/openmpi/lib -lmpi
+
+#The following seems to work on Ubuntu:
+#
+#MPICC    = /usr/bin/mpicc -I/usr/lib/openmpi/include -I/usr/lib/openmpi/include/openmpi -pthread -L/usr/lib -L/usr/lib/openmpi/lib -lmpi -ldl -lhwloc
+

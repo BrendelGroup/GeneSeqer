@@ -1,0 +1,1627 @@
+GeneSeqer.   Version of February 15, 2014.
+Date run: Sat Feb 15 09:43:38 2014
+
+(Bayesian) Splice site model (species):	Oryza sativa
+Fast search parameters:  (-x) wsize 12, (-y) minqHSP 12, (-z) minqHSPc 30.
+                         (-w) minESTc 0.00.
+Total number of ESTs: 19	Total sequence length: 9045
+Minimum sequence length: 275	Maximum sequence length: 712 
+
+Length distribution (number of sequences of specified length):
+<  100:	0
+<  200:	0
+<  300:	1
+<  400:	4
+<  500:	9
+<  600:	0
+<  700:	3
+<  800:	2
+<  900:	0
+< 1000:	0
+>=1000:	0
+
+GenBank file: U89959
+
+________________________________________________________________________________
+Sequence    1:   U89959, from 1 to 106973, both strands analyzed.
+... started  at: Sat Feb 15 09:43:38 2014
+
+
+EST library file:	rice_ests;	matching gDNA +strand ...
+... found all matches, elapsed seconds = 0
+... matches indexed, elapsed seconds = 0 HitsTableSize = 1
+
+EST library file:	rice_ests;	matching gDNA -strand ...
+... found all matches, elapsed seconds = 0
+... matches indexed, elapsed seconds = 0 HitsTableSize = 15
+
+********************************************************************************
+EST sequence      5 +strand   463 n (File: 4880608+)
+
+     1  AGCAGCTATT ACCGGGGAGC TCATGGAATA ATTATTGTAT ACGATGTGAC AGACCAAGAA
+    61  AGCTTCAACA ATGTGAAGCA GTGGTTGAAT GAAATTGATC GTTATGCAAG TGACAATGTA
+   121  AACAAGCTCC TTGTTGGGAA CAAGAGCGAC CTAACTGCCA ACAAAGTTGT GTCATCTGAA
+   181  ACAGCTAAGG CGTTTGCTGA TGAGATGGGC ATCCCCTTCA TGGAGACAAG TGCCAAGAAC
+   241  GCCACTAATG TGGAGCAGGC CTTCATGGCT ATGGCCGCAT CCATCAAGGA CAGGATGGCT
+   301  AGCCAACCGG CCGCTTCAAA TGCAAGGCCA CCGACCGTGC AGATCCGCGG GCAACCTGTC
+   361  AACCAGAAGA CGTCGTGCTG CTCGTCCTAA AGATAACCAA GTCTTTNCTT CCATGTAAAA
+   421  TTCGACGNAT GTTACTACTT GTTTGCTTAC TACAACGNAT TTG
+
+Predicted gene structure (within gDNA segment 52602 to 48993):
+
+ Exon  1  51584  51552 (  33 n);  cDNA      1     33 (  33 n); score: 0.818
+  Intron  1  51551  51475 (  77 n); Pd: 0.765 (s:    0), Pa: 0.963 (s: 0.86)
+ Exon  2  51474  51319 ( 156 n);  cDNA     34    189 ( 156 n); score: 0.814
+  Intron  2  51318  51217 ( 102 n); Pd: 1.000 (s: 0.66), Pa: 0.984 (s: 0.76)
+ Exon  3  51216  51113 ( 104 n);  cDNA    190    293 ( 104 n); score: 0.769
+  Intron  3  51112  50835 ( 278 n); Pd: 0.998 (s: 0.80), Pa: 0.992 (s: 0.82)
+ Exon  4  50834  50734 ( 101 n);  cDNA    294    393 ( 100 n); score: 0.728
+
+MATCH	U89959-	4880608+	0.777	394	0.851	C
+PGS_U89959-_4880608+	(51584  51552,51474  51319,51216  51113,50834  50734)
+
+Alignment (genomic DNA sequence = upper lines):
+
+AGCAGTTACT ACCGTGGGGC ACATGGAATT ATTGTAAGCA ACATCTTATC TAGGTTCTTT    51525
+||||| || | |||| || ||  ||||||||  |||                              
+AGCAGCTATT ACCGGGGAGC TCATGGAATA ATT....... .......... ..........       33
+
+
+CTGTTGACTC CTTTAAGTTT ATGTCCTAAT TTAGTTCTTG CACCTGGTAG ATTGTCTACG    51465
+                                                       ||||| |||| 
+.......... .......... .......... .......... .......... ATTGTATACG       43
+
+
+ATGTCACAGA TGAAGAAAGC TTCAATAATG TCAAGCAATG GTTGAGTGAA ATTGATCGTT    51405
+|||| |||||   |||||||| ||||| |||| | ||||| || ||||| |||| |||||||||| 
+ATGTGACAGA CCAAGAAAGC TTCAACAATG TGAAGCAGTG GTTGAATGAA ATTGATCGTT      103
+
+
+ATGCTAGTGA CAATGTCAAC AAACTCCTTG TTGGAAACAA GTCTGATCTT ACTGAAAACA    51345
+|||| ||||| |||||| ||| || ||||||| |||| ||||| |   || ||  ||||  |||| 
+ATGCAAGTGA CAATGTAAAC AAGCTCCTTG TTGGGAACAA GAGCGACCTA ACTGCCAACA      163
+
+
+GAGCCATTCC TTATGAAACT GCCAAGGTAT ATATATGCCA CTTGAACCAA TTCTTTCTTC    51285
+ ||   |  |  | ||||||  || |||                                      
+AAGTTGTGTC ATCTGAAACA GCTAAG.... .......... .......... ..........      189
+
+
+TCAAGTTTTG AAAATCATCA AACTCTAAGG CTATTATTAC TTTCCTGATT ACTTCGAAAC    51225
+                                                                  
+.......... .......... .......... .......... .......... ..........      189
+
+
+ATTCATAGGC TTTTGCCGAT GAAATCGGGA TTCCTTTTAT GGAGACTAGT GCAAAAGATG    51165
+        ||  ||||| ||| || || || | | || || || |||||| ||| || ||  | | 
+........GC GTTTGCTGAT GAGATGGGCA TCCCCTTCAT GGAGACAAGT GCCAAGAACG      241
+
+
+CTACAAACGT AGAACAGGCT TTCATGGCAA TGTCTGCATC CATCAAAGAG AGGTATTTAT    51105
+| || || ||  || |||||  |||||||| | || | ||||| |||||| ||  ||         
+CCACTAATGT GGAGCAGGCC TTCATGGCTA TGGCCGCATC CATCAAGGAC AG........      293
+
+
+CTTACATCGT TCTTTTTAAG TAACTGCGGT TAATATACTC ATCATACCTG ATGGAACTTT    51045
+                                                                  
+.......... .......... .......... .......... .......... ..........      293
+
+
+TGCGAAGCCA TAATCTCATT TTTGTAAGTG TTTATATAGA TCTCAGAAAG TGTCACTGTG    50985
+                                                                  
+.......... .......... .......... .......... .......... ..........      293
+
+
+TAAGTGACCT TGGAGTGAAA TAAATAAATG ACTGATGTTG ACCTTGCAGT GTTCAAATTG    50925
+                                                                  
+.......... .......... .......... .......... .......... ..........      293
+
+
+AAAATTCAAG TAGTTGTACT TAATCAATTT GCAGAGAGTG TGCGTTCGTG TGATATATGA    50865
+                                                                  
+.......... .......... .......... .......... .......... ..........      293
+
+
+GAGAAATTGA TCTCTGTGGT TTGGATGCAG AATGGCTAGC CAACCAGCTG GGAATAATGC    50805
+                                  ||||||||| ||||| || |      ||||| 
+.......... .......... .......... GATGGCTAGC CAACCGGCCG CTTCAAATGC      323
+
+
+AAGACCACCG ACCGTGCAGA TCAGAGGACA GCCTGTGGCA CAGAAGAACG GC-TGCTGCT    50746
+||| |||||| |||||||||| || | || ||  |||||     |||||| |||  | ||||||| 
+AAGGCCACCG ACCGTGCAGA TCCGCGGGCA ACCTGTCAAC CAGAAG-ACG TCGTGCTGCT      382
+
+
+CAACTTGATT GA    50734
+|  | | |   ||
+CGTCCT-AAA GA      393
+
+
+hqPGS_U89959-_4880608+	(51584  51552,51474  51319,51216  51113,50834  50734)
+
+
+********************************************************************************
+EST sequence     10 +strand   612 n (File: 3763507+)
+
+     1  AGCTCATGGA ATTATTATTG TATATGATGT GACAGACCAA GAAAGCTTCA ACAATGTGAA
+    61  GCAGTGGTTG AATGAAATTG ATCGTTATGC AAGTGACAAT GTTAACAAGC TCCTCGTTGG
+   121  GAACAAGAGC GACCTAACTG CCAACAAAGT TGTGTCATCT GAAACAGCTA AGGCGTTTGC
+   181  TGATGAGATG GGCATCCCAT TCATGGAGAC AAGTGCCAAG AACGCCACTA ATGTGGAGCA
+   241  GGCCTTTATG GCTATGGCTG CATCCATCAA GGACAGGATG GCGAGCCAAC CGGCCGCTGC
+   301  AAATGCAAGG CCACCGACGG TGCAGATCCG CGGGCAACCT GTCAACCAGA AGACGTCGTG
+   361  CTGCTCGTCC TAAAGATAAC GAAGTACTTC CTTCTATGTA AAATTCGACG TATGTTACTA
+   421  CTGTTTGCTC ACTACAACGT ATTTGTAATA TTCATTTGAA CGCCCTCGAT AGCATCTTTT
+   481  CTTTAATCAG ATGGTTAGGG AGCTGCAAAT ATATATGTAA CTTTGCTGTG TTGCTCTTTG
+   541  CTCACGAATC AAGAGGAGCA AGCAGAACCA GTGTATTTGA TTCATTTTAC GCTTAAAAAA
+   601  AAAAAAAAAA AA
+
+Predicted gene structure (within gDNA segment 52203 to 47089):
+
+ Exon  1  51566  51552 (  15 n);  cDNA      2     16 (  15 n); score: 0.933
+  Intron  1  51551  51475 (  77 n); Pd: 0.765 (s:    0), Pa: 0.963 (s: 0.84)
+ Exon  2  51474  51319 ( 156 n);  cDNA     17    172 ( 156 n); score: 0.801
+  Intron  2  51318  51217 ( 102 n); Pd: 1.000 (s: 0.66), Pa: 0.984 (s: 0.76)
+ Exon  3  51216  51113 ( 104 n);  cDNA    173    276 ( 104 n); score: 0.769
+  Intron  3  51112  50835 ( 278 n); Pd: 0.998 (s: 0.80), Pa: 0.992 (s: 0.78)
+ Exon  4  50834  50734 ( 101 n);  cDNA    277    376 ( 100 n); score: 0.708
+ PPA                              cDNA    595    612
+
+MATCH	U89959-	3763507+	0.766	376	0.614	C
+PGS_U89959-_3763507+	(51566  51552,51474  51319,51216  51113,50834  50734)
+
+Alignment (genomic DNA sequence = upper lines):
+
+GCACATGGAA TTATTGTAAG CAACATCTTA TCTAGGTTCT TTCTGTTGAC TCCTTTAAGT    51507
+|| ||||||| |||||                                                  
+GCTCATGGAA TTATT..... .......... .......... .......... ..........       16
+
+
+TTATGTCCTA ATTTAGTTCT TGCACCTGGT AGATTGTCTA CGATGTCACA GATGAAGAAA    51447
+                                   ||||| ||  ||||| ||| ||  |||||| 
+.......... .......... .......... ..ATTGTATA TGATGTGACA GACCAAGAAA       44
+
+
+GCTTCAATAA TGTCAAGCAA TGGTTGAGTG AAATTGATCG TTATGCTAGT GACAATGTCA    51387
+||||||| || ||| |||||  ||||||| || |||||||||| |||||| ||| |||||||| | 
+GCTTCAACAA TGTGAAGCAG TGGTTGAATG AAATTGATCG TTATGCAAGT GACAATGTTA      104
+
+
+ACAAACTCCT TGTTGGAAAC AAGTCTGATC TTACTGAAAA CAGAGCCATT CCTTATGAAA    51327
+|||| |||||  ||||| ||| |||   || | | ||||  || || ||   |   | | ||||| 
+ACAAGCTCCT CGTTGGGAAC AAGAGCGACC TAACTGCCAA CAAAGTTGTG TCATCTGAAA      164
+
+
+CTGCCAAGGT ATATATATGC CACTTGAACC AATTCTTTCT TCTCAAGTTT TGAAAATCAT    51267
+| || |||                                                          
+CAGCTAAG.. .......... .......... .......... .......... ..........      172
+
+
+CAAACTCTAA GGCTATTATT ACTTTCCTGA TTACTTCGAA ACATTCATAG GCTTTTGCCG    51207
+                                                       || ||||| | 
+.......... .......... .......... .......... .......... GCGTTTGCTG      182
+
+
+ATGAAATCGG GATTCCTTTT ATGGAGACTA GTGCAAAAGA TGCTACAAAC GTAGAACAGG    51147
+|||| || ||  || || ||  |||||||| | |||| ||  |  || || ||  || || |||| 
+ATGAGATGGG CATCCCATTC ATGGAGACAA GTGCCAAGAA CGCCACTAAT GTGGAGCAGG      242
+
+
+CTTTCATGGC AATGTCTGCA TCCATCAAAG AGAGGTATTT ATCTTACATC GTTCTTTTTA    51087
+| || |||||  ||| ||||| |||||||| | | ||                             
+CCTTTATGGC TATGGCTGCA TCCATCAAGG ACAG...... .......... ..........      276
+
+
+AGTAACTGCG GTTAATATAC TCATCATACC TGATGGAACT TTTGCGAAGC CATAATCTCA    51027
+                                                                  
+.......... .......... .......... .......... .......... ..........      276
+
+
+TTTTTGTAAG TGTTTATATA GATCTCAGAA AGTGTCACTG TGTAAGTGAC CTTGGAGTGA    50967
+                                                                  
+.......... .......... .......... .......... .......... ..........      276
+
+
+AATAAATAAA TGACTGATGT TGACCTTGCA GTGTTCAAAT TGAAAATTCA AGTAGTTGTA    50907
+                                                                  
+.......... .......... .......... .......... .......... ..........      276
+
+
+CTTAATCAAT TTGCAGAGAG TGTGCGTTCG TGTGATATAT GAGAGAAATT GATCTCTGTG    50847
+                                                                  
+.......... .......... .......... .......... .......... ..........      276
+
+
+GTTTGGATGC AGAATGGCTA GCCAACCAGC TGGGAATAAT GCAAGACCAC CGACCGTGCA    50787
+              ||||| | ||||||| ||  |     ||| ||||| |||| |||| ||||| 
+.......... ..GATGGCGA GCCAACCGGC CGCTGCAAAT GCAAGGCCAC CGACGGTGCA      324
+
+
+GATCAGAGGA CAGCCTGTGG CACAGAAGAA CGGC-TGCTG CTCAACTTGA TTGA    50734
+|||| | ||  || |||||     |||||| | || | ||||| |||  | | |   ||
+GATCCGCGGG CAACCTGTCA ACCAGAAG-A CGTCGTGCTG CTCGTCCT-A AAGA      376
+
+
+hqPGS_U89959-_3763507+	(51566  51552,51474  51319,51216  51113,50834  50734)
+
+
+********************************************************************************
+EST sequence      4 +strand   485 n (File: 4969255+)
+
+     1  TCCTTGTTGG GAACAAGAGC GACCTAACTG CCAACAAAGT TGTGTCATCT GAAACAGCTA
+    61  AGGCGTTTGC TGATGAGATG GGCATCCCCT TCATGGAGAC AAGTGCCAAG AACGCCACTA
+   121  ATGTGGAGCA GGCCTTCATG GCTATGGCCG CATCCATCAA GGACAGGATG GCTAGCCAAC
+   181  CGGCCGNTTC AAATGCAAGG CCACCGACCG TGCAGATCCG CGGGCAACCT GTCAACCAGA
+   241  AGACGTCGTG CTGCTCGTCC TAAAGATAAC CAAGTCTTTC CTTCCATGTA AAATTCGACG
+   301  TATGTTACTA CTTGTTTGCT CACTACAACG TATTTGTGAT ATTCATTTGA ACGGCCTTGA
+   361  TACCATNTTT TCTTTAATCA GATGGTTAGG AAGTGGAANT ATATATGGTA AACCTGGTTT
+   421  GGTGGTTCTN TGGTCAAGGA TTGGGNGGAG GAAGAAGACC AGNGAATTTG ATTNTTTTAA
+   481  GGTTA
+
+Predicted gene structure (within gDNA segment 53103 to 47503):
+
+ Exon  1  51380  51319 (  62 n);  cDNA      1     62 (  62 n); score: 0.710
+  Intron  1  51318  51217 ( 102 n); Pd: 1.000 (s: 0.66), Pa: 0.984 (s: 0.76)
+ Exon  2  51216  51113 ( 104 n);  cDNA     63    166 ( 104 n); score: 0.769
+  Intron  2  51112  50835 ( 278 n); Pd: 0.998 (s: 0.80), Pa: 0.992 (s: 0.82)
+ Exon  3  50834  50734 ( 101 n);  cDNA    167    266 ( 100 n); score: 0.728
+
+MATCH	U89959-	4969255+	0.740	267	0.551	C
+PGS_U89959-_4969255+	(51380  51319,51216  51113,50834  50734)
+
+Alignment (genomic DNA sequence = upper lines):
+
+TCCTTGTTGG AAACAAGTCT GATCTTACTG AAAACAGAGC CATTCCTTAT GAAACTGCCA    51321
+||||||||||  ||||||    || || ||||   |||| ||    |  | | | ||||| || | 
+TCCTTGTTGG GAACAAGAGC GACCTAACTG CCAACAAAGT TGTGTCATCT GAAACAGCTA       60
+
+
+AGGTATATAT ATGCCACTTG AACCAATTCT TTCTTCTCAA GTTTTGAAAA TCATCAAACT    51261
+||                                                                
+AG........ .......... .......... .......... .......... ..........       62
+
+
+CTAAGGCTAT TATTACTTTC CTGATTACTT CGAAACATTC ATAGGCTTTT GCCGATGAAA    51201
+                                                || ||| || ||||| | 
+.......... .......... .......... .......... ....GCGTTT GCTGATGAGA       78
+
+
+TCGGGATTCC TTTTATGGAG ACTAGTGCAA AAGATGCTAC AAACGTAGAA CAGGCTTTCA    51141
+| || || ||  || |||||| || ||||| | |  | || ||  || || ||  ||||| |||| 
+TGGGCATCCC CTTCATGGAG ACAAGTGCCA AGAACGCCAC TAATGTGGAG CAGGCCTTCA      138
+
+
+TGGCAATGTC TGCATCCATC AAAGAGAGGT ATTTATCTTA CATCGTTCTT TTTAAGTAAC    51081
+|||| ||| |  ||||||||| || || ||                                    
+TGGCTATGGC CGCATCCATC AAGGACAG.. .......... .......... ..........      166
+
+
+TGCGGTTAAT ATACTCATCA TACCTGATGG AACTTTTGCG AAGCCATAAT CTCATTTTTG    51021
+                                                                  
+.......... .......... .......... .......... .......... ..........      166
+
+
+TAAGTGTTTA TATAGATCTC AGAAAGTGTC ACTGTGTAAG TGACCTTGGA GTGAAATAAA    50961
+                                                                  
+.......... .......... .......... .......... .......... ..........      166
+
+
+TAAATGACTG ATGTTGACCT TGCAGTGTTC AAATTGAAAA TTCAAGTAGT TGTACTTAAT    50901
+                                                                  
+.......... .......... .......... .......... .......... ..........      166
+
+
+CAATTTGCAG AGAGTGTGCG TTCGTGTGAT ATATGAGAGA AATTGATCTC TGTGGTTTGG    50841
+                                                                  
+.......... .......... .......... .......... .......... ..........      166
+
+
+ATGCAGAATG GCTAGCCAAC CAGCTGGGAA TAATGCAAGA CCACCGACCG TGCAGATCAG    50781
+       ||| |||||||||| | || |      ||||||||  |||||||||| |||||||| | 
+......GATG GCTAGCCAAC CGGCCGNTTC AAATGCAAGG CCACCGACCG TGCAGATCCG      220
+
+
+AGGACAGCCT GTGGCACAGA AGAACGGC-T GCTGCTCAAC TTGATTGA    50734
+ || || ||| ||    |||| || ||| | | |||||||  |  | |  ||
+CGGGCAACCT GTCAACCAGA AG-ACGTCGT GCTGCTCGTC CT-AAAGA      266
+
+
+hqPGS_U89959-_4969255+	(51380  51319,51216  51113,50834  50734)
+
+
+********************************************************************************
+EST sequence     14 +strand   449 n (File: 2280601+)
+
+     1  TCCTTGTTGG GAACAAGAGN GACCTAACTG CCAACAAAGT TGTGTCATCT GAAACAGCTA
+    61  AGGCGTTTGC TGATGAGATG GGCATCCCCT TCATGGAGAC AAGTGCCAAG AACGCCACTA
+   121  ATGTGGAGCA GGCCTTCATG GCTATGGCCG CATCCATCAA GGACAGGATG GCTAGCCAAC
+   181  CGGCCGCTTC AAATGCAAGG CCACCGACCG TGCAGATCCG CGGGCAACCT GTCAACCAGA
+   241  AGACGTCGTG CTGCTCGTCC TAAAGATAAC CAAGTCTTTC CTTCCATGTA AAATTCGACG
+   301  TATGTTACTA CTGTTTGCTC ACTACAACGT ATTTGTGATA TTCATTTGAA CGGCCTTGAT
+   361  ACCATCTTTT CTTTAATCAG ATGGTTAGGC AGCTGCAAAT ATATATGTAA CCTTGCTTTG
+   421  TTGCTCTTTG CTCACGGATC GAGAGGAGG
+
+Predicted gene structure (within gDNA segment 53103 to 47863):
+
+ Exon  1  51380  51319 (  62 n);  cDNA      1     62 (  62 n); score: 0.710
+  Intron  1  51318  51217 ( 102 n); Pd: 1.000 (s: 0.66), Pa: 0.984 (s: 0.76)
+ Exon  2  51216  51113 ( 104 n);  cDNA     63    166 ( 104 n); score: 0.769
+  Intron  2  51112  50835 ( 278 n); Pd: 0.998 (s: 0.80), Pa: 0.992 (s: 0.82)
+ Exon  3  50834  50734 ( 101 n);  cDNA    167    266 ( 100 n); score: 0.728
+
+MATCH	U89959-	2280601+	0.740	267	0.595	C
+PGS_U89959-_2280601+	(51380  51319,51216  51113,50834  50734)
+
+Alignment (genomic DNA sequence = upper lines):
+
+TCCTTGTTGG AAACAAGTCT GATCTTACTG AAAACAGAGC CATTCCTTAT GAAACTGCCA    51321
+||||||||||  ||||||    || || ||||   |||| ||    |  | | | ||||| || | 
+TCCTTGTTGG GAACAAGAGN GACCTAACTG CCAACAAAGT TGTGTCATCT GAAACAGCTA       60
+
+
+AGGTATATAT ATGCCACTTG AACCAATTCT TTCTTCTCAA GTTTTGAAAA TCATCAAACT    51261
+||                                                                
+AG........ .......... .......... .......... .......... ..........       62
+
+
+CTAAGGCTAT TATTACTTTC CTGATTACTT CGAAACATTC ATAGGCTTTT GCCGATGAAA    51201
+                                                || ||| || ||||| | 
+.......... .......... .......... .......... ....GCGTTT GCTGATGAGA       78
+
+
+TCGGGATTCC TTTTATGGAG ACTAGTGCAA AAGATGCTAC AAACGTAGAA CAGGCTTTCA    51141
+| || || ||  || |||||| || ||||| | |  | || ||  || || ||  ||||| |||| 
+TGGGCATCCC CTTCATGGAG ACAAGTGCCA AGAACGCCAC TAATGTGGAG CAGGCCTTCA      138
+
+
+TGGCAATGTC TGCATCCATC AAAGAGAGGT ATTTATCTTA CATCGTTCTT TTTAAGTAAC    51081
+|||| ||| |  ||||||||| || || ||                                    
+TGGCTATGGC CGCATCCATC AAGGACAG.. .......... .......... ..........      166
+
+
+TGCGGTTAAT ATACTCATCA TACCTGATGG AACTTTTGCG AAGCCATAAT CTCATTTTTG    51021
+                                                                  
+.......... .......... .......... .......... .......... ..........      166
+
+
+TAAGTGTTTA TATAGATCTC AGAAAGTGTC ACTGTGTAAG TGACCTTGGA GTGAAATAAA    50961
+                                                                  
+.......... .......... .......... .......... .......... ..........      166
+
+
+TAAATGACTG ATGTTGACCT TGCAGTGTTC AAATTGAAAA TTCAAGTAGT TGTACTTAAT    50901
+                                                                  
+.......... .......... .......... .......... .......... ..........      166
+
+
+CAATTTGCAG AGAGTGTGCG TTCGTGTGAT ATATGAGAGA AATTGATCTC TGTGGTTTGG    50841
+                                                                  
+.......... .......... .......... .......... .......... ..........      166
+
+
+ATGCAGAATG GCTAGCCAAC CAGCTGGGAA TAATGCAAGA CCACCGACCG TGCAGATCAG    50781
+       ||| |||||||||| | || |      ||||||||  |||||||||| |||||||| | 
+......GATG GCTAGCCAAC CGGCCGCTTC AAATGCAAGG CCACCGACCG TGCAGATCCG      220
+
+
+AGGACAGCCT GTGGCACAGA AGAACGGC-T GCTGCTCAAC TTGATTGA    50734
+ || || ||| ||    |||| || ||| | | |||||||  |  | |  ||
+CGGGCAACCT GTCAACCAGA AG-ACGTCGT GCTGCTCGTC CT-AAAGA      266
+
+
+hqPGS_U89959-_2280601+	(51380  51319,51216  51113,50834  50734)
+
+
+********************************************************************************
+EST sequence      9 +strand   467 n (File: 3767651+)
+
+     1  CCAACAAAGT TGTGTCATCT GAAACANCTA AGGCGTTTGC TGATGAGATG GGCATCCCCT
+    61  TCATGGAGAC AAGTGCCAAG AACNCCACTA ATGTGGAGCA GGCCTTCATG GCTATGGCCG
+   121  CATCCCATCA AGGACAGGAT GGCTAGCCAA CCGGCCGCTT CAAATGCAAG GCCACCGACC
+   181  GTGCAGATCC GCGGGCAACC TGTCAACCAG AAGACGTCGT GCTGCTCGTC CTAAAGATAA
+   241  CCAAGTCTTT CCTTCCATGT AAAATTCGAC GTATGTTACT ACTGTTTGCT CACTACAACG
+   301  TATTTGTGAT ATTCATTTGA ACGCCCTTGA TNCCATCTTT TCTTTAATCA GATGGTTAGG
+   361  CAGCTGCAAA TATATATGTA ACCTTGCTTT GTTGCTCTTT GCTCACGAAT CGAGAGGAGC
+   421  AAGCAGAACC AGTGTATTTG ATTCTTTTCA AAAAAAAAAA AAAAAAA
+
+Predicted gene structure (within gDNA segment 52813 to 47393):
+
+ Exon  1  51348  51319 (  30 n);  cDNA      3     32 (  30 n); score: 0.633
+  Intron  1  51318  51217 ( 102 n); Pd: 1.000 (s:    0), Pa: 0.984 (s: 0.76)
+ Exon  2  51216  51113 ( 104 n);  cDNA     33    137 ( 105 n); score: 0.736
+  Intron  2  51112  50835 ( 278 n); Pd: 0.998 (s: 0.74), Pa: 0.992 (s: 0.82)
+ Exon  3  50834  50734 ( 101 n);  cDNA    138    237 ( 100 n); score: 0.728
+ PPA                              cDNA    450    467
+
+MATCH	U89959-	3767651+	0.732	235	0.503	C
+PGS_U89959-_3767651+	(51348  51319,51216  51113,50834  50734)
+
+Alignment (genomic DNA sequence = upper lines):
+
+AACAGAGCCA TTCCTTATGA AACTGCCAAG GTATATATAT GCCACTTGAA CCAATTCTTT    51289
+|||| ||    |  | | ||| |||  | |||                                  
+AACAAAGTTG TGTCATCTGA AACANCTAAG .......... .......... ..........       32
+
+
+CTTCTCAAGT TTTGAAAATC ATCAAACTCT AAGGCTATTA TTACTTTCCT GATTACTTCG    51229
+                                                                  
+.......... .......... .......... .......... .......... ..........       32
+
+
+AAACATTCAT AGGCTTTTGC CGATGAAATC GGGATTCCTT TTATGGAGAC TAGTGCAAAA    51169
+             || |||||  ||||| ||  || || || | | ||||||||  ||||| ||  
+.......... ..GCGTTTGC TGATGAGATG GGCATCCCCT TCATGGAGAC AAGTGCCAAG       80
+
+
+GATGCTACAA ACGTAGAACA GGCTTTCATG GCAATGTCTG CAT-CCATCA AAGAGAGGTA    51110
+ |  | || | | || || || ||| |||||| || ||| | | ||| |||||| | || ||    
+AACNCCACTA ATGTGGAGCA GGCCTTCATG GCTATGGCCG CATCCCATCA AGGACAG...      137
+
+
+TTTATCTTAC ATCGTTCTTT TTAAGTAACT GCGGTTAATA TACTCATCAT ACCTGATGGA    51050
+                                                                  
+.......... .......... .......... .......... .......... ..........      137
+
+
+ACTTTTGCGA AGCCATAATC TCATTTTTGT AAGTGTTTAT ATAGATCTCA GAAAGTGTCA    50990
+                                                                  
+.......... .......... .......... .......... .......... ..........      137
+
+
+CTGTGTAAGT GACCTTGGAG TGAAATAAAT AAATGACTGA TGTTGACCTT GCAGTGTTCA    50930
+                                                                  
+.......... .......... .......... .......... .......... ..........      137
+
+
+AATTGAAAAT TCAAGTAGTT GTACTTAATC AATTTGCAGA GAGTGTGCGT TCGTGTGATA    50870
+                                                                  
+.......... .......... .......... .......... .......... ..........      137
+
+
+TATGAGAGAA ATTGATCTCT GTGGTTTGGA TGCAGAATGG CTAGCCAACC AGCTGGGAAT    50810
+                                       |||| ||||||||||  || |      
+.......... .......... .......... .....GATGG CTAGCCAACC GGCCGCTTCA      162
+
+
+AATGCAAGAC CACCGACCGT GCAGATCAGA GGACAGCCTG TGGCACAGAA GAACGGC-TG    50751
+|||||||| | |||||||||| ||||||| |  || || |||| |    ||||| | ||| | || 
+AATGCAAGGC CACCGACCGT GCAGATCCGC GGGCAACCTG TCAACCAGAA G-ACGTCGTG      221
+
+
+CTGCTCAACT TGATTGA    50734
+||||||  |  | |  ||
+CTGCTCGTCC T-AAAGA      237
+
+
+hqPGS_U89959-_3767651+	(51348  51319,51216  51113,50834  50734)
+
+
+********************************************************************************
+EST sequence      8 +strand   471 n (File: 3769183+)
+
+     1  TGGAAACAGC TAAAGNCGTT TGGCTGATGA GATGGGNAAT CCCTTACTGN AGACAAGTGC
+    61  CAAGAACGCC ACTAAATGTG GAGCAGGCCT TCCATGGCTA TGGCCGCNTC CATCAGGGAC
+   121  AGGATGGCTA GCCAACCGGC CGCTTCAAAT GCAAGGCCAC CGACCGTGCA GATCCGCGGG
+   181  NAACCTGTCA ACCAGAAGAC GTCGTGCTGC TCGTCCTAAA GATAACCAAG TCTTTCCTTC
+   241  CATGTAAAAA TCGACGTANG TNNCNACTGT TTGCNCACTA CAACGTATTT GTGATATTCA
+   301  TTTGAACGCC CTTGATACCA TCTTTTCTTT CATCAGATGG TTAGGCAGCT GCAAATATAT
+   361  ATGTAACCTT GCTTTGTTGC TCTTTGCTCA CGAATCGAGA GGAGCAAGCA GAACCAGTGT
+   421  ATTTGATTCT TTTCACGCTT ACATTTTTCC CATTTCAAAN AAAAAAAAAA A
+
+Predicted gene structure (within gDNA segment 52663 to 47203):
+
+ Exon  1  51229  51113 ( 117 n);  cDNA      3    122 ( 120 n); score: 0.662
+  Intron  1  51112  50835 ( 278 n); Pd: 0.998 (s: 0.67), Pa: 0.992 (s: 0.82)
+ Exon  2  50834  50734 ( 101 n);  cDNA    123    222 ( 100 n); score: 0.718
+ PPA                              cDNA    457    471
+
+MATCH	U89959-	3769183+	0.688	218	0.463	C
+PGS_U89959-_3769183+	(51229  51113,50834  50734)
+
+Alignment (genomic DNA sequence = upper lines):
+
+GAAACATTCA TAGGCTTTTG CC-GATGAAA TCGGGATTCC TTTTATGGAG ACTAGTGCAA    51171
+||||||   |  || | ||||  | ||||| | | || | |||  ||  || || || ||||| | 
+GAAACAGCTA AAGNCGTTTG GCTGATGAGA TGGGNAATCC CTTACTGNAG ACAAGTGCCA       62
+
+
+AAGATGCTAC -AAACGTAGA ACAGG-CTTT CATGGCAATG TCTGCATCCA TCAAAGAGAG    51113
+|  | || ||  ||| || ||  |||| |||  |||||| |||  | || |||| |||  || || 
+AGAACGCCAC TAAATGTGGA GCAGGCCTTC CATGGCTATG GCCGCNTCCA TCAGGGACAG      122
+
+
+GTATTTATCT TACATCGTTC TTTTTAAGTA ACTGCGGTTA ATATACTCAT CATACCTGAT    51053
+                                                                  
+.......... .......... .......... .......... .......... ..........      122
+
+
+GGAACTTTTG CGAAGCCATA ATCTCATTTT TGTAAGTGTT TATATAGATC TCAGAAAGTG    50993
+                                                                  
+.......... .......... .......... .......... .......... ..........      122
+
+
+TCACTGTGTA AGTGACCTTG GAGTGAAATA AATAAATGAC TGATGTTGAC CTTGCAGTGT    50933
+                                                                  
+.......... .......... .......... .......... .......... ..........      122
+
+
+TCAAATTGAA AATTCAAGTA GTTGTACTTA ATCAATTTGC AGAGAGTGTG CGTTCGTGTG    50873
+                                                                  
+.......... .......... .......... .......... .......... ..........      122
+
+
+ATATATGAGA GAAATTGATC TCTGTGGTTT GGATGCAGAA TGGCTAGCCA ACCAGCTGGG    50813
+                                          | |||||||||| ||| || |   
+.......... .......... .......... ........GA TGGCTAGCCA ACCGGCCGCT      144
+
+
+AATAATGCAA GACCACCGAC CGTGCAGATC AGAGGACAGC CTGTGGCACA GAAGAACGGC    50753
+   ||||||| | |||||||| ||||||||||  | ||  | | ||||    || |||| ||| | 
+TCAAATGCAA GGCCACCGAC CGTGCAGATC CGCGGGNAAC CTGTCAACCA GAAG-ACGTC      203
+
+
+-TGCTGCTCA ACTTGATTGA    50734
+ ||||||||   | | |  || 
+GTGCTGCTCG TCCT-AAAGA      222
+
+
+hqPGS_U89959-_3769183+	(51229  51113,50834  50734)
+
+
+********************************************************************************
+EST sequence      7 +strand   318 n (File: 4716498+)
+
+     1  GTTTGCTGAT GAGATGGGCA TCCCCTTCAT GGAGACAAGT GCCAAGAACG CCACTAATGT
+    61  GGAGCAGGCC TTCATGGCTA TGGCCGCATC CATCAAGGAC AGGATGGCTA GCCAACCGGC
+   121  CGCTTCAAAT GCAAGGCCAC CGACCGTGCA GATCCGCGGG CAACCTGTCA ACCAGAAGAC
+   181  GTCGTGCTGC TCGTCCTAAA GATAACCAAG TCTTTCCTTC CATGTAAAAT TCGACGTATG
+   241  TTACTACTGT TTGCTCACTA CAACGTATTT GTGATATTCA TTTGAACGCC CTTGATACCA
+   301  AAAAAAAAAA AAAAAAGG
+
+Predicted gene structure (within gDNA segment 52463 to 48533):
+
+ Exon  1  51213  51113 ( 101 n);  cDNA      2    102 ( 101 n); score: 0.772
+  Intron  1  51112  50835 ( 278 n); Pd: 0.998 (s: 0.80), Pa: 0.992 (s: 0.82)
+ Exon  2  50834  50745 (  90 n);  cDNA    103    192 (  90 n); score: 0.761
+ PPA                              cDNA    300    317
+
+MATCH	U89959-	4716498+	0.767	191	0.601	C
+PGS_U89959-_4716498+	(51213  51113,50834  50745)
+
+Alignment (genomic DNA sequence = upper lines):
+
+TTTGCCGATG AAATCGGGAT TCCTTTTATG GAGACTAGTG CAAAAGATGC TACAAACGTA    51154
+||||| |||| | || || ||  || || ||| ||||| |||| | ||  | ||  || || ||  
+TTTGCTGATG AGATGGGCAT CCCCTTCATG GAGACAAGTG CCAAGAACGC CACTAATGTG       61
+
+
+GAACAGGCTT TCATGGCAAT GTCTGCATCC ATCAAAGAGA GGTATTTATC TTACATCGTT    51094
+|| ||||| | ||||||| || | | |||||| ||||| || | |                     
+GAGCAGGCCT TCATGGCTAT GGCCGCATCC ATCAAGGACA G......... ..........      102
+
+
+CTTTTTAAGT AACTGCGGTT AATATACTCA TCATACCTGA TGGAACTTTT GCGAAGCCAT    51034
+                                                                  
+.......... .......... .......... .......... .......... ..........      102
+
+
+AATCTCATTT TTGTAAGTGT TTATATAGAT CTCAGAAAGT GTCACTGTGT AAGTGACCTT    50974
+                                                                  
+.......... .......... .......... .......... .......... ..........      102
+
+
+GGAGTGAAAT AAATAAATGA CTGATGTTGA CCTTGCAGTG TTCAAATTGA AAATTCAAGT    50914
+                                                                  
+.......... .......... .......... .......... .......... ..........      102
+
+
+AGTTGTACTT AATCAATTTG CAGAGAGTGT GCGTTCGTGT GATATATGAG AGAAATTGAT    50854
+                                                                  
+.......... .......... .......... .......... .......... ..........      102
+
+
+CTCTGTGGTT TGGATGCAGA ATGGCTAGCC AACCAGCTGG GAATAATGCA AGACCACCGA    50794
+                      |||||||||| |||| || |      |||||| || ||||||| 
+.......... .........G ATGGCTAGCC AACCGGCCGC TTCAAATGCA AGGCCACCGA      143
+
+
+CCGTGCAGAT CAGAGGACAG CCTGTGGCAC AGAAGAACGG C-TGCTGCTC    50745
+|||||||||| | | || ||  |||||    | ||||| |||  | |||||||| 
+CCGTGCAGAT CCGCGGGCAA CCTGTCAACC AGAAG-ACGT CGTGCTGCTC      192
+
+
+hqPGS_U89959-_4716498+	(51213  51113,50834  50745)
+
+
+********************************************************************************
+EST sequence      6 +strand   460 n (File: 4879734+)
+
+     1  AGCAGCTATT ACCGGGGAGC TCATGGAATA ATTATTGTAT ACGATGTGAC AGACCAAGAA
+    61  AGCTTCAACA ATGTGAAGCA GTGGTTGAAT GAAATTNATC GTTATGCAAG TNACAATGTA
+   121  AACAAGCTCC TTGTTGGGAA CAAGAGCGAC CTAACTGCCA ACAAAGTTGT GTCATCTGAA
+   181  ACAGCTAAGG CGTTTGCTGA TGAGATGGGC ATCCCCTTCA TGGAGACAAG TGCCAAGAAC
+   241  GCCACTAATG TGGAGCAGGC CTTCATGGCT ATGGCCGCAT CCATCAAGGA CAGGATGGCT
+   301  AGCCAACCGG CCGCTTCAAA TGCAAGGCCA CCGACCGTGC AGATCCGCGG GCAACCTGTC
+   361  AACCAGAAGA CGTCGTGCTT CTCGTCCTAA AGATAACCAA GTCTTTCCTT CCATGTAAAA
+   421  TTCGCGNATT GTACTACTGT TTGTCACNCA CGTATTTGTG
+
+Predicted gene structure (within gDNA segment 52602 to 49023):
+
+ Exon  1  51584  51552 (  33 n);  cDNA      1     33 (  33 n); score: 0.818
+  Intron  1  51551  51475 (  77 n); Pd: 0.765 (s:    0), Pa: 0.963 (s: 0.86)
+ Exon  2  51474  51319 ( 156 n);  cDNA     34    189 ( 156 n); score: 0.801
+  Intron  2  51318  51217 ( 102 n); Pd: 1.000 (s: 0.66), Pa: 0.984 (s: 0.76)
+ Exon  3  51216  51113 ( 104 n);  cDNA    190    293 ( 104 n); score: 0.769
+  Intron  3  51112  50835 ( 278 n); Pd: 0.998 (s: 0.80), Pa: 0.992 (s: 0.82)
+ Exon  4  50834  50759 (  76 n);  cDNA    294    369 (  76 n); score: 0.776
+
+MATCH	U89959-	4879734+	0.786	369	0.802	C
+PGS_U89959-_4879734+	(51584  51552,51474  51319,51216  51113,50834  50759)
+
+Alignment (genomic DNA sequence = upper lines):
+
+AGCAGTTACT ACCGTGGGGC ACATGGAATT ATTGTAAGCA ACATCTTATC TAGGTTCTTT    51525
+||||| || | |||| || ||  ||||||||  |||                              
+AGCAGCTATT ACCGGGGAGC TCATGGAATA ATT....... .......... ..........       33
+
+
+CTGTTGACTC CTTTAAGTTT ATGTCCTAAT TTAGTTCTTG CACCTGGTAG ATTGTCTACG    51465
+                                                       ||||| |||| 
+.......... .......... .......... .......... .......... ATTGTATACG       43
+
+
+ATGTCACAGA TGAAGAAAGC TTCAATAATG TCAAGCAATG GTTGAGTGAA ATTGATCGTT    51405
+|||| |||||   |||||||| ||||| |||| | ||||| || ||||| |||| ||| |||||| 
+ATGTGACAGA CCAAGAAAGC TTCAACAATG TGAAGCAGTG GTTGAATGAA ATTNATCGTT      103
+
+
+ATGCTAGTGA CAATGTCAAC AAACTCCTTG TTGGAAACAA GTCTGATCTT ACTGAAAACA    51345
+|||| ||| | |||||| ||| || ||||||| |||| ||||| |   || ||  ||||  |||| 
+ATGCAAGTNA CAATGTAAAC AAGCTCCTTG TTGGGAACAA GAGCGACCTA ACTGCCAACA      163
+
+
+GAGCCATTCC TTATGAAACT GCCAAGGTAT ATATATGCCA CTTGAACCAA TTCTTTCTTC    51285
+ ||   |  |  | ||||||  || |||                                      
+AAGTTGTGTC ATCTGAAACA GCTAAG.... .......... .......... ..........      189
+
+
+TCAAGTTTTG AAAATCATCA AACTCTAAGG CTATTATTAC TTTCCTGATT ACTTCGAAAC    51225
+                                                                  
+.......... .......... .......... .......... .......... ..........      189
+
+
+ATTCATAGGC TTTTGCCGAT GAAATCGGGA TTCCTTTTAT GGAGACTAGT GCAAAAGATG    51165
+        ||  ||||| ||| || || || | | || || || |||||| ||| || ||  | | 
+........GC GTTTGCTGAT GAGATGGGCA TCCCCTTCAT GGAGACAAGT GCCAAGAACG      241
+
+
+CTACAAACGT AGAACAGGCT TTCATGGCAA TGTCTGCATC CATCAAAGAG AGGTATTTAT    51105
+| || || ||  || |||||  |||||||| | || | ||||| |||||| ||  ||         
+CCACTAATGT GGAGCAGGCC TTCATGGCTA TGGCCGCATC CATCAAGGAC AG........      293
+
+
+CTTACATCGT TCTTTTTAAG TAACTGCGGT TAATATACTC ATCATACCTG ATGGAACTTT    51045
+                                                                  
+.......... .......... .......... .......... .......... ..........      293
+
+
+TGCGAAGCCA TAATCTCATT TTTGTAAGTG TTTATATAGA TCTCAGAAAG TGTCACTGTG    50985
+                                                                  
+.......... .......... .......... .......... .......... ..........      293
+
+
+TAAGTGACCT TGGAGTGAAA TAAATAAATG ACTGATGTTG ACCTTGCAGT GTTCAAATTG    50925
+                                                                  
+.......... .......... .......... .......... .......... ..........      293
+
+
+AAAATTCAAG TAGTTGTACT TAATCAATTT GCAGAGAGTG TGCGTTCGTG TGATATATGA    50865
+                                                                  
+.......... .......... .......... .......... .......... ..........      293
+
+
+GAGAAATTGA TCTCTGTGGT TTGGATGCAG AATGGCTAGC CAACCAGCTG GGAATAATGC    50805
+                                  ||||||||| ||||| || |      ||||| 
+.......... .......... .......... GATGGCTAGC CAACCGGCCG CTTCAAATGC      323
+
+
+AAGACCACCG ACCGTGCAGA TCAGAGGACA GCCTGTGGCA CAGAAG    50759
+||| |||||| |||||||||| || | || ||  |||||     ||||||
+AAGGCCACCG ACCGTGCAGA TCCGCGGGCA ACCTGTCAAC CAGAAG      369
+
+
+hqPGS_U89959-_4879734+	(51584  51552,51474  51319,51216  51113,50834  50759)
+
+
+********************************************************************************
+EST sequence      3 +strand   275 n (File: 4969256+)
+
+     1  TCCTTGTTGG GAACAAGAGC GACCTAACTG CCAACAAAGT TGTGTCATCT GAAACAGCTA
+    61  AGGCNTTTNC TGATGAGATG GGCATCCCCT TCATGGAGAC AAGTGCCAAG AACGCCACTA
+   121  ATGTGGAGCA GGCCTTCATG GCTATGGCCG CATCCATCAA GGACAGGATG GCTAGCCAAC
+   181  CGGCCGCTTC AAATGCAAGG CCACCGACCG TGCAGATCCG CGGGCAACCT GTCAACCAGA
+   241  AGACGTCGTG CTGCTCGTNC TAAAGATAAC CAAGT
+
+Predicted gene structure (within gDNA segment 53103 to 49603):
+
+ Exon  1  51380  51319 (  62 n);  cDNA      1     62 (  62 n); score: 0.710
+  Intron  1  51318  51217 ( 102 n); Pd: 1.000 (s: 0.66), Pa: 0.984 (s: 0.74)
+ Exon  2  51216  51113 ( 104 n);  cDNA     63    166 ( 104 n); score: 0.760
+  Intron  2  51112  50835 ( 278 n); Pd: 0.998 (s: 0.80), Pa: 0.992 (s: 0.82)
+ Exon  3  50834  50771 (  64 n);  cDNA    167    230 (  64 n); score: 0.797
+
+MATCH	U89959-	4969256+	0.757	230	0.836	C
+PGS_U89959-_4969256+	(51380  51319,51216  51113,50834  50771)
+
+Alignment (genomic DNA sequence = upper lines):
+
+TCCTTGTTGG AAACAAGTCT GATCTTACTG AAAACAGAGC CATTCCTTAT GAAACTGCCA    51321
+||||||||||  ||||||    || || ||||   |||| ||    |  | | | ||||| || | 
+TCCTTGTTGG GAACAAGAGC GACCTAACTG CCAACAAAGT TGTGTCATCT GAAACAGCTA       60
+
+
+AGGTATATAT ATGCCACTTG AACCAATTCT TTCTTCTCAA GTTTTGAAAA TCATCAAACT    51261
+||                                                                
+AG........ .......... .......... .......... .......... ..........       62
+
+
+CTAAGGCTAT TATTACTTTC CTGATTACTT CGAAACATTC ATAGGCTTTT GCCGATGAAA    51201
+                                                || |||  | ||||| | 
+.......... .......... .......... .......... ....GCNTTT NCTGATGAGA       78
+
+
+TCGGGATTCC TTTTATGGAG ACTAGTGCAA AAGATGCTAC AAACGTAGAA CAGGCTTTCA    51141
+| || || ||  || |||||| || ||||| | |  | || ||  || || ||  ||||| |||| 
+TGGGCATCCC CTTCATGGAG ACAAGTGCCA AGAACGCCAC TAATGTGGAG CAGGCCTTCA      138
+
+
+TGGCAATGTC TGCATCCATC AAAGAGAGGT ATTTATCTTA CATCGTTCTT TTTAAGTAAC    51081
+|||| ||| |  ||||||||| || || ||                                    
+TGGCTATGGC CGCATCCATC AAGGACAG.. .......... .......... ..........      166
+
+
+TGCGGTTAAT ATACTCATCA TACCTGATGG AACTTTTGCG AAGCCATAAT CTCATTTTTG    51021
+                                                                  
+.......... .......... .......... .......... .......... ..........      166
+
+
+TAAGTGTTTA TATAGATCTC AGAAAGTGTC ACTGTGTAAG TGACCTTGGA GTGAAATAAA    50961
+                                                                  
+.......... .......... .......... .......... .......... ..........      166
+
+
+TAAATGACTG ATGTTGACCT TGCAGTGTTC AAATTGAAAA TTCAAGTAGT TGTACTTAAT    50901
+                                                                  
+.......... .......... .......... .......... .......... ..........      166
+
+
+CAATTTGCAG AGAGTGTGCG TTCGTGTGAT ATATGAGAGA AATTGATCTC TGTGGTTTGG    50841
+                                                                  
+.......... .......... .......... .......... .......... ..........      166
+
+
+ATGCAGAATG GCTAGCCAAC CAGCTGGGAA TAATGCAAGA CCACCGACCG TGCAGATCAG    50781
+       ||| |||||||||| | || |      ||||||||  |||||||||| |||||||| | 
+......GATG GCTAGCCAAC CGGCCGCTTC AAATGCAAGG CCACCGACCG TGCAGATCCG      220
+
+
+AGGACAGCCT    50771
+ || || ||| 
+CGGGCAACCT      230
+
+
+hqPGS_U89959-_4969256+	(51380  51319,51216  51113,50834  50771)
+
+
+********************************************************************************
+EST sequence     15 +strand   365 n (File: 703053+)
+
+     1  TGGAATTATT ATTGTATATG ANGTGACAGA CCAAGAAAGC TTCAACAATG TGAAGCAGTG
+    61  GTTGAATGAA ATTGATCGTT ATGCAAGTGA CAATGTTAAC AAGCTCCTCG TTGGGAACAA
+   121  GAGCGACCTA ACTGCCAACA AAGTTGTGTC ATCTGAAACA GCTAAGGCGT TTGCTGATGA
+   181  GATGGGCATC CCATTCATGG AGACAAGTGC CAAGAACGCC ACTAATGTGG AGCAGGCCTT
+   241  TATGGCTATG GCTGCATCCA TCAAGGACAG GATGGCGAGC CAACCGGCCG CTGCAAATGC
+   301  AAGGCCACCG ACGGTGCAGA TCCGCGGGCA CCTGTCAACC AGANGCGTCG TNTTCTCGTC
+   361  CTAAG
+
+Predicted gene structure (within gDNA segment 52372 to 49499):
+
+ Exon  1  51561  51552 (  10 n);  cDNA      1     10 (  10 n); score: 1.000
+  Intron  1  51551  51475 (  77 n); Pd: 0.765 (s:    0), Pa: 0.963 (s: 0.82)
+ Exon  2  51474  51319 ( 156 n);  cDNA     11    166 ( 156 n); score: 0.795
+  Intron  2  51318  51217 ( 102 n); Pd: 1.000 (s: 0.66), Pa: 0.984 (s: 0.76)
+ Exon  3  51216  51113 ( 104 n);  cDNA    167    270 ( 104 n); score: 0.769
+  Intron  3  51112  50835 ( 278 n); Pd: 0.998 (s: 0.80), Pa: 0.992 (s: 0.78)
+ Exon  4  50834  50775 (  60 n);  cDNA    271    330 (  60 n); score: 0.767
+
+MATCH	U89959-	703053+	0.781	330	0.904	C
+PGS_U89959-_703053+	(51561  51552,51474  51319,51216  51113,50834  50775)
+
+Alignment (genomic DNA sequence = upper lines):
+
+TGGAATTATT GTAAGCAACA TCTTATCTAG GTTCTTTCTG TTGACTCCTT TAAGTTTATG    51502
+||||||||||                                                        
+TGGAATTATT .......... .......... .......... .......... ..........       10
+
+
+TCCTAATTTA GTTCTTGCAC CTGGTAGATT GTCTACGATG TCACAGATGA AGAAAGCTTC    51442
+                             ||| || || || | | |||||  | |||||||||| 
+.......... .......... .......ATT GTATATGANG TGACAGACCA AGAAAGCTTC       43
+
+
+AATAATGTCA AGCAATGGTT GAGTGAAATT GATCGTTATG CTAGTGACAA TGTCAACAAA    51382
+|| ||||| | |||| ||||| || ||||||| |||||||||| | |||||||| ||| |||||  
+AACAATGTGA AGCAGTGGTT GAATGAAATT GATCGTTATG CAAGTGACAA TGTTAACAAG      103
+
+
+CTCCTTGTTG GAAACAAGTC TGATCTTACT GAAAACAGAG CCATTCCTTA TGAAACTGCC    51322
+||||| |||| | ||||||    || || ||| |  |||| ||    |  | |  |||||| ||  
+CTCCTCGTTG GGAACAAGAG CGACCTAACT GCCAACAAAG TTGTGTCATC TGAAACAGCT      163
+
+
+AAGGTATATA TATGCCACTT GAACCAATTC TTTCTTCTCA AGTTTTGAAA ATCATCAAAC    51262
+|||                                                               
+AAG....... .......... .......... .......... .......... ..........      166
+
+
+TCTAAGGCTA TTATTACTTT CCTGATTACT TCGAAACATT CATAGGCTTT TGCCGATGAA    51202
+                                                 || || ||| |||||  
+.......... .......... .......... .......... .....GCGTT TGCTGATGAG      181
+
+
+ATCGGGATTC CTTTTATGGA GACTAGTGCA AAAGATGCTA CAAACGTAGA ACAGGCTTTC    51142
+|| || || | | || ||||| ||| |||||  ||  | || | | || || ||  ||||| ||  
+ATGGGCATCC CATTCATGGA GACAAGTGCC AAGAACGCCA CTAATGTGGA GCAGGCCTTT      241
+
+
+ATGGCAATGT CTGCATCCAT CAAAGAGAGG TATTTATCTT ACATCGTTCT TTTTAAGTAA    51082
+||||| |||  |||||||||| ||| || ||                                   
+ATGGCTATGG CTGCATCCAT CAAGGACAG. .......... .......... ..........      270
+
+
+CTGCGGTTAA TATACTCATC ATACCTGATG GAACTTTTGC GAAGCCATAA TCTCATTTTT    51022
+                                                                  
+.......... .......... .......... .......... .......... ..........      270
+
+
+GTAAGTGTTT ATATAGATCT CAGAAAGTGT CACTGTGTAA GTGACCTTGG AGTGAAATAA    50962
+                                                                  
+.......... .......... .......... .......... .......... ..........      270
+
+
+ATAAATGACT GATGTTGACC TTGCAGTGTT CAAATTGAAA ATTCAAGTAG TTGTACTTAA    50902
+                                                                  
+.......... .......... .......... .......... .......... ..........      270
+
+
+TCAATTTGCA GAGAGTGTGC GTTCGTGTGA TATATGAGAG AAATTGATCT CTGTGGTTTG    50842
+                                                                  
+.......... .......... .......... .......... .......... ..........      270
+
+
+GATGCAGAAT GGCTAGCCAA CCAGCTGGGA ATAATGCAAG ACCACCGACC GTGCAGATCA    50782
+        || ||| |||||| || || |      ||||||||  ||||||||  |||||||||  
+.......GAT GGCGAGCCAA CCGGCCGCTG CAAATGCAAG GCCACCGACG GTGCAGATCC      323
+
+
+GAGGACA    50775
+| || ||
+GCGGGCA      330
+
+
+hqPGS_U89959-_703053+	(51561  51552,51474  51319,51216  51113,50834  50775)
+
+
+********************************************************************************
+EST sequence      2 +strand   712 n (File: 5005502+)
+
+     1  TGCAAAATCT CGCGACCAAG CGGCGGCGGC GGCGGGAGAG AACGAGAGGT GACCGATGGC
+    61  GACGGGCGGC GCCGCCGGCG AGGACGTCCC CGGCGGCGGC GAGTTCTACC TGCGGTACTA
+   121  CGTGGGGCAC AAGGGGAAGT TCGGGCACGA GTTCCTCGAG TTCGAGTTCC GCCCCGACGG
+   181  CAAGCTCCGC TACGCCAACA ACTCCAACTA CAAGAACGAC ACCATGATCC GCAAGGAGGT
+   241  CTTCGTCTCC CCCTCCGTCC TCCGCGAGGC CCGGAGGATC ATCCAGGAGT CCGAGATTAT
+   301  GAAGGAGGAC GACAACAACT GGCCAGAGCC CGACCGCGTG GGGAGGCAGG AGCTCGAGAT
+   361  TGTTATGGGC AACGAGCACA TCTCCTTCAC CACCTCCAAG ATTGGCTCCC TCGTCGACGT
+   421  CCAGACCAGC AAGGACCCTG AGGGCCTCCG GCATCTTCTA CTACCTCGTC CAGGATCTGA
+   481  AATGTTTCGT GTTTTCACTC ATCAATCTCC ACTTCAAAGA TCAAGCCTAT TCAATCTTGA
+   541  GCTCCTTTCA GTCTCTTAAT TGTGTTATGG CCAGTTTTAG AGAATTCTGT ATTATTATGT
+   601  ATGATCCAGC GGGTTANCCA TGGTGGTGGG GTGTTTGTGG AACAGAGGGT GGAATCTTAA
+   661  TACTTTGGTG CCTGGGATTG GTTGTTGGAT TGNGCAAGTT TGGGTGTCGT TA
+
+Predicted gene structure (within gDNA segment 56368 to 51069):
+
+ Exon  1  54768  54574 ( 195 n);  cDNA    101    295 ( 195 n); score: 0.769
+  Intron  1  54573  54336 ( 238 n); Pd: 0.516 (s: 0.62), Pa: 0.999 (s: 0.76)
+ Exon  2  54335  54159 ( 177 n);  cDNA    296    473 ( 178 n); score: 0.754
+  Intron  2  54158  53915 ( 244 n); Pd: 0.999 (s: 0.74), Pa: 0.994 (s: 0.77)
+ Exon  3  53914  53859 (  56 n);  cDNA    474    530 (  57 n); score: 0.795
+
+MATCH	U89959-	5005502+	0.766	428	0.601	C
+PGS_U89959-_5005502+	(54768  54574,54335  54159,53914  53859)
+
+Alignment (genomic DNA sequence = upper lines):
+
+GAGTTCTACC TGAGATACTA TGTCGGTCAC AAAGGGAAAT TTGGACACGA GTTCCTGGAG    54709
+|||||||||| || | |||||  || || ||| || ||||| | | || ||||| |||||| ||| 
+GAGTTCTACC TGCGGTACTA CGTGGGGCAC AAGGGGAAGT TCGGGCACGA GTTCCTCGAG      160
+
+
+TTCGAGTTTA GAGAGGACGG TAAGCTCCGT TACGCCAATA ACTCTAACTA CAAGAACGAT    54649
+||||||||   |    |||||  ||||||||  |||||||| | |||| ||||| |||||||||  
+TTCGAGTTCC GCCCCGACGG CAAGCTCCGC TACGCCAACA ACTCCAACTA CAAGAACGAC      220
+
+
+ACTATTATCC GCAAGGAGGT ATTTCTCACC CCCGCCGTGC TCAAGGAATG CAAGCGTATC    54589
+|| || |||| ||||||||||  ||  || || ||| |||| | ||   ||    |  | | ||| 
+ACCATGATCC GCAAGGAGGT CTTCGTCTCC CCCTCCGTCC TCCGCGAGGC CCGGAGGATC      280
+
+
+GTCTCCGAGA GCGAGGTCCT TTTTCTCTCT CTCTTCCGAT TTGCTTCTCT CTTGTTAATT    54529
+ ||   |||   ||||                                                  
+ATCCAGGAGT CCGAG..... .......... .......... .......... ..........      295
+
+
+GTCCGCGTTT TGGTCAATCG ACGCTATAAT AGCCAATTAG GGTTTTAGTG ATTTTGCTTC    54469
+                                                                  
+.......... .......... .......... .......... .......... ..........      295
+
+
+GATTTTTGTC GATCTAGGGC ATCTTTCCTG ACTAGTGTTG TAGGTTTAGA ACCCTCTTCG    54409
+                                                                  
+.......... .......... .......... .......... .......... ..........      295
+
+
+TTGTTAATGC TATTATCTAG GAATAATGGA TGATTTTGTA CAACCTGACA TGTGATTATT    54349
+                                                                  
+.......... .......... .......... .......... .......... ..........      295
+
+
+TGTCTGCGGG TAGATTCTGA AAGAAGACGA TAACAATTGG CCGGAACCTG ACCGTGTTGG    54289
+              ||| ||| | || |||||  ||||| ||| || || || | |||| || || 
+.......... ...ATTATGA AGGAGGACGA CAACAACTGG CCAGAGCCCG ACCGCGTGGG      342
+
+
+AAAGCAAGAG CTCGAGATCG TCTTGGGTAA TGAGCATATC TCATTCGCTA CATCTAAGAT    54229
+ | ||| ||| |||||||| | |  |||| ||  ||||| ||| || ||| | | | || ||||| 
+GAGGCAGGAG CTCGAGATTG TTATGGGCAA CGAGCACATC TCCTTCACCA CCTCCAAGAT      402
+
+
+TGGATCTCTT GTTGATTGCC AGAGCAGTAA TGATCCTGAA GGACTTC-GC ATCTTCTACT    54170
+||| || ||  || ||   || ||| ||| ||  || |||||  || || | || |||||||||| 
+TGGCTCCCTC GTCGACGTCC AGACCAGCAA GGACCCTGAG GGCCTCCGGC ATCTTCTACT      462
+
+
+ATCTTGTTCA GGTCTCCTCT CTTTTTCTTC CACCCCTTGC CTTACCATCT TTTCTTTTAC    54110
+| || || || |                                                      
+ACCTCGTCCA G......... .......... .......... .......... ..........      473
+
+
+CTAATCCCTT AACTCTATTG GACTCGATTA TATATTTAGG ACTCTGCCTT TTAACGTATT    54050
+                                                                  
+.......... .......... .......... .......... .......... ..........      473
+
+
+CACTGTCTCA AACTTTAACA TTTAGGGTTT GGCTGTTAAC ACTCATCCCT TACATGGTTC    53990
+                                                                  
+.......... .......... .......... .......... .......... ..........      473
+
+
+TGTAGTTTTT TTTTTTTTAG TTTCTGTATT TATTTGTGCT CTAACATATT CCTTTTGAAA    53930
+                                                                  
+.......... .......... .......... .......... .......... ..........      473
+
+
+CTTTCATGGT TGCAGGACTT GAAATGTCTT GTTTTTTCGC TCATCTCTCT GCACTTCAAA    53870
+                ||  | ||||||| |  || ||||| | |||||  |||  ||||||||| 
+.......... .....GATCT GAAATGTTTC GTGTTTTCAC TCATCAATCT CCACTTCAAA      518
+
+
+-ATCAAGCCT AT    53859
+ ||||||||| ||
+GATCAAGCCT AT      530
+
+
+hqPGS_U89959-_5005502+	(54768  54574,54335  54159,53914  53859)
+
+
+********************************************************************************
+EST sequence     11 +strand   614 n (File: 3760776+)
+
+     1  TTCCCCCCCC GACGGCAAGC TCCNTACGCC AACAACTCCA ACTACAAGAA CGACNCCNTG
+    61  ATCCGCAAGG AGGTCTTCGT CTCCCCCTCC GTCCTCCCGC GAGGCCCGGA GGATCATCCA
+   121  GGAGTCCGAG ATTTATGAAG GAGGACGACA ACAACTGGCC AGAGCCCGAC CGCTTGGGGA
+   181  GGCAGGAGCT CGAGATTGTT ATGGGCAACG AGCACATCTC CTTCACCACC TCCAAGATTG
+   241  GCTCCCTCGT CGACGTCCAG ACCAGCAAGG ACCCTGAGGG CCTCCGCATC TTCTACTACC
+   301  TCGTCCAGGA TCTGAAATGT TTCGTGTTTT CACTCATCAA TCTCCACTTC AAGATCAAGC
+   361  CTATTCAATC TTGAGCTCCT TTCAGTCTCT TAATTGTGTT ATGGCCNGTT TTAGAGAATT
+   421  CTGTATTATT ATGTATGATC CAGCGGGTTA ACCATGGTGG TGGGGTGTTT GTGGAACAGA
+   481  GGGTGGAATC TTAATACTTT GGTGCCTGGG ATTGTTGTTG GATTGTGCAA GCTTTGGGTG
+   541  CTCGTTACTC AAGTNGTGAT ATTTATTATT GTGAAATCTT TTTCTNCTCC AAAAAAAAAA
+   601  AAAAAAAAAA AAAA
+
+Predicted gene structure (within gDNA segment 55653 to 50399):
+
+ Exon  1  54693  54574 ( 120 n);  cDNA     11    130 ( 120 n); score: 0.721
+  Intron  1  54573  54336 ( 238 n); Pd: 0.516 (s: 0.58), Pa: 0.999 (s: 0.70)
+ Exon  2  54335  54159 ( 177 n);  cDNA    131    308 ( 178 n); score: 0.749
+  Intron  2  54158  53915 ( 244 n); Pd: 0.999 (s: 0.80), Pa: 0.994 (s: 0.80)
+ Exon  3  53914  53859 (  56 n);  cDNA    309    364 (  56 n); score: 0.821
+ PPA                              cDNA    591    614
+
+MATCH	U89959-	3760776+	0.751	353	0.575	C
+PGS_U89959-_3760776+	(54693  54574,54335  54159,53914  53859)
+
+Alignment (genomic DNA sequence = upper lines):
+
+GACGGTAAGC TCCGTTACGC CAATAACTCT AACTACAAGA ACGATACTAT TATCCGCAAG    54634
+||||| |||| |||  ||||| ||| |||||  |||||||||| ||||  |  |  ||||||||| 
+GACGGCAAGC TCC-NTACGC CAACAACTCC AACTACAAGA ACGACNCCNT GATCCGCAAG       69
+
+
+GAGGTATTTC TCACCCCCGC CGTGCTCAAG -GAATGCAAG CGTATCGTCT CCGAGAGCGA    54575
+||||| ||   || ||||| | ||| |||  |  ||   |  |  | ||| ||    |||  ||| 
+GAGGTCTTCG TCTCCCCCTC CGTCCTCCCG CGAGGCCCGG AGGATCATCC AGGAGTCCGA      129
+
+
+GGTCCTTTTT CTCTCTCTCT TCCGATTTGC TTCTCTCTTG TTAATTGTCC GCGTTTTGGT    54515
+|                                                                 
+G......... .......... .......... .......... .......... ..........      130
+
+
+CAATCGACGC TATAATAGCC AATTAGGGTT TTAGTGATTT TGCTTCGATT TTTGTCGATC    54455
+                                                                  
+.......... .......... .......... .......... .......... ..........      130
+
+
+TAGGGCATCT TTCCTGACTA GTGTTGTAGG TTTAGAACCC TCTTCGTTGT TAATGCTATT    54395
+                                                                  
+.......... .......... .......... .......... .......... ..........      130
+
+
+ATCTAGGAAT AATGGATGAT TTTGTACAAC CTGACATGTG ATTATTTGTC TGCGGGTAGA    54335
+                                                                | 
+.......... .......... .......... .......... .......... .........A      131
+
+
+-TTCTGAAAG AAGACGATAA CAATTGGCCG GAACCTGACC GTGTTGGAAA GCAAGAGCTC    54276
+ || |||| | | ||||| || ||| |||||  || || |||| |  | || |  ||| |||||| 
+TTTATGAAGG AGGACGACAA CAACTGGCCA GAGCCCGACC GCTTGGGGAG GCAGGAGCTC      191
+
+
+GAGATCGTCT TGGGTAATGA GCATATCTCA TTCGCTACAT CTAAGATTGG ATCTCTTGTT    54216
+||||| ||   |||| || || ||| |||||  ||| | || | | ||||||||  || || ||  
+GAGATTGTTA TGGGCAACGA GCACATCTCC TTCACCACCT CCAAGATTGG CTCCCTCGTC      251
+
+
+GATTGCCAGA GCAGTAATGA TCCTGAAGGA CTTCGCATCT TCTACTATCT TGTTCAGGTC    54156
+||   |||||  ||| || ||  ||||| ||  || ||||||| ||||||| ||  || |||    
+GACGTCCAGA CCAGCAAGGA CCCTGAGGGC CTCCGCATCT TCTACTACCT CGTCCAG...      308
+
+
+TCCTCTCTTT TTCTTCCACC CCTTGCCTTA CCATCTTTTC TTTTACCTAA TCCCTTAACT    54096
+                                                                  
+.......... .......... .......... .......... .......... ..........      308
+
+
+CTATTGGACT CGATTATATA TTTAGGACTC TGCCTTTTAA CGTATTCACT GTCTCAAACT    54036
+                                                                  
+.......... .......... .......... .......... .......... ..........      308
+
+
+TTAACATTTA GGGTTTGGCT GTTAACACTC ATCCCTTACA TGGTTCTGTA GTTTTTTTTT    53976
+                                                                  
+.......... .......... .......... .......... .......... ..........      308
+
+
+TTTTAGTTTC TGTATTTATT TGTGCTCTAA CATATTCCTT TTGAAACTTT CATGGTTGCA    53916
+                                                                  
+.......... .......... .......... .......... .......... ..........      308
+
+
+GGACTTGAAA TGTCTTGTTT TTTCGCTCAT CTCTCTGCAC TTCAAAATCA AGCCTAT    53859
+ ||  ||||| ||| | || | |||| ||||| |  ||| ||| ||||| |||| |||||||
+.GATCTGAAA TGTTTCGTGT TTTCACTCAT CAATCTCCAC TTCAAGATCA AGCCTAT      364
+
+
+hqPGS_U89959-_3760776+	(54693  54574,54335  54159,53914  53859)
+
+
+********************************************************************************
+EST sequence     13 +strand   475 n (File: 2312397+)
+
+     1  GGGGAAGTTC GGGCACGAGT TCCTGGAGTT CGAGTTCCGG CCCGACGGGA AGCTCCGGTA
+    61  CGCCAACAAC TCCAACTACA AGAAGGACAC CATGATCCGC AAGGAGGTGT TCGTCTCCCC
+   121  CTCCGTCCTC CGCGAGGCCA CCAGGATCAT CCACGAATCC GAGATTATGA AGGAGGATGA
+   181  CAGCAACTGG CCGGAGCCAG ACGAACGTGG GAAGGCAGGA GCTGGAGATC GTGATGGGGA
+   241  ACGAGCACAT CTCCTTCACC ACCTCCAAGA TCGGCTCCCT CGTCGACGTC CAGACCAGCA
+   301  AGGACCCCGA GGGCCTCCGC ATCTTCTACT ACCTCGTCCA GGATCTTAAG TGCTTTCGTG
+   361  TTTTCACTCA TCAATCTCCA CTTCAAGATC AAAGCCCATT TAAATCTTGA GCTNCTTTCA
+   421  GTTTCTTAAT TGTATTATGG TCAGTGTTAA GAGAGTCAGT ACAATGTATG ATCTG
+
+Predicted gene structure (within gDNA segment 55453 to 52119):
+
+ Exon  1  54735  54574 ( 162 n);  cDNA      2    163 ( 162 n); score: 0.759
+  Intron  1  54573  54336 ( 238 n); Pd: 0.516 (s: 0.62), Pa: 0.999 (s: 0.68)
+ Exon  2  54335  54159 ( 177 n);  cDNA    164    341 ( 178 n); score: 0.732
+  Intron  2  54158  53915 ( 244 n); Pd: 0.999 (s: 0.78), Pa: 0.994 (s: 0.70)
+ Exon  3  53914  53865 (  50 n);  cDNA    342    392 (  51 n); score: 0.710
+
+MATCH	U89959-	2312397+	0.740	389	0.819	C
+PGS_U89959-_2312397+	(54735  54574,54335  54159,53914  53865)
+
+Alignment (genomic DNA sequence = upper lines):
+
+GGGAAATTTG GACACGAGTT CCTGGAGTTC GAGTTTAGAG AGGACGGTAA GCTCCGTTAC    54676
+||||| || | | |||||||| |||||||||| |||||  |     ||||| || |||||| ||| 
+GGGAAGTTCG GGCACGAGTT CCTGGAGTTC GAGTTCCGGC CCGACGGGAA GCTCCGGTAC       61
+
+
+GCCAATAACT CTAACTACAA GAACGATACT ATTATCCGCA AGGAGGTATT TCTCACCCCC    54616
+||||| |||| | |||||||| ||| || ||  || ||||||| ||||||| ||   || ||||| 
+GCCAACAACT CCAACTACAA GAAGGACACC ATGATCCGCA AGGAGGTGTT CGTCTCCCCC      121
+
+
+GCCGTGCTCA AGGAATGCAA GCGTATCGTC TCCGAGAGCG AGGTCCTTTT TCTCTCTCTC    54556
+ |||| |||    ||   ||    | ||| ||   |||   || ||                    
+TCCGTCCTCC GCGAGGCCAC CAGGATCATC CACGAATCCG AG........ ..........      163
+
+
+TTCCGATTTG CTTCTCTCTT GTTAATTGTC CGCGTTTTGG TCAATCGACG CTATAATAGC    54496
+                                                                  
+.......... .......... .......... .......... .......... ..........      163
+
+
+CAATTAGGGT TTTAGTGATT TTGCTTCGAT TTTTGTCGAT CTAGGGCATC TTTCCTGACT    54436
+                                                                  
+.......... .......... .......... .......... .......... ..........      163
+
+
+AGTGTTGTAG GTTTAGAACC CTCTTCGTTG TTAATGCTAT TATCTAGGAA TAATGGATGA    54376
+                                                                  
+.......... .......... .......... .......... .......... ..........      163
+
+
+TTTTGTACAA CCTGACATGT GATTATTTGT CTGCGGGTAG ATTCTGAAAG AAGACGATAA    54316
+                                            ||| |||| | | || || |  
+.......... .......... .......... .......... ATTATGAAGG AGGATGACAG      183
+
+
+CAATTGGCCG GAACCTGAC- CGTGTTGGAA AGCAAGAGCT CGAGATCGTC TTGGGTAATG    54257
+||| |||||| || || |||     || ||||  ||| |||||  ||||||||   |||| || | 
+CAACTGGCCG GAGCCAGACG AACGTGGGAA GGCAGGAGCT GGAGATCGTG ATGGGGAACG      243
+
+
+AGCATATCTC ATTCGCTACA TCTAAGATTG GATCTCTTGT TGATTGCCAG AGCAGTAATG    54197
+|||| |||||  ||| | ||  || ||||| | | || || ||  ||   |||| | ||| || | 
+AGCACATCTC CTTCACCACC TCCAAGATCG GCTCCCTCGT CGACGTCCAG ACCAGCAAGG      303
+
+
+ATCCTGAAGG ACTTCGCATC TTCTACTATC TTGTTCAGGT CTCCTCTCTT TTTCTTCCAC    54137
+| || || ||  || |||||| |||||||| | | || |||                         
+ACCCCGAGGG CCTCCGCATC TTCTACTACC TCGTCCAG.. .......... ..........      341
+
+
+CCCTTGCCTT ACCATCTTTT CTTTTACCTA ATCCCTTAAC TCTATTGGAC TCGATTATAT    54077
+                                                                  
+.......... .......... .......... .......... .......... ..........      341
+
+
+ATTTAGGACT CTGCCTTTTA ACGTATTCAC TGTCTCAAAC TTTAACATTT AGGGTTTGGC    54017
+                                                                  
+.......... .......... .......... .......... .......... ..........      341
+
+
+TGTTAACACT CATCCCTTAC ATGGTTCTGT AGTTTTTTTT TTTTTAGTTT CTGTATTTAT    53957
+                                                                  
+.......... .......... .......... .......... .......... ..........      341
+
+
+TTGTGCTCTA ACATATTCCT TTTGAAACTT TCATGGTTGC AGGACTTGAA ATG-TCTTGT    53898
+                                              ||  | ||  || | | || 
+.......... .......... .......... .......... ..GATCTTAA GTGCTTTCGT      359
+
+
+TTTTTCGCTC ATCTCTCTGC ACTTCAAAAT CAA    53865
+ ||||| ||| |||  ||| | ||||||| || |||
+GTTTTCACTC ATCAATCTCC ACTTCAAGAT CAA      392
+
+
+hqPGS_U89959-_2312397+	(54735  54574,54335  54159,53914  53865)
+
+
+********************************************************************************
+EST sequence     16 +strand   416 n (File: 569748+)
+
+     1  CCTCTATTTG CGTTGCGAGG CGACGACGTG CCAACCACGA ACAGAGGCGG CGCTGCAAAA
+    61  TCTCGCGACC AAGCGGCGGC GGCGGCGGGA GAGAACGAGA GGTGACCGAT GGCGACGGGC
+   121  GGNGCGCCGG CGAGNGACGT CCCCGGCGGC GGCGAGTTCT ACCTGCGGTA CTACGTGGGG
+   181  CACAAGGGGA AGTTCGGGCA CGAGTTCCTC GAGTTCGAGT TCCGCCCCGA CGGCAAGCTC
+   241  CGCTACGCCA ACAACTCCAA CTACAAGAAC GACACCATGA TCCGCAAGGA GGTCTTCGTC
+   301  TCCCCCTCCG TCCTCCGCGA GGCCCGGAGG ATCATCCAGG AGTNCGAGAT TATGAAGGAG
+   361  GACGACAACA ACTTNGCCAG AGCCCGACCG CGTTGGGGAG GCAGGAGCTC GAGATT
+
+Predicted gene structure (within gDNA segment 56898 to 52789):
+
+ Exon  1  54768  54574 ( 195 n);  cDNA    154    348 ( 195 n); score: 0.769
+  Intron  1  54573  54336 ( 238 n); Pd: 0.516 (s: 0.62), Pa: 0.999 (s: 0.69)
+ Exon  2  54335  54271 (  65 n);  cDNA    349    415 (  67 n); score: 0.738
+
+MATCH	U89959-	569748+	0.762	260	0.625	C
+PGS_U89959-_569748+	(54768  54574,54335  54271)
+
+Alignment (genomic DNA sequence = upper lines):
+
+GAGTTCTACC TGAGATACTA TGTCGGTCAC AAAGGGAAAT TTGGACACGA GTTCCTGGAG    54709
+|||||||||| || | |||||  || || ||| || ||||| | | || ||||| |||||| ||| 
+GAGTTCTACC TGCGGTACTA CGTGGGGCAC AAGGGGAAGT TCGGGCACGA GTTCCTCGAG      213
+
+
+TTCGAGTTTA GAGAGGACGG TAAGCTCCGT TACGCCAATA ACTCTAACTA CAAGAACGAT    54649
+||||||||   |    |||||  ||||||||  |||||||| | |||| ||||| |||||||||  
+TTCGAGTTCC GCCCCGACGG CAAGCTCCGC TACGCCAACA ACTCCAACTA CAAGAACGAC      273
+
+
+ACTATTATCC GCAAGGAGGT ATTTCTCACC CCCGCCGTGC TCAAGGAATG CAAGCGTATC    54589
+|| || |||| ||||||||||  ||  || || ||| |||| | ||   ||    |  | | ||| 
+ACCATGATCC GCAAGGAGGT CTTCGTCTCC CCCTCCGTCC TCCGCGAGGC CCGGAGGATC      333
+
+
+GTCTCCGAGA GCGAGGTCCT TTTTCTCTCT CTCTTCCGAT TTGCTTCTCT CTTGTTAATT    54529
+ ||   |||   ||||                                                  
+ATCCAGGAGT NCGAG..... .......... .......... .......... ..........      348
+
+
+GTCCGCGTTT TGGTCAATCG ACGCTATAAT AGCCAATTAG GGTTTTAGTG ATTTTGCTTC    54469
+                                                                  
+.......... .......... .......... .......... .......... ..........      348
+
+
+GATTTTTGTC GATCTAGGGC ATCTTTCCTG ACTAGTGTTG TAGGTTTAGA ACCCTCTTCG    54409
+                                                                  
+.......... .......... .......... .......... .......... ..........      348
+
+
+TTGTTAATGC TATTATCTAG GAATAATGGA TGATTTTGTA CAACCTGACA TGTGATTATT    54349
+                                                                  
+.......... .......... .......... .......... .......... ..........      348
+
+
+TGTCTGCGGG TAGATTCTGA AAGAAGACGA TAACAA-TTG GCCGGAACCT GACCGTGTT-    54291
+              ||| ||| | || |||||  ||||| ||  ||| || ||  ||||| |||  
+.......... ...ATTATGA AGGAGGACGA CAACAACTTN GCCAGAGCCC GACCGCGTTG      395
+
+
+GGAAAGCAAG AGCTCGAGAT    54271
+|| | ||| | |||||||||| 
+GGGAGGCAGG AGCTCGAGAT      415
+
+
+hqPGS_U89959-_569748+	(54768  54574,54335  54271)
+
+
+********************************************************************************
+EST sequence     12 +strand   325 n (File: 425897+)
+
+     1  CGGACGTGCG GCGCTGCAAA ATCTCGCGAC CAAGCGGCGG CGGCGGCGGG AGAGAACGAG
+    61  AGGTGACCGA TGGCGACGGG CGGAGCGCCG GCGAGGACGT CCCCGGCGGC GGCGAGTTCT
+   121  ACCTGCGGTA CTACGTGGGG CACAAGGGGA AGTTCGGGCA CGAGTTCCTC GAGTTCGAGT
+   181  TCCGCCCCGA CGGCAAGCTC CGCTACGCCA ACAACTCCAA CTACAAGAAC GACACCATGA
+   241  TCCGCAAGGA GGTCTTCGTC TCCCCCTCCG TCCTNCGGAG CCCGGAGGAT CATCCAGGAG
+   301  TNCGAGATTA TGAAGGAGGA CGACA
+
+Predicted gene structure (within gDNA segment 56498 to 53299):
+
+ Exon  1  54768  54574 ( 195 n);  cDNA    114    306 ( 193 n); score: 0.769
+  Intron  1  54573  54336 ( 238 n); Pd: 0.516 (s: 0.62), Pa: 0.999 (s:    0)
+ Exon  2  54335  54319 (  17 n);  cDNA    307    323 (  17 n); score: 0.824
+
+MATCH	U89959-	425897+	0.769	212	0.652	C
+PGS_U89959-_425897+	(54768  54574,54335  54319)
+
+Alignment (genomic DNA sequence = upper lines):
+
+GAGTTCTACC TGAGATACTA TGTCGGTCAC AAAGGGAAAT TTGGACACGA GTTCCTGGAG    54709
+|||||||||| || | |||||  || || ||| || ||||| | | || ||||| |||||| ||| 
+GAGTTCTACC TGCGGTACTA CGTGGGGCAC AAGGGGAAGT TCGGGCACGA GTTCCTCGAG      173
+
+
+TTCGAGTTTA GAGAGGACGG TAAGCTCCGT TACGCCAATA ACTCTAACTA CAAGAACGAT    54649
+||||||||   |    |||||  ||||||||  |||||||| | |||| ||||| |||||||||  
+TTCGAGTTCC GCCCCGACGG CAAGCTCCGC TACGCCAACA ACTCCAACTA CAAGAACGAC      233
+
+
+ACTATTATCC GCAAGGAGGT ATTTCTCACC CCCGCCGTGC TCAAGGAATG CAAGCGTATC    54589
+|| || |||| ||||||||||  ||  || || ||| |||| | |   || |   |  | | ||| 
+ACCATGATCC GCAAGGAGGT CTTCGTCTCC CCCTCCGTCC T-NCGG-AGC CCGGAGGATC      291
+
+
+GTCTCCGAGA GCGAGGTCCT TTTTCTCTCT CTCTTCCGAT TTGCTTCTCT CTTGTTAATT    54529
+ ||   |||   ||||                                                  
+ATCCAGGAGT NCGAG..... .......... .......... .......... ..........      306
+
+
+GTCCGCGTTT TGGTCAATCG ACGCTATAAT AGCCAATTAG GGTTTTAGTG ATTTTGCTTC    54469
+                                                                  
+.......... .......... .......... .......... .......... ..........      306
+
+
+GATTTTTGTC GATCTAGGGC ATCTTTCCTG ACTAGTGTTG TAGGTTTAGA ACCCTCTTCG    54409
+                                                                  
+.......... .......... .......... .......... .......... ..........      306
+
+
+TTGTTAATGC TATTATCTAG GAATAATGGA TGATTTTGTA CAACCTGACA TGTGATTATT    54349
+                                                                  
+.......... .......... .......... .......... .......... ..........      306
+
+
+TGTCTGCGGG TAGATTCTGA AAGAAGACGA    54319
+              ||| ||| | || ||||| 
+.......... ...ATTATGA AGGAGGACGA      323
+
+
+hqPGS_U89959-_425897+	(54768  54574,54335  54319)
+
+
+********************************************************************************
+EST sequence      1 +strand   314 n (File: 4880166+)
+
+     1  GCAAGACTCT TGCCGTGTTG AGACTGCAGA AACGAGAGCT AGCTAGCCAG AGGTGCAAGA
+    61  AGATTCTGCA CCCATAGATC GTCTACCATG GCCACAAACC CAGGACTCTT CACGGAGTGG
+   121  CCATGGAAGA AGCTTGGCAG CTTCAAGTAC GTGTTGCTGG CGCCGTGGGT AGCGCACGGG
+   181  TGGTATGAGG TGGCGANCAA GGGGTGGCGG GAGGTGGATC TCGGGTACAT CGGCATCCTC
+   241  CCGTCGTTGC TGCTGCGGAT NCTGCACAAC CAAGCCTTGA TCACCATTTC CGGCTTTCAA
+   301  AACGCCGTTG CCGC
+
+Predicted gene structure (within gDNA segment 63873 to 67854):
+
+ Exon  1  65542  65624 (  83 n);  cDNA     88    170 (  83 n); score: 0.753
+
+MATCH	U89959+	4880166+	0.753	83	0.264	C
+PGS_U89959+_4880166+	(65542  65624)
+
+Alignment (genomic DNA sequence = upper lines):
+
+ATGGCGTCGA GGCCCGGAGC TCTT-ACGGA GTGGCCATGG AGTCCCCTTG GTAGCTTCAA    65600
+|||||  | |   || ||| | |||| ||||| |||||||||| |     |||| | |||||||| 
+ATGGCCACAA ACCCAGGA-C TCTTCACGGA GTGGCCATGG AAGAAGCTTG GCAGCTTCAA      146
+
+
+GTACCTCTTG GTGGCCCCGT TGGT    65624
+|||| | |||  |||| ||||  |||
+GTACGTGTTG CTGGCGCCGT GGGT      170
+
+
+hqPGS_U89959+_4880166+	(65542  65624)
+
+
+
+Total number of EST alignments reported: 16
+
+
+
+________________________________________________________________________________
+
+
+
+Predicted gene locations (3) in segment 1 to 106973:
+
+
+PGL   1 (- strand):	 51584   50734
+AGS-1 (51584  51552,51474  51319,51216  51113,50834  50734)
+SCR   (e 1.000  d 0.765 a 0.963,e 0.814  d 1.000 a 0.984,e 0.772  d 0.998 a 0.992,e 0.776)
+
+  Exon  1  51584  51552 (  33 n); score: 1.000
+   Intron  1  51551  51475 (  77 n);           Pd: 0.765  Pa: 0.963
+  Exon  2  51474  51319 ( 156 n); score: 0.814
+   Intron  2  51318  51217 ( 102 n);           Pd: 1.000  Pa: 0.984
+  Exon  3  51216  51113 ( 104 n); score: 0.772
+   Intron  3  51112  50835 ( 278 n);           Pd: 0.998  Pa: 0.992
+  Exon  4  50834  50734 ( 101 n); score: 0.776
+
+  PGS (51584  51552,51474  51319,51216  51113,50834  50734)	4880608+
+  PGS (51566  51552,51474  51319,51216  51113,50834  50734)	3763507+
+  PGS (51380  51319,51216  51113,50834  50734)	4969255+
+  PGS (51380  51319,51216  51113,50834  50734)	2280601+
+  PGS (51348  51319,51216  51113,50834  50734)	3767651+
+  PGS (51229  51113,50834  50734)	3769183+
+  PGS (51213  51113,50834  50745)	4716498+
+  PGS (51584  51552,51474  51319,51216  51113,50834  50759)	4879734+
+  PGS (51380  51319,51216  51113,50834  50771)	4969256+
+  PGS (51561  51552,51474  51319,51216  51113,50834  50775)	703053+
+
+3-phase translation of AGS-1 (-strand):
+
+        .         .         .         .   :        .         .         
+ 51584  AGCAGTTACTACCGTGGGGCACATGGAATTATT : ATTGTCTACGATGTCACAGATGAAGAA
+         S  S  Y  Y  R  G  A  H  G  I  I  :  I  V  Y  D  V  T  D  E  E 
+          A  V  T  T  V  G  H  M  E  L  L :   L  S  T  M  S  Q  M  K  K 
+           Q  L  L  P  W  G  T  W  N  Y   : Y  C  L  R  C  H  R  -  R 
+
+
+        .         .         .         .         .         .         
+ 51447  AGCTTCAATAATGTCAAGCAATGGTTGAGTGAAATTGATCGTTATGCTAGTGACAATGTC
+         S  F  N  N  V  K  Q  W  L  S  E  I  D  R  Y  A  S  D  N  V 
+          A  S  I  M  S  S  N  G  -  V  K  L  I  V  M  L  V  T  M  S 
+        K  L  Q  -  C  Q  A  M  V  E  -  N  -  S  L  C  -  -  Q  C 
+
+
+        .         .         .         .         .         .         
+ 51387  AACAAACTCCTTGTTGGAAACAAGTCTGATCTTACTGAAAACAGAGCCATTCCTTATGAA
+         N  K  L  L  V  G  N  K  S  D  L  T  E  N  R  A  I  P  Y  E 
+          T  N  S  L  L  E  T  S  L  I  L  L  K  T  E  P  F  L  M  K 
+        Q  Q  T  P  C  W  K  Q  V  -  S  Y  -  K  Q  S  H  S  L  - 
+
+
+        .         :  .         .         .         .         .         
+ 51327  ACTGCCAAG : GCTTTTGCCGATGAAATCGGGATTCCTTTTATGGAGACTAGTGCAAAAGAT
+         T  A  K  :  A  F  A  D  E  I  G  I  P  F  M  E  T  S  A  K  D 
+          L  P  R :   L  L  P  M  K  S  G  F  L  L  W  R  L  V  Q  K  M 
+        N  C  Q   : G  F  C  R  -  N  R  D  S  F  Y  G  D  -  C  K  R 
+
+
+        .         .         .         .         .         .   :        
+ 51165  GCTACAAACGTAGAACAGGCTTTCATGGCAATGTCTGCATCCATCAAAGAGAG : AATGGCT
+         A  T  N  V  E  Q  A  F  M  A  M  S  A  S  I  K  E  R :   M  A 
+          L  Q  T  -  N  R  L  S  W  Q  C  L  H  P  S  K  R   : E  W  L 
+        C  Y  K  R  R  T  G  F  H  G  N  V  C  I  H  Q  R  E  :  N  G 
+
+
+        .         .         .         .         .         .         
+ 50827  AGCCAACCAGCTGGGAATAATGCAAGACCACCGACCGTGCAGATCAGAGGACAGCCTGTG
+         S  Q  P  A  G  N  N  A  R  P  P  T  V  Q  I  R  G  Q  P  V 
+          A  N  Q  L  G  I  M  Q  D  H  R  P  C  R  S  E  D  S  L  W 
+        -  P  T  S  W  E  -  C  K  T  T  D  R  A  D  Q  R  T  A  C 
+
+
+        .         .         .         .   
+ 50767  GCACAGAAGAACGGCTGCTGCTCAACTTGATTGA
+         A  Q  K  N  G  C  C  S  T  -  L 
+          H  R  R  T  A  A  A  Q  L  D  - 
+        G  T  E  E  R  L  L  L  N  L  I 
+
+
+Maximal non-overlapping open reading frames (>= 64 codons):
+
+>U89959-_PGL-1_AGS-1_PPS_1 (51584  51552,51474  51319,51216  51113,50834  50738)	(frame '1';   387 bp,  129 residues) 
+     1  SSYYRGAHGI IIVYDVTDEE SFNNVKQWLS EIDRYASDNV NKLLVGNKSD LTENRAIPYE 
+    61  TAKAFADEIG IPFMETSAKD ATNVEQAFMA MSASIKERMA SQPAGNNARP PTVQIRGQPV 
+   121  AQKNGCCST-
+
+
+
+
+PGL   2 (- strand):	 54768   53859
+AGS-1 (54768  54574,54335  54159,53914  53859)
+SCR   (e 0.769  d 0.516 a 0.999,e 0.754  d 0.999 a 0.994,e 0.821)
+
+  Exon  1  54768  54574 ( 195 n); score: 0.769
+   Intron  1  54573  54336 ( 238 n);           Pd: 0.516  Pa: 0.999
+  Exon  2  54335  54159 ( 177 n); score: 0.754
+   Intron  2  54158  53915 ( 244 n);           Pd: 0.999  Pa: 0.994
+  Exon  3  53914  53859 (  56 n); score: 0.821
+
+  PGS (54768  54574,54335  54159,53914  53859)	5005502+
+  PGS (54693  54574,54335  54159,53914  53859)	3760776+
+  PGS (54735  54574,54335  54159,53914  53865)	2312397+
+  PGS (54768  54574,54335  54271)	569748+
+  PGS (54768  54574,54335  54319)	425897+
+
+3-phase translation of AGS-1 (-strand):
+
+        .         .         .         .         .         .         
+ 54768  GAGTTCTACCTGAGATACTATGTCGGTCACAAAGGGAAATTTGGACACGAGTTCCTGGAG
+         E  F  Y  L  R  Y  Y  V  G  H  K  G  K  F  G  H  E  F  L  E 
+          S  S  T  -  D  T  M  S  V  T  K  G  N  L  D  T  S  S  W  S 
+           V  L  P  E  I  L  C  R  S  Q  R  E  I  W  T  R  V  P  G 
+
+
+        .         .         .         .         .         .         
+ 54708  TTCGAGTTTAGAGAGGACGGTAAGCTCCGTTACGCCAATAACTCTAACTACAAGAACGAT
+         F  E  F  R  E  D  G  K  L  R  Y  A  N  N  S  N  Y  K  N  D 
+          S  S  L  E  R  T  V  S  S  V  T  P  I  T  L  T  T  R  T  I 
+        V  R  V  -  R  G  R  -  A  P  L  R  Q  -  L  -  L  Q  E  R 
+
+
+        .         .         .         .         .         .         
+ 54648  ACTATTATCCGCAAGGAGGTATTTCTCACCCCCGCCGTGCTCAAGGAATGCAAGCGTATC
+         T  I  I  R  K  E  V  F  L  T  P  A  V  L  K  E  C  K  R  I 
+          L  L  S  A  R  R  Y  F  S  P  P  P  C  S  R  N  A  S  V  S 
+        Y  Y  Y  P  Q  G  G  I  S  H  P  R  R  A  Q  G  M  Q  A  Y 
+
+
+        .         .     :      .         .         .         .         
+ 54588  GTCTCCGAGAGCGAG : ATTCTGAAAGAAGACGATAACAATTGGCCGGAACCTGACCGTGTT
+         V  S  E  S  E  :  I  L  K  E  D  D  N  N  W  P  E  P  D  R  V 
+          S  P  R  A  R :   F  -  K  K  T  I  T  I  G  R  N  L  T  V  L 
+        R  L  R  E  R   : D  S  E  R  R  R  -  Q  L  A  G  T  -  P  C 
+
+
+        .         .         .         .         .         .         
+ 54290  GGAAAGCAAGAGCTCGAGATCGTCTTGGGTAATGAGCATATCTCATTCGCTACATCTAAG
+         G  K  Q  E  L  E  I  V  L  G  N  E  H  I  S  F  A  T  S  K 
+          E  S  K  S  S  R  S  S  W  V  M  S  I  S  H  S  L  H  L  R 
+        W  K  A  R  A  R  D  R  L  G  -  -  A  Y  L  I  R  Y  I  - 
+
+
+        .         .         .         .         .         .         
+ 54230  ATTGGATCTCTTGTTGATTGCCAGAGCAGTAATGATCCTGAAGGACTTCGCATCTTCTAC
+         I  G  S  L  V  D  C  Q  S  S  N  D  P  E  G  L  R  I  F  Y 
+          L  D  L  L  L  I  A  R  A  V  M  I  L  K  D  F  A  S  S  T 
+        D  W  I  S  C  -  L  P  E  Q  -  -  S  -  R  T  S  H  L  L 
+
+
+        .         .  :         .         .         .         .         
+ 54170  TATCTTGTTCAG : GACTTGAAATGTCTTGTTTTTTCGCTCATCTCTCTGCACTTCAAAATC
+         Y  L  V  Q  :  D  L  K  C  L  V  F  S  L  I  S  L  H  F  K  I 
+          I  L  F  R :   T  -  N  V  L  F  F  R  S  S  L  C  T  S  K  S 
+        L  S  C  S   : G  L  E  M  S  C  F  F  A  H  L  S  A  L  Q  N 
+
+
+        .       
+ 53866  AAGCCTAT
+         K  P 
+          S  L 
+        Q  A  Y 
+
+
+Maximal non-overlapping open reading frames (>= 64 codons):
+
+>U89959-_PGL-2_AGS-1_PPS_1 (54768  54574,54335  54159,53914  53861)	(frame '1';   426 bp,  142 residues) 
+     1  EFYLRYYVGH KGKFGHEFLE FEFREDGKLR YANNSNYKND TIIRKEVFLT PAVLKECKRI 
+    61  VSESEILKED DNNWPEPDRV GKQELEIVLG NEHISFATSK IGSLVDCQSS NDPEGLRIFY 
+   121  YLVQDLKCLV FSLISLHFKI KP
+
+
+
+
+PGL   3 (+ strand):	 65542   65624
+AGS-1 (65542  65624)
+SCR   (e 0.753)
+
+  Exon  1  65542  65624 (  83 n); score: 0.753
+
+  PGS (65542  65624)	4880166+
+
+3-phase translation of AGS-1 (+strand):
+
+        .         .         .         .         .         .         
+ 65542  ATGGCGTCGAGGCCCGGAGCTCTTACGGAGTGGCCATGGAGTCCCCTTGGTAGCTTCAAG
+         M  A  S  R  P  G  A  L  T  E  W  P  W  S  P  L  G  S  F  K 
+          W  R  R  G  P  E  L  L  R  S  G  H  G  V  P  L  V  A  S  S 
+           G  V  E  A  R  S  S  Y  G  V  A  M  E  S  P  W  -  L  Q 
+
+
+        .         .         .  
+ 65602  TACCTCTTGGTGGCCCCGTTGGT
+         Y  L  L  V  A  P  L 
+          T  S  W  W  P  R  W 
+        V  P  L  G  G  P  V  G 
+
+
+Maximal non-overlapping open reading frames (>= 64 codons):
+none
+
+
+3-phase translation of AGS-1 (-strand):
+
+        .         .         .         .         .         .         
+ 65624  ACCAACGGGGCCACCAAGAGGTACTTGAAGCTACCAAGGGGACTCCATGGCCACTCCGTA
+         T  N  G  A  T  K  R  Y  L  K  L  P  R  G  L  H  G  H  S  V 
+          P  T  G  P  P  R  G  T  -  S  Y  Q  G  D  S  M  A  T  P  - 
+           Q  R  G  H  Q  E  V  L  E  A  T  K  G  T  P  W  P  L  R 
+
+
+        .         .         .  
+ 65564  AGAGCTCCGGGCCTCGACGCCAT
+         R  A  P  G  L  D  A 
+          E  L  R  A  S  T  P 
+        K  S  S  G  P  R  R  H 
+
+
+Maximal non-overlapping open reading frames (>= 64 codons):
+none
+
+
+
+... finished at: Sat Feb 15 09:43:41 2014
+

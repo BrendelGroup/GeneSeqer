@@ -1,0 +1,29 @@
+#!/bin/csh -f
+#
+
+\rm check;
+
+echo out1.gbS >> check; echo "" >> check; diff out1.gbS out1.gbS.orig >> check; echo "" >> check;
+echo out2.gbS >> check; echo "" >> check; diff out2.gbS out2.gbS.orig >> check; echo "" >> check;
+echo out12.gbS >> check; echo "" >> check; diff out12.gbS out12.gbS.orig >> check; echo "" >> check;
+echo out12.gbS.html >> check; echo "" >> check; diff out12.gbS.html out12.gbS.html.orig >> check; echo "" >> check;
+echo out.gbA >> check; echo "" >> check; diff out.gbA out.gbA.orig >> check; echo "" >> check;
+echo outfile.gbA >> check; echo "" >> check; diff outfile.gbA outfile.gbA.orig >> check; echo "" >> check;
+echo stdout.gbA >> check; echo "" >> check; diff stdout.gbA stdout.gbA.orig >> check; echo "" >> check;
+echo outfile.gbA.html >> check; echo "" >> check; diff outfile.gbA.html outfile.gbA.html.orig >> check; echo "" >> check;
+echo stdout.gbA.html >> check; echo "" >> check; diff stdout.gbA.html stdout.gbA.html.orig >> check; echo "" >> check;
+echo out.gbAw8 >> check; echo "" >> check; diff out.gbAw8 out.gbAw8.orig >> check; echo "" >> check;
+echo outM60.gbA >> check; echo "" >> check; diff outM60.gbA outM60.gbA.orig >> check; echo "" >> check;
+echo out.faA >> check; echo "" >> check; diff out.faA out.faA.orig >> check; echo "" >> check;
+echo out.faAX >> check; echo "" >> check; diff out.faAX out.faAX.orig >> check; echo "" >> check;
+echo out.faAXHQ >> check; echo "" >> check; diff out.faAXHQ out.faAXHQ.orig >> check; echo "" >> check;
+echo out.est3 >> check; echo "" >> check; diff out.est3 out.est3.orig >> check; echo "" >> check;
+echo out.rice >> check; echo "" >> check; diff out.rice out.rice.orig >> check; echo "" >> check;
+echo out.riceU >> check; echo "" >> check; diff out.riceU out.riceU.orig >> check; echo "" >> check;
+echo out.qp1 >> check; echo "" >> check; diff out.qp1 out.qp1.orig >> check; echo "" >> check;
+echo out.qp1.html >> check; echo "" >> check; diff out.qp1.html out.qp1.html.orig >> check; echo "" >> check;
+echo out.qp2 >> check; echo "" >> check; diff out.qp2 out.qp2.orig >> check; echo "" >> check;
+echo out.estqp2.html >> check; echo "" >> check; diff out.estqp2.html out.estqp2.html.orig >> check; echo "" >> check;
+echo out.qp3 >> check; echo "" >> check; diff out.qp3 out.qp3.orig >> check; echo "" >> check;
+echo sp.out >> check; echo "" >> check; diff sp.out sp.out.orig >> check; echo "" >> check;
+echo spLL.out >> check; echo "" >> check; diff spLL.out spLL.out.orig >> check; echo "" >> check;

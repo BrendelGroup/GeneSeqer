@@ -1,0 +1,39 @@
+GeneSeqer-MPI - README_EXAMPLES                              (February 15, 2014)
+________________________________________________________________________________
+
+I. Set the number of processors (x) in the lines
+
+set np = x
+
+in x*.
+
+
+II. Example:
+
+(Comment out the MakeArray associated lines in xrunme if you have not generated
+ the indices for ATest1 and ATest2 in ../data in a previous step.)
+
+xrunme
+
+  should produce out.gbA, the single processor output as in ../data, and
+  out.gbA.MPIx, the output produced by the MPI version with x processors.
+
+xdiff
+
+  will show the differences between your output files and the supplied
+  originals.  When comparing out.gbA with out.gbA.MPIx, EST sequence numbers
+  could change, but otherwise the output should be identical.
+
+
+NOTES:
+
+(1) To evaluate performance of the code, you could produce the binary "GeneSeqerMPIt"
+    with "make -f makefile.lnxMPIt" in ../src and then issue
+    	xrunme >& err.sh.o
+    Peruse "xtimes" and execute this script to generate a record of time points
+    in the GeneSeqerMPI run.
+
+(2) The directory HPCsubmit-scripts contains a few submit scripts on various
+    HPC resources that use job schedulers.  You will need to make adjustments
+    for the resource you are using according to their instructions, but these
+    template scripts might give you a useful starting point.

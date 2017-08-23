@@ -1,0 +1,429 @@
+GeneSeqer.   Version of February 15, 2014.
+Date run: Sat Feb 15 09:44:06 2014
+
+(Bayesian) Splice site model (species):	Arabidopsis thaliana
+Amino acid substitution scoring matrix: ../include/PPAM250 
+GenBank file: U89959
+
+________________________________________________________________________________
+Sequence    1:   U89959, from 101 to 13000, both strands analyzed.
+... started  at: Sat Feb 15 09:44:06 2014
+
+
+********************************************************************************
+Query protein sequence    1 (File: qprot1)
+
+     1  KLAAAIWDCI SKYKAIPNFP QTETCELLIV DRSVDQIAPI IHEWTYDAMC HDLLDMEGNK
+    61  HVIEVPSKTG GPPEKKEIVL EDHDPVWLEL RHTHIADASE RLHEKMTNFA SKNKAAQMRS
+   121  RDGSELSTRD LQKIVQALPQ YGEQVDKLST HVELAGKINR IIRDTGLRDL GQLEQDLVFG
+   181  DAGAKDVINF LRTNQDTNPE NKLRLLMIYA TVYPEKFEGD KGVKLMQVIS NMQLIAGSPE
+   241  NKAKSGSFSL KFDAGKTKQA NRKDRSGEEE TWQLFRFYPM IEELLEKLVK GDLSKSDYLC
+   301  MNQSSHKEES EARTGSVRKS SAPTAVPERK ATPHSMRSRR TATWARPHSS DDGYSRHSIL
+   361  HNDFLFFGPF ERSLDFF-
+
+Predicted gene structure (within gDNA segment 101 to 13000):
+
+ Exon  1    103    108 (   6 n);  Protein    35    36 (   2 aa); score: 1.000
+  Intron  1    109    190 (  82 n);  Pd: 0.000   Pa: 0.635
+ Exon  2    191    274 (  84 n);  Protein    37    64 (  28 aa); score: 1.000
+  Intron  2    275    436 ( 162 n);  Pd: 0.999   Pa: 0.900
+ Exon  3    437    535 (  99 n);  Protein    65    97 (  33 aa); score: 1.000
+  Intron  3    536    613 (  78 n);  Pd: 0.975   Pa: 0.996
+ Exon  4    614    684 (  71 n);  Protein    98   121 (  24 aa); score: 1.000
+  Intron  4    685    861 ( 177 n);  Pd: 0.885   Pa: 0.999
+ Exon  5    862    958 (  97 n);  Protein   122   153 (  32 aa); score: 1.000
+  Intron  5    959   1045 (  87 n);  Pd: 0.997   Pa: 0.979
+ Exon  6   1046   1171 ( 126 n);  Protein   154   195 (  42 aa); score: 1.000
+  Intron  6   1172   1258 (  87 n);  Pd: 0.866   Pa: 0.994
+ Exon  7   1259   1354 (  96 n);  Protein   196   227 (  32 aa); score: 1.000
+  Intron  7   1355   1461 ( 107 n);  Pd: 0.000   Pa: 0.964
+ Exon  8   1462   1548 (  87 n);  Protein   228   256 (  29 aa); score: 1.000
+  Intron  8   1549   1639 (  91 n);  Pd: 0.995   Pa: 0.934
+ Exon  9   1640   1717 (  78 n);  Protein   257   282 (  26 aa); score: 1.000
+  Intron  9   1718   1799 (  82 n);  Pd: 0.480   Pa: 0.992
+ Exon 10   1800   2087 ( 288 n);  Protein   283   377 (  95 aa); score: 1.000
+
+MATCH	U89959+	qprot1	1.000	1032	0.910	P
+PGS_U89959+_qprot1	(103  108,191  274,437  535,614  684,862  958,1046  1171,1259  1354,1462  1548,1640  1717,1800  2087)
+
+Alignment:
+
+GATCAGGTTT TAAGGCTCAT CTACTACATT TACTCCTCAA GTCCATATTG ATAGTTTATT      162
+ D  Q                                                             
+ |  |                                                             
+ D  Q .... .......... .......... .......... .......... ..........       36
+
+
+TCTCTAAACG ATTGAGGTGT AACTGTAGAT CGCTCCTATC ATACACGAAT GGACCTATGA      222
+                               I   A  P  I   I  H  E   W  T  Y  D 
+                               |   |  |  |   |  |  |   |  |  |  | 
+.......... .......... ........ I   A  P  I   I  H  E   W  T  Y  D       47
+
+
+TGCTATGTGC CATGATTTGC TTGACATGGA GGGGAATAAA CATGTCATTG AGGTAATTCT      282
+  A  M  C   H  D  L   L  D  M  E   G  N  K   H  V  I   E          
+  |  |  |   |  |  |   |  |  |  |   |  |  |   |  |  |   |          
+  A  M  C   H  D  L   L  D  M  E   G  N  K   H  V  I   E ........       64
+
+
+ATTTTTCTTT CTTATCCTTC AACTTTTTTC CGTTTCTGAA AGGCCCCGAT CCGGACTGCC      342
+                                                                  
+                                                                  
+.......... .......... .......... .......... .......... ..........       64
+
+
+TAAAGTCCGG TCGAGAGAAG TCCTAGCCAA CGATCCTATT GAGGATCGCG GGCGTTACAG      402
+                                                                  
+                                                                  
+.......... .......... .......... .......... .......... ..........       64
+
+
+TTTCTCTCTT CCTAATCTCT CTACCATATG CTAGGTTCCC AGTAAAACTG GTGGGCCTCC      462
+                                      V  P   S  K  T   G  G  P  P 
+                                      |  |   |  |  |   |  |  |  | 
+.......... .......... .......... .... V  P   S  K  T   G  G  P  P       73
+
+
+GGAGAAAAAG GAGATAGTGC TTGAAGATCA TGATCCAGTG TGGCTTGAGC TTCGACACAC      522
+  E  K  K   E  I  V   L  E  D  H   D  P  V   W  L  E   L  R  H  T 
+  |  |  |   |  |  |   |  |  |  |   |  |  |   |  |  |   |  |  |  | 
+  E  K  K   E  I  V   L  E  D  H   D  P  V   W  L  E   L  R  H  T       93
+
+
+ACATATAGCA GATGTATAAC ACAATTATAT ACATCATCTT TTCACTGAAT AGCTCACCAT      582
+  H  I  A   D                                                     
+  |  |  |   |                                                     
+  H  I  A   D ....... .......... .......... .......... ..........       97
+
+
+GTTGACACCA TCATTTTTGG TTTATAAATA GGCTAGCGAG CGTTTGCATG AGAAAATGAC      642
+                                   A  S  E   R  L  H   E  K  M  T 
+                                   |  |  |   |  |  |   |  |  |  | 
+.......... .......... .......... . A  S  E   R  L  H   E  K  M  T      107
+
+
+CAACTTTGCT TCAAAAAACA AAGCCGCACA AATGAGATCA AGGTCAGCGC TAAGAACTTA      702
+  N  F  A   S  K  N   K  A  A  Q   M  R  S   R                    
+  |  |  |   |  |  |   |  |  |  |   |  |  |   |                    
+  N  F  A   S  K  N   K  A  A  Q   M  R  S   R........ ..........      121
+
+
+TCTTTCTGTC TTCATAACCG AGTGCTTAGA CAATGGAACA GTTGCCTAAG TTTGATATCT      762
+                                                                  
+                                                                  
+.......... .......... .......... .......... .......... ..........      121
+
+
+GGAAGACTTT AAGTTTCTTG TTATCCTCGA TATGGATTCG TGATCCCTCA CAGACTTTTT      822
+                                                                  
+                                                                  
+.......... .......... .......... .......... .......... ..........      121
+
+
+TGATATGTAT TGCTAACATC TTTGGCTAAT GTGACGCAGG GACGGTAGCG AGTTGTCTAC      882
+                                             D  G  S   E  L  S  T 
+                                             |  |  |   |  |  |  | 
+.......... .......... .......... .........   D  G  S   E  L  S  T      128
+
+
+ACGAGATCTA CAGAAAATAG TTCAGGCTTT GCCGCAATAT GGAGAACAAG TTGACAAACT      942
+  R  D  L   Q  K  I   V  Q  A  L   P  Q  Y   G  E  Q   V  D  K  L 
+  |  |  |   |  |  |   |  |  |  |   |  |  |   |  |  |   |  |  |  | 
+  R  D  L   Q  K  I   V  Q  A  L   P  Q  Y   G  E  Q   V  D  K  L      148
+
+
+CTCCACTCAT GTAGAGGTTT GTCTCACCAT TAAATTATCT CAAAATTCAA TGTTAGATGT     1002
+  S  T  H   V  E                                                  
+  |  |  |   |  |                                                  
+  S  T  H   V  E .... .......... .......... .......... ..........      153
+
+
+GGTTGCTGAC AGTTTTTTTT TTTTACTTTA TAATCAAATT CAGCTAGCTG GAAAAATTAA     1062
+                                                L  A   G  K  I  N 
+                                                |  |   |  |  |  | 
+.......... .......... .......... .......... ... L  A   G  K  I  N      159
+
+
+TAGAATAATC AGAGACACAG GACTTCGGGA TCTTGGGCAG CTGGAACAAG ATCTTGTTTT     1122
+  R  I  I   R  D  T   G  L  R  D   L  G  Q   L  E  Q   D  L  V  F 
+  |  |  |   |  |  |   |  |  |  |   |  |  |   |  |  |   |  |  |  | 
+  R  I  I   R  D  T   G  L  R  D   L  G  Q   L  E  Q   D  L  V  F      179
+
+
+TGGAGATGCA GGTGCCAAGG ACGTTATCAA CTTTCTGAGG ACGAATCAGG TGAATAAGTT     1182
+  G  D  A   G  A  K   D  V  I  N   F  L  R   T  N  Q              
+  |  |  |   |  |  |   |  |  |  |   |  |  |   |  |  |              
+  G  D  A   G  A  K   D  V  I  N   F  L  R   T  N  Q . ..........      195
+
+
+TGAAACATGA CAAAAAAAAC TTGATAGCCG CATTGATTTA GTGTTTGAAA TGACACATCA     1242
+                                                                  
+                                                                  
+.......... .......... .......... .......... .......... ..........      195
+
+
+TGTATTTAAA ATGCAGGACA CAAACCCGGA AAACAAATTA CGGCTTTTGA TGATTTATGC     1302
+                  D   T  N  P  E   N  K  L   R  L  L   M  I  Y  A 
+                  |   |  |  |  |   |  |  |   |  |  |   |  |  |  | 
+.......... ...... D   T  N  P  E   N  K  L   R  L  L   M  I  Y  A      210
+
+
+AACAGTGTAC CCCGAGAAGT TTGAAGGTGA CAAGGGTGTG AAGCTAATGC AGGTAGCTTT     1362
+  T  V  Y   P  E  K   F  E  G  D   K  G  V   K  L  M   Q          
+  |  |  |   |  |  |   |  |  |  |   |  |  |   |  |  |   |          
+  T  V  Y   P  E  K   F  E  G  D   K  G  V   K  L  M   Q ........      227
+
+
+TCGTGTGATA GAGACCCCTT GTAATGCATG GAACAACTTG CTAAACAAAT ACTGCATTTA     1422
+                                                                  
+                                                                  
+.......... .......... .......... .......... .......... ..........      227
+
+
+TGTTATCAGC TTGCTAGATT ATCACCTGTG GATATGAAGG TTATAAGCAA CATGCAATTG     1482
+                                            V  I  S  N   M  Q  L  
+                                            |  |  |  |   |  |  |  
+.......... .......... .......... .........  V  I  S  N   M  Q  L       234
+
+
+ATAGCTGGAT CCCCAGAAAA CAAAGCTAAG TCCGGTAGTT TCTCCCTCAA ATTTGACGCT     1542
+ I  A  G   S  P  E  N   K  A  K   S  G  S   F  S  L  K   F  D  A  
+ |  |  |   |  |  |  |   |  |  |   |  |  |   |  |  |  |   |  |  |  
+ I  A  G   S  P  E  N   K  A  K   S  G  S   F  S  L  K   F  D  A       254
+
+
+GGAAAGGTAA CAGATTCAGT TTAATTATGA AAAATCAACA CTAGTTACCG AGAATAAGAA     1602
+ G  K                                                             
+ |  |                                                             
+ G  K .... .......... .......... .......... .......... ..........      256
+
+
+GAAGAATCTG ACGGATATGT ATACTCTTTT GCTATAGACA AAACAAGCAA ACAGGAAAGA     1662
+                                         T   K  Q  A   N  R  K  D 
+                                         |   |  |  |   |  |  |  | 
+.......... .......... .......... ....... T   K  Q  A   N  R  K  D      264
+
+
+TCGATCTGGT GAAGAAGAAA CATGGCAACT GTTCCGGTTT TATCCCATGA TCGAGGTAGA     1722
+  R  S  G   E  E  E   T  W  Q  L   F  R  F   Y  P  M   I  E       
+  |  |  |   |  |  |   |  |  |  |   |  |  |   |  |  |   |  |       
+  R  S  G   E  E  E   T  W  Q  L   F  R  F   Y  P  M   I  E .....      282
+
+
+TGAACACCCC GGCTTATAAG CTACATATCC ACTATGTAAA CATGAAGTGG CTGAGATACA     1782
+                                                                  
+                                                                  
+.......... .......... .......... .......... .......... ..........      282
+
+
+TCTTTGTTAT GTTGCAGGAG CTGCTTGAGA AACTCGTGAA AGGCGATCTA TCTAAAAGCG     1842
+                   E   L  L  E   K  L  V  K   G  D  L   S  K  S   
+                   |   |  |  |   |  |  |  |   |  |  |   |  |  |   
+.......... ....... E   L  L  E   K  L  V  K   G  D  L   S  K  S        296
+
+
+ACTATCTATG TATGAACCAA TCAAGTCATA AGGAGGAGAG TGAAGCAAGA ACAGGATCTG     1902
+D  Y  L  C   M  N  Q   S  S  H   K  E  E  S   E  A  R   T  G  S   
+|  |  |  |   |  |  |   |  |  |   |  |  |  |   |  |  |   |  |  |   
+D  Y  L  C   M  N  Q   S  S  H   K  E  E  S   E  A  R   T  G  S        316
+
+
+TCAGGAAGAG TTCTGCTCCT ACAGCGGTTC CAGAGAGAAA AGCCACCCCT CATTCTATGA     1962
+V  R  K  S   S  A  P   T  A  V   P  E  R  K   A  T  P   H  S  M   
+|  |  |  |   |  |  |   |  |  |   |  |  |  |   |  |  |   |  |  |   
+V  R  K  S   S  A  P   T  A  V   P  E  R  K   A  T  P   H  S  M        336
+
+
+GATCAAGACG AACTGCAACT TGGGCGCGTC CTCATTCTTC TGACGATGGA TATTCCAGGC     2022
+R  S  R  R   T  A  T   W  A  R   P  H  S  S   D  D  G   Y  S  R   
+|  |  |  |   |  |  |   |  |  |   |  |  |  |   |  |  |   |  |  |   
+R  S  R  R   T  A  T   W  A  R   P  H  S  S   D  D  G   Y  S  R        356
+
+
+ATTCTATTTT ACATAATGAT TTCTTATTTT TTGGTCCATT TGAGAGGAGC TTGGATTTTT     2082
+H  S  I  L   H  N  D   F  L  F   F  G  P  F   E  R  S   L  D  F   
+|  |  |  |   |  |  |   |  |  |   |  |  |  |   |  |  |   |  |  |   
+H  S  I  L   H  N  D   F  L  F   F  G  P  F   E  R  S   L  D  F        376
+
+
+TCTAA     2087
+F  * 
+|    
+F  *       378
+
+
+
+********************************************************************************
+Query protein sequence    4 (File: qprot2)
+
+     1  MEERHKCKLC WKSFANGRAL GGHMRSHMLI HPLPSQPESY SSSMADPGFV LQDRESETES
+    61  SKKPSRKRSR LNRRSISSLR HQQSNEEGKS ETARAADIKI GVQELSESCT EQEPMSSVSD
+   121  AATTEEDVAL SLMLLSRDKW EKEEEESDEE RWKKKRNKWF ECETCEKVFK SYQALGGHRA
+   181  SHKKKIAETD QLGSDELKKK KKKSTSSHHE CPICAKVFTS GQALGGHKRS HASANNEFTR
+   241  RSGIIISLID LNLPAPSEEE EMASSVF-
+
+Predicted gene structure (within gDNA segment 13000 to 101):
+
+ Exon  1   6576   5773 ( 804 n);  Protein     1   267 ( 267 aa); score: 1.000
+
+MATCH	U89959-	qprot2	1.000	804	1.000	P
+PGS_U89959-_qprot2	(6576  5773)
+
+Alignment:
+
+ATGGAAGAGA GGCATAAGTG CAAGTTATGT TGGAAGAGCT TCGCTAATGG AAGGGCTTTG     6517
+ M  E  E   R  H  K  C   K  L  C   W  K  S   F  A  N  G   R  A  L  
+ |  |  |   |  |  |  |   |  |  |   |  |  |   |  |  |  |   |  |  |  
+ M  E  E   R  H  K  C   K  L  C   W  K  S   F  A  N  G   R  A  L        20
+
+
+GGAGGTCACA TGAGGTCTCA CATGCTCATT CACCCTCTCC CCAGTCAGCC CGAGTCATAT     6457
+ G  G  H   M  R  S  H   M  L  I   H  P  L   P  S  Q  P   E  S  Y  
+ |  |  |   |  |  |  |   |  |  |   |  |  |   |  |  |  |   |  |  |  
+ G  G  H   M  R  S  H   M  L  I   H  P  L   P  S  Q  P   E  S  Y        40
+
+
+TCGTCTTCCA TGGCTGATCC AGGGTTTGTT CTTCAGGACA GAGAGAGTGA AACCGAGTCG     6397
+ S  S  S   M  A  D  P   G  F  V   L  Q  D   R  E  S  E   T  E  S  
+ |  |  |   |  |  |  |   |  |  |   |  |  |   |  |  |  |   |  |  |  
+ S  S  S   M  A  D  P   G  F  V   L  Q  D   R  E  S  E   T  E  S        60
+
+
+TCCAAGAAGC CCTCCCGCAA ACGATCCAGA CTTAACCGGA GATCCATCTC ATCATTACGT     6337
+ S  K  K   P  S  R  K   R  S  R   L  N  R   R  S  I  S   S  L  R  
+ |  |  |   |  |  |  |   |  |  |   |  |  |   |  |  |  |   |  |  |  
+ S  K  K   P  S  R  K   R  S  R   L  N  R   R  S  I  S   S  L  R        80
+
+
+CATCAACAAT CCAACGAAGA AGGGAAAAGT GAAACCGCAA GAGCAGCAGA TATCAAGATC     6277
+ H  Q  Q   S  N  E  E   G  K  S   E  T  A   R  A  A  D   I  K  I  
+ |  |  |   |  |  |  |   |  |  |   |  |  |   |  |  |  |   |  |  |  
+ H  Q  Q   S  N  E  E   G  K  S   E  T  A   R  A  A  D   I  K  I       100
+
+
+GGGGTTCAAG AACTCAGTGA GTCGTGTACG GAGCAGGAAC CGATGAGTTC GGTGTCGGAC     6217
+ G  V  Q   E  L  S  E   S  C  T   E  Q  E   P  M  S  S   V  S  D  
+ |  |  |   |  |  |  |   |  |  |   |  |  |   |  |  |  |   |  |  |  
+ G  V  Q   E  L  S  E   S  C  T   E  Q  E   P  M  S  S   V  S  D       120
+
+
+GCTGCAACAA CGGAAGAAGA CGTGGCCTTG AGTCTCATGT TGCTGTCGAG AGACAAGTGG     6157
+ A  A  T   T  E  E  D   V  A  L   S  L  M   L  L  S  R   D  K  W  
+ |  |  |   |  |  |  |   |  |  |   |  |  |   |  |  |  |   |  |  |  
+ A  A  T   T  E  E  D   V  A  L   S  L  M   L  L  S  R   D  K  W       140
+
+
+GAGAAGGAGG AAGAGGAAAG TGATGAAGAG AGATGGAAGA AGAAGAGGAA TAAGTGGTTC     6097
+ E  K  E   E  E  E  S   D  E  E   R  W  K   K  K  R  N   K  W  F  
+ |  |  |   |  |  |  |   |  |  |   |  |  |   |  |  |  |   |  |  |  
+ E  K  E   E  E  E  S   D  E  E   R  W  K   K  K  R  N   K  W  F       160
+
+
+GAGTGCGAGA CTTGCGAGAA AGTGTTTAAG TCGTATCAGG CGTTAGGGGG ACACAGAGCA     6037
+ E  C  E   T  C  E  K   V  F  K   S  Y  Q   A  L  G  G   H  R  A  
+ |  |  |   |  |  |  |   |  |  |   |  |  |   |  |  |  |   |  |  |  
+ E  C  E   T  C  E  K   V  F  K   S  Y  Q   A  L  G  G   H  R  A       180
+
+
+AGCCACAAGA AGAAGATAGC AGAAACAGAT CAATTAGGCT CAGATGAGTT GAAGAAGAAG     5977
+ S  H  K   K  K  I  A   E  T  D   Q  L  G   S  D  E  L   K  K  K  
+ |  |  |   |  |  |  |   |  |  |   |  |  |   |  |  |  |   |  |  |  
+ S  H  K   K  K  I  A   E  T  D   Q  L  G   S  D  E  L   K  K  K       200
+
+
+AAGAAGAAGA GTACTAGTAG TCACCATGAA TGTCCAATCT GTGCCAAAGT CTTCACATCT     5917
+ K  K  K   S  T  S  S   H  H  E   C  P  I   C  A  K  V   F  T  S  
+ |  |  |   |  |  |  |   |  |  |   |  |  |   |  |  |  |   |  |  |  
+ K  K  K   S  T  S  S   H  H  E   C  P  I   C  A  K  V   F  T  S       220
+
+
+GGTCAAGCTC TCGGAGGTCA CAAAAGATCT CACGCTTCCG CTAATAATGA ATTCACGAGA     5857
+ G  Q  A   L  G  G  H   K  R  S   H  A  S   A  N  N  E   F  T  R  
+ |  |  |   |  |  |  |   |  |  |   |  |  |   |  |  |  |   |  |  |  
+ G  Q  A   L  G  G  H   K  R  S   H  A  S   A  N  N  E   F  T  R       240
+
+
+AGATCAGGAA TAATAATTAG CTTGATAGAT CTAAATCTCC CAGCGCCATC GGAGGAGGAA     5797
+ R  S  G   I  I  I  S   L  I  D   L  N  L   P  A  P  S   E  E  E  
+ |  |  |   |  |  |  |   |  |  |   |  |  |   |  |  |  |   |  |  |  
+ R  S  G   I  I  I  S   L  I  D   L  N  L   P  A  P  S   E  E  E       260
+
+
+GAGATGGCCT CGTCGGTTTT TTAA     5773
+ E  M  A   S  S  V  F   * 
+ |  |  |   |  |  |  |     
+ E  M  A   S  S  V  F   *       268
+
+
+
+********************************************************************************
+Query protein sequence    3 (File: qprot1)
+
+     1  KLAAAIWDCI SKYKAIPNFP QTETCELLIV DRSVDQIAPI IHEWTYDAMC HDLLDMEGNK
+    61  HVIEVPSKTG GPPEKKEIVL EDHDPVWLEL RHTHIADASE RLHEKMTNFA SKNKAAQMRS
+   121  RDGSELSTRD LQKIVQALPQ YGEQVDKLST HVELAGKINR IIRDTGLRDL GQLEQDLVFG
+   181  DAGAKDVINF LRTNQDTNPE NKLRLLMIYA TVYPEKFEGD KGVKLMQVIS NMQLIAGSPE
+   241  NKAKSGSFSL KFDAGKTKQA NRKDRSGEEE TWQLFRFYPM IEELLEKLVK GDLSKSDYLC
+   301  MNQSSHKEES EARTGSVRKS SAPTAVPERK ATPHSMRSRR TATWARPHSS DDGYSRHSIL
+   361  HNDFLFFGPF ERSLDFF-
+
+Predicted gene structure (within gDNA segment 13000 to 101):
+
+ Exon  1  12999  12858 ( 142 n);  Protein   332   377 (  46 aa); score: 0.088
+
+MATCH	U89959-	qprot1	0.088	142	0.125	P
+PGS_U89959-_qprot1	(12999  12858)
+
+Alignment:
+
+GCTACGGGAA CGCTGGGCTC TTCCAGGAGT -C-AGTGAAG CTGTTCCAGA CCATGAAGCA    12942
+ A  T  G   T  L  G  S   S  R  S      S  E   A  V  P  D   H  E  A  
+ +  .      +  +     |   .  |  +      +  .      .  .      |  .  +  
+ T  P  H   S  M  R  S   R  R  T   -  A  T   W  A  R  P   H  S  S       350
+
+
+GATGGGCATC TCCCCTTCCG TTCTTACCTT CAACAGTCTT CTCTCCATTT TGCTCAAGCG    12882
+ D  G  H   L  P  F  R   S  Y  L   Q  Q  S   S  L  H  F   A  Q  A  
+ |  +         +     +   |     |   +  +  .      |     |   +  .     
+ D  D  G   Y  S  R  H   S  I  L   H  N  D   F  L  F  F   G  P  F       370
+
+
+TGGCAGAACT GGAATGGCCC ATGA    12858
+ W  Q  N   W  N  G  P   * 
+    +  +      +           
+ E  R  S   L  D  F  F   *       378
+
+
+
+********************************************************************************
+Query protein sequence    2 (File: qprot2)
+
+     1  MEERHKCKLC WKSFANGRAL GGHMRSHMLI HPLPSQPESY SSSMADPGFV LQDRESETES
+    61  SKKPSRKRSR LNRRSISSLR HQQSNEEGKS ETARAADIKI GVQELSESCT EQEPMSSVSD
+   121  AATTEEDVAL SLMLLSRDKW EKEEEESDEE RWKKKRNKWF ECETCEKVFK SYQALGGHRA
+   181  SHKKKIAETD QLGSDELKKK KKKSTSSHHE CPICAKVFTS GQALGGHKRS HASANNEFTR
+   241  RSGIIISLID LNLPAPSEEE EMASSVF-
+
+Predicted gene structure (within gDNA segment 101 to 13000):
+
+ Exon  1  12924  12999 (  76 n);  Protein     1    26 (  26 aa); score: 0.255
+
+MATCH	U89959+	qprot2	0.255	76	0.095	P
+PGS_U89959+_qprot2	(12924  12999)
+
+Alignment:
+
+GAAGGGGAGA TGCCCATCTG CTTCATGGTC TGGAACAGCT TCACTGACTC CTGGAAG-A-    12981
+ E  G  E   M  P  I  C   F  M  V   W  N  S   F  T  D  S   W  K     
+    .  |   .  .     |      +      |  +  |   |  +  +  +   +        
+ M  E  E   R  H  K  C   K  L  C   W  K  S   F  A  N  G   R  A  L        20
+
+
+GCCCAGCGTT CCCGTAGC    12999
+ A  Q  R   S  R  S 
+ +     +      |  | 
+ G  G  H   M  R  S        26
+
+
+... finished at: Sat Feb 15 09:44:09 2014
+

@@ -1,0 +1,60 @@
+PLATFORM = AN4PLAT
+INCLDIR  = ../include
+BINDIR   = ../bin
+CC       = cc -O
+CFLAGS   = -D$(PLATFORM) -I$(INCLDIR)
+LFLAGS   = -lm
+
+all:	MakeArray GeneSeqer SplicePredictor SplicePredictorLL
+
+
+MOBJS    = MakeArray.o \
+	   DbSuffix.o \
+	   SufArray.o \
+	   EstData.o \
+	   LcpTree.o \
+	   RawTextFile.o \
+	   TopsPage.o \
+	   TopsPost.o \
+	   TopsSeq.o \
+	   TopsWire.o
+
+MakeArray:	$(MOBJS)
+	$(CC) $(CFLAGS) $(MOBJS) -o $(BINDIR)/MakeArray
+
+
+GOBJS    = GeneSeqer.o \
+	   getgbs.o \
+	   getlns.o \
+	   getlps.o \
+	   list.o \
+	   result.o \
+	   sahmtd.o \
+	   sahmtp.o \
+	   SufArray.o \
+	   EstData.o \
+	   LcpTree.o \
+	   RawTextFile.o \
+	   TopsPage.o \
+	   TopsPost.o \
+	   TopsSeq.o \
+	   TopsWire.o
+
+GeneSeqer:	$(GOBJS)
+	$(CC) $(CFLAGS) $(GOBJS) $(LFLAGS) -o $(BINDIR)/GeneSeqer
+
+
+SOBJS    = RawTextFile.o \
+	   getgbs.o \
+	   getlns.o \
+	   getlps.o \
+	   sahmtd.o \
+	   sahmtp.o
+
+SplicePredictor:	$(SOBJS)
+	$(CC) $(CFLAGS) -DDAPBM -DDAPBM7 SplicePredictor.c $(SOBJS) $(LFLAGS) \
+	-o $(BINDIR)/SplicePredictor
+
+SplicePredictorLL:	$(SOBJS)
+	$(CC) $(CFLAGS) SplicePredictor.c $(SOBJS) $(LFLAGS) \
+	-o $(BINDIR)/SplicePredictorLL
