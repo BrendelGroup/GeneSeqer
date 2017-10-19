@@ -66,7 +66,6 @@ int cod2aa[4][4][4] = {
  { { 9,  9,  9, 17}, { 7,  7,  7,  7}, {12, 12,  5,  5}, { 3,  3, 10, 10} },
  { { 4,  4,  4,  4}, { 1,  1,  1,  1}, { 8,  8,  6,  6}, { 2,  2,  2,  2} } };
 float SCALEF = 0.4F;
-char algnmnt[6*MAXGLGTH+2*MAXCLGTH+2*MAXNEXNS*80];
 
 
 /*      ^^^^^^^^^ FUNCTION DEFINITIONS ^^^^^^^^^ */
@@ -851,12 +850,6 @@ static void OutputParse(float *pd, float *pa, int ia, int numbp,
     else {
       CHECKALIGNLEN; nextFree+=sprintf(global_algnmnt+nextFree, " score:     0\n");
     }
-    sprintf(&(algnmnt[strlen(algnmnt)]),
-      "(%4d n);  Protein %5d %5d (%4d aa);", GEnd - GBegin + 1, PBegin, PEnd, PEnd - PBegin + 1);
-    if (oescr > 0)
-      sprintf(&(algnmnt[strlen(algnmnt)]), " score: %5.3f\n", escr / oescr);
-    else
-      sprintf(&(algnmnt[strlen(algnmnt)]), " score:     0\n");
     gpa->exnscr[exn - 1] = escr / oescr;
     if (GEnd - GBegin + 1 >= MINELGTHfS) {
       gescr += escr;

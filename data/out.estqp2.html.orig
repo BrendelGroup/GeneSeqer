@@ -1,8 +1,8 @@
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
 <HTML><HEAD><TITLE>GeneSeqer Output</TITLE></HEAD><BODY bgcolor=white text=black link=blue><FONT FACE="Courier"><PRE>
 <A NAME="TOP"></A>
-GeneSeqer.   Version of February 15, 2014.
-Date run: Sat Feb 15 09:43:57 2014
+GeneSeqer.   Version of October 19, 2017.
+Date run: Thu Oct 19 11:56:35 2017
 
 (Bayesian) Splice site model (species):	Arabidopsis thaliana
 Fast search parameters:  (-x) wsize 12, (-y) minqHSP 12, (-z) minqHSPc 30.
@@ -14,7 +14,7 @@ ________________________________________________________________________________
 <A NAME="U89959-100-12999"></A>
 
 Sequence    1:   <A HREF="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Search&db=Nucleotide&term=U89959&doptcmdl=GenBank" TARGET="NUCLEOTIDE SEQUENCE SEARCH">U89959</A>, from 101 to 13000, both strands analyzed.
-... started  at: Sat Feb 15 09:43:57 2014
+... started  at: Thu Oct 19 11:56:35 2017
 
 
 <A HREF="#HEAD-PGL-U89959-100-12999">Scroll down to "Predicted gene locations"</A>
@@ -2160,10 +2160,10 @@ F  *       378
 
 
 
-<A NAME="PPGS4@U89959-100-12999"></A>
+<A NAME="PPGS2@U89959-100-12999"></A>
 
 ********************************************************************************
-Query protein sequence    4 (File: <A HREF="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Search&db=Protein&term=qprot2&doptcmdl=GenPept" TARGET="PROTEIN SEQUENCE SEARCH">qprot2</A>)
+Query protein sequence    2 (File: <A HREF="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Search&db=Protein&term=qprot2&doptcmdl=GenPept" TARGET="PROTEIN SEQUENCE SEARCH">qprot2</A>)
 
      1  MEERHKCKLC WKSFANGRAL GGHMRSHMLI HPLPSQPESY SSSMADPGFV LQDRESETES
     61  SKKPSRKRSR LNRRSISSLR HQQSNEEGKS ETARAADIKI GVQELSESCT EQEPMSSVSD
@@ -2265,10 +2265,10 @@ GAGATGGCCT CGTCGGTTTT TTAA     5773
 
 
 
-<A NAME="PPGS3@U89959-100-12999"></A>
+<A NAME="PPGS1@U89959-100-12999"></A>
 
 ********************************************************************************
-Query protein sequence    3 (File: <A HREF="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Search&db=Protein&term=qprot1&doptcmdl=GenPept" TARGET="PROTEIN SEQUENCE SEARCH">qprot1</A>)
+Query protein sequence    1 (File: <A HREF="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Search&db=Protein&term=qprot1&doptcmdl=GenPept" TARGET="PROTEIN SEQUENCE SEARCH">qprot1</A>)
 
      1  KLAAAIWDCI SKYKAIPNFP QTETCELLIV DRSVDQIAPI IHEWTYDAMC HDLLDMEGNK
     61  HVIEVPSKTG GPPEKKEIVL EDHDPVWLEL RHTHIADASE RLHEKMTNFA SKNKAAQMRS
@@ -2338,6 +2338,6 @@ GCCCAGCGTT CCCGTAGC    12999
  G  G  H   M  R  S        26
 
 
-... finished at: Sat Feb 15 09:44:06 2014
+... finished at: Thu Oct 19 11:56:41 2017
 
 </PRE></BODY></HTML>

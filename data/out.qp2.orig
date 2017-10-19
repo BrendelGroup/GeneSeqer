@@ -1,12 +1,12 @@
-GeneSeqer.   Version of February 15, 2014.
-Date run: Sat Feb 15 09:43:54 2014
+GeneSeqer.   Version of October 19, 2017.
+Date run: Thu Oct 19 11:56:32 2017
 
 (Bayesian) Splice site model (species):	Arabidopsis thaliana
 GenBank file: U89959
 
 ________________________________________________________________________________
 Sequence    1:   U89959, from 101 to 13000, both strands analyzed.
-... started  at: Sat Feb 15 09:43:54 2014
+... started  at: Thu Oct 19 11:56:32 2017
 
 
 ********************************************************************************
@@ -253,7 +253,7 @@ F  *       378
 
 
 ********************************************************************************
-Query protein sequence    4 (File: qprot2)
+Query protein sequence    2 (File: qprot2)
 
      1  MEERHKCKLC WKSFANGRAL GGHMRSHMLI HPLPSQPESY SSSMADPGFV LQDRESETES
     61  SKKPSRKRSR LNRRSISSLR HQQSNEEGKS ETARAADIKI GVQELSESCT EQEPMSSVSD
@@ -356,7 +356,7 @@ GAGATGGCCT CGTCGGTTTT TTAA     5773
 
 
 ********************************************************************************
-Query protein sequence    3 (File: qprot1)
+Query protein sequence    1 (File: qprot1)
 
      1  KLAAAIWDCI SKYKAIPNFP QTETCELLIV DRSVDQIAPI IHEWTYDAMC HDLLDMEGNK
     61  HVIEVPSKTG GPPEKKEIVL EDHDPVWLEL RHTHIADASE RLHEKMTNFA SKNKAAQMRS
@@ -424,5 +424,5 @@ GCCCAGCGTT CCCGTAGC    12999
  G  G  H   M  R  S        26
 
 
-... finished at: Sat Feb 15 09:43:57 2014
+... finished at: Thu Oct 19 11:56:35 2017
 
