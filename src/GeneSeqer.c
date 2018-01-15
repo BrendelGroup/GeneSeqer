@@ -1,4 +1,4 @@
-/* GeneSeqer.c;                               Last update: February 15, 2014. */
+/* GeneSeqer.c;                                Last update: October 19, 2017. */
 /* Dependencies:   getgbs.c getlns.c getlps.c sahmtd.c sahmtp.c               */
 /* Bugs:                                                                      */
 
@@ -18,7 +18,7 @@
 
 /*******************************************************************************
 
-    Copyright (C) 2012-2014 Volker Brendel.
+    Copyright (C) 2012-2017 Volker Brendel.
 
     This file is part of GeneSeqer.
 
@@ -1510,7 +1510,7 @@ int main(int argc, char *argv[])
     fprintf(outfp, "<A NAME=\"TOP\"></A>\n");
   }
 
-  fprintf(outfp, "GeneSeqer.   Version of February 15, 2014.\n");
+  fprintf(outfp, "GeneSeqer.   Version of October 19, 2017.\n");
   fprintf(outfp, "Date run: %s\n", ctime(&tlc));
 #ifdef DAPBM
   if (Species < NMDLS)
@@ -1537,7 +1537,7 @@ int main(int argc, char *argv[])
   if (oflag == 1) {
     if (htmlop)
       fprintf(stdout, "<A NAME=\"TOP\"></A>\n");
-    fprintf(stdout, "GeneSeqer.   Version of February 15, 2014.\n");
+    fprintf(stdout, "GeneSeqer.   Version of October 19, 2017.\n");
     fprintf(stdout, "Date run: %s\n", ctime(&tlc));
 #ifdef DAPBM
     if (Species < NMDLS)
@@ -2007,6 +2007,7 @@ void doit(int numbp, int ia, int ib, int rflag, int maxnest)
   auto int estlg;
   auto int numaa;
   static int qpcnt;
+  static int phcnt;
   auto int iaR;
   auto int ibR;
   auto int gia;
@@ -3176,7 +3177,8 @@ fflush(stdout);
   if (qpop) {
     if (bflag == 1  ||  (bflag == 0  &&  rflag == 0)  ||  (bflag == 2  &&  rflag == 1)) {
       setPositionRawTextFile(QP_FILE, 0);
-      if (bflag != 1  ||  rflag == 0) qpcnt = 0;
+      qpcnt = 0;
+      if (bflag != 1  ||  rflag == 0) phcnt = 0;
       while ((numaa = getlps(QP_FILE, 1, qnoffset, sfname, protein)) != 0) {
         if (numaa == -1)
 	  continue;
@@ -3219,6 +3221,7 @@ fflush(stdout);
 	    if (oflag == 1)
 	      prt_gpa_list(stdout, gpa, gsgmntn);
 	    insert_gpa(&gpaheadp, gpa);
+	    ++phcnt;
 	  }
 	  else
 	    free_gpa(gpa);
@@ -3242,6 +3245,7 @@ fflush(stdout);
 	    if (oflag == 1)
 	      prt_gpa_list(stdout, gpa, gsgmntn);
 	    insert_gpa(&gpaheadp, gpa);
+	    ++phcnt;
 	  }
 	  else
 	    free_gpa(gpa);
@@ -3251,7 +3255,7 @@ fflush(stdout);
     }
 
     if (rflag == 1) {
-      if (qpcnt == 0) {
+      if (phcnt == 0) {
 	fprintf(outfp, "\n\nNo significant protein matches were found.\n");
 	if (oflag == 1)
 	  fprintf(stdout, "\n\nNo significant protein matches were found.\n");
