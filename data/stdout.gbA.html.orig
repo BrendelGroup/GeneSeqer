@@ -1,8 +1,8 @@
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
 <HTML><HEAD><TITLE>GeneSeqer Output</TITLE></HEAD><BODY bgcolor=white text=black link=blue><FONT FACE="Courier"><PRE>
 <A NAME="TOP"></A>
-GeneSeqer.   Version of October 19, 2017.
-Date run: Thu Oct 19 11:53:29 2017
+GeneSeqer.   Version of February 11, 2019.
+Date run: Mon Feb 11 11:03:23 2019
 
 (Bayesian) Splice site model (species):	Arabidopsis thaliana
 Fast search parameters:  (-x) wsize 12, (-y) minqHSP 12, (-z) minqHSPc 30.

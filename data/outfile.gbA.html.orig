@@ -1,8 +1,8 @@
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
 <HTML><HEAD><TITLE>GeneSeqer Output</TITLE></HEAD><BODY bgcolor=white text=black link=blue><FONT FACE="Courier"><PRE>
 <A NAME="TOP"></A>
-GeneSeqer.   Version of October 19, 2017.
-Date run: Thu Oct 19 11:53:29 2017
+GeneSeqer.   Version of February 11, 2019.
+Date run: Mon Feb 11 11:03:23 2019
 
 (Bayesian) Splice site model (species):	Arabidopsis thaliana
 Fast search parameters:  (-x) wsize 12, (-y) minqHSP 12, (-z) minqHSPc 30.
@@ -14,7 +14,7 @@ ________________________________________________________________________________
 <A NAME="U89959-0-106972"></A>
 
 Sequence    1:   <A HREF="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Search&db=Nucleotide&term=U89959&doptcmdl=GenBank" TARGET="NUCLEOTIDE SEQUENCE SEARCH">U89959</A>, from 1 to 106973, both strands analyzed.
-... started  at: Thu Oct 19 11:53:29 2017
+... started  at: Mon Feb 11 11:03:23 2019
 
 
 <A HREF="#HEAD-PGL-U89959-0-106972">Scroll down to "Predicted gene locations"</A>
@@ -28,8 +28,8 @@ EST library file:	ATest2;	matching gDNA +strand ...
 ... matches indexed, elapsed seconds = 0 HitsTableSize = 110
 
 EST library file:	ATest1;	matching gDNA -strand ...
-... found all matches, elapsed seconds = 1
-... matches indexed, elapsed seconds = 1 HitsTableSize = 37
+... found all matches, elapsed seconds = 0
+... matches indexed, elapsed seconds = 0 HitsTableSize = 37
 
 EST library file:	ATest2;	matching gDNA -strand ...
 ... found all matches, elapsed seconds = 0
@@ -39059,6 +39059,6 @@ Maximal non-overlapping open reading frames (>= 64 codons):
 <A HREF="#HEAD-PGL-U89959-0-106972">Scroll back to "Predicted gene locations"</A>
 <A HREF="#TOP">Scroll up to top</A>
 <A NAME="BOTTOM-PGL-U89959-0-106972"></A>
-... finished at: Thu Oct 19 11:54:10 2017
+... finished at: Mon Feb 11 11:04:17 2019
 
 </PRE></BODY></HTML>

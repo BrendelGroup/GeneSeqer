@@ -1,4 +1,4 @@
-/* SplicePredictor.c;                         Last update: February 15, 2014. */
+/* SplicePredictor.c;                         Last update: February 11, 2019. */
 /* Dependencies:   getlns.c getgbs.c sahmtD.c sahmtP.c                        */
 /* Bugs:  add: ATG; STP; assembly check                                       */
 
@@ -15,7 +15,7 @@
 
 /*******************************************************************************
 
-    Copyright (C) 2012-2014 Volker Brendel.
+    Copyright (C) 2012-2019 Volker Brendel.
 
     This file is part of GeneSeqer.
 
@@ -1282,12 +1282,12 @@ fprintf(stderr,"\n");
   if (pstyle!=3 && pstyle!=5)
 #ifdef DAPBM
 #ifdef DAPBM7
-   {fprintf(outfp,"SplicePredictor.   Version of February 15, 2014.\n");
+   {fprintf(outfp,"SplicePredictor.   Version of February 11, 2019.\n");
 #else
-   {fprintf(outfp,"SplicePredictorB2.   Version of February 15, 2014.\n");
+   {fprintf(outfp,"SplicePredictorB2.   Version of February 11, 2019.\n");
 #endif
 #else
-   {fprintf(outfp,"SplicePredictorLL.   Version of February 15, 2014.\n");
+   {fprintf(outfp,"SplicePredictorLL.   Version of February 11, 2019.\n");
 #endif
     fprintf(outfp,"Date run: %s\n", ctime(&tlc) );
 #ifdef DAPBM

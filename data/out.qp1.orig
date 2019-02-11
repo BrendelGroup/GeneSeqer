@@ -1,12 +1,12 @@
-GeneSeqer.   Version of October 19, 2017.
-Date run: Thu Oct 19 11:56:31 2017
+GeneSeqer.   Version of February 11, 2019.
+Date run: Mon Feb 11 11:07:25 2019
 
 (Bayesian) Splice site model (species):	Arabidopsis thaliana
 GenBank file: AC002396
 
 ________________________________________________________________________________
 Sequence    1:   AC002396, from 72001 to 76000, reverse strand.
-... started  at: Thu Oct 19 11:56:31 2017
+... started  at: Mon Feb 11 11:07:25 2019
 
 
 ********************************************************************************
@@ -244,5 +244,5 @@ GCAGGTATCA GGGGCAACAA GATGGAATGG GAGCAGGACC AAGTGTGAAT AA    73145
 .... V  N   L  L  C   K  L  G  I   R  M  I   Q  L  Q   *       225
 
 
-... finished at: Thu Oct 19 11:56:32 2017
+... finished at: Mon Feb 11 11:07:25 2019
 

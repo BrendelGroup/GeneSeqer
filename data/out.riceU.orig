@@ -1,5 +1,5 @@
-GeneSeqer.   Version of October 19, 2017.
-Date run: Thu Oct 19 11:56:23 2017
+GeneSeqer.   Version of February 11, 2019.
+Date run: Mon Feb 11 11:07:14 2019
 
 (Bayesian) Splice site model (species):	Oryza sativa
 Fast search parameters:  (-x) wsize 12, (-y) minqHSP 12, (-z) minqHSPc 30.
@@ -42,7 +42,7 @@ GenBank file: U89959
 
 ________________________________________________________________________________
 Sequence    1:   U89959, from 1 to 106973, both strands analyzed.
-... started  at: Thu Oct 19 11:56:23 2017
+... started  at: Mon Feb 11 11:07:14 2019
 
 
 EST library file:	rice_ests;	matching gDNA +strand ...
@@ -4153,5 +4153,5 @@ none
 
 
 
-... finished at: Thu Oct 19 11:56:31 2017
+... finished at: Mon Feb 11 11:07:25 2019
 

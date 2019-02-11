@@ -1,4 +1,4 @@
-/* GeneSeqer.c;                                Last update: October 19, 2017. */
+/* GeneSeqer.c;                                Last update: February 11, 2019. */
 /* Dependencies:   getgbs.c getlns.c getlps.c sahmtd.c sahmtp.c               */
 /* Bugs:                                                                      */
 
@@ -18,7 +18,7 @@
 
 /*******************************************************************************
 
-    Copyright (C) 2012-2017 Volker Brendel.
+    Copyright (C) 2012-2019 Volker Brendel.
 
     This file is part of GeneSeqer.
 
@@ -1510,7 +1510,7 @@ int main(int argc, char *argv[])
     fprintf(outfp, "<A NAME=\"TOP\"></A>\n");
   }
 
-  fprintf(outfp, "GeneSeqer.   Version of October 19, 2017.\n");
+  fprintf(outfp, "GeneSeqer.   Version of February 11, 2019.\n");
   fprintf(outfp, "Date run: %s\n", ctime(&tlc));
 #ifdef DAPBM
   if (Species < NMDLS)
@@ -1537,7 +1537,7 @@ int main(int argc, char *argv[])
   if (oflag == 1) {
     if (htmlop)
       fprintf(stdout, "<A NAME=\"TOP\"></A>\n");
-    fprintf(stdout, "GeneSeqer.   Version of October 19, 2017.\n");
+    fprintf(stdout, "GeneSeqer.   Version of February 11, 2019.\n");
     fprintf(stdout, "Date run: %s\n", ctime(&tlc));
 #ifdef DAPBM
     if (Species < NMDLS)
@@ -2019,7 +2019,7 @@ void doit(int numbp, int ia, int ib, int rflag, int maxnest)
   auto char *protein;
   auto char dfnameB[257]={0};
   auto char dfname[257]={0};
-  auto char gsgmntn[257]={0};
+  auto char gsgmntn[513]={0};
   auto char efname[257]={0};
   auto float avgpdpa = 0.0;
   auto float MINAVGPDPA;

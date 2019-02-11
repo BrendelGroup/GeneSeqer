@@ -1,7 +1,7 @@
 /* sahmtp.c
    Sequence Alignment Hidden Markov Tool - target Protein version
 
-   Last update:  February 15, 2014. (VB)
+   Last update:  February 11, 2019. (VB)
 */
 
 
@@ -21,7 +21,7 @@
 
 /*******************************************************************************
 
-    Copyright (C) 2012-2014 Volker Brendel.
+    Copyright (C) 2012-2019 Volker Brendel.
 
     This file is part of GeneSeqer.
 
@@ -38,7 +38,7 @@
     You should have received a copy of the GNU General Public License
     along with GeneSeqer.  If not, see <http://www.gnu.org/licenses/>.
 
-/*******************************************************************************
+*******************************************************************************/
 
 
 
@@ -1452,7 +1452,7 @@ void free_gpa(struct gpalgnmnt *gpa)
 int prt_gpa_list(FILE *fp, struct gpalgnmnt *gpa, char *gsgmntn)
 {
   int ngpa = 0;
-  char anchorName[257];
+  char anchorName[513];
 
   while (gpa != NULL) {
     if (htmlop) {

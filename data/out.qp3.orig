@@ -1,5 +1,5 @@
-GeneSeqer.   Version of October 19, 2017.
-Date run: Thu Oct 19 11:56:41 2017
+GeneSeqer.   Version of February 11, 2019.
+Date run: Mon Feb 11 11:07:36 2019
 
 (Bayesian) Splice site model (species):	Arabidopsis thaliana
 Amino acid substitution scoring matrix: ../include/PPAM250 
@@ -7,7 +7,7 @@ GenBank file: U89959
 
 ________________________________________________________________________________
 Sequence    1:   U89959, from 101 to 13000, both strands analyzed.
-... started  at: Thu Oct 19 11:56:41 2017
+... started  at: Mon Feb 11 11:07:36 2019
 
 
 ********************************************************************************
@@ -425,5 +425,5 @@ GCCCAGCGTT CCCGTAGC    12999
  G  G  H   M  R  S        26
 
 
-... finished at: Thu Oct 19 11:56:44 2017
+... finished at: Mon Feb 11 11:07:39 2019
 

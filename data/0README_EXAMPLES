@@ -1,4 +1,4 @@
-GeneSeqer-5.1 - README_EXAMPLES                              (February 15, 2014)
+GeneSeqer-5.2 - README_EXAMPLES                              (February 11, 2019)
 ________________________________________________________________________________
 
 
@@ -23,7 +23,8 @@ ________________________________________________________________________________
 #      used in fast screening for matching ESTs.  Pre-processing is done with
 #      the command "../bin/MakeArray".  Depending on available RAM on your CPU,
 #      the EST database may have to be split up into several smaller pieces as
-#      in the provided example (ATest1, ATest2).
+#      in the provided example (ATest1, ATest2).  You could use the Perl script
+#      fastasplit.pl in the bin directory to accomplish this task.
 #
 #date
 #   ../bin/MakeArray ATest1; ../bin/MakeArray ATest2

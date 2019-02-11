@@ -1,4 +1,4 @@
-GeneSeqer-MPI - README_EXAMPLES                              (February 15, 2014)
+GeneSeqer-MPI - README_EXAMPLES                              (February 11, 2019)
 ________________________________________________________________________________
 
 I. Set the number of processors (x) in the lines
@@ -10,8 +10,8 @@ in x*.
 
 II. Example:
 
-(Comment out the MakeArray associated lines in xrunme if you have not generated
- the indices for ATest1 and ATest2 in ../data in a previous step.)
+(You can omit the MakeArray associated lines in xrunme if you have already
+ generated the indices for ATest1 and ATest2 in ../data in a previous step.)
 
 xrunme
 

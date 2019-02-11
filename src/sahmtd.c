@@ -1,7 +1,7 @@
 /* sahmtd.c
    Sequence Alignment Hidden Markov Tool - DNA version
 
-   Last update:  February 15, 2014. (VB)
+   Last update:  February 11, 2019. (VB)
 */
 
 
@@ -16,7 +16,7 @@
 
 /*******************************************************************************
 
-    Copyright (C) 2012-2014 Volker Brendel.
+    Copyright (C) 2012-2019 Volker Brendel.
 
     This file is part of GeneSeqer.
 

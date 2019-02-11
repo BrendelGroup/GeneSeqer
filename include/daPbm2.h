@@ -1,4 +1,4 @@
-/*daPbm2.h                  Last update: February 15, 2014, by Volker Brendel */
+/*daPbm2.h                  Last update: February 11, 2019, by Volker Brendel */
 /*Bayesian splice site model parameters and subroutines for GeneSeqer.c       */
 
 

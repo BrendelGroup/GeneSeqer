@@ -1,4 +1,4 @@
-__GeneSeqer/SplicePredictor.                       Version 5.1 (February 15, 2014)__
+__GeneSeqer/SplicePredictor.                       Version 5.2 (February 11, 2019)__
 ________________________________________________________________________________
 
 __UTILITY:__ Gene prediction by spliced alignment

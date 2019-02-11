@@ -3,9 +3,9 @@
 
 set np = 6
 
-#cd ../data
-#MakeArray ATest1; MakeArray ATest2
-#cd ../mpidata
+cd ../data
+../bin/MakeArray ATest1; ../bin/MakeArray ATest2
+cd ../mpidata
 
 time ../bin/GeneSeqer -s Arabidopsis -d ../data/ATest1 ../data/ATest2 \
 	-g ../data/U89959 > out.gbA
