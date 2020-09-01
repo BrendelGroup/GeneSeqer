@@ -27,7 +27,7 @@ in include/sahmt.h], but the alignment algorithm will be slow.
 Also, chance matches leading to insignificant alignments will be
 more prevalent for long cDNAs.  For such applications, use of
 the options "-x", "-y", and "-z" with higher than default values
-is recommended.  
+is recommended.
 
 __DATABASE SUPPORT:__
 Please see 0README in the DBsupport directory for
@@ -60,6 +60,12 @@ cd ../demo		#(see 0README_EXAMPLES)
 #
 $make INSTALLDIR=~/bin install
 $)
+
+# Note: If your are planning on Windows 10, I would suggest reading through this tutorial first:
+#       https://docs.microsoft.com/en-us/cpp/build/walkthrough-compiling-a-native-cpp-program-on-the-command-line?view=vs-2019
+#
+#       Once you have a developer command prompt, the installation method above can be used.
+#       [system-type] -> win
 ```
 
 __BINARIES:__

@@ -1,8 +1,13 @@
 #Makefile for GeneSeqer/SplicePredictor
 #Last update: February 11, 2019.
 
-BINDIR     = ../bin
-INSTALLDIR = /usr/local/bin
+ifeq ($(OS),Windows_NT)
+	BINDIR     = ..\bin
+	INSTALLDIR = "%programfiles(x86)%\GeneSeqer\bin"
+else
+	BINDIR     = ../bin
+	INSTALLDIR = /usr/local/bin
+endif
 
 what:
 	clear;
@@ -43,7 +48,10 @@ sun-os:
 	@make -f makefile.sun
 
 win:
-	mkdir -p $(BINDIR)
+# Check if file exists, create it if it doesn't
+ifeq ("$(wildcard $(BINDIR))", "")
+	mkdir $(BINDIR)
+endif
 	@make -f makefile.win
 
 OPENMPI:
@@ -54,10 +62,22 @@ OPENMPI:
 
 
 install:
+ifeq ($(OS),Windows_NT)
+	xcopy /f $(BINDIR)\* $(INSTALLDIR)
+else
 	cp $(BINDIR)/* $(INSTALLDIR)/
+endif
 
 clean:
+ifeq ($(OS),Windows_NT)
+	del /f *.obj
+else
 	\rm *.o
+endif
 
 allclean:
+ifeq ($(OS),Windows_NT)
+	del /f *.o ..\bin\GeneSeqer* ..\bin\MakeArray ..\bin\SplicePredictor*
+else
 	\rm *.o ../bin/GeneSeqer* ../bin/MakeArray ../bin/SplicePredictor*
+endif
