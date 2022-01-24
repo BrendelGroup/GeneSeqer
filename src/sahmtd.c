@@ -57,7 +57,6 @@ extern char NAUC[];
 extern char AAUC[];
 extern int codtoaa[4][4][4];
 extern int frompA, top, htmlop, ifwdth;
-extern FILE *imageDataFh;
 extern int NDEALLOC_GCA;
 int NALLOC_PGL = 0, NDEALLOC_PGL = 0;
 int NALLOC_ALN = 0, NDEALLOC_ALN = 0;
@@ -581,7 +580,7 @@ static void WritePath(int g, int c, int statev)
 
 
 
-int Obeg, Gbeg, Cbeg, Oend;
+static int Obeg, Gbeg, Cbeg, Oend;
 
 static void OutputEnds(int ia)
 {

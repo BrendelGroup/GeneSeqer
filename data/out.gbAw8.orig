@@ -1,5 +1,5 @@
-GeneSeqer.   Version of February 11, 2019.
-Date run: Mon Feb 11 11:04:17 2019
+GeneSeqer.   Version of January 24, 2022.
+Date run: Mon Jan 24 13:04:46 2022
 
 (Bayesian) Splice site model (species):	Arabidopsis thaliana
 Fast search parameters:  (-x) wsize 12, (-y) minqHSP 12, (-z) minqHSPc 30.
@@ -8,7 +8,7 @@ GenBank file: U89959
 
 ________________________________________________________________________________
 Sequence    1:   U89959, from 1 to 106973, both strands analyzed.
-... started  at: Mon Feb 11 11:04:17 2019
+... started  at: Mon Jan 24 13:04:46 2022
 
 
 EST library file:	ATest1;	matching gDNA +strand ...
@@ -16,8 +16,8 @@ EST library file:	ATest1;	matching gDNA +strand ...
 ... matches indexed, elapsed seconds = 0 HitsTableSize = 89
 
 EST library file:	ATest2;	matching gDNA +strand ...
-... found all matches, elapsed seconds = 0
-... matches indexed, elapsed seconds = 0 HitsTableSize = 110
+... found all matches, elapsed seconds = 1
+... matches indexed, elapsed seconds = 1 HitsTableSize = 110
 
 EST library file:	ATest1;	matching gDNA -strand ...
 ... found all matches, elapsed seconds = 0
@@ -19371,5 +19371,5 @@ Maximal non-overlapping open reading frames (>= 64 codons):
 
 
 
-... finished at: Mon Feb 11 11:04:35 2019
+... finished at: Mon Jan 24 13:04:58 2022
 

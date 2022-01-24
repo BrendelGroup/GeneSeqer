@@ -1,4 +1,4 @@
-/* SplicePredictor.c;                         Last update: February 11, 2019. */
+/* SplicePredictor.c;                          Last update: January 24, 2022. */
 /* Dependencies:   getlns.c getgbs.c sahmtD.c sahmtP.c                        */
 /* Bugs:  add: ATG; STP; assembly check                                       */
 
@@ -15,7 +15,7 @@
 
 /*******************************************************************************
 
-    Copyright (C) 2012-2019 Volker Brendel.
+    Copyright (C) 2012-2022 Volker Brendel.
 
     This file is part of GeneSeqer.
 
@@ -131,7 +131,31 @@
 #include "smat.h"
 #include "def.h"
 #include "abc.h"
+
+int JNLGTH;
+int MIN_INTRONLENGTH;
+float SIWEIGHT;
+int MIN_EXONLENGTH;
+float SEWEIGHT;
+int MIN_NBR_ENDMATCHES;
+
+float match[12][12];
+float *scoreD[2][2];
+short int **pathD[2];
+int *intronstart[2];
+int *exonstart[2];
+
+int ssmat[23][23];
+float *scoreP[4][4];
+short int **pathP[4];
+int *intronstart_IA[4], *intronstart_IB[4], *intronstart_IC[4];
+int *splitcodon_IB[4], *splitcodon_IC1[4], *splitcodon_IC2[4];
+
+int *optGDNA, *optCDNA, *optProtein, *optState, optN, optM, optcounter;
+FILE *sahmtfp;
+
 #include "sahmt.h"
+
 #include "platform.h"
 #include "RawTextFile.h"	/* Header, raw text file services */
 #include "html.h"
@@ -1282,12 +1306,12 @@ fprintf(stderr,"\n");
   if (pstyle!=3 && pstyle!=5)
 #ifdef DAPBM
 #ifdef DAPBM7
-   {fprintf(outfp,"SplicePredictor.   Version of February 11, 2019.\n");
+   {fprintf(outfp,"SplicePredictor.   Version of January 24, 2022.\n");
 #else
-   {fprintf(outfp,"SplicePredictorB2.   Version of February 11, 2019.\n");
+   {fprintf(outfp,"SplicePredictorB2.   Version of January 24, 2022.\n");
 #endif
 #else
-   {fprintf(outfp,"SplicePredictorLL.   Version of February 11, 2019.\n");
+   {fprintf(outfp,"SplicePredictorLL.   Version of January 24, 2022.\n");
 #endif
     fprintf(outfp,"Date run: %s\n", ctime(&tlc) );
 #ifdef DAPBM

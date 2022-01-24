@@ -1,8 +1,8 @@
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
 <HTML><HEAD><TITLE>GeneSeqer Output</TITLE></HEAD><BODY bgcolor=white text=black link=blue><FONT FACE="Courier"><PRE>
 <A NAME="TOP"></A>
-GeneSeqer.   Version of February 11, 2019.
-Date run: Mon Feb 11 11:07:25 2019
+GeneSeqer.   Version of January 24, 2022.
+Date run: Mon Jan 24 13:06:52 2022
 
 (Bayesian) Splice site model (species):	Arabidopsis thaliana
 GenBank file: AC002396
@@ -11,7 +11,7 @@ ________________________________________________________________________________
 <A NAME="AC002396-72000-75999"></A>
 
 Sequence    1:   <A HREF="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Search&db=Nucleotide&term=AC002396&doptcmdl=GenBank" TARGET="NUCLEOTIDE SEQUENCE SEARCH">AC002396</A>, from 72001 to 76000, reverse strand.
-... started  at: Mon Feb 11 11:07:25 2019
+... started  at: Mon Jan 24 13:06:52 2022
 
 
 <A NAME="PPGS1@AC002396-72000-75999"></A>
@@ -251,6 +251,6 @@ GCAGGTATCA GGGGCAACAA GATGGAATGG GAGCAGGACC AAGTGTGAAT AA    73145
 .... V  N   L  L  C   K  L  G  I   R  M  I   Q  L  Q   *       225
 
 
-... finished at: Mon Feb 11 11:07:25 2019
+... finished at: Mon Jan 24 13:06:52 2022
 
 </PRE></BODY></HTML>

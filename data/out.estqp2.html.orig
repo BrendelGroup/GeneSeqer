@@ -1,8 +1,8 @@
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
 <HTML><HEAD><TITLE>GeneSeqer Output</TITLE></HEAD><BODY bgcolor=white text=black link=blue><FONT FACE="Courier"><PRE>
 <A NAME="TOP"></A>
-GeneSeqer.   Version of February 11, 2019.
-Date run: Mon Feb 11 11:07:29 2019
+GeneSeqer.   Version of January 24, 2022.
+Date run: Mon Jan 24 13:06:54 2022
 
 (Bayesian) Splice site model (species):	Arabidopsis thaliana
 Fast search parameters:  (-x) wsize 12, (-y) minqHSP 12, (-z) minqHSPc 30.
@@ -14,7 +14,7 @@ ________________________________________________________________________________
 <A NAME="U89959-100-12999"></A>
 
 Sequence    1:   <A HREF="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Search&db=Nucleotide&term=U89959&doptcmdl=GenBank" TARGET="NUCLEOTIDE SEQUENCE SEARCH">U89959</A>, from 101 to 13000, both strands analyzed.
-... started  at: Mon Feb 11 11:07:29 2019
+... started  at: Mon Jan 24 13:06:54 2022
 
 
 <A HREF="#HEAD-PGL-U89959-100-12999">Scroll down to "Predicted gene locations"</A>
@@ -2338,6 +2338,6 @@ GCCCAGCGTT CCCGTAGC    12999
  G  G  H   M  R  S        26
 
 
-... finished at: Mon Feb 11 11:07:36 2019
+... finished at: Mon Jan 24 13:06:59 2022
 
 </PRE></BODY></HTML>

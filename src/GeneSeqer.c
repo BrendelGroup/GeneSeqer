@@ -1,4 +1,4 @@
-/* GeneSeqer.c;                                Last update: February 11, 2019. */
+/* GeneSeqer.c;                                Last update: January 24, 2022. */
 /* Dependencies:   getgbs.c getlns.c getlps.c sahmtd.c sahmtp.c               */
 /* Bugs:                                                                      */
 
@@ -18,7 +18,7 @@
 
 /*******************************************************************************
 
-    Copyright (C) 2012-2019 Volker Brendel.
+    Copyright (C) 2012-2022 Volker Brendel.
 
     This file is part of GeneSeqer.
 
@@ -178,6 +178,7 @@
 #include "SufArray.h"
 #include "RawTextFile.h"	/* Header, raw text file services */
 
+FILE *imageDataFh;
 #include "html.h"
 
 
@@ -206,7 +207,31 @@ struct bcvct {
 #include "abc.h"
 #include "smat.h"
 #include "mytype.h"
+
+int JNLGTH;
+int MIN_INTRONLENGTH;
+float SIWEIGHT;
+int MIN_EXONLENGTH;
+float SEWEIGHT;
+int MIN_NBR_ENDMATCHES;
+
+float match[12][12];
+float *scoreD[2][2];
+short int **pathD[2];
+int *intronstart[2];
+int *exonstart[2];
+
+int ssmat[23][23];
+float *scoreP[4][4];
+short int **pathP[4];
+int *intronstart_IA[4], *intronstart_IB[4], *intronstart_IC[4];
+int *splitcodon_IB[4], *splitcodon_IC1[4], *splitcodon_IC2[4];
+
+int *optGDNA, *optCDNA, *optProtein, *optState, optN, optM, optcounter;
+FILE *sahmtfp;
+
 #include "sahmt.h"
+
 #include "sequence.h"
 #include "space.h"
 #include "result.h"
@@ -1510,7 +1535,7 @@ int main(int argc, char *argv[])
     fprintf(outfp, "<A NAME=\"TOP\"></A>\n");
   }
 
-  fprintf(outfp, "GeneSeqer.   Version of February 11, 2019.\n");
+  fprintf(outfp, "GeneSeqer.   Version of January 24, 2022.\n");
   fprintf(outfp, "Date run: %s\n", ctime(&tlc));
 #ifdef DAPBM
   if (Species < NMDLS)
@@ -1537,7 +1562,7 @@ int main(int argc, char *argv[])
   if (oflag == 1) {
     if (htmlop)
       fprintf(stdout, "<A NAME=\"TOP\"></A>\n");
-    fprintf(stdout, "GeneSeqer.   Version of February 11, 2019.\n");
+    fprintf(stdout, "GeneSeqer.   Version of January 24, 2022.\n");
     fprintf(stdout, "Date run: %s\n", ctime(&tlc));
 #ifdef DAPBM
     if (Species < NMDLS)

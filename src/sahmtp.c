@@ -65,7 +65,7 @@ int cod2aa[4][4][4] = {
  { { 0,  0,  0,  0}, {11, 11, 11, 11}, {16, 16, 14, 14}, {10, 10, 10, 10} },
  { { 9,  9,  9, 17}, { 7,  7,  7,  7}, {12, 12,  5,  5}, { 3,  3, 10, 10} },
  { { 4,  4,  4,  4}, { 1,  1,  1,  1}, { 8,  8,  6,  6}, { 2,  2,  2,  2} } };
-float SCALEF = 0.4F;
+static float SCALEF = 0.4F;
 
 
 /*      ^^^^^^^^^ FUNCTION DEFINITIONS ^^^^^^^^^ */
@@ -679,7 +679,7 @@ static void WriteIntron(int g, int state)
 
 
 
-int Obeg, Gbeg, Pbeg, Oend;
+static int Obeg, Gbeg, Pbeg, Oend;
 
 static void OutputEnds(int ia)
 {

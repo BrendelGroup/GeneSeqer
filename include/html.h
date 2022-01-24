@@ -4,7 +4,7 @@
 
 
 static char link[1024]="";
-FILE *imageDataFh;
+extern FILE *imageDataFh;
 
 #ifndef HTMLWSF
 #ifdef HTMLWS
