@@ -7,51 +7,54 @@ CFLAGS   = -D$(PLATFORM) -I$(INCLDIR)
 all:	MakeArray GeneSeqer SplicePredictor SplicePredictorLL
 
 
-MOBJS    = MakeArray.obj \
-	   DbSuffix.obj \
-	   SufArray.obj \
-	   EstData.obj \
-	   LcpTree.obj \
-	   RawTextFile.obj \
-	   TopsPage.obj \
-	   TopsPost.obj \
-	   TopsSeq.obj \
-	   TopsWire.obj
+MOBJS = MakeArray.obj \
+	DbSuffix.obj \
+	SufArray.obj \
+	EstData.obj \
+	LcpTree.obj \
+	RawTextFile.obj \
+	TopsPage.obj \
+	TopsPost.obj \
+	TopsSeq.obj \
+	TopsWire.obj
 
 MakeArray:	$(MOBJS)
-	$(CC) $(CFLAGS) $(MOBJS) -o $(BINDIR)\MakeArray
+	$(CC) $(CFLAGS) $(MOBJS) /Fo$(BINDIR)\MakeArray
 
 
-GOBJS    = GeneSeqer.obj \
-	   getgbs.obj \
-	   getlns.obj \
-	   getlps.obj \
-	   list.obj \
-	   result.obj \
-	   sahmtd.obj \
-	   sahmtp.obj \
-	   SufArray.obj \
-	   EstData.obj \
-	   LcpTree.obj \
-	   RawTextFile.obj \
-	   TopsPage.obj \
-	   TopsPost.obj \
-	   TopsSeq.obj \
-	   TopsWire.obj
+GOBJS = GeneSeqer.obj \
+	getgbs.obj \
+	getlns.obj \
+	getlps.obj \
+	list.obj \
+	result.obj \
+	sahmtd.obj \
+	sahmtp.obj \
+	SufArray.obj \
+	EstData.obj \
+	LcpTree.obj \
+	RawTextFile.obj \
+	TopsPage.obj \
+	TopsPost.obj \
+	TopsSeq.obj \
+	TopsWire.obj
 
 GeneSeqer:	$(GOBJS)
-	$(CC) $(CFLAGS) $(GOBJS) -o $(BINDIR)\GeneSeqer
+	$(CC) $(CFLAGS) $(GOBJS) /Fo$(BINDIR)\GeneSeqer
 
 
-SOBJS    = RawTextFile.obj \
-	   getgbs.obj \
-	   getlns.obj \
-	   getlps.obj \
-	   sahmtd.obj \
-	   sahmtp.obj
+SOBJS = RawTextFile.obj \
+	getgbs.obj \
+	getlns.obj \
+	getlps.obj \
+	sahmtd.obj \
+	sahmtp.obj
 
 SplicePredictor:	$(SOBJS)
-	$(CC) $(CFLAGS) -DDAPBM -DDAPBM7 SplicePredictor.c $(SOBJS) -o $(BINDIR)\SplicePredictor
+	$(CC) $(CFLAGS) -DDAPBM -DDAPBM7 SplicePredictor.c $(SOBJS) /Fo$(BINDIR)\SplicePredictor
 
 SplicePredictorLL:	$(SOBJS)
-	$(CC) $(CFLAGS) SplicePredictor.c $(SOBJS) -o $(BINDIR)\SplicePredictorLL
+	$(CC) $(CFLAGS) SplicePredictor.c $(SOBJS) /Fo$(BINDIR)\SplicePredictorLL
+
+%.obj: %.c
+	$(CC) -c $< /Fo$@ $(CFLAGS)

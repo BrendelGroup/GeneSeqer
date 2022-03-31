@@ -90348,7 +90348,7 @@ double is_donor(char seq[], int numbp, int pos, int wl, int species, struct ssit
 {
   int i, j, p, c, S1, S2, d, gcspecies = 0, gcdonor = 0;
   struct bcvct bcvl, bcvr;
-  double delU = 0.0, delS = 0.0, Tv[3] = {}, Fv[4] = {}, pval = -0.5, cval = -99.0;
+  double delU = 0.0, delS = 0.0, Tv[3], Fv[4], pval = -0.5, cval = -99.0;
   int mutate = 0, seqo1=0, seqo2=0;
 
   if (seq[pos] != 3  ||  seq[pos + 1] != 0) {
@@ -90490,7 +90490,7 @@ else {
 double is_acptr(char seq[], int numbp, int pos, int wl, int species, struct ssite_stats *psite, int allownn)
 {
   int i, j, p, c, S1, S2, d;
-  double delU = 0.0, delS = 0.0, Tv[3] = {}, Fv[4] = {}, pval = -0.5, cval = -99.0;
+  double delU = 0.0, delS = 0.0, Tv[3], Fv[4], pval = -0.5, cval = -99.0;
   int qlty_branchpoint(char seq[], int numbp, int pos, int wa, int wb);
   struct bcvct bcvl, bcvr;
   int mutate = 0, seqo1=0, seqo2=0;
@@ -90604,7 +90604,7 @@ double is_acptr(char seq[], int numbp, int pos, int wl, int species, struct ssit
 double donorP(char seq[], int numbp, int pos, int species)
 {
   int i, j, p, c, S1, S2, d, gcspecies = 0, gcdonor = 0;
-  double pval = 0.5, Tv[3] = {}, Fv[4] = {};
+  double pval = 0.5, Tv[3], Fv[4];
 
   if (pos < 0  ||  pos >= numbp-1  ||  seq[pos] != 3) return (-1.0);
   if (species != 8  &&  species != 10  &&  species != 11 &&  species != 12  &&  seq[pos + 1] != 0) return (-1.0);
@@ -90718,7 +90718,7 @@ else {
 double acptrP(char seq[], int numbp, int pos, int species)
 {
   int i, j, p, c, S1, S2, d;
-  double pval = 0.5, Tv[3] = {}, Fv[4] = {};
+  double pval = 0.5, Tv[3], Fv[4];
 
   if (pos == 0  ||  (seq[pos - 1] != 2 || seq[pos] != 3)) {
     return (-1.0);
